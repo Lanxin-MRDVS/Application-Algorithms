@@ -66,7 +66,7 @@ The Global Settings defines the core filtering and recognition parameters for de
 
 4. Layer Height (mm):  This parameter is used to filter cargo by layer height and distinguish items across different stacking levels. For example, if the Layer Height is set to 200 mm, it means that when soft-bags are stacked, the height of a single bag (e.g., 200 mm) determines the height of each layer. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from futher computation.
 
-5. Arrangement Order: Defines the priority order for the algorithm to recognize cargo. Set to Near to far as default, which means the system recognizes near cargos first, and then far cargos. 
+5. Arrangement Order: Defines the priority order for the algorithm to recognize cargo. Set to Near to far as default, which means the system recognizes near cargos first, and then far cargos. ????
 
 6. Advanced Toggles [Under Development]: Includes options for enabling large-size splitting, parallel alignment correction, multiple results at once, and occlusion detection. In the current version, these are reserved configuration items and are not yet active.
 Interface & Language Settings
