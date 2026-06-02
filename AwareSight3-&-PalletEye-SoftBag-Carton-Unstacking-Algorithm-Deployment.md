@@ -17,7 +17,7 @@ The overall interface of the AW3 platform is primarily divided into four major f
 
 The Parameter Configuration Section contains five menus, the Device Connection, the Algorithm enable, the Parameters, the Soft-pack depalletizing, and the Result log. 
 
-### Device Connection menu
+## Device Connection menu
 
 When clicking the Device Connection menu, the content will then be at the right side of the displays, as shown in Figure 2 red box. The Center Connection section shows the information of the center AlgPlatformViewer is connected to. 
 
@@ -39,13 +39,43 @@ When clicking the Device Connection menu, the content will then be at the right 
 
 - Connect center: By clicking this button, the AlgPlatformViewer will manually by conneted to a selected center. This is for the case if the subnet routing doesn't support UDP broadcast discovery.  
 
-### Soft-pack depalletizing
+## Soft-pack depalletizing
 
+The Soft-pack Depalletizing Configuration Interface is a core feature of the PalletEye algorithm. It integrates task template/mode settings, algorithm parameter configuration, and core operational capabilities. Designed to support parameter configuration, calibration, task template management, and algorithm computation for soft-pack and carton depalletizing scenarios, it is fully adapted to the demands of routine industrial operations and on-site tuning.
 
+### Task Template and Mode
+1. Fetch Current Parameters: By clicking this button, the AlgPlatformViewer fetches the soft-bag parameters and the pre-defined template parameters from the center. The fetched parameters are then loaded into the Global-, Calibration-, Region settings for visualization and further configuration if needed.
 
+2.Template Selection: Selects saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags
 
+3. Material Type Switching: Supports switching between two material types—Soft-pack (Bag) and Carton (Box)—to adapt to different depalletizing target recognition logics.
 
+4. Apply Calibration to All Templates and Distribute: This button applies the parameters of the selected Global settings template to the region calibration and hand-eye calibration. The calibration results are then updated in the calibration and region settings template.
 
+5. Operation Mode Switching: Simple Mode: Parameters are fixed. It performs only basic validation on cargo dimensions without advanced algorithm features, making it suitable for standardized, routine depalletizing scenarios. Expert Mode: Unlocks full custom parameter configuration and enables advanced features like parcel merging. This mode is designed for complex working conditions and scenarios requiring refined recognition (UI to be continuously optimized).
+
+### Global Settings
+
+The Global Settings defines the core filtering and recognition parameters for depalletizing target detection. It is used to control cargo detection accuracy and filtering rules. The parameters are described as follows:
+
+1. Fill Ratio: Determines the threshold of how well the detected target fill the detection frame. Recommended value is 0.7. Cargo with a fill ratio lower than this threshold will be filtered out to avoid invalid or interfering targets.
+
+2. Standard Dimensions (L x W mm): Sets the standard length and width benchmarks for the target material.
+
+3. Length/Width Range (mm): Defines the valid length and width intervals for cargo. Targets falling outside these ranges are automatically filtered.
+
+4. Layer Height (mm):  This parameter is used to filter cargo by layer height and distinguish items across different stacking levels. For example, if the Layer Height is set to 200 mm, it means that when soft-bags are stacked, the height of a single bag (e.g., 200 mm) determines the height of each layer. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from futher computation.
+
+5. Arrangement Order: Defines the priority order for the algorithm to recognize cargo. Set to Near to far as default, which means the system recognizes near cargos first, and then far cargos. 
+
+6. Advanced Toggles [Under Development]: Includes options for enabling large-size splitting, parallel alignment correction, multiple results at once, and occlusion detection. In the current version, these are reserved configuration items and are not yet active.
+Interface & Language Settings
+
+7. Used to configure the real-time display type and system language of the software interface. Parameters take effect immediately without requiring additional saving or distribution, adapting to various debugging and observation scenarios.
+
+### Region Settings
+
+### Calibration Settings
 
 ## Connection Management Section
 
