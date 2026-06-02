@@ -19,13 +19,33 @@ The Parameter Configuration Section contains five menus, the Device Connection, 
 
 ### Device Connection menu
 
-When clicking the Device Connection menu, the content will then be at the right side of the displays, as shown
+When clicking the Device Connection menu, the content will then be at the right side of the displays, as shown in Figure 2 red box. The Center Connection section shows the information of the center AlgPlatformViewer is connected to. 
+
+- Center Address: The IP address of the center that AlgPlatformViewer is connected to.
+- Center Port: The port number used by the center to transport all operational data streams. This includes sharing information about cameras connected to this center with other centers, as well as importing real-time 3D image data from cameras.
+- Broadcast Address: Defaults to "auto". In this mode, the center automatically broadcasts its IP address and Discovery Port information via a UDP packet.
+- Discovery Port: The port number used by the center to broadcast its IP address and port details to other centers within the same subnet. When a center receives a discovery packet from another center, it sends a response. This mechanism allows centers to discover each other and establish collaboration.
+- Timeout Value: The timeout duration in milliseconds (ms). This defines how long AlgPlatformViewer will attempt to connect to the center before stopping if a connection cannot be established.
+- Discover Centers: When this button is clicked, all centers connected to the same subnet will be detected and displayed in the list below.
+
+<p align= “center”>
+<img width="1437" height="906" alt="PixPin_2026-06-02_08-32-02" src="https://github.com/user-attachments/assets/36f48856-18df-491d-9da3-2466a98f3fc8" />
+<br>
+   <em> Figure 2：Center Connection </em>
+</p>
+
+
+- Connect center
+- Fetch virtual cameras
+
+### Algorithm enable menu
 
 
 
-- Connection Management Section: 
+
+## Connection Management Section
 
 
-- Display Configuration Section: 
+## Display Configuration Section
 
-- Visualization Section: 
+## Visualization Section
