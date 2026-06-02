@@ -26,7 +26,9 @@ When clicking the Device Connection menu, the content will then be at the right 
 - Broadcast Address: Defaults to "auto". In this mode, the center automatically broadcasts its IP address and Discovery Port information via a UDP packet.
 - Discovery Port: The port number used by the center to broadcast its IP address and port details to other centers within the same subnet. When a center receives a discovery packet from another center, it sends a response. This mechanism allows centers to discover each other and establish collaboration.
 - Timeout Value: The timeout duration in milliseconds (ms). This defines how long AlgPlatformViewer will attempt to connect to the center before stopping if a connection cannot be established.
-- Discover Centers: When this button is clicked, all centers connected to the same subnet will be detected and displayed in the list below.
+- Discover Centers: Clicking this button detects all centers on the same subnet and displays them in below, and AlgPlatformViewer will automatically connect to first center in order. By clicking a center in the list, all virtual cameras created by that center will then appear in the Connection Management section. You can switch to a specific virtual camera's view in the Display section by clicking the virtual camera number.
+
+(Virtual cameras are designed to support multi-camera cooperation in the future. Currently, each virtual camera is only mapped to a single physical camera.)
 
 <p align= “center”>
 <img width="1437" height="906" alt="PixPin_2026-06-02_08-32-02" src="https://github.com/user-attachments/assets/36f48856-18df-491d-9da3-2466a98f3fc8" />
@@ -35,10 +37,12 @@ When clicking the Device Connection menu, the content will then be at the right 
 </p>
 
 
-- Connect center
-- Fetch virtual cameras
+- Connect center: By clicking this button, the AlgPlatformViewer will manually by conneted to a selected center. This is for the case if the subnet routing doesn't support UDP broadcast discovery.  
 
-### Algorithm enable menu
+### Soft-pack depalletizing
+
+
+
 
 
 
