@@ -1,4 +1,4 @@
-# Instruction
+## Instruction
 
 AwareSight3 （or so called AW3） is an application management platform designed for industrial vision algorithms. It is responsible for device connection, authentication, camera parameter configuration, and the management and deployment of algorithm parameters. PalletEye （so called PE） is a built-in algorithm module within the platform, specifically tailored for soft bag and carton unstacking. Leveraging RGB-D camera data, it delivers capabilities such as pallet cargo recognition, region calibration, hand-eye calibration, grasp pose estimation, and dimension detection. It is widely applied in industrial pallet unstacking scenarios. This manual serves to guide operators through the entire process of software deployment, device connection, apply for algorithm license, parameter configuration, unstacking function debugging, and template management.
 
@@ -50,7 +50,7 @@ The Soft-pack Depalletizing Configuration Interface is a core feature of the Pal
 
 3. Material Type Switching: Supports switching between two material types—Soft-pack (Bag) and Carton (Box)—to adapt to different depalletizing target recognition logics.
 
-4. Apply Calibration to All Templates and Distribute: This button applies the parameters of the selected Global settings template to the region calibration and hand-eye calibration. The calibration results are then updated in the calibration and region settings template.
+4. Apply Calibration to All Templates and Distribute: This button applies the Region and Calibration settings to all other templates. The logic is that Global settings contain parameters specific to a depalletizing target, which may change when cargo types change. However, the detection area and camera calibration remain constant since the robot's physical position does not change. Therefore, when the cargo type changes, you only need to update the Global settings, without having to re-enter the Region and Calibration parameters every time.
 
 5. Operation Mode Switching: Simple Mode: Parameters are fixed. It performs only basic validation on cargo dimensions without advanced algorithm features, making it suitable for standardized, routine depalletizing scenarios. Expert Mode: Unlocks full custom parameter configuration and enables advanced features like parcel merging. This mode is designed for complex working conditions and scenarios requiring refined recognition (UI to be continuously optimized).
 
@@ -66,20 +66,55 @@ The Global Settings defines the core filtering and recognition parameters for de
 
 4. Layer Height (mm):  This parameter is used to filter cargo by layer height and distinguish items across different stacking levels. For example, if the Layer Height is set to 200 mm, it means that when soft-bags are stacked, the height of a single bag (e.g., 200 mm) determines the height of each layer. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from futher computation.
 
-5. Arrangement Order: Defines the priority order for the algorithm to recognize cargo. Set to Near to far as default, which means the system recognizes near cargos first, and then far cargos. ????
+5. Arrangement Order: Defines the priority order for the algorithm to recognize cargo. It defaults to "Near to far," meaning the system prioritizes recognizing the nearest cargo first. This setting is crucial in industrial environments where cargo may not be stacked neatly, and items on the same layer might partially overlap. This function prevents the system from attempting to pick up a top layer cargo that has another item partly on top of it, which could cause displacement or instability during retrieval.
 
 6. Advanced Toggles [Under Development]: Includes options for enabling large-size splitting, parallel alignment correction, multiple results at once, and occlusion detection. In the current version, these are reserved configuration items and are not yet active.
-Interface & Language Settings
-
-7. Used to configure the real-time display type and system language of the software interface. Parameters take effect immediately without requiring additional saving or distribution, adapting to various debugging and observation scenarios.
 
 ### Region Settings
 
+Used to customize the spatial detection range of the algorithm. By setting the maximum and minimum values for the X, Y and Z, it limits the camera's effective recognition space and filters out interfering targets outside the field of detection frame. 
+
+### Output Settings [Under Development]
+
+All configuration options in this section are currently under development, and settings are not yet active; the interface is reserved for future use, including Euler angle type, RZ range, Reverse range, Output type (3D/2D), rxry tilt range, Output unit (deg/mm), Output precision. 
+
 ### Calibration Settings
+
+Used for managing hand-eye calibration parameters between the camera and the robotic arm. Configurable parameters include Euler angles, translation vector, offsets, and the tool coordinate system RT, which serve as the callibration benchmark for depalletizing pose calculations. 
+Used for initial calibration. 
+
+- Euler Angles: Represents the orientation (rotation) of an object in 3D space. It describes how an object is tilted or turned using three specific angles: Roll, Pitch, and Yaw. 
+
+- Translation Vector: Represents the position of an object in 3D space. It defines the object's exact location relative to a reference point (origin) using X, Y, and Z coordinates. It tells the system how far the tool tip is from the robot camera in the length, width, and height directions.
+
+- Offset: Represents an intentional adjustment or shift applied to a target position. It adds a specific distance to the original coordinates to fine-tune the final location (e.g., to avoid collisions or adjust a gripping point).
+
+
+### Button functions
+
+1. Single trigger
+
+2. Add Template
+
+3. Region calibration
+
+Click the button to execute the region calibration. The algorithm identifies all cargo targets within the RGB field of view, selects most centered cargo as the base detection area, expands outward by a fixed range, and generates the valid detection area with a visual display of the calibration result. 
+
+5. Hand-eye calibration
+
+Currently, this feature only supports the Chinese version. During the initial setup, clicking this button will launch the hand-eye calibration tool. The purpose of this tool is to align the separate coordinate systems of the camera and the robot arm.
+The "Camera Coordinate" section displays the X, Y, Z value of a specific point within the camera's coordinate system showing the camera's location. Below this, an RGB image shows four reference points on the tray. You need to move the robot arm's tip to each of these points and input the corresponding coordinates into the "Robot Coordinate" section. Once you click OK, the algorithm will unify the camera's and robot arm's coordinate systems, determining the precise spatial relationship between them. 
+
+6. Save and send 
 
 ## Connection Management Section
 
 
 ## Display Configuration Section
 
+Interface & Language Settings: Used to configure the real-time display type and system language of the software interface. Parameters take effect immediately without requiring additional saving or distribution, adapting to various debugging and observation scenarios.
+
+
 ## Visualization Section
+
+## Overrun
