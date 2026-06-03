@@ -92,9 +92,11 @@ The Global Settings defines the core filtering and recognition parameters for de
 
 If the cargo's volume and size exceed the maximum Length/Width range in the Global settings, or if the target cargo is too small and falls below the minimum Length/Width range, the system will filter out the cargo and will not detect it as a target. This is shown in Figure 6. If that happened, switch template or change Global settings parameters, and then click Single trigger. 
 
-
-<img width="1906" height="997" alt="PixPin_2026-06-03_09-32-28" src="https://github.com/user-attachments/assets/1ef658d4-b981-4902-857e-a5799eaf16c5" />
-
+<p align= “center”>
+<img alt="PixPin_2026-06-03_09-32-28" src="https://github.com/user-attachments/assets/1ef658d4-b981-4902-857e-a5799eaf16c5" />
+<br>
+   <em> Figure 6：Error example </em>
+</p>
 
 
 ### Region Settings
@@ -106,6 +108,8 @@ Used to customize the spatial detection range of the algorithm. By setting the m
 <br>
    <em> Figure 7：Region Settings </em>
 </p>
+
+
 
 ### Output Settings [Under Development]
 
