@@ -179,4 +179,38 @@ Interface & Language Settings: Used to configure the real-time display type and 
 
 ## Deployment example
 
+This chapter provides a complete deployment configuration process for the AW3 platform combined with the PE flexible packaging depalletizing algorithm. It serves as a reference for standardized on-site configuration and is applicable to scenarios such as initial deployment of new machines, site relocation, and cargo template resets.
 
+### Step 1: Launch the Software 
+Open AlgPlatformViewer.exe to run the AW3 host software.
+
+### Step 2：Verify Network Environment
+Ensure that the host computer and the camera algorithm module are on the same local area network (LAN) subnet to guarantee normal communication, discovery, and connection of the devices.
+
+### Step 3: Deploy Algorithm Firmware
+Write the PE depalletizing algorithm to the algorithm module via the platform's firmware upgrade feature. (Note: This feature is currently under development; in the current version, algorithm deployment must be completed in advance by the R&D team.) The algorithm module will automatically restart after the firmware update is complete.
+
+### Step 4: Connect to the Device
+After the device restarts, return to the [Device Connection] interface. Click the broadcast search button to refresh the LAN devices. Select the current camera hub from the device list and establish the connection.
+
+### Step 5: Activate Algorithm Authorization
+Switch to the [Algorithm Activation] tab, click Algorithm Authentication, select the Flexible Packaging Depalletizing algorithm, and obtain the authorization request Key. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click Apply Authorization to activate the algorithm.
+
+### Step 6: Configure Basic Camera Parameters
+Switch to the [Parameter Settings] tab, select the standard configuration matching the current camera model, and click Deploy Camera SDK Parameters to complete the initialization of the camera's underlying parameters.
+
+### Step 7: Configure Depalletizing Business Parameters
+Enter the flexible packaging depalletizing configuration interface, select the corresponding business template, set the material type to "Flexible Packaging," and switch the application mode to "Expert Mode." Based on the actual dimensions of the on-site cargo, sequentially set core detection parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
+
+### Step 8: Hand-Eye Calibration
+Execute the hand-eye calibration process to complete the coordinate alignment between the camera and the robotic arm. Once the calibration is verified as accurate, click Save and Deploy to persistently save the calibration parameters to the camera device.
+
+### Step 9: Automatic Area Calibration
+Click the Area Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection area, completing the calibration of the scene detection range.
+
+### Step 10: Performance Verification
+Click Single Trigger to execute a single algorithm detection. Observe the results, including cargo recognition, grasping pose, and dimension output, to determine whether the detection performance is reasonable and meets the on-site depalletizing requirements.
+Communication Verification: Request results directly from the algorithm module according to the communication protocol, and observe the corresponding changes on the AW3 interface.
+
+### Step 11: Efficiency Verification
+The latency from sending the request to receiving the result must be less than 2500ms.
