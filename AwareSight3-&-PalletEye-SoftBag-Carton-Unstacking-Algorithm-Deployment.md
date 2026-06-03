@@ -31,7 +31,7 @@ When clicking the Device Connection menu, the content will then be at the right 
 (Virtual cameras are designed to support multi-camera cooperation in the future. Currently, each virtual camera is only mapped to a single physical camera.)
 
 <p align= “center”>
-<img width="1437" height="906" alt="PixPin_2026-06-02_08-32-02" src="https://github.com/user-attachments/assets/36f48856-18df-491d-9da3-2466a98f3fc8" />
+<img alt="PixPin_2026-06-02_08-32-02" src="https://github.com/user-attachments/assets/36f48856-18df-491d-9da3-2466a98f3fc8" />
 <br>
    <em> Figure 2：Center Connection </em>
 </p>
@@ -43,7 +43,13 @@ When clicking the Device Connection menu, the content will then be at the right 
 
 The Soft-pack Depalletizing Configuration Interface is a core feature of the PalletEye algorithm. It integrates task template/mode settings, algorithm parameter configuration, and core operational capabilities. Designed to support parameter configuration, calibration, task template management, and algorithm computation for soft-pack and carton depalletizing scenarios, it is fully adapted to the demands of routine industrial operations and on-site tuning.
 
-### Task Template and Mode
+<p align= “center”>
+<img alt="PixPin_2026-06-03_08-14-13" src="https://github.com/user-attachments/assets/8a8d5f4b-1c5b-426d-b8ee-d078f8e8ffd1" />
+<br>
+   <em> Figure 3：Soft-bag depalletizing </em>
+</p>
+
+### Choose Template and Mode
 1. Fetch Current Parameters: By clicking this button, the AlgPlatformViewer fetches the soft-bag parameters and the pre-defined template parameters from the center. The fetched parameters are then loaded into the Global-, Calibration-, Region settings for visualization and further configuration if needed.
 
 2.Template Selection: Selects saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags
@@ -53,6 +59,12 @@ The Soft-pack Depalletizing Configuration Interface is a core feature of the Pal
 4. Apply Calibration to All Templates and Distribute: This button applies the Region and Calibration settings to all other templates. The logic is that Global settings contain parameters specific to a depalletizing target, which may change when cargo types change. However, the detection area and camera calibration remain constant since the robot's physical position does not change. Therefore, when the cargo type changes, you only need to update the Global settings, without having to re-enter the Region and Calibration parameters every time.
 
 5. Operation Mode Switching: Simple Mode: Parameters are fixed. It performs only basic validation on cargo dimensions without advanced algorithm features, making it suitable for standardized, routine depalletizing scenarios. Expert Mode: Unlocks full custom parameter configuration and enables advanced features like parcel merging. This mode is designed for complex working conditions and scenarios requiring refined recognition (UI to be continuously optimized).
+
+<p align= “center”>
+<img alt="PixPin_2026-06-03_08-18-31" src="https://github.com/user-attachments/assets/9ac618ee-a4be-4569-babb-f97960a7bbfc" />
+<br>
+   <em> Figure 4：Choose template and mode </em>
+</p>
 
 ### Global Settings
 
@@ -70,13 +82,34 @@ The Global Settings defines the core filtering and recognition parameters for de
 
 6. Advanced Toggles [Under Development]: Includes options for enabling large-size splitting, parallel alignment correction, multiple results at once, and occlusion detection. In the current version, these are reserved configuration items and are not yet active.
 
+
+
+<p align= “center”>
+<img alt="PixPin_2026-06-03_08-19-04" src="https://github.com/user-attachments/assets/39a12f80-453a-4253-81d5-8497591b3fed" />
+<br>
+   <em> Figure 5：Clobal Settings </em>
+</p>
+
+
 ### Region Settings
 
 Used to customize the spatial detection range of the algorithm. By setting the maximum and minimum values for the X, Y and Z, it limits the camera's effective recognition space and filters out interfering targets outside the field of detection frame. 
 
+<p align= “center”>
+<img alt="PixPin_2026-06-03_08-20-34" src="https://github.com/user-attachments/assets/422ed648-a506-43c8-a68f-87bbdc06a61e" />
+<br>
+   <em> Figure 6：Region Settings </em>
+</p>
+
 ### Output Settings [Under Development]
 
 All configuration options in this section are currently under development, and settings are not yet active; the interface is reserved for future use, including Euler angle type, RZ range, Reverse range, Output type (3D/2D), rxry tilt range, Output unit (deg/mm), Output precision. 
+
+<p align= “center”>
+<img alt="PixPin_2026-06-03_08-19-45" src="https://github.com/user-attachments/assets/3dd318a9-3277-48a6-87f8-c64dfab89143" />
+<br>
+   <em> Figure 7：Output Settings </em>
+</p>
 
 ### Calibration Settings
 
@@ -89,29 +122,26 @@ Used for initial calibration.
 
 - Offset: Represents an intentional adjustment or shift applied to a target position. It adds a specific distance to the original coordinates to fine-tune the final location (e.g., to avoid collisions or adjust a gripping point).
 
+<p align= “center”>
+<img alt="PixPin_2026-06-03_08-20-11" src="https://github.com/user-attachments/assets/bc8e03b4-efba-4134-8a72-c49b4a901501" />
+<br>
+   <em> Figure 8：Calibration Settings </em>
+</p>
 
-### Button functions
+### Buttons
 
-1. Single trigger
+1. Single trigger: Click the button to execute a single image capture and depalletizing calculation. It updates detection results (such as cargo grasping pose and dimensions) in real-time, suitable for single-run debugging and verification.
 
-Click the button to execute a single image capture and depalletizing calculation. It updates detection results (such as cargo grasping pose and dimensions) in real-time, suitable for single-run debugging and verification.
-
-3. Add Template/Delete template
+2. Add Template/Delete template: 
 - Add template： Click the button and enter a custom name to create and save a new template.
 - Delete Current Template: One-click deletion of the currently selected template to clear invalid scene configurations. 
 
-4. Region calibration
+3. Region calibration: Click the button to execute the region calibration. The algorithm identifies all cargo targets within the RGB field of view, selects most centered cargo as the base detection area, expands outward by a fixed range, and generates the valid detection area with a visual display of the calibration result. 
 
-Click the button to execute the region calibration. The algorithm identifies all cargo targets within the RGB field of view, selects most centered cargo as the base detection area, expands outward by a fixed range, and generates the valid detection area with a visual display of the calibration result. 
-
-5. Hand-eye calibration
-
-Currently, this feature only supports the Chinese version. During the initial setup, clicking this button will launch the hand-eye calibration tool. The purpose of this tool is to align the separate coordinate systems of the camera and the robot arm.
+4. Hand-eye calibration: Currently, this feature only supports the Chinese version. During the initial setup, clicking this button will launch the hand-eye calibration tool. The purpose of this tool is to align the separate coordinate systems of the camera and the robot arm.
 The "Camera Coordinate" section displays the X, Y, Z value of a specific point within the camera's coordinate system showing the camera's location. Below this, an RGB image shows four reference points on the tray. You need to move the robot arm's tip to each of these points and input the corresponding coordinates into the "Robot Coordinate" section. Once you click OK, the algorithm will unify the camera's and robot arm's coordinate systems, determining the precise spatial relationship between them. 
 
-6. Save and send
-
-Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
+5. Save and send: Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
 
 
 ## Connection Management Section
@@ -124,4 +154,4 @@ Interface & Language Settings: Used to configure the real-time display type and 
 
 ## Visualization Section
 
-## Overrun
+## Overrun 
