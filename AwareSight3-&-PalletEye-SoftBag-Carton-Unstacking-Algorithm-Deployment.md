@@ -50,9 +50,9 @@ The Soft-pack Depalletizing Configuration Interface is a core feature of the Pal
 </p>
 
 ### Choose Template and Mode
-1. Fetch Current Parameters: By clicking this button, the AlgPlatformViewer fetches the soft-bag parameters and the pre-defined template parameters from the center. The fetched parameters are then loaded into the Global-, Calibration-, Region settings for visualization and further configuration if needed.
+1. Fetch Current Parameters: By clicking this button, the AlgPlatformViewer fetches all the Global-, Region-, and Calibration parameters saved on the center connected. The fetched parameters are then loaded into the Global-, Calibration-, Region settings for visualization and further configuration if needed.
 
-2.Template Selection: Selects saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags
+2. Template Selection: Selects saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags
 
 3. Material Type Switching: Supports switching between two material types—Soft-pack (Bag) and Carton (Box)—to adapt to different depalletizing target recognition logics.
 
@@ -78,7 +78,7 @@ The Global Settings defines the core filtering and recognition parameters for de
 
 4. Layer Height (mm):  This parameter is used to filter cargo by layer height and distinguish items across different stacking levels. For example, if the Layer Height is set to 200 mm, it means that when soft-bags are stacked, the height of a single bag (e.g., 200 mm) determines the height of each layer. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from futher computation.
 
-5. Arrangement Order: Defines the priority order for the algorithm to recognize cargo. It defaults to "Near to far," meaning the system prioritizes recognizing the nearest cargo first. This setting is crucial in industrial environments where cargo may not be stacked neatly, and items on the same layer might partially overlap. This function prevents the system from attempting to pick up a top layer cargo that has another item partly on top of it, which could cause displacement or instability during retrieval.
+5. Arrangement Order: Defines the priority order for the algorithm to recognize cargo. It defaults to "Near to far," meaning the system prioritizes recognizing the nearest cargo first. This setting is crucial in industrial environments where cargo may not be stacked neatly, and items on the same layer might partially overlap. This function prevents the system from attempting to pick up a top layer cargo that has another item partly on top of it, which could cause displacement or instability during retrieval. For example in Figure 5, you can see the arrangement order as the green number. 
 
 6. Advanced Toggles [Under Development]: Includes options for enabling large-size splitting, parallel alignment correction, multiple results at once, and occlusion detection. In the current version, these are reserved configuration items and are not yet active.
 
@@ -90,6 +90,12 @@ The Global Settings defines the core filtering and recognition parameters for de
    <em> Figure 5：Clobal Settings </em>
 </p>
 
+If the cargo's volume and size exceed the maximum Length/Width range in the Global settings, or if the target cargo is too small and falls below the minimum Length/Width range, the system will filter out the cargo and will not detect it as a target. This is shown in Figure 6. If that happened, switch template or change Global settings parameters, and then click Single trigger. 
+
+
+<img width="1906" height="997" alt="PixPin_2026-06-03_09-32-28" src="https://github.com/user-attachments/assets/1ef658d4-b981-4902-857e-a5799eaf16c5" />
+
+
 
 ### Region Settings
 
@@ -98,7 +104,7 @@ Used to customize the spatial detection range of the algorithm. By setting the m
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-20-34" src="https://github.com/user-attachments/assets/422ed648-a506-43c8-a68f-87bbdc06a61e" />
 <br>
-   <em> Figure 6：Region Settings </em>
+   <em> Figure 7：Region Settings </em>
 </p>
 
 ### Output Settings [Under Development]
@@ -108,7 +114,7 @@ All configuration options in this section are currently under development, and s
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-19-45" src="https://github.com/user-attachments/assets/3dd318a9-3277-48a6-87f8-c64dfab89143" />
 <br>
-   <em> Figure 7：Output Settings </em>
+   <em> Figure 8：Output Settings </em>
 </p>
 
 ### Calibration Settings
@@ -125,7 +131,7 @@ Used for initial calibration.
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-20-11" src="https://github.com/user-attachments/assets/bc8e03b4-efba-4134-8a72-c49b4a901501" />
 <br>
-   <em> Figure 8：Calibration Settings </em>
+   <em> Figure 9：Calibration Settings </em>
 </p>
 
 ### Buttons
@@ -146,7 +152,7 @@ The "Camera Coordinate" section displays the X, Y, Z value of a specific point w
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-21-01" src="https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614" />
 <br>
-   <em> Figure 9：Buttons </em>
+   <em> Figure 10：Buttons </em>
 </p>
 
 
