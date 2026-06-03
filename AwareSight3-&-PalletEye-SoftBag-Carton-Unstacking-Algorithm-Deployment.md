@@ -194,16 +194,16 @@ Write the PE depalletizing algorithm to the algorithm module via the platform's 
 After the device restarts, return to the [Device Connection] interface. Click the broadcast search button to refresh the LAN devices. Select the current camera hub from the device list and establish the connection.
 
 ### Step 5: Activate Algorithm Authorization
-Switch to the [Algorithm Activation] tab, click Algorithm Authentication, select the Flexible Packaging Depalletizing algorithm, and obtain the authorization request Key. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click Apply Authorization to activate the algorithm.
+Switch to the [Algorithm Activation] tab, click Algorithm Authentication, select the Soft-bag Depalletizing algorithm, and obtain the authorization request Key. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click Apply Authorization to activate the algorithm.
 
 ### Step 6: Configure Basic Camera Parameters
-Switch to the [Parameter Settings] tab, select the standard configuration matching the current camera model, and click Deploy Camera SDK Parameters to complete the initialization of the camera's underlying parameters.
+Switch to the [Parameter] tab, select the right camera parameter template matching the business need and camera model , and click Deploy Camera Base SDK to complete the initialization of the camera's parameters.
 
-### Step 7: Configure Depalletizing Business Parameters
-Enter the flexible packaging depalletizing configuration interface, select the corresponding business template, set the material type to "Flexible Packaging," and switch the application mode to "Expert Mode." Based on the actual dimensions of the on-site cargo, sequentially set core detection parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
+### Step 7: Configure Depalletizing Parameters
+Enter the Soft-bag depalletizing configuration interface, select the corresponding cargo template, set the material type to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, sequentially set core detection parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
 ### Step 8: Hand-Eye Calibration
-Execute the hand-eye calibration process to complete the coordinate alignment between the camera and the robotic arm. Once the calibration is verified as accurate, click Save and Deploy to persistently save the calibration parameters to the camera device.
+Execute the hand-eye calibration process to complete the coordinate alignment between the camera and the robotic arm, as mentioned in Buttons - Hand-eye Calibration section in this document. Once the calibration is verified as accurate, click Save and Deploy to persistently save the calibration parameters to the camera device.
 
 ### Step 9: Automatic Area Calibration
 Click the Area Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection area, completing the calibration of the scene detection range.
