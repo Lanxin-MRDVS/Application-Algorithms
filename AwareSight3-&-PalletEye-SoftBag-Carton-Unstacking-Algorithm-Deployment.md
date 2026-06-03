@@ -94,9 +94,13 @@ Used for initial calibration.
 
 1. Single trigger
 
-2. Add Template
+Click the button to execute a single image capture and depalletizing calculation. It updates detection results (such as cargo grasping pose and dimensions) in real-time, suitable for single-run debugging and verification.
 
-3. Region calibration
+3. Add Template/Delete template
+- Add template： Click the button and enter a custom name to create and save a new template.
+- Delete Current Template: One-click deletion of the currently selected template to clear invalid scene configurations. 
+
+4. Region calibration
 
 Click the button to execute the region calibration. The algorithm identifies all cargo targets within the RGB field of view, selects most centered cargo as the base detection area, expands outward by a fixed range, and generates the valid detection area with a visual display of the calibration result. 
 
@@ -105,7 +109,10 @@ Click the button to execute the region calibration. The algorithm identifies all
 Currently, this feature only supports the Chinese version. During the initial setup, clicking this button will launch the hand-eye calibration tool. The purpose of this tool is to align the separate coordinate systems of the camera and the robot arm.
 The "Camera Coordinate" section displays the X, Y, Z value of a specific point within the camera's coordinate system showing the camera's location. Below this, an RGB image shows four reference points on the tray. You need to move the robot arm's tip to each of these points and input the corresponding coordinates into the "Robot Coordinate" section. Once you click OK, the algorithm will unify the camera's and robot arm's coordinate systems, determining the precise spatial relationship between them. 
 
-6. Save and send 
+6. Save and send
+
+Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
+
 
 ## Connection Management Section
 
