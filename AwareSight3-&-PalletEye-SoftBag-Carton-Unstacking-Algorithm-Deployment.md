@@ -143,6 +143,12 @@ The "Camera Coordinate" section displays the X, Y, Z value of a specific point w
 
 5. Save and send: Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
 
+<p align= “center”>
+<img alt="PixPin_2026-06-03_08-21-01" src="https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614" />
+<br>
+   <em> Figure 9：Buttons </em>
+</p>
+
 
 ## Connection Management Section
 
