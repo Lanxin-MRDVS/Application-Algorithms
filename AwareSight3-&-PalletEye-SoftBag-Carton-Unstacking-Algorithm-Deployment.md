@@ -90,7 +90,7 @@ The Global Settings defines the core filtering and recognition parameters for de
    <em> Figure 5：Clobal Settings </em>
 </p>
 
-If the cargo's volume and size exceed the maximum Length/Width range in the Global settings, or if the target cargo is too small and falls below the minimum Length/Width range, the system will filter out the cargo and will not detect it as a target. This is shown in Figure 6. If that happened, switch template or change Global settings parameters, and then click Single trigger. 
+If the cargo's volume and size exceed the maximum Length/Width range in the Global settings, or if the target cargo is too small and falls below the minimum Length/Width range, the system will filter out the cargo and will not detect it as a target. This is shown in Figure 6. If that happened, switch template or change Global settings parameters, and then click Save and Send, and then Single trigger. 
 
 <p align= “center”>
 <img alt="PixPin_2026-06-03_09-32-28" src="https://github.com/user-attachments/assets/1ef658d4-b981-4902-857e-a5799eaf16c5" />
@@ -101,7 +101,7 @@ If the cargo's volume and size exceed the maximum Length/Width range in the Glob
 
 ### Region Settings
 
-Used to customize the spatial detection range of the algorithm. By setting the maximum and minimum values for the X, Y and Z, it limits the camera's effective recognition space and filters out interfering targets outside the field of detection frame. 
+Used to customize the spatial detection region of the algorithm. By setting the maximum and minimum values for the X, Y and Z, it limits the camera's effective recognition space and filters out interfering targets outside the field of detection range. 
 
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-20-34" src="https://github.com/user-attachments/assets/422ed648-a506-43c8-a68f-87bbdc06a61e" />
@@ -109,7 +109,14 @@ Used to customize the spatial detection range of the algorithm. By setting the m
    <em> Figure 7：Region Settings </em>
 </p>
 
+For example, if the region is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 8. If that happened, configure the Region Settings and change the region size, then click Save and Send and Single Trigger. 
 
+
+<p align= “center”>
+<img alt="PixPin_2026-06-03_10-27-36" src="https://github.com/user-attachments/assets/35a488b1-513e-4d8f-a0d8-a6a4af056177" />
+<br>
+   <em> Figure 8：Error example </em>
+</p>
 
 ### Output Settings [Under Development]
 
@@ -118,7 +125,7 @@ All configuration options in this section are currently under development, and s
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-19-45" src="https://github.com/user-attachments/assets/3dd318a9-3277-48a6-87f8-c64dfab89143" />
 <br>
-   <em> Figure 8：Output Settings </em>
+   <em> Figure 9：Output Settings </em>
 </p>
 
 ### Calibration Settings
@@ -135,7 +142,7 @@ Used for initial calibration.
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-20-11" src="https://github.com/user-attachments/assets/bc8e03b4-efba-4134-8a72-c49b4a901501" />
 <br>
-   <em> Figure 9：Calibration Settings </em>
+   <em> Figure 10：Calibration Settings </em>
 </p>
 
 ### Buttons
@@ -156,7 +163,7 @@ The "Camera Coordinate" section displays the X, Y, Z value of a specific point w
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-21-01" src="https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614" />
 <br>
-   <em> Figure 10：Buttons </em>
+   <em> Figure 11：Buttons </em>
 </p>
 
 
