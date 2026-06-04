@@ -197,7 +197,9 @@ This chapter provides a complete deployment configuration process for the AW3 pl
 Open AlgPlatformViewer.exe to run the AW3 host software.
 
 ### Step 2：Verify Network Environment
-Ensure that the host computer and the camera algorithm module are on the same local area network (LAN) subnet to guarantee normal communication, discovery, and connection of the devices.
+Ensure that the host computer and the camera algorithm module are on the same local area network (LAN) subnet to guarantee normal communication, discovery, and connection of the devices. For more details about IP and Firewall configuration, please refer to the LxCameraViewer use manual at https://github.com/Lanxin-MRDVS/CameraSDK/wiki/LxCameraViewer-User-Manual
+
+
 
 ### Step 3: Deploy Algorithm Firmware [Under development]
 Write the PE depalletizing algorithm to the algorithm module via the platform's firmware upgrade feature. (Note: This feature is currently under development; in the current version, algorithm deployment must be completed in advance by the R&D team.) The algorithm module will automatically restart after the firmware update is complete.
