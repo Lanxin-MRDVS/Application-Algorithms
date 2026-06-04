@@ -124,7 +124,7 @@ After completing the IP and Gateway configurations above, launch the LxCameraVie
 </p>
 
 
-Click the [Basic] button on the top toolbar as shown in Figure 4. The basic camera settings will then appear in the status panel on the right, as shown in Figure 4. Scroll down and expand the 3D Settings and Filtering menus to adjust the camera parameters. For S10 Series: You only need to set the Glare Level in 3D Settings to 1; the minimum amplitude value does not need to be configured. When testing high-reflectivity objects, you can also turn the Glare value to 2 or 3 based on your needs. For non-standard vehicle installations and parameter configurations, please contact MRDVS technical support.
+Click the [Basic] button on the top toolbar as shown in Figure 4. The basic camera settings will then appear in the status panel on the right, as shown in Figure 4. Scroll down and expand the 3D Settings and Filtering menus to adjust the camera parameters. For S10 Series: You only need to set the Glare Level in 3D Settings to 1; the minimum amplitude value does not need to be configured. When testing high-reflectivity objects, you can also turn the Glare level to 2 or 3 based on your needs. For non-standard vehicle installations and parameter configurations, please contact MRDVS technical support.
 
 <p align="center">
 <img alt="Näyttökuva 2026-05-29 kello 12 13 56" src="https://github.com/user-attachments/assets/55a6def7-247f-4826-a4c5-7ab4dd2f7cc1" />
@@ -264,9 +264,9 @@ parameters with other configurations.
 
 
 ### Zone Configuration
-Choose the [Algorithm parameters] index to apply different obstacle avoidance
-zones. [Algorithm parameters] are shown in Figure 12 in the blue box. The
-[Algorithm parameters] menu contains of index 0 to 19. Each index refers to
+Choose the [Algorithm index] index to apply different obstacle avoidance
+zones. [Algorithm index] are shown in Figure 12 in the blue box. The
+[Algorithm index] menu contains of index 0 to 19. Each index refers to
 a obstacle avoidance zone configuration set as shown in Figure 10 in the green
 box. Number 0 - 6 are seven ready-made obstacle avoidance zone configuration
 sets that you can choose, number 6 - 19 are the same configurations. You can
@@ -454,9 +454,6 @@ avoidance.json file located in the software installation path \Tools\params\Curr
 
 ---
 ## 10. Troubleshooting
-
-### Black Objects (Low Reflectivity)
-Due to the Time-of-Flight (ToF) principle, S-series cameras are affected by the reflectivity of black pallets. The S2max camera can achieve imaging within a 2-meter range even with black pallets that have a 5% reflectivity rate. During configuration, you can also optimize the imaging of black pallets by adjusting the high integration time and low signal threshold via the host software. If black forks are present in the obstacle avoidance scenario, it is recommended to add high-reflectivity auxiliary markers at the fork tips for better detection, such as painting the front section of the forks with a different color.
 
 ### Low Ground Objects
 Objects directly on the ground cannot be avoided. In obstacle avoidance applications, we generally use the ground as the reference for extrinsic parameter configuration. If low obstacles on the ground fail to trigger obstacle avoidance, please refer to the following solutions:
