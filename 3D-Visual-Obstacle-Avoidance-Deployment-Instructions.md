@@ -133,17 +133,6 @@ Click the [Basic] button on the top toolbar as shown in Figure 4. The basic came
 </p>
 
 
-
-For S10 Pro cameras using Obstacle Avoidance 2.0, repeat the steps above.
-However, it is recommended to set the first exposure to 650 and the second
-exposure to 200, and the minimum amplitude in the filter settings between 10 and 20.
-
-<p align="center">
-<img width="20%" height="20%" alt="PixPin_2026-05-29_09-44-26" src="https://github.com/user-attachments/assets/5b3cb57a-e216-4abc-89fc-228b98459fec" />
-<br>
-  <em>Figure 5: Initial setup for Obstacle Avoidance 2.0 </em>
-</p>
-
 ---
 
 ## 4. Algorithm Configuration
