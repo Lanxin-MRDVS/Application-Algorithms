@@ -17,9 +17,20 @@ The overall interface of the AW3 platform is primarily divided into four major f
 
 Interface & Language Settings: Used to configure the real-time display type and system language of the software interface. Parameters take effect immediately without requiring additional saving or distribution, adapting to various configuration and observation scenarios.
 
+<p align= “center”>
+<img alt="PixPin_2026-06-04_08-11-06" src="https://github.com/user-attachments/assets/48ecdaf1-d922-4c29-9b9e-5997a6b6cf7c" />
+<br>
+   <em> Figure </em>
+</p>
+
+
 # Visualization Section 
 
-
+<p align= “center”>
+<img alt="PixPin_2026-06-04_08-13-07" src="https://github.com/user-attachments/assets/7541fda0-d06a-4bf3-b985-470161af6616" />
+<br>
+   <em> Figure </em>
+</p>
 
 # Parameter Configuration Section
 
