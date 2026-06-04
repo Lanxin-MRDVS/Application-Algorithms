@@ -124,15 +124,7 @@ After completing the IP and Gateway configurations above, launch the LxCameraVie
 </p>
 
 
-For S10 cameras using Obstacle Avoidance 1.0, after opening the camera, click
-the [Basic] button on the top toolbar as shown in Figure 4. The basic camera
-settings will then appear in the status panel on the right, as shown in Figure 4.
-Scroll down and expand the 3D Settings and Filtering menus to adjust the cam-
-era parameters. The minimum amplitude in the filter settings is recommended
-to be set between 10 and 20. (Note for S10 Series: You only need to set the
-Glare Level in 3D Settings to 1; the minimum amplitude value does not need
-to be configured. When testing high-reflectivity objects, you can also turn the
-Glare value to 2 or 3 based on your needs.) For non-standard vehicle installations and parameter configurations, please contact MRDVS technical support.
+Click the [Basic] button on the top toolbar as shown in Figure 4. The basic camera settings will then appear in the status panel on the right, as shown in Figure 4. Scroll down and expand the 3D Settings and Filtering menus to adjust the camera parameters. For S10 Series: You only need to set the Glare Level in 3D Settings to 1; the minimum amplitude value does not need to be configured. When testing high-reflectivity objects, you can also turn the Glare value to 2 or 3 based on your needs. For non-standard vehicle installations and parameter configurations, please contact MRDVS technical support.
 
 <p align="center">
 <img alt="Näyttökuva 2026-05-29 kello 12 13 56" src="https://github.com/user-attachments/assets/55a6def7-247f-4826-a4c5-7ab4dd2f7cc1" />
@@ -141,11 +133,10 @@ Glare value to 2 or 3 based on your needs.) For non-standard vehicle installatio
 </p>
 
 
-> **Note:** For S10 Series, the minimum amplitude in filter settings does not need to be configured unless testing high-reflectivity objects.
 
 For S10 Pro cameras using Obstacle Avoidance 2.0, repeat the steps above.
 However, it is recommended to set the first exposure to 650 and the second
-exposure to 200, as shown in Figure 5.
+exposure to 200, and the minimum amplitude in the filter settings between 10 and 20.
 
 <p align="center">
 <img width="20%" height="20%" alt="PixPin_2026-05-29_09-44-26" src="https://github.com/user-attachments/assets/5b3cb57a-e216-4abc-89fc-228b98459fec" />
@@ -187,8 +178,7 @@ the camera receives the heart leap package, it will reply to the LxCameraViewer
 and tell it that the camera system is still alive, and continue to operate and output data. If the camera system hasn’t receive any heartbeat package from the
 LxCameraViewer in a fixed time interval, it will assume the connection is lost,
 and stop outputing data. Suppose the robot’s main control computer suddenly
-crashes, the program fails, or the network cable is accidentally unplugged, pre-
-venting LxCameraViewer from sending heartbeat packets. Once the camera
+crashes, the program fails, or the network cable is accidentally unplugged, preventing LxCameraViewer from sending heartbeat packets. Once the camera
 stops receiving these heartbeats, it will assume that the ’brain’ has gone offline
 and proactively stop outputting obstacle avoidance data, thereby bringing the
 robot to a halt and preventing serious accidents.
