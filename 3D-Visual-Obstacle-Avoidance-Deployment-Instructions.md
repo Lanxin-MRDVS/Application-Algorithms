@@ -145,7 +145,7 @@ Depending on your camera model, choose the right algorithm:
 
 ### Step 1: Select Algorithm
 After completing the camera parameter configuration, click the [Algorithm] button. The algorithm settings will appear in the status panel on the right, as shown
-in Figure 6. Select [Avoid Obstacle] for S10 cameras, and [Avoid Obstacle 2.0]
+in Figure 6. Select [Avoid Obstacle] for S10 and S11 cameras, and [Avoid Obstacle 2.0]
 for all other models. Please note that the version number is displayed only for
 [Avoid Obstacle 2.0]; it is not visible for [Avoid Obstacle 1.0].
 
