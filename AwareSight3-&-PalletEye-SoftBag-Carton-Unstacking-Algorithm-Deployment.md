@@ -1,3 +1,4 @@
+
 ## Instruction
 
 AwareSight3 （or so called AW3） is an application management platform designed for industrial vision algorithms. It is responsible for device connection, authentication, camera parameter configuration, and the management and deployment of algorithm parameters. PalletEye （so called PE） is a built-in algorithm module within the platform, specifically tailored for soft bag and carton unstacking. Leveraging RGB-D camera data, it delivers capabilities such as pallet cargo recognition, region calibration, hand-eye calibration, grasp pose estimation, and dimension detection. It is widely applied in industrial pallet unstacking scenarios. This manual serves to guide operators through the entire process of software deployment, device connection, apply for algorithm license, parameter configuration, unstacking function debugging, and template management.
@@ -187,26 +188,33 @@ Open AlgPlatformViewer.exe to run the AW3 host software.
 ### Step 2：Verify Network Environment
 Ensure that the host computer and the camera algorithm module are on the same local area network (LAN) subnet to guarantee normal communication, discovery, and connection of the devices.
 
-### Step 3: Deploy Algorithm Firmware
+### Step 3: Deploy Algorithm Firmware [Under development]
 Write the PE depalletizing algorithm to the algorithm module via the platform's firmware upgrade feature. (Note: This feature is currently under development; in the current version, algorithm deployment must be completed in advance by the R&D team.) The algorithm module will automatically restart after the firmware update is complete.
 
 ### Step 4: Connect to the Device
-After the device restarts, return to the [Device Connection] interface. Click the broadcast search button to refresh the LAN devices. Select the current camera hub from the device list and establish the connection.
+After the device restarts, return to the [Device Connection] interface. Click the [Discover centers] button to refresh the LAN connection as shown in green box. Select the center which your wanted camera is connected to from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in blue box. Click on the virtual camera option and establish the connection.
+
+<p align= “center”>
+<img alt="PixPin_2026-06-04_05-40-02" src="https://github.com/user-attachments/assets/2c2e76f1-2433-4b01-bcfb-1413211e26d0" />
+<br>
+   <em> Figure </em>
+</p>
+
 
 ### Step 5: Activate Algorithm Authorization
-Switch to the [Algorithm Activation] tab, click Algorithm Authentication, select the Soft-bag Depalletizing algorithm, and obtain the authorization request Key. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click Apply Authorization to activate the algorithm.
+Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click [Algorithm Authentication] button as shown in red box, and obtain the authorization request Key by clicking [Get request key]. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
 
 ### Step 6: Configure Basic Camera Parameters
-Switch to the [Parameter] tab, select the right camera parameter template matching the business need and camera model , and click Deploy Camera Base SDK to complete the initialization of the camera's parameters.
+Switch to the [Parameters] tab, select the right camera parameter template matching the business need and camera model at [camera template] , and click [Deploy Camera template] to complete the initialization of the camera's parameters.
 
 ### Step 7: Configure Depalletizing Parameters
-Enter the Soft-bag depalletizing configuration interface, select the corresponding cargo template, set the material type to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, sequentially set core detection parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
+Enter the [Soft-bag depalletizing] tab, select the corresponding cargo template at [cargo template], select the [material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
 ### Step 8: Hand-Eye Calibration
-Execute the hand-eye calibration process to complete the coordinate alignment between the camera and the robotic arm, as mentioned in Buttons - Hand-eye Calibration section in this document. Once the calibration is verified as accurate, click Save and Deploy to persistently save the calibration parameters to the camera device.
+Execute the hand-eye calibration process to complete the coordinate alignment between the camera and the robotic arm, as mentioned in Buttons - section in this document. Once the calibration is verified as accurate, click [Calibration] button to persistently save the calibration parameters to the camera device and automatically set the [Calibration Settings] parameters.
 
-### Step 9: Automatic Area Calibration
-Click the Area Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection area, completing the calibration of the scene detection range.
+### Step 9: Automatic Region Calibration
+Click the Region Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completing the region calibration.
 
 ### Step 10: Performance Verification
 Click Single Trigger to execute a single algorithm detection. Observe the results, including cargo recognition, grasping pose, and dimension output, to determine whether the detection performance is reasonable and meets the on-site depalletizing requirements.
