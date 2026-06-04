@@ -346,7 +346,7 @@ You can also use NetAssistant from https://github.com/luokyme/NetAssistant, whic
 
 The API  Communication supports various environments including Windows, Linux, and ARM, as well as programming languages such as C++, C#, Java, ROS1, and ROS2. 
 
-For Windows, once the host computer software is installed, the files of Software Development Kit and example source code can be found in the installation directory (e.g., D:\Program Files\Lanxin-MRDVS). For Linux environments, please contact MRDVS technical support or download the SDK from the official website.
+For Windows, once the host computer software is installed, the files of Software Development Kit and example source code can be found in the installation directory (e.g., D:\Program Files\Lanxin-MRDVS). For Linux environments, please contact MRDVS technical support or download the SDK from the official Github site at https://github.com/Lanxin-MRDVS/CameraSDK/tree/master/linux .
 
 Directory Overview:
 - Document: Contains the user manuals for the SDK and host computer software.
