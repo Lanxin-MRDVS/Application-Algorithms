@@ -204,17 +204,44 @@ After the device restarts, return to the [Device Connection] interface. Click th
 ### Step 5: Activate Algorithm Authorization
 Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click [Algorithm Authentication] button as shown in red box, and obtain the authorization request Key by clicking [Get request key]. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
 
+<p align= “center”>
+<img alt="PixPin_2026-06-04_05-43-36" src="https://github.com/user-attachments/assets/d2762816-727e-4849-9af0-dfb309032f5e" />
+<br>
+   <em> Figure </em>
+</p>
+
 ### Step 6: Configure Basic Camera Parameters
 Switch to the [Parameters] tab, select the right camera parameter template matching the business need and camera model at [camera template] , and click [Deploy Camera template] to complete the initialization of the camera's parameters.
 
+<p align= “center”>
+<img alt="PixPin_2026-06-04_05-48-48" src="https://github.com/user-attachments/assets/08526776-d984-40d4-946c-ea63e5d65862" />
+<br>
+   <em> Figure </em>
+</p>
+
+
 ### Step 7: Configure Depalletizing Parameters
 Enter the [Soft-bag depalletizing] tab, select the corresponding cargo template at [cargo template], select the [material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
+
+<p align= “center”>
+<img alt="PixPin_2026-06-04_05-56-00" src="https://github.com/user-attachments/assets/56565721-8efe-4fca-b651-06881936c717" />
+<br>
+   <em> Figure </em>
+</p>
+
 
 ### Step 8: Hand-Eye Calibration
 Execute the hand-eye calibration process to complete the coordinate alignment between the camera and the robotic arm, as mentioned in Buttons - section in this document. Once the calibration is verified as accurate, click [Calibration] button to persistently save the calibration parameters to the camera device and automatically set the [Calibration Settings] parameters.
 
 ### Step 9: Automatic Region Calibration
 Click the Region Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completing the region calibration.
+
+<p align= “center”>
+<img alt="PixPin_2026-06-04_05-56-00" src="https://github.com/user-attachments/assets/3dffb6fa-f92a-4253-8d2e-33729aac709e" />
+<br>
+   <em> Figure </em>
+</p>
+
 
 ### Step 10: Performance Verification
 Click Single Trigger to execute a single algorithm detection. Observe the results, including cargo recognition, grasping pose, and dimension output, to determine whether the detection performance is reasonable and meets the on-site depalletizing requirements.
