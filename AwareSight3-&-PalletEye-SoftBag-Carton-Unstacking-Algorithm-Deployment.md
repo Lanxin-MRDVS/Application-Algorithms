@@ -1,5 +1,4 @@
-
-## Instruction
+# Instruction
 
 AwareSight3 （or so called AW3） is an application management platform designed for industrial vision algorithms. It is responsible for device connection, authentication, camera parameter configuration, and the management and deployment of algorithm parameters. PalletEye （so called PE） is a built-in algorithm module within the platform, specifically tailored for soft bag and carton unstacking. Leveraging RGB-D camera data, it delivers capabilities such as pallet cargo recognition, region calibration, hand-eye calibration, grasp pose estimation, and dimension detection. It is widely applied in industrial pallet unstacking scenarios. This manual serves to guide operators through the entire process of software deployment, device connection, apply for algorithm license, parameter configuration, unstacking function debugging, and template management.
 
@@ -14,11 +13,19 @@ The overall interface of the AW3 platform is primarily divided into four major f
    <em> Figure 1：Interface overview </em>
 </p>
 
-## Parameter Configuration Section
+# Display Configuration Section
 
-The Parameter Configuration Section contains five menus, the Device Connection, the Algorithm enable, the Parameters, the Soft-pack depalletizing, and the Result log. 
+Interface & Language Settings: Used to configure the real-time display type and system language of the software interface. Parameters take effect immediately without requiring additional saving or distribution, adapting to various configuration and observation scenarios.
 
-## Device Connection menu
+# Visualization Section 
+
+
+
+# Parameter Configuration Section
+
+The Parameter Configuration Section contains five tabs, the Device Connection, the Algorithm enable, the Parameters, the Soft-pack depalletizing, and the Result log. 
+
+## Device Connection tab
 
 When clicking the Device Connection menu, the content will then be at the right side of the displays, as shown in Figure 2 red box. The Center Connection section shows the information of the center AlgPlatformViewer is connected to. 
 
@@ -168,17 +175,10 @@ The "Camera Coordinate" section displays the X, Y, Z value of a specific point w
 </p>
 
 
-## Connection Management Section
 
 
-## Display Configuration Section
 
-Interface & Language Settings: Used to configure the real-time display type and system language of the software interface. Parameters take effect immediately without requiring additional saving or distribution, adapting to various debugging and observation scenarios.
-
-
-## Visualization Section
-
-## Deployment example
+# Deployment example
 
 This chapter provides a complete deployment configuration process for the AW3 platform combined with the PE flexible packaging depalletizing algorithm. It serves as a reference for standardized on-site configuration and is applicable to scenarios such as initial deployment of new machines, site relocation, and cargo template resets.
 
