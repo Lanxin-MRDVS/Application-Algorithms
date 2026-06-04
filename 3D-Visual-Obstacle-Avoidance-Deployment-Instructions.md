@@ -124,7 +124,7 @@ After completing the IP and Gateway configurations above, launch the LxCameraVie
 </p>
 
 
-Click the [Basic] button on the top toolbar as shown in Figure 4. The basic camera settings will then appear in the status panel on the right, as shown in Figure 4. Scroll down and expand the 3D Settings and Filtering menus to adjust the camera parameters. For S10 Series: You only need to set the Glare Level in 3D Settings to 1; the minimum amplitude value does not need to be configured. When testing high-reflectivity objects, you can also turn the Glare level to 2 or 3 based on your needs. For non-standard vehicle installations and parameter configurations, please contact MRDVS technical support.
+Click the [Basic] button on the top toolbar as shown in Figure 4. The basic camera settings will then appear in the status panel on the right, as shown in Figure 4. Scroll down and expand the 3D Settings and Filtering menus to adjust the camera parameters. For S10 Series Cameras: You only need to set the Glare Level in 3D Settings to 1; the minimum amplitude value does not need to be configured. When testing high-reflectivity objects, you can also turn the Glare level to 2 or 3 based on your needs. For non-standard vehicle installations and parameter configurations, please contact MRDVS technical support.
 
 <p align="center">
 <img alt="Näyttökuva 2026-05-29 kello 12 13 56" src="https://github.com/user-attachments/assets/55a6def7-247f-4826-a4c5-7ab4dd2f7cc1" />
