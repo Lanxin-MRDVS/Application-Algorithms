@@ -330,7 +330,7 @@ tection of obstacles within 500 mm above the ground, as shown in Figure 14.
 
 ## 7. Networking
 
-Here, we used NetAssist as the communication configuration tool. You can download it from https://www.cmsoft.cn/resource/102.html, as shown in Figure 16. 
+Here, we used NetAssist as the communication configuration tool. You can download it from https://www.cmsoft.cn/resource/102.html, as shown in Figure 16. You must configure the obstacle avoidance index using the LxCameraViewer we provide before you can switch between different obstacle avoidance index using non-API communication methods.
 
 You can also use NetAssistant from https://github.com/luokyme/NetAssistant, which includes English documentation, but it has not been tested with this instruction.
 
