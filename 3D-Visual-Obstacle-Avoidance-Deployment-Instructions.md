@@ -251,6 +251,12 @@ parameters with other configurations.
 
 ### Parameter Definitions
 
+<p align="center">
+<img alt="PixPin_2026-06-04_11-15-40" src="https://github.com/user-attachments/assets/0e749d64-f04d-437f-8daf-699200250ab3" />
+<br>
+  <em> Zone parameters </em>
+</p>
+
 | Parameter Name | Value | Parameter Definition |
 | :--- | :---: | :--- |
 | **Warning Distance (X-Far)** | 2000 | Obstacle avoidance range; distance from the vehicle center in the x-direction. Obstacles beyond this distance are considered safe; the area between Warning Distance x(Far) and Alarm Distance x(Medium) is treated as a warning zone for deceleration, displayed as a yellow area on the interface. Unit: mm. |
@@ -270,8 +276,7 @@ zones. [Algorithm index] are shown in Figure 12 in the blue box. The
 a obstacle avoidance zone configuration set as shown in Figure 10 in the green
 box. Number 0 - 6 are seven ready-made obstacle avoidance zone configuration
 sets that you can choose, number 6 - 19 are the same configurations. You can
-modify each set yourself based on your need. (Note: If you use UDP, 485, API,
-CAN as the connection method, you can change index from 0-19, but if you use
+modify each set yourself based on your need, click [Set Parameters] to save the modifications. (Note: If you use TCP, UDP, API as the connection method, you can change index from 0-19, but if you use
 IO as the connection, you can only change index 0, 1, 2, 3.
 
 <p align="center">
@@ -391,7 +396,7 @@ Definition of the UDP Hex Data Packets Sent by the Obstacle Avoidance System:
 
 
 
-- Step 3: The parameters set via communication configuration tool remain effective until the camera is restarted, unless the power is cut off or they are modified using other communication methods. If you want the settings to persist after a power cycle, you can use the No. 10 message to save them as default parameters. Saving as default parameters is a feature unique to TCP&UDP communication; CAN and 485 do not support this.
+- Step 3: The parameters set via communication configuration tool remain effective until the camera is restarted, unless the power is cut off or they are modified using other communication methods. If you want the settings to persist after a power cycle, you can use the No. 10 message to save them as default parameters. Saving as default parameters is a feature unique to TCP&UDP communicatio.
 
 - If the camera IP has been changed, use: Camera IP:6688; taking changing from parameter 19 to parameter 0 as an example, click to send the No. 5 data. The sign of a successful setting is that the 5th byte changes from 0x13 (parameter 19) to 0x00 (parameter 0), as shown in the figure below.
 
@@ -426,7 +431,7 @@ Definition of the TCP Hex Data Packets Sent by the Obstacle Avoidance System:
 <em>Figure 19: TCP Connection</em>
 </p>
 
-- Parameters set via TCP remain effective until the camera is restarted, unless the power is cut off or other communication methods are used to modify them. If you want the parameters to remain effective after a power cycle, you can use the No. 10 message to save them as default parameters. The function of saving as default parameters is unique to TCP&UDP communication and is not supported by CAN or RS485.
+- Parameters set via TCP remain effective until the camera is restarted, unless the power is cut off or other communication methods are used to modify them. If you want the parameters to remain effective after a power cycle, you can use the No. 10 message to save them as default parameters. The function of saving as default parameters is unique to TCP&UDP communication.
 
 
 ---
