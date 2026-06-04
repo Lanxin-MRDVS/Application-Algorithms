@@ -140,8 +140,8 @@ Click the [Basic] button on the top toolbar as shown in Figure 4. The basic came
 Depending on your camera model, choose the right algorithm:
 | Camera Model | Algorithm Version |
 | :--- | :--- | 
-| **S10** | Obstacle Avoidance 1.0 | 
-| **S10 Pro** | Obstacle Avoidance 2.0 | 
+| **S10 , S11** | Obstacle Avoidance 1.0 | 
+
 
 ### Step 1: Select Algorithm
 After completing the camera parameter configuration, click the [Algorithm] button. The algorithm settings will appear in the status panel on the right, as shown
