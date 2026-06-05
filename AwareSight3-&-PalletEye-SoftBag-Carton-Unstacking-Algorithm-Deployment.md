@@ -256,9 +256,12 @@ Click the Area Calibration button. The software will automatically identify the 
 </p>
 
 
-### Step 10: Performance Verification
-Click Single Trigger to execute a single algorithm detection. Observe the results, including cargo recognition, grasping pose, and dimension output, to determine whether the detection performance is reasonable and meets the on-site depalletizing requirements.
-Communication Verification: Request results directly from the algorithm module according to the communication protocol, and observe the corresponding changes on the AW3 interface.
+### Step 10: Test the result
+Click Single Trigger to execute a single algorithm detection. Observe the results, including cargo recognition, grasping pose, and dimension output, to determine whether the detection performance is reasonable and meets the on-site depalletizing requirements. You can also see the results at [Result log] tab. 
+
+
+### Communication Verification
+Request results directly from the algorithm module according to the communication protocol, and observe the corresponding changes on the AW3 interface.
 
 ### Step 11: Efficiency Verification
 The latency from sending the request to receiving the result must be less than 2500ms.
