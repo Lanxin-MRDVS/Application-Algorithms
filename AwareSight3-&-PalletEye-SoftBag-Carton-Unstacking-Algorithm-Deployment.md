@@ -20,7 +20,7 @@ Interface & Language Settings: Used to configure the real-time display type and 
 <p align= “center”>
 <img alt="PixPin_2026-06-04_08-11-06" src="https://github.com/user-attachments/assets/48ecdaf1-d922-4c29-9b9e-5997a6b6cf7c" />
 <br>
-   <em> Figure </em>
+   <em> Figure 2: Display Configuration</em>
 </p>
 
 
@@ -29,7 +29,7 @@ Interface & Language Settings: Used to configure the real-time display type and 
 <p align= “center”>
 <img alt="PixPin_2026-06-04_08-13-07" src="https://github.com/user-attachments/assets/7541fda0-d06a-4bf3-b985-470161af6616" />
 <br>
-   <em> Figure </em>
+   <em> Figure 3: Visualization </em>
 </p>
 
 # Parameter Configuration Section
@@ -52,20 +52,20 @@ When clicking the Device Connection menu, the content will then be at the right 
 <p align= “center”>
 <img alt="PixPin_2026-06-02_08-32-02" src="https://github.com/user-attachments/assets/36f48856-18df-491d-9da3-2466a98f3fc8" />
 <br>
-   <em> Figure 2：Center Connection </em>
+   <em> Figure 4：Connect to center </em>
 </p>
 
 
 - Connect center: By clicking this button, the AlgPlatformViewer will manually by conneted to a selected center. This is for the case if the subnet routing doesn't support UDP broadcast discovery.  
 
-## Soft-pack depalletizing
+## Depalletizing
 
-The Soft-pack Depalletizing Configuration Interface is a core feature of the PalletEye algorithm. It integrates task template/mode settings, algorithm parameter configuration, and core operational capabilities. Designed to support parameter configuration, calibration, task template management, and algorithm computation for soft-pack and carton depalletizing scenarios, it is fully adapted to the demands of routine industrial operations and on-site tuning.
+The Depalletizing Configuration Interface is a core feature of the PalletEye algorithm. It integrates task template/mode settings, algorithm parameter configuration, and core operational capabilities. Designed to support parameter configuration, calibration, task template management, and algorithm computation for soft-pack and carton depalletizing scenarios, it is fully adapted to the demands of routine industrial operations and on-site tuning.
 
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-14-13" src="https://github.com/user-attachments/assets/8a8d5f4b-1c5b-426d-b8ee-d078f8e8ffd1" />
 <br>
-   <em> Figure 3：Soft-bag depalletizing </em>
+   <em> Figure 5：Depalletizing Configuration </em>
 </p>
 
 ### Choose Template and Mode
@@ -82,7 +82,7 @@ The Soft-pack Depalletizing Configuration Interface is a core feature of the Pal
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-18-31" src="https://github.com/user-attachments/assets/9ac618ee-a4be-4569-babb-f97960a7bbfc" />
 <br>
-   <em> Figure 4：Choose template and mode </em>
+   <em> Figure 6：Choose template and mode </em>
 </p>
 
 ### Global Settings
@@ -106,7 +106,7 @@ The Global Settings defines the core filtering and recognition parameters for de
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-19-04" src="https://github.com/user-attachments/assets/39a12f80-453a-4253-81d5-8497591b3fed" />
 <br>
-   <em> Figure 5：Clobal Settings </em>
+   <em> Figure 7：Clobal Settings </em>
 </p>
 
 If the cargo's volume and size exceed the maximum Length/Width range in the Global settings, or if the target cargo is too small and falls below the minimum Length/Width range, the system will filter out the cargo and will not detect it as a target. This is shown in Figure 6. If that happened, switch template or change Global settings parameters, and then click Save and Send, and then Single trigger. 
@@ -114,27 +114,27 @@ If the cargo's volume and size exceed the maximum Length/Width range in the Glob
 <p align= “center”>
 <img alt="PixPin_2026-06-03_09-32-28" src="https://github.com/user-attachments/assets/1ef658d4-b981-4902-857e-a5799eaf16c5" />
 <br>
-   <em> Figure 6：Error example </em>
+   <em> Figure 8：Error example </em>
 </p>
 
 
-### Region Settings
+### Area Settings
 
 Used to customize the spatial detection region of the algorithm. By setting the maximum and minimum values for the X, Y and Z, it limits the camera's effective recognition space and filters out interfering targets outside the field of detection range. 
 
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-20-34" src="https://github.com/user-attachments/assets/422ed648-a506-43c8-a68f-87bbdc06a61e" />
 <br>
-   <em> Figure 7：Region Settings </em>
+   <em> Figure 9：Area Settings </em>
 </p>
 
-For example, if the region is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 8. If that happened, configure the Region Settings and change the region size, then click Save and Send and Single Trigger. 
+For example, if the Area is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 8. If that happened, configure the Region Settings and change the area size, then click Save and Send and Single Trigger. 
 
 
 <p align= “center”>
 <img alt="PixPin_2026-06-03_10-27-36" src="https://github.com/user-attachments/assets/35a488b1-513e-4d8f-a0d8-a6a4af056177" />
 <br>
-   <em> Figure 8：Error example </em>
+   <em> Figure 10：Error example </em>
 </p>
 
 ### Output Settings [Under Development]
@@ -144,7 +144,7 @@ All configuration options in this section are currently under development, and s
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-19-45" src="https://github.com/user-attachments/assets/3dd318a9-3277-48a6-87f8-c64dfab89143" />
 <br>
-   <em> Figure 9：Output Settings </em>
+   <em> Figure 11：Output Settings </em>
 </p>
 
 ### Calibration Settings
@@ -161,7 +161,7 @@ Used for initial calibration.
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-20-11" src="https://github.com/user-attachments/assets/bc8e03b4-efba-4134-8a72-c49b4a901501" />
 <br>
-   <em> Figure 10：Calibration Settings </em>
+   <em> Figure 12：Calibration Settings </em>
 </p>
 
 ### Buttons
@@ -182,7 +182,7 @@ The "Camera Coordinate" section displays the X, Y, Z value of a specific point w
 <p align= “center”>
 <img alt="PixPin_2026-06-03_08-21-01" src="https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614" />
 <br>
-   <em> Figure 11：Buttons </em>
+   <em> Figure 13：Buttons </em>
 </p>
 
 
@@ -220,7 +220,7 @@ Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorith
 <p align= “center”>
 <img alt="PixPin_2026-06-04_05-43-36" src="https://github.com/user-attachments/assets/d2762816-727e-4849-9af0-dfb309032f5e" />
 <br>
-   <em> Figure </em>
+   <em> Figure 14: Acivate algorithm </em>
 </p>
 
 ### Step 6: Configure Basic Camera Parameters
@@ -229,30 +229,30 @@ Switch to the [Parameters] tab, select the right camera parameter template match
 <p align= “center”>
 <img alt="PixPin_2026-06-04_05-48-48" src="https://github.com/user-attachments/assets/08526776-d984-40d4-946c-ea63e5d65862" />
 <br>
-   <em> Figure </em>
+   <em> Figure 15: Basic camera parameters </em>
 </p>
 
 
 ### Step 7: Configure Depalletizing Parameters
-Enter the [Soft-bag depalletizing] tab, select the corresponding cargo template at [cargo template], select the [material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
+Enter the [Depalletizing] tab, select the corresponding cargo template at [cargo template], select the [material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
 <p align= “center”>
 <img alt="PixPin_2026-06-04_05-56-00" src="https://github.com/user-attachments/assets/56565721-8efe-4fca-b651-06881936c717" />
 <br>
-   <em> Figure </em>
+   <em> Figure 16:  Depalletizing configuration </em>
 </p>
 
 
 ### Step 8: Hand-Eye Calibration
 Execute the hand-eye calibration process to complete the coordinate alignment between the camera and the robotic arm, as mentioned in Buttons - section in this document. Once the calibration is verified as accurate, click [Calibration] button to persistently save the calibration parameters to the camera device and automatically set the [Calibration Settings] parameters.
 
-### Step 9: Automatic Region Calibration
-Click the Region Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completing the region calibration.
+### Step 9: Automatic Area Calibration
+Click the Area Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completing the region calibration.
 
 <p align= “center”>
 <img alt="PixPin_2026-06-04_05-56-00" src="https://github.com/user-attachments/assets/3dffb6fa-f92a-4253-8d2e-33729aac709e" />
 <br>
-   <em> Figure </em>
+   <em> Figure 17 : Area calibration</em>
 </p>
 
 
