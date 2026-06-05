@@ -71,7 +71,7 @@ The Depalletizing Configuration Interface is a core feature of the PalletEye alg
 ### Choose Template and Mode
 1. Fetch Current Parameters: By clicking this button, the AlgPlatformViewer fetches all the Global-, Region-, and Calibration parameters saved on the center connected. The fetched parameters are then loaded into the Global-, Calibration-, Region settings for visualization and further configuration if needed.
 
-2. Template Selection: Selects saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags
+2. Template Selection: Selects saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags. For soft-bags, we recommand to use template 6. 
 
 3. Material Type Switching: Supports switching between two material types—Soft-pack (Bag) and Carton (Box)—to adapt to different depalletizing target recognition logics.
 
@@ -128,7 +128,7 @@ Used to customize the spatial detection region of the algorithm. By setting the 
    <em> Figure 9：Area Settings </em>
 </p>
 
-For example, if the Area is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 8. If that happened, configure the Region Settings and change the area size, then click Save and Send and Single Trigger. 
+For example, if the Area is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 8. If that happened, configure the Area Settings and change the area size, then click Save and Send and Single Trigger. 
 
 
 <p align= “center”>
@@ -205,7 +205,7 @@ Ensure that the host computer and the camera algorithm module are on the same lo
 Write the PE depalletizing algorithm to the algorithm module via the platform's firmware upgrade feature. (Note: This feature is currently under development; in the current version, algorithm deployment must be completed in advance by the R&D team.) The algorithm module will automatically restart after the firmware update is complete.
 
 ### Step 4: Connect to the Device
-After the device restarts, return to the [Device Connection] interface. Click the [Discover centers] button to refresh the LAN connection as shown in green box. Select the center which your wanted camera is connected to from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in blue box. Click on the virtual camera option and establish the connection.
+After the device restarts, return to the [Device Connection] interface. Click the [Discover centers] button to refresh the LAN connection as shown in green box. Select the center which your wanted camera is connected to from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in blue box. Click on the virtual camera option and click the camera you want to establish connection with. Then click [Connect to Center] button. 
 
 <p align= “center”>
 <img alt="PixPin_2026-06-04_05-40-02" src="https://github.com/user-attachments/assets/2c2e76f1-2433-4b01-bcfb-1413211e26d0" />
@@ -234,7 +234,7 @@ Switch to the [Parameters] tab, select the right camera parameter template match
 
 
 ### Step 7: Configure Depalletizing Parameters
-Enter the [Depalletizing] tab, select the corresponding cargo template at [cargo template], select the [material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
+Enter the [Depalletizing] tab, select the corresponding cargo template at [cargo template], for soft-bags, we recommand to use template 6, then select the [material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
 <p align= “center”>
 <img alt="PixPin_2026-06-04_05-56-00" src="https://github.com/user-attachments/assets/56565721-8efe-4fca-b651-06881936c717" />
@@ -247,7 +247,7 @@ Enter the [Depalletizing] tab, select the corresponding cargo template at [cargo
 Execute the hand-eye calibration process to complete the coordinate alignment between the camera and the robotic arm, as mentioned in Buttons - section in this document. Once the calibration is verified as accurate, click [Calibration] button to persistently save the calibration parameters to the camera device and automatically set the [Calibration Settings] parameters.
 
 ### Step 9: Automatic Area Calibration
-Click the Area Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completing the region calibration.
+Click the Area Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completing the region calibration. If you want to manually configure the area, remember to click [save and send] button after configuration, to send the new area data to the center. 
 
 <p align= “center”>
 <img alt="PixPin_2026-06-04_05-56-00" src="https://github.com/user-attachments/assets/3dffb6fa-f92a-4253-8d2e-33729aac709e" />
