@@ -87,7 +87,6 @@ Furthermore, the system can output precise bounding boxes for these semantically
 | **Rectangular/Fan-shaped Zone Detection** | Supported | Supported |
 | **3-Level Obstacle Avoidance Signal Output (0/1/2)** | Supported | Supported |
 | **Non-semantic Object Clustering + Bounding Box Output** | Not Supported | Supported |
-| **Ground Void Detection (DEMO Level)** | Not Supported | Supported |
 | **Customized Semantic Obstacle Recognition** | Not Supported | Supported (Requires Custom Model) |
 | **Parameter Configuration Mode** | Wired Configuration only | Online Dynamic Configuration is also supported |
 
