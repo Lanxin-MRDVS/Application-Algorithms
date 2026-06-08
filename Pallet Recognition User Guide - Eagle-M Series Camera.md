@@ -29,7 +29,7 @@ supporting the camera to prevent any blockage of emitted or reflected infrared l
 
 
 
-## 3.2 Camera connection (MRDVS)
+## 3.2 Camera configuration (MRDVS)
 
 1. Before connecting the camera, please complete the following setup:
 
@@ -50,7 +50,7 @@ supporting the camera to prevent any blockage of emitted or reflected infrared l
 
 3. Select the pallet positioning algorithm, and set the working mode to close when disconnected. For better recognition, it is recommended to use the updated version of the software, PalletPro, which can be upgraded through firmware updates. ???
 
-## 3.3 Camera connection (PalletPro)
+## 3.3 Pallet algorithm configuration (PalletPro)
 
 1. Before opening PalletPro, exit LxCameraViewer first. Then open the Pallet Recognition software PalletPro: It is recommended to use the latest version of PalletPro.
 
