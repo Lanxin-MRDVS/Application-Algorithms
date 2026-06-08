@@ -1,3 +1,4 @@
+
 # 1. Introduction 
 
 Pallet recognition is a solution developed by MRDVS using the in-house developed Eagle-M series cameras. 
@@ -10,12 +11,42 @@ Adaptive Pallet Recognition, The system can adaptively recognize pallets of diff
 including wooden and plastic pallets with different shapes, as shown below.
 
 
+<p align="center">
+<img  alt="Picture3" src="https://github.com/user-attachments/assets/07ea19b2-275a-4697-bbbe-932926c33afc" />
+<br>
+  <em></em>
+</p>
+
+
+<p align="center">
+<img  alt="Picture2" src="https://github.com/user-attachments/assets/b9e6997f-2853-4967-94bb-2f980dbd7ac4" />
+<br>
+  <em></em>
+</p>
+
+<p align="center">
+<img  alt="Picture5" src="https://github.com/user-attachments/assets/4e9ed2c6-5b31-4dd9-8c6d-b36cdfb230d8" />
+<br>
+  <em></em>
+</p>
+
+<p align="center">
+<img  alt="Picture4" src="https://github.com/user-attachments/assets/7c750174-1cc7-45d8-b5ab-2b93efc2f910" />
+<br>
+  <em></em>
+</p>
+
 # 2. Eagle-M camera installation
 
 As shown in the figure below, install the Eagle-M camera at a distance of 35cm to 45cm above the base panel 
 of the fork arm, ensuring it is close to the center of the two fork teeth (with a left-right deviation of 
 no more than 5cm).
 
+<p align="center">
+<img width="50%" height="50%" alt="Näyttökuva 2026-06-08 kello 11 00 12" src="https://github.com/user-attachments/assets/6c61370b-6d9f-4b9c-8b46-5ddc8fbfb13a" />
+<br>
+  <em>Figure 1: Installation example</em>
+</p>
 
 # 3. Initial setup and Calibration
 Install LxCameraViewer and PalletPro software on a Windows operating system, 
@@ -43,7 +74,7 @@ supporting the camera to prevent any blockage of emitted or reflected infrared l
 <p align="center">
 <img width="50%" height="50%"  alt="Näyttökuva 2026-06-08 kello 9 44 01" src="https://github.com/user-attachments/assets/c553a115-6aea-4da1-b6c9-658bb249b346" />
 <br>
-  <em>Figure 1: IP configuration</em>
+  <em>Figure 2: IP configuration</em>
 </p>
 
 2. Open the LxCameraViewer to test the camera view. Glick the [3D settings] tab. The default camera high exposure value is 650, and the low exposure value is 200. Adjust the camera exposure value based on different application scenarios.
