@@ -48,7 +48,34 @@ no more than 5cm).
   <em>Figure 1: Installation example</em>
 </p>
 
-# 3. Initial setup and Calibration
+# Interfaces
+
+## [Advanced applications] Interface
+
+
+Camera configuration file: The camera configuration file "pallet_settings.json", which contains the camera parameters, will be downloaded and loaded into PalletPro.
+
+Camera IP/ID: Displays the IP address and ID of the connected camera.
+
+| Parameter | Value/Status | Description |
+| :--- | :--- | :--- |
+| R | [0.0, 0.0, 0.0] | Angle parameters; the first group is 0.0 pitch angle, the second group is 0.0 heading angle, and the third group is 0.0 roll angle. |
+| t | [0.0, 0.0, 0.0] | Offset parameters; the first group is 0.0 lateral offset parameter, the second group is 0.0 (not effective), and the third group is 0.0 depth offset (forklift front and rear direction). |
+| two_leg | 0 | Whether to enable two legs; if there is no two-legged pallet in the application, it is not recommended to enable it. 0 is closed, 1 is open. |
+| ground_y | 331 | Installation height in MM. |
+| min_leg | 30 | Minimum leg width supported. |
+| max_leg | 170 | Maximum leg width supported. |
+| thickness | 15 | Algorithm extraction thickness. |
+| x-client | "nonetest" | Customer name (and forklift serial number) for future maintenance. |
+| orientation | 0 | Installation method; 0 is upright, 2 is inverted; 1, 3 are side-mounted. |
+| min_z | 1000 | Minimum range for recognition; it does not recognize within 1000. |
+| max_z | 3200 | Maximum range for recognition; it does not recognize beyond 3200. |
+| min_x | -980 | Horizontal direction filtering; not recognized beyond 980mm to the left of the center. |
+| max_x | 980 | Horizontal direction filtering; not recognized beyond 980mm to the right of the center. |
+
+
+
+# 4. Initial setup and Calibration going through
 Install LxCameraViewer and PalletPro software on a Windows operating system, 
 set up and prepare the software before testing.
 
@@ -79,19 +106,50 @@ supporting the camera to prevent any blockage of emitted or reflected infrared l
 
 2. Open the LxCameraViewer to test the camera view. Glick the [3D settings] tab. The default camera high exposure value is 650, and the low exposure value is 200. Adjust the camera exposure value based on different application scenarios.
 
-3. Select the pallet positioning algorithm, and set the working mode to close when disconnected. For better recognition, it is recommended to use the updated version of the software, PalletPro, which can be upgraded through firmware updates. ???
+<p align="center">
+<img width="50%" height="50%" alt="PixPin_2026-06-08_04-36-24" src="https://github.com/user-attachments/assets/325269dc-cad8-4ae0-bf5a-93cabe51c628" />
+<br>
+  <em>Figure 3: Camera configuration</em>
+</p>
+
+4. Select the pallet positioning algorithm and set the working mode to Close on Disconnect.
+Note: LxCameraviewer is only used for configuring camera internal parameters, while PalletPro handles all other algorithm parameters. For better recognition performance, we recommend upgrading to the latest version of PalletPro via a firmware update
+
+<p align="center">
+<img  width="50%" height="50%" alt="PixPin_2026-06-08_05-46-26" src="https://github.com/user-attachments/assets/ee38fd74-d705-4851-9343-9e1887bc9083" />
+<br>
+  <em>Figure 4: Camera configuration</em>
+</p>
 
 ## 3.3 Pallet algorithm configuration (PalletPro)
 
-1. Before opening PalletPro, exit LxCameraViewer first. Then open the Pallet Recognition software PalletPro: It is recommended to use the latest version of PalletPro.
+1. Before opening PalletPro, exit LxCameraViewer first. Then open the Pallet Recognition software PalletPro.
 
 2. After opening PalletPro, it will automatically scan the camera. Click on the camera to open and obtain the camera data stream.
 
-3. Click on parameter settings, and the user can get the data easily. If the parameters are all default 0 for the first time, click the adaptive button to get the approximate installation height of the current camera. Then fine-tune it, as shown in the diagram, adjusting the auxiliary line value to the intersection position of the pallet and the ground. Click save parameters, check real-time display, and real-time detection to achieve pallet recognition display functionality.
+3. Click on [parameter settings] tab, which shows the current position of the camera. If the parameters are all default 0 while connecting the PalletPro to the camera first time, click the adaptive button to get the approximate installation height of the current camera. Then fine-tune it, as shown in the diagram, adjusting the auxiliary line value to the intersection position of the pallet and the ground. Click save parameters, check [real-time display], and [real-time detection] to achieve pallet recognition display functionality.
 
 
+## 3.4 Pallet calibration preparation
+
+1. Preparation:
+   - A standard European blue plastic pallet, 1200mm×1200mm×150mm, as shown in the diagram.
+   - A tape measure.
+   - A forklift that can move normally
+  
+Note: The ground should be relatively flat during calibration. Before calibration, refer to the simple test method mentioned in 3.1 to set the approximate installation height of the camera. Then, when the forklift moves back and forth, both the far-end calibration and the near-end calibration can recognize the pallet stably.
+  
+     
+## 3.5 Near-end calibration 
+
+The near-end calibration scheme uses a so called teaching calibration method. The forklift needs to manually control the docking of the pallet once. First, move the forklift under the pallet, and pick up the pallet once, which makes sure that the forklift is centered in terms of the pallet. Then, lift down the lift arm, and in a straight line, drive the forklift (the pallet is on the ground without lifting) to make the fork tip about 200mm away from the front edge of the pallet (as shown in the diagram). At this time, click on the [pallet teaching (near)] to calibrate the installation height, lateral offset, heading angle, and roll angle. After calibration, click [Real-time display] and [Detection] to continue detection. 
+
+## 3.6 Far-end calibration
+The far-end calibration function is to calibrate the pitch angle of the camera installation. After completing the near-end calibration, ensure that the pallet position remains unchanged, control the forklift to move away from the pallet, and click on the [pallet teaching (far)] when the distance displayed on PalletPro is in the range of 2300mm-2500mm. This will calibrate the pitch angle of the camera installation. Click save parameters to complete the calibration. As shown in the diagram.
 
 
+## 3.7 Calibration verification
 
+Once the near-end and far-end calibrations are complete, you can begin verifying the calibration accuracy. Move the forklift back and forth between the near-end and far-end calibration points while monitoring the R output for distance (X value), lateral deviation (Y value), and angle. Calibration is considered successful when the X and Y errors are within 10 mm and the recognition is stable with no missed detections. The forklift can then be put into normal operation.
 
 
