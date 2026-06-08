@@ -40,9 +40,11 @@ supporting the camera to prevent any blockage of emitted or reflected infrared l
 - For more details about IP and Firewall configuration, please see the LxCameraViewer use manual at https://github.com/Lanxin-MRDVS/CameraSDK/wiki/LxCameraViewer-User-Manual
 
 
-
+<p align="center">
 <img alt="Näyttökuva 2026-06-08 kello 9 44 01" src="https://github.com/user-attachments/assets/c553a115-6aea-4da1-b6c9-658bb249b346" />
-
+<br>
+  <em>Figure 1: IP configuration</em>
+</p>
 
 2. Open the LxCameraViewer to test the camera view. Glick the [3D settings] tab. The default camera high exposure value is 650, and the low exposure value is 200. Adjust the camera exposure value based on different application scenarios.
 
