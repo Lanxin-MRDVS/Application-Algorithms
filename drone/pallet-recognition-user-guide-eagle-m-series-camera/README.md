@@ -50,6 +50,22 @@ no more than 5cm).
 
 # Interfaces
 
+## Main Interface
+
+After launching the software, the main interface shown below will appear. You can perform operations such as camera connection, camera calibration, and pallet recognition on this screen.
+
+** The interface includes the following functions:**
+
+| Function Module | Specific Functions/Description |
+| :--- | :--- |
+| Menu Bar | Includes basic operations, advanced applications, extrinsic calibration, camera operations, advanced parameters, and save parameters |
+| Camera Parameter Settings | Includes scanning, embedded mode, camera on/off, real-time display, detection, projection, and camera calibration parameter settings |
+| File Import | Includes calibration parameter files, recognition images, and folders |
+| Log Printing | Prints detection results, camera firmware version, algorithm version, etc. |
+| Image Display | Displays image dat
+
+
+
 ## [Advanced applications] Interface
 
 
