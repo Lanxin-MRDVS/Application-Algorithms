@@ -178,7 +178,15 @@ Note: LxCameraviewer is only used for configuring camera internal parameters, wh
 
 1. Before opening PalletPro, exit LxCameraViewer first. Then open the Pallet Recognition software PalletPro.
 
-2. After opening PalletPro, it will automatically scan the camera. Click on the camera to open and obtain the camera data stream.
+2. After opening PalletPro, it will automatically scan the camera. Click on the [start camera] tab to open and obtain the camera data stream.
+
+<p align="center">
+<img  alt="PixPin_2026-06-09_12-42-49" src="https://github.com/user-attachments/assets/ac3e174f-a146-4b43-bb37-97d501ae3672" />
+<br>
+  <em>Figure 5: Start Camera</em>
+</p>
+   
+
 
 3. Click on [parameter settings] tab, which shows the current position of the camera. If the parameters are all default 0 while connecting the PalletPro to the camera first time, click the adaptive button to get the approximate installation height of the current camera. Then fine-tune it, as shown in the diagram, adjusting the auxiliary line value to the intersection position of the pallet and the ground. Click save parameters, check [real-time display], and [real-time detection] to achieve pallet recognition display functionality.
 
