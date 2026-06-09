@@ -241,3 +241,35 @@ The latency from sending the request to receiving the result must be less than 2
 | 18         | Mask is invalid or empty                          |
 | 19         | Abnormal aspect ratio                             |
 | 99         | Unknown error                                     |
+
+## Safety Detection Function
+This function detects whether there are any obstructions above the stacked packages. The relevant parameters include:
+- Safety detection enable/disable
+- Safe height lift distance
+- Obstruction size threshold
+
+**Detection Logic:**
+When safety detection is enabled, a safety plane is established by adding the "Safe height lift distance" to the highest detected package. The system then checks if there are any objects between the camera and this safety plane that exceed the "Obstruction size threshold."
+If an obstruction is detected, all detected package information will be cleared. The RGB display will appear as follows:
+
+### 2. Transition Point
+To facilitate robotic arm path planning, the transition point calculation function can be enabled. The adjustable parameters include:
+- Output transition point (Enable/Disable)
+- Extension distance
+
+### 3. Package Sorting Method
+Detected packages can be sorted in different ways to adjust the grasping sequence. The specific mapping is as follows:
+- `0`: Z min to max
+- `1`: X min to max
+- `2`: X max to min
+- `3`: Y min to max
+- `4`: Y max to min
+
+### 4. Aspect Ratio Limit
+The maximum aspect ratio for packages can be configured. The minimum aspect ratio is fixed at 1.
+
+### 5. PCA for Package Pose Calculation
+You can configure whether to enable PCA (Principal Component Analysis) for package pose calculation in the template. While PCA can still calculate the pose even if the package point cloud has voids, excessive incompleteness in the point cloud will affect the accuracy of the pose results.
+
+### 6. Package Merging
+This function addresses the issue where a single soft package with wrinkles is mistakenly recognized as two (or more) separate packages. When enabled, the system will automatically merge them into a single complete package.
