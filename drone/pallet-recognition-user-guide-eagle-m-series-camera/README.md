@@ -54,6 +54,12 @@ no more than 5cm).
 
 After launching the software, the main interface shown below will appear. You can perform operations such as camera connection, camera calibration, and pallet recognition on this screen.
 
+<p align="center">
+<img alt="PixPin_2026-06-09_12-18-31" src="https://github.com/user-attachments/assets/d70a5468-f972-4d3c-86bd-e2aac69758ca" />
+<br>
+  <em>Figure 2: Main Interface</em>
+</p>
+
 The interface includes the following functions: 
 
 | Function Module | Specific Functions/Description |
@@ -90,7 +96,14 @@ Camera IP/ID: Displays the IP address and ID of the connected camera.
 | max_x | 980 | Horizontal direction filtering; not recognized beyond 980mm to the right of the center. |
 
 ## Menu bar
-The four options—Extrinsic Calibration, Camera Operations, Advanced Parameters, and Save Parameters—are also included in Basic Operations and Advanced Applications. The following sections will only describe the parameters within Basic Operations and Advanced Applications.
+The four options—External Calibration, Camera Operations, Advanced Parameters, and Save Parameters—are also included in Basic Operations and Advanced Applications. The following sections will only describe the parameters within Basic Operations and Advanced Applications.
+
+
+<p align="center">
+<img alt="PixPin_2026-06-09_12-20-32" src="https://github.com/user-attachments/assets/78b106bc-2d67-45bc-9d11-32ce54cee9d5" />
+<br>
+  <em>Figure 3: Menu bar</em>
+</p>
 
 ### Basic Operations
 
@@ -100,8 +113,20 @@ The four options—Extrinsic Calibration, Camera Operations, Advanced Parameters
 | Basic Operations | Save Parameters | Save the configured parameters and send them to the camera. |
 | Camera Operations | Get Camera Info | Retrieve the camera IP, camera ID, and software logs. |
 
-#### Extrinsic Calibration Module
-Click Extrinsic Calibration under Basic Operations. The extrinsic calibration interface will be displayed on the right side of the software window.
+#### External Calibration Module
+Click External Calibration under Basic Operations. The extrinsic calibration interface will be displayed on the right side of the software window.
+
+<p align="center">
+<img  alt="PixPin_2026-06-09_12-21-07" src="https://github.com/user-attachments/assets/f323033b-31cc-4bcc-8650-5b58a19739b9" />
+<br>
+  <em>Figure 4 : External calibration module</em>
+</p>
+
+Click 'External Calibration' and then select 'Calibration Notes' to display the precautions for external calibration. Please read them carefully to avoid any issues during the process.
+<p align="center"><img width="415" height="468" alt="PixPin_2026-06-09_12-21-48" src="https://github.com/user-attachments/assets/2208e4e5-6f5b-4ad3-bb63-99020e040bbc" />
+<br>
+  <em>Figure 5 : External calibration notes</em>
+</p>
 
 # 4. Initial setup and Calibration going through
 Install LxCameraViewer and PalletPro software on a Windows operating system, 
