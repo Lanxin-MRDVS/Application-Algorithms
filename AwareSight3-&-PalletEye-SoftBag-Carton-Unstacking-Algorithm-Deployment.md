@@ -118,6 +118,7 @@ If the cargo's volume and size exceed the maximum Length/Width range in the Glob
 </p>
 
 
+
 ### Area Settings
 
 Used to customize the spatial detection region of the algorithm. By setting the maximum and minimum values for the X, Y and Z, it limits the camera's effective recognition space and filters out interfering targets outside the field of detection range. 
@@ -265,3 +266,51 @@ Request results directly from the algorithm module according to the communicatio
 
 ### Step 11: Efficiency Verification
 The latency from sending the request to receiving the result must be less than 2500ms.
+
+# Error codes
+
+## Algorithm error codes
+| Error Code | Description |
+| :--- | :--- |
+| 0 | Success |
+| -1 | Too few point clouds after AOI cropping |
+| -2 | Inference failed (model returned no results) |
+| -3 | Too few point clouds after filtering |
+| -4 | Clustering resulted in empty set |
+| -5 | No valid soft packages detected |
+| -6 | Obstruction detected in the grasping area |
+| -7 | Upper packages filtered out; grasping lower layer is prohibited |
+| -9 | Package exceeds image boundaries |
+| -10 | Input image is empty or has abnormal dimensions |
+| -100 | Unknown / Initial error |
+| -101 | Pipeline parameters not configured |
+<p align= “center”>
+<img alt="93474dbc90f60414541a338171e058eb" src="https://github.com/user-attachments/assets/61fdbf03-54c3-4119-ba55-46fa3c06eaf7" />
+<br>
+   <em> Figure 18 : Algorithm error code</em>
+</p>
+
+## Package error codes 
+| Error Code | Description |
+| :--- | :--- |
+| 0 | Normal detection |
+| 1 | No valid depth (q.z < 0.1) |
+| 2 | No contour after morphological processing |
+| 3 | Fill rate does not meet the standard |
+| 4 | Contour too small (w <= 20 or h <= 20) |
+| 5 | Out of AOI range |
+| 6 | Too few contour points (< 100) |
+| 7 | Point cloud is empty outside the AOI |
+| 8 | Too few valid plane points after normal filtering |
+| 9 | Multiple vertical clusters |
+| 10 | Width mismatch |
+| 11 | Length mismatch |
+| 12 | Both length and width mismatch |
+| 13 | Abnormal z-value for p1/p2 points |
+| 14 | Classified as a lower-layer package |
+| 15 | Merged into another package |
+| 16 | Center point z-value out of range |
+| 17 | Suppressed by NMS (Non-Maximum Suppression) |
+| 18 | Mask is invalid or empty |
+| 19 | Abnormal aspect ratio |
+| 99 | Unknown error |
