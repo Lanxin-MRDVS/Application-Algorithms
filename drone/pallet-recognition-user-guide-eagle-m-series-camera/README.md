@@ -54,7 +54,7 @@ no more than 5cm).
 
 After launching the software, the main interface shown below will appear. You can perform operations such as camera connection, camera calibration, and pallet recognition on this screen.
 
-** The interface includes the following functions:**
+The interface includes the following functions: 
 
 | Function Module | Specific Functions/Description |
 | :--- | :--- |
