@@ -66,7 +66,7 @@ The interface includes the following functions:
 
 
 
-## [Advanced applications] Interface
+## Advanced applications Interface
 
 
 Camera configuration file: The camera configuration file "pallet_settings.json", which contains the camera parameters, will be downloaded and loaded into PalletPro.
@@ -89,7 +89,19 @@ Camera IP/ID: Displays the IP address and ID of the connected camera.
 | min_x | -980 | Horizontal direction filtering; not recognized beyond 980mm to the left of the center. |
 | max_x | 980 | Horizontal direction filtering; not recognized beyond 980mm to the right of the center. |
 
+## Menu bar
+The four options—Extrinsic Calibration, Camera Operations, Advanced Parameters, and Save Parameters—are also included in Basic Operations and Advanced Applications. The following sections will only describe the parameters within Basic Operations and Advanced Applications.
 
+### Basic Operations
+
+| Menu | Option | Description |
+| :--- | :--- | :--- |
+| Basic Operations | Extrinsic Calibration | Camera calibration, including camera height, lateral offset, pitch angle, yaw angle, and roll angle. |
+| Basic Operations | Save Parameters | Save the configured parameters and send them to the camera. |
+| Camera Operations | Get Camera Info | Retrieve the camera IP, camera ID, and software logs. |
+
+#### Extrinsic Calibration Module
+Click Extrinsic Calibration under Basic Operations. The extrinsic calibration interface will be displayed on the right side of the software window.
 
 # 4. Initial setup and Calibration going through
 Install LxCameraViewer and PalletPro software on a Windows operating system, 
