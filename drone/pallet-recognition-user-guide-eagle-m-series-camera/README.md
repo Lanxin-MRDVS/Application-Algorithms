@@ -72,31 +72,10 @@ The interface includes the following functions:
 
 
 
-## Advanced applications Interface
 
-
-Camera configuration file: The camera configuration file "pallet_settings.json", which contains the camera parameters, will be downloaded and loaded into PalletPro.
-
-Camera IP/ID: Displays the IP address and ID of the connected camera.
-
-| Parameter | Value/Status | Description |
-| :--- | :--- | :--- |
-| R | [0.0, 0.0, 0.0] | Angle parameters; the first group is 0.0 pitch angle, the second group is 0.0 heading angle, and the third group is 0.0 roll angle. |
-| t | [0.0, 0.0, 0.0] | Offset parameters; the first group is 0.0 lateral offset parameter, the second group is 0.0 (not effective), and the third group is 0.0 depth offset (forklift front and rear direction). |
-| two_leg | 0 | Whether to enable two legs; if there is no two-legged pallet in the application, it is not recommended to enable it. 0 is closed, 1 is open. |
-| ground_y | 331 | Installation height in MM. |
-| min_leg | 30 | Minimum leg width supported. |
-| max_leg | 170 | Maximum leg width supported. |
-| thickness | 15 | Algorithm extraction thickness. |
-| x-client | "nonetest" | Customer name (and forklift serial number) for future maintenance. |
-| orientation | 0 | Installation method; 0 is upright, 2 is inverted; 1, 3 are side-mounted. |
-| min_z | 1000 | Minimum range for recognition; it does not recognize within 1000. |
-| max_z | 3200 | Maximum range for recognition; it does not recognize beyond 3200. |
-| min_x | -980 | Horizontal direction filtering; not recognized beyond 980mm to the left of the center. |
-| max_x | 980 | Horizontal direction filtering; not recognized beyond 980mm to the right of the center. |
 
 ## Menu bar
-The four options—External Calibration, Camera Operations, Advanced Parameters, and Save Parameters—are also included in Basic Operations and Advanced Applications. The following sections will only describe the parameters within Basic Operations and Advanced Applications.
+The five options—External Calibration, Camera Operations, Advanced Parameters, Save Parameters, and Languages—are also included in Basic Operations and Advanced Applications. The following sections will only describe the parameters within Basic Operations and Advanced Applications.
 
 
 <p align="center">
@@ -127,6 +106,81 @@ Click 'External Calibration' and then select 'Calibration Notes' to display the 
 <br>
   <em>Figure 5 : External calibration notes</em>
 </p>
+
+
+Information verification at the Bottom of [Calibration Notes]:
+Customer Name: It is recommended to use the format "Project Name + Forklift Number" for easier troubleshooting as shown in Figure 5.
+Minimum Recognition Distance (mm): Keep the default value as shown in Figure 5. (If the calibration distance is relatively short, adjust it to 1.2m.)
+
+
+Distance from Rotation Center to Optical Center: When set to the default value of 0, it represents the coordinate of camera's optical center is overlapping with the forklift's rotation center. You must enter the actual distance from the camera's optical center to the forklift's rotation center.
+
+Pallet Teaching (It is recommended to perform two calibrations):
+[Pallet Teaching (Near)]: Position the pallet 200mm away from the forklift forks to perform near-end calibration. This step determines the pallet's height, lateral offset, heading angle, and roll angle.
+[Pallet Teaching (Far)]: After near-end calibration, proceed with far-end calibration (secondary teaching). For example, if the camera recognizes the pallet distance as 1300mm during near-end calibration, drive the forklift straight backward by approximately 400–800mm without any angular or lateral movement. Perform far-end calibration when the distance to the pallet reaches 1.8–2.4m. This step determines the camera's pitch angle. Note: [Pallet Teaching (Far)] tab is only available after [Pallet Teaching (Near)] is successful. 
+
+Clicking 'Reset Calibration' will restore all external calibration parameters to zero.
+
+Lateral deviation means the literal deviation between the camera's optical center and forklift's coordinate center, and it is automatically determined through the calibration process.
+
+
+Note: Method 2 is a custom feature for other client, you can dismiss that. 
+
+
+### Advanced applications Interface
+
+#### Advanced parameters
+Camera configuration file: The camera configuration file "pallet_settings.json", which contains the camera parameters, will be downloaded and loaded into PalletPro.
+
+Camera IP/ID: Displays the IP address and ID of the connected camera.
+
+Leg width: The width of the legs on the side facing the camera.
+
+Pallet width: The width of the pallet on the side facing the camera.
+
+Crossbar width: The width of the pallet crossbar on the side facing the camera.
+
+| Setting | Mode Option | Parameter / Description |
+| :--- | :--- | :--- |
+| **Leg Width Selection** | Standard Mode | 10-15cm |
+| | Thin Fork Mode | 5cm |
+| | Ultra-thin Pallet | 3-4cm |
+| | Wider | 15cm |
+| | Extra Wide | 20cm+ |
+| | 8 - 32 cm  | 8-32cm | 
+| | Custom number| Custom number | 
+| **Pallet Width Selection** | Standard Mode | 0.7-1.3m |
+| | Wide Pallet | 1.1-1.6m |
+| | Custom number | Custom number|
+| **Crossbar Width Selection** | Standard (Default) | No changes needed for general use |
+| | Thinner | 80% |
+| | Very Thin | 60% |
+| | Sparse | 10% |
+
+Parameters which can be modified in advanced settings.
+| Parameter | Value/Status | Description |
+| :--- | :--- | :--- |
+| R | [0.0, 0.0, 0.0] | Angle parameters; the first group is 0.0 pitch angle, the second group is 0.0 heading angle, and the third group is 0.0 roll angle. |
+| t | [0.0, 0.0, 0.0] | Offset parameters; the first group is 0.0 lateral offset parameter, the second group is 0.0 (not effective), and the third group is 0.0 depth offset (forklift front and rear direction). |
+| two_leg | 0 | Whether to enable two legs; if there is no two-legged pallet in the application, it is not recommended to enable it. 0 is closed, 1 is open. |
+| ground_y | 331 | Installation height in MM. |
+| min_leg | 30 | Minimum leg width supported. |
+| max_leg | 170 | Maximum leg width supported. |
+| thickness | 15 | Algorithm extraction thickness. |
+| x-client | "nonetest" | Customer name (and forklift serial number) for future maintenance. |
+| orientation | 0 | Installation method; 0 is upright, 2 is inverted; 1, 3 are side-mounted. |
+| min_z | 1000 | Minimum range for recognition; it does not recognize within 1000. |
+| max_z | 3200 | Maximum range for recognition; it does not recognize beyond 3200. |
+| min_x | -980 | Horizontal direction filtering; not recognized beyond 980mm to the left of the center. |
+| max_x | 980 | Horizontal direction filtering; not recognized beyond 980mm to the right of the center. |
+
+Expanded Parameters: Expansion of existing parameters, but modification is not recommended.
+
+#### Display 3D
+
+"Select 'Advanced Application' and click the [Display 3D] tab to display the current 3D point cloud. You can adjust the page dimensions by dragging its edges，hold down the left mouse button and use the scroll wheel to zoom in or out，or hold down the left mouse button and drag to rotate or tumble the image. This feature can also be used during offline testing to check the completeness of the pallet point cloud."
+
+####
 
 # 4. Initial setup and Calibration going through
 Install LxCameraViewer and PalletPro software on a Windows operating system, 
