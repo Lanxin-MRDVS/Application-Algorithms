@@ -1,4 +1,4 @@
-# AwareSight3-&-PalletEye-SoftBag-Carton-Unstacking-Algorithm-Deployment
+# SoftBag Carton Unstacking Algorithm Deployment
 
 ## Instruction
 
