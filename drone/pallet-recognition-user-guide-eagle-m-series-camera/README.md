@@ -199,11 +199,34 @@ Note: LxCameraviewer is only used for configuring camera internal parameters, wh
    - A forklift that can move normally
   
 Note: The ground should be relatively flat during calibration. Before calibration, refer to the simple test method mentioned in 3.1 to set the approximate installation height of the camera. Then, when the forklift moves back and forth, both the far-end calibration and the near-end calibration can recognize the pallet stably.
-  
+
+<p align="center">
+<img alt="图片2" src="https://github.com/user-attachments/assets/2a84a161-f9aa-4f71-85ed-cc51699df9e3" />
+<br>
+  <em>Figure 6: Pallet </em>
+</p>
      
 ## 3.5 Near-end calibration 
 
 The near-end calibration scheme uses a so called teaching calibration method. The forklift needs to manually control the docking of the pallet once. First, move the forklift under the pallet, and pick up the pallet once, which makes sure that the forklift is centered in terms of the pallet. Then, lift down the lift arm, and in a straight line, drive the forklift (the pallet is on the ground without lifting) to make the fork tip about 200mm away from the front edge of the pallet (as shown in the diagram). At this time, click on the [pallet teaching (near)] to calibrate the installation height, lateral offset, heading angle, and roll angle. After calibration, click [Real-time display] and [Detection] to continue detection. 
+
+<p align="center">
+<img  alt="图片3" src="https://github.com/user-attachments/assets/405aa2cd-0040-4078-a1ad-b54f6f09fa04" />
+<br>
+  <em>Figure 7: Pickup first </em>
+</p>
+
+<p align="center">
+<img  alt="图片4" src="https://github.com/user-attachments/assets/c5afa644-e76b-4d79-ae6d-ea3e211cd014" />
+<br>
+  <em>Figure 7: Lift down and move backward </em>
+</p>
+     
+
+
+
+
+
 
 ## 3.6 Far-end calibration
 The far-end calibration function is to calibrate the pitch angle of the camera installation. After completing the near-end calibration, ensure that the pallet position remains unchanged, control the forklift to move away from the pallet, and click on the [pallet teaching (far)] when the distance displayed on PalletPro is in the range of 2300mm-2500mm. This will calibrate the pitch angle of the camera installation. Click save parameters to complete the calibration. As shown in the diagram.
