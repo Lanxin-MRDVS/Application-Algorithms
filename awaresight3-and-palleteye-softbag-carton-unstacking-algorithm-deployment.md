@@ -16,7 +16,7 @@ _&#x46;igure 1：Interface overview_
 Interface & Language Settings: Used to configure the real-time display type and system language of the software interface. Parameters take effect immediately without requiring additional saving or distribution, adapting to various configuration and observation scenarios.
 
 ![PixPin\_2026-06-04\_08-11-06](https://github.com/user-attachments/assets/48ecdaf1-d922-4c29-9b9e-5997a6b6cf7c)\
-&#xNAN;_&#x46;igure 2: Display Configuration_
+_&#x46;igure 2: Display Configuration_
 
 ## Visualization Section
 
@@ -148,28 +148,28 @@ Write the PE depalletizing algorithm to the algorithm module via the platform's 
 After the device restarts, return to the \[Device Connection] interface. Click the \[Discover centers] button to refresh the LAN connection as shown in green box. Select the center which your wanted camera is connected to from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in blue box. Click on the virtual camera option and click the camera you want to establish connection with. Then click \[Connect to Center] button.
 
 ![PixPin\_2026-06-04\_05-40-02](https://github.com/user-attachments/assets/2c2e76f1-2433-4b01-bcfb-1413211e26d0)\
-_&#x46;igure_
+_&#x46;igure 14: Connection_
 
 #### Step 5: Activate Algorithm Authorization
 
 Switch to the \[Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click \[Algorithm Authentication] button as shown in red box, and obtain the authorization request Key by clicking \[Get request key]. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click \[Apply License] to activate the algorithm.
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/d2762816-727e-4849-9af0-dfb309032f5e)\
-_&#x46;igure 14: Acivate algorithm_
+_&#x46;igure 15: Acivate algorithm_
 
 #### Step 6: Configure Basic Camera Parameters
 
 Switch to the \[Parameters] tab, select the right camera parameter template matching the business need and camera model at \[camera template] , and click \[Deploy Camera template] to complete the initialization of the camera's parameters.
 
 ![PixPin\_2026-06-04\_05-48-48](https://github.com/user-attachments/assets/08526776-d984-40d4-946c-ea63e5d65862)\
-_&#x46;igure 15: Basic camera parameters_
+_&#x46;igure 16: Basic camera parameters_
 
 #### Step 7: Configure Depalletizing Parameters
 
 Enter the \[Depalletizing] tab, select the corresponding cargo template at \[cargo template], for soft-bags, we recommand to use template 6, then select the \[material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined \[cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/56565721-8efe-4fca-b651-06881936c717)\
-_&#x46;igure 16: Depalletizing configuration_
+_&#x46;igure 17: Depalletizing configuration_
 
 #### Step 8: Hand-Eye Calibration
 
@@ -180,7 +180,7 @@ Execute the hand-eye calibration process to complete the coordinate alignment be
 Click the Area Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completing the region calibration. If you want to manually configure the area, remember to click \[save and send] button after configuration, to send the new area data to the center.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/3dffb6fa-f92a-4253-8d2e-33729aac709e)\
-_&#x46;igure 17 : Area calibration_
+_&#x46;igure 18 : Area calibration_
 
 #### Step 10: Test the result
 
@@ -214,7 +214,7 @@ The latency from sending the request to receiving the result must be less than 2
 | -101       | Pipeline parameters not configured                              |
 
 ![93474dbc90f60414541a338171e058eb](https://github.com/user-attachments/assets/61fdbf03-54c3-4119-ba55-46fa3c06eaf7)\
-&#xNAN;_&#x46;igure 18 : Algorithm error code_
+_&#x46;igure 19 : Algorithm error code_
 
 ### Package error codes
 
