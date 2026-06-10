@@ -9,7 +9,7 @@ AwareSight3 （or so called AW3） is an application management platform designe
 The overall interface of the AW3 platform is primarily divided into four major functional sections: 1. Connection Management Section; 2. Parameter Configuration Section; 3. Display Configuration Section ; and 4. Visualization Section. These sections operate independently yet work in synergy, covering the full operational workflow of device access, parameter configuration, visual observation, and algorithm execution (as shown in Figure 1).
 
 ![PixPin\_2026-06-01\_10-40-42](https://github.com/user-attachments/assets/ad3c08cf-d85c-40c1-b935-9b1b1934ab76)\
-&#xNAN;_&#x46;igure 1：Interface overview_
+_&#x46;igure 1：Interface overview_
 
 ## Display Configuration Section
 
@@ -21,7 +21,7 @@ Interface & Language Settings: Used to configure the real-time display type and 
 ## Visualization Section
 
 ![PixPin\_2026-06-04\_08-13-07](https://github.com/user-attachments/assets/7541fda0-d06a-4bf3-b985-470161af6616)\
-&#xNAN;_&#x46;igure 3: Visualization_
+_&#x46;igure 3: Visualization_
 
 ## Parameter Configuration Section
 
@@ -41,7 +41,7 @@ When clicking the Device Connection menu, the content will then be at the right 
 (Virtual cameras are designed to support multi-camera cooperation in the future. Currently, each virtual camera is only mapped to a single physical camera.)
 
 ![PixPin\_2026-06-02\_08-32-02](https://github.com/user-attachments/assets/36f48856-18df-491d-9da3-2466a98f3fc8)\
-&#xNAN;_&#x46;igure 4：Connect to center_
+_&#x46;igure 4：Connect to center_
 
 * Connect center: By clicking this button, the AlgPlatformViewer will manually by conneted to a selected center. This is for the case if the subnet routing doesn't support UDP broadcast discovery.
 
@@ -50,7 +50,7 @@ When clicking the Device Connection menu, the content will then be at the right 
 The Depalletizing Configuration Interface is a core feature of the PalletEye algorithm. It integrates task template/mode settings, algorithm parameter configuration, and core operational capabilities. Designed to support parameter configuration, calibration, task template management, and algorithm computation for soft-pack and carton depalletizing scenarios, it is fully adapted to the demands of routine industrial operations and on-site tuning.
 
 ![PixPin\_2026-06-03\_08-14-13](https://github.com/user-attachments/assets/8a8d5f4b-1c5b-426d-b8ee-d078f8e8ffd1)\
-&#xNAN;_&#x46;igure 5：Depalletizing Configuration_
+_&#x46;igure 5：Depalletizing Configuration_
 
 #### Choose Template and Mode
 
@@ -61,7 +61,7 @@ The Depalletizing Configuration Interface is a core feature of the PalletEye alg
 5. Operation Mode Switching: Simple Mode: Parameters are fixed. It performs only basic validation on cargo dimensions without advanced algorithm features, making it suitable for standardized, routine depalletizing scenarios. Expert Mode: Unlocks full custom parameter configuration and enables advanced features like parcel merging. This mode is designed for complex working conditions and scenarios requiring refined recognition (UI to be continuously optimized).
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/9ac618ee-a4be-4569-babb-f97960a7bbfc)\
-&#xNAN;_&#x46;igure 6：Choose template and mode_
+_&#x46;igure 6：Choose template and mode_
 
 #### Global Settings
 
@@ -75,31 +75,31 @@ The Global Settings defines the core filtering and recognition parameters for de
 6. Advanced Toggles \[Under Development]: Includes options for enabling large-size splitting, parallel alignment correction, multiple results at once, and occlusion detection. In the current version, these are reserved configuration items and are not yet active.
 
 ![PixPin\_2026-06-03\_08-19-04](https://github.com/user-attachments/assets/39a12f80-453a-4253-81d5-8497591b3fed)\
-&#xNAN;_&#x46;igure 7：Clobal Settings_
+_&#x46;igure 7：Clobal Settings_
 
 If the cargo's volume and size exceed the maximum Length/Width range in the Global settings, or if the target cargo is too small and falls below the minimum Length/Width range, the system will filter out the cargo and will not detect it as a target. This is shown in Figure 6. If that happened, switch template or change Global settings parameters, and then click Save and Send, and then Single trigger.
 
 ![PixPin\_2026-06-03\_09-32-28](https://github.com/user-attachments/assets/1ef658d4-b981-4902-857e-a5799eaf16c5)\
-&#xNAN;_&#x46;igure 8：Error example_
+_&#x46;igure 8：Error example_
 
 #### Area Settings
 
 Used to customize the spatial detection region of the algorithm. By setting the maximum and minimum values for the X, Y and Z, it limits the camera's effective recognition space and filters out interfering targets outside the field of detection range.
 
 ![PixPin\_2026-06-03\_08-20-34](https://github.com/user-attachments/assets/422ed648-a506-43c8-a68f-87bbdc06a61e)\
-&#xNAN;_&#x46;igure 9：Area Settings_
+_&#x46;igure 9：Area Settings_
 
 For example, if the Area is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 8. If that happened, configure the Area Settings and change the area size, then click Save and Send and Single Trigger.
 
 ![PixPin\_2026-06-03\_10-27-36](https://github.com/user-attachments/assets/35a488b1-513e-4d8f-a0d8-a6a4af056177)\
-&#xNAN;_&#x46;igure 10：Error example_
+_&#x46;igure 10：Error example_
 
 #### Output Settings \[Under Development]
 
 All configuration options in this section are currently under development, and settings are not yet active; the interface is reserved for future use, including Euler angle type, RZ range, Reverse range, Output type (3D/2D), rxry tilt range, Output unit (deg/mm), Output precision.
 
 ![PixPin\_2026-06-03\_08-19-45](https://github.com/user-attachments/assets/3dd318a9-3277-48a6-87f8-c64dfab89143)\
-&#xNAN;_&#x46;igure 11：Output Settings_
+_&#x46;igure 11：Output Settings_
 
 #### Calibration Settings
 
@@ -110,7 +110,7 @@ Used for managing hand-eye calibration parameters between the camera and the rob
 * Offset: Represents an intentional adjustment or shift applied to a target position. It adds a specific distance to the original coordinates to fine-tune the final location (e.g., to avoid collisions or adjust a gripping point).
 
 ![PixPin\_2026-06-03\_08-20-11](https://github.com/user-attachments/assets/bc8e03b4-efba-4134-8a72-c49b4a901501)\
-&#xNAN;_&#x46;igure 12：Calibration Settings_
+_&#x46;igure 12：Calibration Settings_
 
 #### Buttons
 
@@ -125,7 +125,7 @@ Used for managing hand-eye calibration parameters between the camera and the rob
 5. Save and send: Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
 
 ![PixPin\_2026-06-03\_08-21-01](https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614)\
-&#xNAN;_&#x46;igure 13：Buttons_
+_&#x46;igure 13：Buttons_
 
 ## Deployment example
 
@@ -148,28 +148,28 @@ Write the PE depalletizing algorithm to the algorithm module via the platform's 
 After the device restarts, return to the \[Device Connection] interface. Click the \[Discover centers] button to refresh the LAN connection as shown in green box. Select the center which your wanted camera is connected to from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in blue box. Click on the virtual camera option and click the camera you want to establish connection with. Then click \[Connect to Center] button.
 
 ![PixPin\_2026-06-04\_05-40-02](https://github.com/user-attachments/assets/2c2e76f1-2433-4b01-bcfb-1413211e26d0)\
-&#xNAN;_&#x46;igure_
+_&#x46;igure_
 
 #### Step 5: Activate Algorithm Authorization
 
 Switch to the \[Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click \[Algorithm Authentication] button as shown in red box, and obtain the authorization request Key by clicking \[Get request key]. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click \[Apply License] to activate the algorithm.
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/d2762816-727e-4849-9af0-dfb309032f5e)\
-&#xNAN;_&#x46;igure 14: Acivate algorithm_
+_&#x46;igure 14: Acivate algorithm_
 
 #### Step 6: Configure Basic Camera Parameters
 
 Switch to the \[Parameters] tab, select the right camera parameter template matching the business need and camera model at \[camera template] , and click \[Deploy Camera template] to complete the initialization of the camera's parameters.
 
 ![PixPin\_2026-06-04\_05-48-48](https://github.com/user-attachments/assets/08526776-d984-40d4-946c-ea63e5d65862)\
-&#xNAN;_&#x46;igure 15: Basic camera parameters_
+_&#x46;igure 15: Basic camera parameters_
 
 #### Step 7: Configure Depalletizing Parameters
 
 Enter the \[Depalletizing] tab, select the corresponding cargo template at \[cargo template], for soft-bags, we recommand to use template 6, then select the \[material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined \[cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/56565721-8efe-4fca-b651-06881936c717)\
-&#xNAN;_&#x46;igure 16: Depalletizing configuration_
+_&#x46;igure 16: Depalletizing configuration_
 
 #### Step 8: Hand-Eye Calibration
 
@@ -180,7 +180,7 @@ Execute the hand-eye calibration process to complete the coordinate alignment be
 Click the Area Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completing the region calibration. If you want to manually configure the area, remember to click \[save and send] button after configuration, to send the new area data to the center.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/3dffb6fa-f92a-4253-8d2e-33729aac709e)\
-&#xNAN;_&#x46;igure 17 : Area calibration_
+_&#x46;igure 17 : Area calibration_
 
 #### Step 10: Test the result
 
