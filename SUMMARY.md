@@ -1,18 +1,18 @@
 # Table of contents
 
-## AGV
-
 * [3D-Visual-Obstacle-Avoidance-Deployment-Instructions](README.md)
-* [AwareSight3-&-PalletEye-SoftBag-Carton-Unstacking-Algorithm-Deployment](agv/awaresight3-and-palleteye-softbag-carton-unstacking-algorithm-deployment.md)
-* [LxCameraViewer-User-Manual](agv/lxcameraviewer-user-manual.md)
-* [M4-Mega,-M4,-M4Pro-iToF-Camera](agv/m4-mega-m4-m4pro-itof-camera.md)
+* [AwareSight3-&-PalletEye-SoftBag-Carton-Unstacking-Algorithm-Deployment](awaresight3-and-palleteye-softbag-carton-unstacking-algorithm-deployment.md)
+* [LxCameraViewer-User-Manual](lxcameraviewer-user-manual.md)
+* [M4-Mega,-M4,-M4Pro-iToF-Camera](m4-mega-m4-m4pro-itof-camera.md)
+* [Page 1](page-1.md)
+* [Product-Overview-产品概述](productoverview-chan-pin-gai-shu.md)
+* [Home](home.md)
+* [Pallet Recognition User Guide - Eagle-M Series Camera](pallet-recognition-user-guide-eagle-m-series-camera.md)
+
+## AGV
 
 ## Drone
 
-* [Page 1](drone/page-1.md)
-* [Home](drone/home.md)
-* [Pallet Recognition User Guide - Eagle-M Series Camera](drone/pallet-recognition-user-guide-eagle-m-series-camera/README.md)
-  * [Product-Overview-产品概述](drone/pallet-recognition-user-guide-eagle-m-series-camera/productoverview-chan-pin-gai-shu.md)
 * [M4‐G-Series-3D-Camera](drone/m4-g-series-3d-camera.md)
 
 ***
