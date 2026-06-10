@@ -21,9 +21,9 @@ As shown in the figure below, install the Eagle-M camera at a distance of 35cm t
 <img length="50%" width="50%" alt="Näyttökuva 2026-06-08 kello 11 00 12" src="https://github.com/user-attachments/assets/f77877a6-e6b3-45df-9e1e-355a2744c463" />
 <br><em>Figure 1: Installation example</em></p>
 
-## Interfaces
+## 3. Interfaces
 
-### Main Interface
+### 3.1 Main Interface
 
 After launching the software, the main interface shown below will appear. You can perform operations such as camera connection, camera calibration, and pallet recognition on this screen.
 
@@ -39,21 +39,21 @@ The interface includes the following functions:
 | Log Printing              | Prints detection results, camera firmware version, algorithm version, etc.                                                           |
 | Image Display             | Displays image dat                                                                                                                   |
 
-### Menu bar
+### 3.2 Menu bar
 
-The five options—External Calibration, Camera Operations, Advanced Parameters, Save Parameters, and Languages—are also included in Basic Operations and Advanced Applications. The following sections will only describe the parameters within Basic Operations and Advanced Applications.
+The five options—External Calibration, Camera Operations, Advanced Parameters, Save Parameters, and Languages—are also included in Basic Operations and Advanced Applications.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/78b106bc-2d67-45bc-9d11-32ce54cee9d5" alt="PixPin_2026-06-09_12-20-32"><br><em>Figure 3: Menu bar</em></p>
 
-#### Basic Operations
+### 3.3 Basic Operations
 
 | Menu              | Option                | Description                                                                                          |
 | ----------------- | --------------------- | ---------------------------------------------------------------------------------------------------- |
 | Basic Operations  | Extrinsic Calibration | Camera calibration, including camera height, lateral offset, pitch angle, yaw angle, and roll angle. |
 | Basic Operations  | Save Parameters       | Save the configured parameters and send them to the camera.                                          |
-| Camera Operations | Get Camera Info       | Retrieve the camera IP, camera ID, and software logs.                                                |
+| Basic Operations | Camera Operations      | Retrieve the camera IP, camera ID, and software logs.                                                |
 
-**External Calibration Module**
+#### 3.3.1 External Calibration Module
 
 Click External Calibration under Basic Operations. The extrinsic calibration interface will be displayed on the right side of the software window.
 
@@ -75,9 +75,12 @@ Lateral deviation means the literal deviation between the camera's optical cente
 
 Note: Method 2 is a custom feature for other client, you can dismiss that.
 
-#### Advanced applications Interface
+#### 3.3.2 Camera Operations
 
-**Advanced parameters**
+
+### 3.4 Advanced applications Interface
+
+#### 3.4.1 Advanced parameters 
 
 Camera configuration file: The camera configuration file "pallet\_settings.json", which contains the camera parameters, will be downloaded and loaded into PalletPro.
 
@@ -126,10 +129,235 @@ Parameters which can be modified in advanced settings.
 
 Expanded Parameters: Expansion of existing parameters, but modification is not recommended.
 
-**Display 3D**
+#### 3.4.2 Display 3D
 
-"Select 'Advanced Application' and click the \[Display 3D] tab to display the current 3D point cloud. You can adjust the page dimensions by dragging its edges，hold down the left mouse button and use the scroll wheel to zoom in or out，or hold down the left mouse button and drag to rotate or tumble the image. This feature can also be used during offline testing to check the completeness of the pallet point cloud."
+Select 'Advanced Application' and click the [Display 3D] tab to display the current 3D point cloud. You can adjust the page dimensions by dragging its edges，hold down the left mouse button and use the scroll wheel to zoom in or out，or hold down the left mouse button and drag to rotate or tumble the image. This feature can also be used during offline testing to check the completeness of the pallet point cloud.
 
+
+
+#### 3.4.3 Offline Testing Module
+
+Select [Advanced Application] and click the [Offline Testing] tab. To recognize offline images, import a JSON calibration calibration parameter file, a single image or an image folder into PalletPro, choose [File] or [Folder] option, and then click the [Start Detection] button. 
+<p align="center">
+
+<img alt="PixPin_2026-06-10_10-26-32" src="https://github.com/user-attachments/assets/8f49a205-95c9-4992-bd90-370ef1581f00" />
+
+<br><em>Figure 4 : Offline testing module</em></p>
+
+Normally, a JSON parameter file is automatically generated into the PalletPro application folder upon connecting to the camera. However, if you wish to test the PalletPro algorithm offline, you can create your own JSON parameter file following the format as shown below. Place this file in the root directory of the application, and specify its path in the [Parameter file] field as shown in Figure 4.
+
+```json
+{
+  "R": {
+    "key": "R",
+    "value": [0.0, 0.0, 0.0],
+    "level": 1,
+    "desc": "euler angles"
+  },
+  "t": {
+    "key": "t",
+    "value": [0.0, 0.0, 0.0],
+    "level": 1,
+    "desc": "translation vector"
+  },
+  "ground_y": {
+    "key": "ground_y",
+    "value": -100,
+    "level": 1,
+    "desc": "地面高度，单位毫米"
+  },
+  "fork_space": {
+    "key": "fork_space",
+    "value": 20,
+    "level": 1,
+    "desc": "相机与叉臂间隙"
+  },
+  "thickness": {
+    "key": "thickness",
+    "value": 15,
+    "level": 1,
+    "desc": "算法提取厚度"
+  },
+  "multi_level": {
+    "key": "multi_level",
+    "value": 0,
+    "level": 1,
+    "desc": "是否支持多托盘检测"
+  },
+  "x-client": {
+    "key": "x-client",
+    "value": "none",
+    "level": 1,
+    "desc": "客户名称"
+  },
+  "fork_angle": {
+    "key": "fork_angle",
+    "value": 0,
+    "level": 1,
+    "desc": "叉臂与叉车直线运动方向的夹角，一般为0"
+  },
+  "two_leg": {
+    "key": "two_leg",
+    "value": 0,
+    "level": 1,
+    "desc": "是否支持双腿"
+  },
+  "fork_insert": {
+    "key": "fork_insert",
+    "value": 0,
+    "level": 1,
+    "desc": "叉车旋转中心到托盘前沿后，需要继续插入的距离"
+  },
+  "orientation": {
+    "key": "orientation",
+    "value": 0,
+    "level": 1,
+    "desc": "安装方式；0为正装，2为倒装；1、3侧装"
+  },
+  "min_z": {
+    "key": "min_z",
+    "value": 800,
+    "level": 1,
+    "desc": "z方向最小值"
+  },
+  "max_z": {
+    "key": "max_z",
+    "value": 3200,
+    "level": 1,
+    "desc": "z方向最大值"
+  },
+  "min_x": {
+    "key": "min_x",
+    "value": -980,
+    "level": 1,
+    "desc": "水平方向最小值"
+  },
+  "max_x": {
+    "key": "max_x",
+    "value": 980,
+    "level": 1,
+    "desc": "水平方向最大值"
+  },
+  "quad": {
+    "key": "quad",
+    "value": 0,
+    "level": 2,
+    "desc": "是否支持四腿托盘"
+  },
+  "scan_step": {
+    "key": "scan_step",
+    "value": 1,
+    "level": 2,
+    "desc": ""
+  },
+  "min_line_count": {
+    "key": "min_line_count",
+    "value": 60,
+    "level": 2,
+    "desc": ""
+  },
+  "log_level": {
+    "key": "log_level",
+    "value": 0,
+    "level": 2,
+    "desc": ""
+  },
+  "cutting_height": {
+    "key": "cutting_height",
+    "value": 50,
+    "level": 2,
+    "desc": ""
+  },
+  "space_dist": {
+    "key": "space_dist",
+    "value": 25,
+    "level": 2,
+    "desc": ""
+  },
+  "max_legwidth_diff": {
+    "key": "max_legwidth_diff",
+    "value": 50,
+    "level": 2,
+    "desc": "左右腿最大差异"
+  },
+  "min_hole": {
+    "key": "min_hole",
+    "value": 280,
+    "level": 2,
+    "desc": ""
+  },
+  "max_hole": {
+    "key": "max_hole",
+    "value": 700,
+    "level": 2,
+    "desc": ""
+  },
+  "leg_dist_min": {
+    "key": "leg_dist_min",
+    "value": 500,
+    "level": 2,
+    "desc": "<双腿检测>左右腿最小距离"
+  },
+  "leg_dist_max": {
+    "key": "leg_dist_max",
+    "value": 1600,
+    "level": 2,
+    "desc": "<双腿检测>左右腿最大距离"
+  },
+  "denoise_search_radius": {
+    "key": "denoise_search_radius",
+    "value": 25,
+    "level": 2,
+    "desc": ""
+  },
+  "denoise_min_pts": {
+    "key": "denoise_min_pts",
+    "value": 20,
+    "level": 2,
+    "desc": ""
+  },
+  "bar_check_dist": {
+    "key": "bar_check_dist",
+    "value": 100,
+    "level": 2,
+    "desc": ""
+  },
+  "bar_search_y": {
+    "key": "bar_search_y",
+    "value": 12,
+    "level": 2,
+    "desc": ""
+  },
+  "max_hole_diff": {
+    "key": "max_hole_diff",
+    "value": 91,
+    "level": 2,
+    "desc": "最大托盘孔距差异"
+  }
+}
+```
+
+<p align="center">
+<img alt="PixPin_2026-06-10_10-11-14" src="https://github.com/user-attachments/assets/c8a94deb-81fa-4902-9ea8-fa9b71bee415" />
+<br><em>Figure 4 : Offline testing module</em></p>
+
+
+Then add the target pointcloud PNG image to the PalletPro folder and specify its path in the [Input file] section. Then, click [Start Detection]. 
+
+<p align="center">
+<img alt="PixPin_2026-06-10_10-38-43" src="https://github.com/user-attachments/assets/b79e3b84-c45a-40a6-8db1-4b71f126836f" />
+<br><em>Figure 4 : Add offline pointcloud image</em></p>
+
+Or you can also specify the path of the folder containing the images in the [Folder] section, enter the order of the picture from which you want to test, and then, click [Start Detection], and the Algorithm will automatically find the picture inside the folder. 
+
+
+<p align="center">
+<img  alt="PixPin_2026-06-10_10-20-47" src="https://github.com/user-attachments/assets/529560da-785b-47fc-9022-4791ea1db1bd" />
+<br><em>Figure 4 : Add offline pointcloud image folder</em></p>
+
+**Example:**
+<p align="center"><img alt="PixPin_2026-06-10_10-20-20" src="https://github.com/user-attachments/assets/b5cc3e33-e553-4742-a8d0-130d21c039aa" />
+<br><em>Figure 4 : Example format</em></p>
 
 
 ## 4. Initial setup and Calibration going through
