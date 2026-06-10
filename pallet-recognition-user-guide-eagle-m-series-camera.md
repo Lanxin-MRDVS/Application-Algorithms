@@ -16,7 +16,10 @@ Pallet recognition is a solution developed by MRDVS using the in-house developed
 
 As shown in the figure below, install the Eagle-M camera at a distance of 35cm to 45cm above the base panel of the fork arm, ensuring it is close to the center of the two fork teeth (with a left-right deviation of no more than 5cm).
 
-<p align="center"><br><em>Figure 1: Installation example</em></p>
+<p align="center">
+  
+<img length="50%" width="50%" alt="Näyttökuva 2026-06-08 kello 11 00 12" src="https://github.com/user-attachments/assets/f77877a6-e6b3-45df-9e1e-355a2744c463" />
+<br><em>Figure 1: Installation example</em></p>
 
 ## Interfaces
 
