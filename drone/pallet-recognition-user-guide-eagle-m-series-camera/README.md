@@ -231,6 +231,13 @@ The near-end calibration scheme uses a so called teaching calibration method. Th
 ## 3.6 Far-end calibration
 The far-end calibration function is to calibrate the pitch angle of the camera installation. After completing the near-end calibration, ensure that the pallet position remains unchanged, control the forklift to move away from the pallet, and click on the [pallet teaching (far)] when the distance displayed on PalletPro is in the range of 2300mm-2500mm. This will calibrate the pitch angle of the camera installation. Click save parameters to complete the calibration. As shown in the diagram.
 
+<p align="center">
+<img width="331" height="323" alt="图片4" src="https://github.com/user-attachments/assets/5413cee4-1e45-4bf8-89d7-6a5910c5fd7b" />
+<br>
+  <em>Figure 8: Distance 2300mm - 2500mm </em>
+</p>
+     
+
 
 ## 3.7 Calibration verification
 
