@@ -11,8 +11,8 @@
 
 <p align="center">
   <a href="https://hub.mrdvs.cn/">中文知识社区</a> |
-  <a href="#english">English Website</a> |
-  <a href="#中文">中文网站</a> |
+  <a href="#english">English</a> |
+  <a href="#中文">中文</a> |
   <a href="https://github.com/Lanxin-MRDVS/CameraSDK">CameraSDK</a>
 </p>
 
