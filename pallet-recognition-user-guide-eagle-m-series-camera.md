@@ -105,6 +105,21 @@ Note: Method 2 is a custom feature for other client, you can dismiss that.
 
 #### 3.3.2 Camera Operations
 
+The [Camera Operations] section displays the camera's internal parameters.
+
+[Camera IP]: Displays the IP address of the connected camera.
+
+[Camera ID]: Displays the ID of the connected camera.
+
+[Get lanxin vision log]: Click this button to save the camera detection log to the platform folder as file lanxin_vision_log.
+
+
+[Camera Parameter Configuration]: This section is for administrators only to configure the docking system. Do not modify these settings.
+
+[Advanced Parameters Configuration]: By clicking [Pull], the current advanced parameters will be loaded into the platform folder as /docking_config.json. Next, click [Configure the algorithm parameters] to show and adjust the parameters within the platform, and finally click [Upload].
+
+
+
 
 ### 3.4 Advanced applications Interface
 
