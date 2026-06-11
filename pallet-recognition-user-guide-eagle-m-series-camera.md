@@ -152,7 +152,12 @@ Crossbar width: The width of the pallet crossbar on the side facing the camera.
 |                              | Very Thin          | 60%                               |
 |                              | Sparse             | 10%                               |
 
-Parameters which can be modified in advanced settings.
+
+<p align="center">
+<img  alt="PixPin_2026-06-11_05-13-00" src="https://github.com/user-attachments/assets/bd6adef2-26da-43b7-9450-1ba390c8a584" />
+<br><em>Figure 10 : Advanced parameters 1</em></p>
+
+**Parameters which can be modified in advanced settings:**
 
 | Parameter   | Value/Status     | Description                                                                                                                                                                               |
 | ----------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -171,6 +176,10 @@ Parameters which can be modified in advanced settings.
 | max\_x      | 980              | Horizontal direction filtering; not recognized beyond 980mm to the right of the center.                                                                                                   |
 
 Expanded Parameters: Expansion of existing parameters, but modification is not recommended.
+
+<p align="center">
+<img alt="PixPin_2026-06-11_05-13-20" src="https://github.com/user-attachments/assets/144d5cf2-489e-4231-862a-9942d83cd89a" />
+<br><em>Figure 11 : Advanced parameters 2</em></p>
 
 #### 3.4.2 Display 3D
 
@@ -412,6 +421,11 @@ Install LxCameraViewer and PalletPro software on a Windows operating system, set
 
 As shown in the figure below, it is advisable to mount the camera at a height of around 400mm. Position the pallet directly in front of the camera at a distance of 1500mm. Note: Ensure that the front surface of the camera is positioned close to the edge of the object supporting the camera to prevent any blockage of emitted or reflected infrared light.
 
+<p align="center">
+<img alt="Picture6" src="https://github.com/user-attachments/assets/3d8ee678-2126-49df-8054-f8dc29d96853" />
+<br><em>Figure 4 : Camera installation example </em></p>
+
+
 ### 4.2 Camera configuration (MRDVS)
 
 1. Before connecting the camera, please complete the following setup:
@@ -426,7 +440,7 @@ As shown in the figure below, it is advisable to mount the camera at a height of
 
 <p align="center"><br><em>Figure 3: Camera configuration</em></p>
 
-4. Select the pallet positioning algorithm and set the working mode to Close on Disconnect. Note: LxCameraviewer is only used for configuring camera internal parameters, while PalletPro handles all other algorithm parameters. For better recognition performance, we recommend upgrading to the latest version of PalletPro via a firmware update
+4. Select the pallet positioning algorithm and set the working mode to [Close While Disconnect]. Note: LxCameraviewer is only used for configuring camera internal parameters, while PalletPro handles all other algorithm parameters. For better recognition performance, we recommend upgrading to the latest version of PalletPro via a firmware update
 
 <p align="center"><br><em>Figure 4: Camera configuration</em></p>
 
