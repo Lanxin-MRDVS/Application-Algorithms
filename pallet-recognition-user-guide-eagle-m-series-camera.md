@@ -125,7 +125,7 @@ The [Camera Operations] section displays the camera's internal parameters.
 
 #### 3.4.1 Advanced parameters 
 
-Camera configuration file: The camera configuration file "pallet\_settings.json", which contains the camera parameters, will be downloaded and loaded into PalletPro.
+Camera configuration file: The camera configuration file "pallet\_settings.json", which contains the camera algorithm parameters, will be downloaded and loaded into PalletPro.
 
 Camera IP/ID: Displays the IP address and ID of the connected camera.
 
@@ -157,14 +157,14 @@ Crossbar width: The width of the pallet crossbar on the side facing the camera.
 <img  alt="PixPin_2026-06-11_05-13-00" src="https://github.com/user-attachments/assets/bd6adef2-26da-43b7-9450-1ba390c8a584" />
 <br><em>Figure 10 : Advanced parameters 1</em></p>
 
-**Parameters which can be modified in advanced settings:**
+**Camera algorithm parameters which can be modified in advanced settings:**
 
 | Parameter   | Value/Status     | Description                                                                                                                                                                               |
 | ----------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | R           | \[0.0, 0.0, 0.0] | Angle parameters; the first group is 0.0 pitch angle, the second group is 0.0 heading angle, and the third group is 0.0 roll angle.                                                       |
 | t           | \[0.0, 0.0, 0.0] | Offset parameters; the first group is 0.0 lateral offset parameter, the second group is 0.0 (not effective), and the third group is 0.0 depth offset (forklift front and rear direction). |
 | two\_leg    | 0                | Whether to enable two legs; if there is no two-legged pallet in the application, it is not recommended to enable it. 0 is closed, 1 is open.                                              |
-| ground\_y   | 331              | Installation height in MM.                                                                                                                                                                |
+| ground\_y   | 331              | Installation height in mm.                                                                                                                                                                |
 | min\_leg    | 30               | Minimum leg width supported.                                                                                                                                                              |
 | max\_leg    | 170              | Maximum leg width supported.                                                                                                                                                              |
 | thickness   | 15               | Algorithm extraction thickness.                                                                                                                                                           |
