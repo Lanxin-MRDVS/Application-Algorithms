@@ -57,15 +57,13 @@ The five options—External Calibration, Camera Operations, Advanced Parameters,
 
 Click External Calibration under Basic Operations. The extrinsic calibration interface will be displayed on the right side of the software window.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/f323033b-31cc-4bcc-8650-5b58a19739b9" alt="PixPin_2026-06-09_12-21-07"><br><em>Figure 4 : External calibration module</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/f323033b-31cc-4bcc-8650-5b58a19739b9" alt="PixPin_2026-06-09_12-21-07"><br><em>Figure 4: External calibration module</em></p>
 
 Click 'External Calibration' and then select 'Calibration Notes' to display the precautions for external calibration. Please read them carefully to avoid any issues during the process.
 
 <p align="center">
-  
-
 <img alt="PixPin_2026-06-09_12-21-48" src="https://github.com/user-attachments/assets/58904c8f-b0ed-4f78-b862-d80fd9542096" />
-<br><em>Figure 5 : External calibration notes</em></p>
+<br><em>Figure 5: External calibration notes</em></p>
 
 Information verification at the Bottom of [Calibration Notes]: Customer Name: It is recommended to use the format "Project Name + Forklift Number" for easier troubleshooting as shown in Figure 6. Minimum Recognition Distance (mm): Keep the default value as shown in Figure 6. (If the calibration distance is relatively short, adjust it to 1.2m.)
 
@@ -78,16 +76,15 @@ Distance from Rotation Center to Optical Center: When set to the default value o
 Fork Arm Position (Depth to Tray Edge): This parameter defines the additional insertion distance the forklift arm needs to travel after reaching the front edge of the pallet. It acts as a safety margin to ensure the forks are fully and securely inserted under the pallet.
 
 <p align="center">
-
 <img alt="PixPin_2026-06-10_11-31-24" src="https://github.com/user-attachments/assets/cd0cc029-04f3-4801-a8c8-42fc44a7e9b8" />
-<br><em>Figure 7 : Parameters</em></p>
+<br><em>Figure 7: Parameters</em></p>
 
 
 Pallet Teaching (It is recommended to perform two calibrations): \[Pallet Teaching (Near)]: Position the pallet 200mm away from the forklift forks to perform near-end calibration. This step determines the pallet's height, lateral offset, heading angle, and roll angle. \[Pallet Teaching (Far)]: After near-end calibration, proceed with far-end calibration (secondary teaching). For example, if the camera recognizes the pallet distance as 1300mm during near-end calibration, drive the forklift straight backward by approximately 400–800mm without any angular or lateral movement. Perform far-end calibration when the distance to the pallet reaches 1.8–2.4m. This step determines the camera's pitch angle. Note: \[Pallet Teaching (Far)] tab is only available after \[Pallet Teaching (Near)] is successful.
 
 <p align="center">
 <img alt="PixPin_2026-06-10_11-31-24" src="https://github.com/user-attachments/assets/eadf1f1c-7927-4a4f-bcd9-3a4572537e45" />
-<br><em>Figure 8 : Pallet Teaching</em></p>
+<br><em>Figure 8: Pallet Teaching</em></p>
 
 
 
@@ -95,7 +92,7 @@ Clicking 'Reset Calibration' will restore all external calibration parameters to
 
 <p align="center">
 <img  alt="PixPin_2026-06-10_11-10-32" src="https://github.com/user-attachments/assets/17bce3f3-1a9f-4c17-b76d-a716e2a982dd" />
-<br><em>Figure 9 : Reset Calibration</em></p>
+<br><em>Figure 9: Reset Calibration</em></p>
 
 Lateral deviation means the literal deviation between the camera's optical center and forklift's coordinate center, and it is automatically determined through the calibration process.
 
@@ -107,17 +104,30 @@ Note: Method 2 is a custom feature for other client, you can dismiss that.
 
 The [Camera Operations] section displays the camera's internal parameters.
 
+<p align="center">
+<img alt="PixPin_2026-06-11_10-17-01" src="https://github.com/user-attachments/assets/ac58f77e-8e79-4be4-a964-437275a58079" />
+<br><em>Figure 10: Camera Operations</em></p>
+
+
+
 [Camera IP]: Displays the IP address of the connected camera.
 
 [Camera ID]: Displays the ID of the connected camera.
 
 [Get lanxin vision log]: Click this button to save the camera detection log to the platform folder as file lanxin_vision_log.
 
+[Camera docking system Configuration]: This section is for administrators only to configure the docking system. Do not modify these settings.
 
-[Camera Parameter Configuration]: This section is for administrators only to configure the docking system. Do not modify these settings.
+
+<p align="center">
+<img alt="PixPin_2026-06-11_10-32-07" src="https://github.com/user-attachments/assets/a71bdc4d-1a84-4f7d-b182-1cb3bba83f04" />
+<br><em>Figure 11: Camera docking system Configuration </em></p>
 
 [Advanced Parameters Configuration]: By clicking [Pull], the current advanced parameters will be loaded into the platform folder as /docking_config.json. Next, click [Configure the algorithm parameters] to show and adjust the parameters within the platform, and finally click [Upload].
 
+<p align="center">
+<img  alt="PixPin_2026-06-11_10-33-41" src="https://github.com/user-attachments/assets/1db72dff-ae36-44af-bc77-41c57164e152" />
+<br><em>Figure 12: Advanced Parameters Configuration</em></p>
 
 
 
@@ -155,7 +165,7 @@ Crossbar width: The width of the pallet crossbar on the side facing the camera.
 
 <p align="center">
 <img  alt="PixPin_2026-06-11_05-13-00" src="https://github.com/user-attachments/assets/bd6adef2-26da-43b7-9450-1ba390c8a584" />
-<br><em>Figure 10 : Advanced parameters 1</em></p>
+<br><em>Figure 13: Advanced parameters 1</em></p>
 
 **Camera algorithm parameters which can be modified in advanced settings:**
 
@@ -179,22 +189,21 @@ Expanded Parameters: Expansion of existing parameters, but modification is not r
 
 <p align="center">
 <img alt="PixPin_2026-06-11_05-13-20" src="https://github.com/user-attachments/assets/144d5cf2-489e-4231-862a-9942d83cd89a" />
-<br><em>Figure 11 : Advanced parameters 2</em></p>
+<br><em>Figure 14: Advanced parameters 2</em></p>
 
 #### 3.4.2 Display 3D
 
 Select 'Advanced Application' and click the [Display 3D] tab to display the current 3D point cloud. You can adjust the page dimensions by dragging its edges，hold down the left mouse button and use the scroll wheel to zoom in or out，or hold down the left mouse button and drag to rotate or tumble the image. This feature can also be used during offline testing to check the completeness of the pallet point cloud.
 
-
+<p align="center"><img alt="PixPin_2026-06-11_10-16-21" src="https://github.com/user-attachments/assets/8caba97f-0406-48a8-b7c5-337e5e8f94e6" />
+<br><em>Figure 15: Display 3D image</em></p>
 
 #### 3.4.3 Offline Testing Module
 
 Select [Advanced Application] and click the [Offline Testing] tab. To recognize offline images, import a JSON calibration calibration parameter file, a single image or an image folder into PalletPro, choose [File] or [Folder] option, and then click the [Start Detection] button. 
 <p align="center">
-
 <img alt="PixPin_2026-06-10_10-26-32" src="https://github.com/user-attachments/assets/8f49a205-95c9-4992-bd90-370ef1581f00" />
-
-<br><em>Figure 4 : Offline testing module</em></p>
+<br><em>Figure 16: Offline testing module</em></p>
 
 Normally, a JSON parameter file is automatically generated into the PalletPro application folder upon connecting to the camera. However, if you wish to test the PalletPro algorithm offline, you can create your own JSON parameter file following the format as shown below. Place this file in the root directory of the application, and specify its path in the [Parameter file] field as shown in Figure 4.
 
@@ -236,7 +245,8 @@ Normally, a JSON parameter file is automatically generated into the PalletPro ap
     "level": 1,
     "desc": "是否支持多托盘检测"
   },
-  "x-client": {
+  "x-client": {<img width="1920" height="1028" alt="PixPin_2026-06-11_10-16-21" src="https://github.com/user-attachments/assets/a106cf48-e605-4b71-a50f-536fd9806d42" />
+
     "key": "x-client",
     "value": "none",
     "level": 1,
@@ -391,25 +401,25 @@ Normally, a JSON parameter file is automatically generated into the PalletPro ap
 
 <p align="center">
 <img alt="PixPin_2026-06-10_10-11-14" src="https://github.com/user-attachments/assets/c8a94deb-81fa-4902-9ea8-fa9b71bee415" />
-<br><em>Figure 4 : Offline testing module</em></p>
+<br><em>Figure 17: Offline testing module</em></p>
 
 
 Then add the target pointcloud image to the PalletPro folder and specify its path in the [Input file] section. Then, click [Start Detection]. 
 
 <p align="center">
 <img alt="PixPin_2026-06-10_10-38-43" src="https://github.com/user-attachments/assets/b79e3b84-c45a-40a6-8db1-4b71f126836f" />
-<br><em>Figure 4 : Add offline pointcloud image</em></p>
+<br><em>Figure 18: Add offline pointcloud image</em></p>
 
 Or you can also specify the path of the folder containing the images in the [Folder] section, enter the order of the picture from which you want to test, and then, click [Start Detection], and the Algorithm will automatically find the picture inside the folder. 
 
 
 <p align="center">
 <img  alt="PixPin_2026-06-10_10-20-47" src="https://github.com/user-attachments/assets/529560da-785b-47fc-9022-4791ea1db1bd" />
-<br><em>Figure 4 : Add offline pointcloud image folder</em></p>
+<br><em>Figure 19: Add offline pointcloud image folder</em></p>
 
 **Example:**
 <p align="center"><img alt="PixPin_2026-06-10_10-20-20" src="https://github.com/user-attachments/assets/b5cc3e33-e553-4742-a8d0-130d21c039aa" />
-<br><em>Figure 4 : Example format</em></p>
+<br><em>Figure 20: Example format</em></p>
 
 Note: The offline testing module will automatically perform the detection, so you don't need to do [Pallet Teaching (far)] and [Pallet Teaching (near)] separately if the forklift's moving range is within 2000 mm of the pallet.
 
@@ -423,7 +433,7 @@ As shown in the figure below, it is advisable to mount the camera at a height of
 
 <p align="center">
 <img alt="Picture6" src="https://github.com/user-attachments/assets/3d8ee678-2126-49df-8054-f8dc29d96853" />
-<br><em>Figure 4 : Camera installation example </em></p>
+<br><em>Figure 21: Camera installation example </em></p>
 
 
 ### 4.2 Camera configuration (MRDVS)
@@ -436,19 +446,19 @@ As shown in the figure below, it is advisable to mount the camera at a height of
 
 <p align="center">
 <img alt="Picture1" src="https://github.com/user-attachments/assets/1a1a0010-12b5-4972-a9bd-e084c3d91a51" />
-<br><em>Figure 2: IP configuration</em></p>
+<br><em>Figure 22: IP configuration</em></p>
 
 2. Open the LxCameraViewer to test the camera view. Glick the [3D settings] tab. The default camera high exposure value is 650, and the low exposure value is 200. Adjust the camera exposure value based on different application scenarios.
 
 <p align="center">
 <img  alt="PixPin_2026-06-11_07-52-05" src="https://github.com/user-attachments/assets/e3168c7b-6aa6-4b07-94fe-5b12bf31fbba" />
-<br><em>Figure 3: Camera configuration</em></p>
+<br><em>Figure 23: Camera configuration</em></p>
 
 4. Select the pallet positioning algorithm and set the working mode to [Keep Heartbeat]. Note: LxCameraviewer is only used for configuring camera internal parameters, while PalletPro handles all other algorithm parameters. For better recognition performance, we recommend upgrading to the latest version of PalletPro via a firmware update.
 
 <p align="center">
 <img alt="PixPin_2026-06-11_07-56-54" src="https://github.com/user-attachments/assets/5dd64e77-5fb7-4e64-96e0-7390397f9737" />
-<br><em>Figure 4: Camera configuration</em></p>
+<br><em>Figure 24: Camera configuration</em></p>
 
 ### 4.3 Pallet algorithm configuration (PalletPro)
 
@@ -461,7 +471,7 @@ As shown in the figure below, it is advisable to mount the camera at a height of
 
 <p align="center">
 <img alt="PixPin_2026-06-11_08-16-15" src="https://github.com/user-attachments/assets/71fe6cb5-6d7c-4cbb-b21d-1bf18f8511aa" />
-<br><em>Figure 5: Parameter Settings</em></p>
+<br><em>Figure 25: Parameter Settings</em></p>
 
 ### 4.4 Pallet calibration preparation
 
@@ -472,19 +482,19 @@ As shown in the figure below, it is advisable to mount the camera at a height of
 
 Note: The ground should be relatively flat during calibration. Before calibration, refer to the simple test method mentioned in 3.1 to set the approximate installation height of the camera. Then, when the forklift moves back and forth, both the far-end calibration and the near-end calibration can recognize the pallet stably.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/2a84a161-f9aa-4f71-85ed-cc51699df9e3" alt="图片2"><br><em>Figure 6: Pallet</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/2a84a161-f9aa-4f71-85ed-cc51699df9e3" alt="图片2"><br><em>Figure 26: Pallet</em></p>
 
 ### 4.5 Near-end calibration
 
 The near-end calibration scheme uses a so called teaching calibration method. The forklift needs to manually control the docking of the pallet once. First, move the forklift under the pallet, and pick up the pallet once, which makes sure that the forklift is centered in terms of the pallet. Then, lift down the lift arm, and in a straight line, drive the forklift (the pallet is on the ground without lifting) to make the camera about 1300mm away from the front edge of the pallet (as shown in the diagram). At this time, click on the [pallet teaching (near)] to calibrate the installation height, lateral offset, heading angle, and roll angle. After calibration, click [Real-time display] and [Detection] to continue detection.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/405aa2cd-0040-4078-a1ad-b54f6f09fa04" alt="图片3"><br><em>Figure 7: Pickup first</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/405aa2cd-0040-4078-a1ad-b54f6f09fa04" alt="图片3"><br><em>Figure 27: Pickup first</em></p>
 
-<p align="center"><img src="https://github.com/user-attachments/assets/c5afa644-e76b-4d79-ae6d-ea3e211cd014" alt="图片4"><br><em>Figure 7: Lift down and move backward</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/c5afa644-e76b-4d79-ae6d-ea3e211cd014" alt="图片4"><br><em>Figure 28: Lift down and move backward</em></p>
 
 <p align="center">
 <img alt="PixPin_2026-06-11_08-27-53" src="https://github.com/user-attachments/assets/6b962439-78e8-4be6-83ba-049a1c86075c" />
-<em>Figure 7: Lift down and move backward</em></p>
+<em>Figure 29: Lift down and move backward</em></p>
 
 
 
@@ -496,11 +506,11 @@ Note: The [Pallet Teaching (far)] is not mandatory, if the forklift's moving ran
 
 <p align="center">
 <img alt="Picture7" src="https://github.com/user-attachments/assets/16605e1f-868b-40f1-b0c2-039135965f06" />
-<br><em>Figure 8: Distance 2000mm - 2400mm</em></p>
+<br><em>Figure 30: Distance 2000mm - 2400mm</em></p>
 
 <p align="center">
 <img alt="PixPin_2026-06-11_08-36-59" src="https://github.com/user-attachments/assets/f021bd37-7b8d-44b3-b031-939c86794d87" />
-<br><em>Figure 8: Distance 2000mm - 2400mm</em></p>
+<br><em>Figure 31: Distance 2000mm - 2400mm</em></p>
 
 ### 4.7 Calibration verification
 
@@ -508,4 +518,4 @@ Once the near-end and far-end calibrations are complete, you can begin verifying
 
 <p align="center">
 <img alt="PixPin_2026-06-11_08-39-02" src="https://github.com/user-attachments/assets/f2c5d344-a009-4461-8671-041f0132e574" />
-<br><em>Figure 8: Verification</em></p>
+<br><em>Figure 32: Verification</em></p>
