@@ -516,12 +516,41 @@ Note: The [Pallet Teaching (far)] is not mandatory, if the forklift's moving ran
 
 Once the near-end and far-end calibrations are complete, you can begin verifying the calibration accuracy. Move the forklift back and forth between the near-end and far-end calibration points while monitoring the R output for distance (X value), lateral deviation (Y value), and angle. Calibration is considered successful when the X and Y errors are within 10 mm and the recognition is stable with no missed detections. The forklift can then be put into normal operation.
 
-Example: x, y, theta = (-2000, 100, 2.3)
-This signifies that the pallet is 2000 millimeters away from the camera's optical center, shifted right by 100 millimeters, with an angular deviation of 2.3° (top view, counterclockwise direction).
-The data result is X: -2000; Y: 100; Theta: 2300.
+Example: x, y, theta = (-1987, 81, -2.1)
+This signifies that the pallet is 1987 millimeters away from the camera's optical center, shifted right by 81 millimeters, with an angular deviation of -2.3° (top view, counterclockwise direction).
+The data result is X: -1987; Y: 81; Theta: -2100.
 
 <p align="center">
 <img alt="PixPin_2026-06-11_08-39-02" src="https://github.com/user-attachments/assets/f2c5d344-a009-4461-8671-041f0132e574" />
 <br><em>Figure 32: Verification</em></p>
 
 ## 5. Data communication methods 
+
+
+
+### 5.1 API Invocation
+
+The API invocation method supports C++, C#, JAVA, ROS1, ROS2, and other environments on Windows, Linux, ARM, etc. For the Windows environment, after installing the upper computer software, SDK files, and sample program codes are available in the installation path (e.g., D:\Program Files\Lanxin-MRDVS). 
+- Document Folder: Contains SDK and upper computer usage documentation.
+- Firmware Folder: Stores camera firmware packages.
+- Sample Folder: Holds sample code source files for various development environments.
+- SDK Folder: Contains SDK library files, and environment variables can be configured according to the development environment.
+
+
+### 5.2 UDP Communication 
+
+When using the UDP communication method, set the algorithm working mode to open on the  computer.
+Port Configuration:
+
+Host Port Number: 8000
+
+
+### 5.3 TCP Communication
+
+
+### 5.5 CAN Communication
+Please note the Can protocol only supports M4 cameras.
+The communication protocol adopts CANopen. The CANopen protocol is an application layer protocol running on the standard CAN bus. Its communication mode is the commonly used "master-slave" mode in industrial communication protocols. In this mode, there is one master station + multiple slave stations, and slave stations do not communicate directly with each other. All communication is between the master station and slave stations. The master station is also referred to as the "client," and the slave station is referred to as the "server." 
+The underlying communication method uses the CAN standard frame format, where the CAN ID is 11 bits (0x000~7FF), and the data is 8 bytes.
+For the use of CAN IDs:
+Divide the 11-bit ID into a 4-bit function code and a 7-bit node ID. The CAN ID is also called COB ID.
