@@ -434,15 +434,23 @@ As shown in the figure below, it is advisable to mount the camera at a height of
 * Disable the firewall.
 * For more details about IP and Firewall configuration, please see the LxCameraViewer use manual at https://github.com/Lanxin-MRDVS/CameraSDK/wiki/LxCameraViewer-User-Manual
 
-<p align="center"><br><em>Figure 2: IP configuration</em></p>
+<p align="center">
+<img alt="Picture1" src="https://github.com/user-attachments/assets/1a1a0010-12b5-4972-a9bd-e084c3d91a51" />
+  
+<br><em>Figure 2: IP configuration</em></p>
 
-2. Open the LxCameraViewer to test the camera view. Glick the \[3D settings] tab. The default camera high exposure value is 650, and the low exposure value is 200. Adjust the camera exposure value based on different application scenarios.
+2. Open the LxCameraViewer to test the camera view. Glick the [3D settings] tab. The default camera high exposure value is 650, and the low exposure value is 200. Adjust the camera exposure value based on different application scenarios.
 
-<p align="center"><br><em>Figure 3: Camera configuration</em></p>
+<p align="center">
 
-4. Select the pallet positioning algorithm and set the working mode to [Close While Disconnect]. Note: LxCameraviewer is only used for configuring camera internal parameters, while PalletPro handles all other algorithm parameters. For better recognition performance, we recommend upgrading to the latest version of PalletPro via a firmware update
 
-<p align="center"><br><em>Figure 4: Camera configuration</em></p>
+<br><em>Figure 3: Camera configuration</em></p>
+
+4. Select the pallet positioning algorithm and set the working mode to [Keep Heartbeat]. Note: LxCameraviewer is only used for configuring camera internal parameters, while PalletPro handles all other algorithm parameters. For better recognition performance, we recommend upgrading to the latest version of PalletPro via a firmware update.
+
+<p align="center">
+  
+<br><em>Figure 4: Camera configuration</em></p>
 
 ### 4.3 Pallet algorithm configuration (PalletPro)
 
@@ -451,7 +459,9 @@ As shown in the figure below, it is advisable to mount the camera at a height of
 
 <p align="center"><img src="https://github.com/user-attachments/assets/ac3e174f-a146-4b43-bb37-97d501ae3672" alt="PixPin_2026-06-09_12-42-49"><br><em>Figure 5: Start Camera</em></p>
 
-3. Click on \[parameter settings] tab, which shows the current position of the camera. If the parameters are all default 0 while connecting the PalletPro to the camera first time, click the adaptive button to get the approximate installation height of the current camera. Then fine-tune it, as shown in the diagram, adjusting the auxiliary line value to the intersection position of the pallet and the ground. Click save parameters, check \[real-time display], and \[real-time detection] to achieve pallet recognition display functionality.
+3. Click on [parameter settings] tab, which shows the current position of the camera. If the parameters are all default 0 while connecting the PalletPro to the camera first time, click the [auto-adjusting high] button to get the approximate installation height of the current camera. Then fine-tune it, as shown in the diagram, adjusting the auxiliary line value to the intersection position of the pallet and the ground. Click save parameters, check [real-time display], and [real-time detection] to achieve pallet recognition display functionality.
+
+
 
 ### 4.4 Pallet calibration preparation
 
