@@ -482,6 +482,12 @@ The near-end calibration scheme uses a so called teaching calibration method. Th
 
 <p align="center"><img src="https://github.com/user-attachments/assets/c5afa644-e76b-4d79-ae6d-ea3e211cd014" alt="图片4"><br><em>Figure 7: Lift down and move backward</em></p>
 
+<p align="center">
+<img alt="PixPin_2026-06-11_08-27-53" src="https://github.com/user-attachments/assets/6b962439-78e8-4be6-83ba-049a1c86075c" />
+<em>Figure 7: Lift down and move backward</em></p>
+
+
+
 ### 4.6 Far-end calibration
 
 The far-end calibration function is to calibrate the pitch angle of the camera installation. After completing the near-end calibration, ensure that the pallet position remains unchanged, control the forklift to move away from the pallet, and click on the [pallet teaching (far)] when the distance displayed on PalletPro is in the range of 2000mm-2400mm. This will calibrate the pitch angle of the camera installation. Click save parameters to complete the calibration. As shown in the diagram.
@@ -489,10 +495,17 @@ The far-end calibration function is to calibrate the pitch angle of the camera i
 Note: The [Pallet Teaching (far)] is not mandatory, if the forklift's moving range is within 2000 mm of the pallet.
 
 <p align="center">
-  
 <img alt="Picture7" src="https://github.com/user-attachments/assets/16605e1f-868b-40f1-b0c2-039135965f06" />
+<br><em>Figure 8: Distance 2000mm - 2400mm</em></p>
+
+<p align="center">
+<img alt="PixPin_2026-06-11_08-36-59" src="https://github.com/user-attachments/assets/f021bd37-7b8d-44b3-b031-939c86794d87" />
 <br><em>Figure 8: Distance 2000mm - 2400mm</em></p>
 
 ### 4.7 Calibration verification
 
 Once the near-end and far-end calibrations are complete, you can begin verifying the calibration accuracy. Move the forklift back and forth between the near-end and far-end calibration points while monitoring the R output for distance (X value), lateral deviation (Y value), and angle. Calibration is considered successful when the X and Y errors are within 10 mm and the recognition is stable with no missed detections. The forklift can then be put into normal operation.
+
+<p align="center">
+<img alt="PixPin_2026-06-11_08-39-02" src="https://github.com/user-attachments/assets/f2c5d344-a009-4461-8671-041f0132e574" />
+<br><em>Figure 8: Verification</em></p>
