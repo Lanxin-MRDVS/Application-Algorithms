@@ -436,20 +436,18 @@ As shown in the figure below, it is advisable to mount the camera at a height of
 
 <p align="center">
 <img alt="Picture1" src="https://github.com/user-attachments/assets/1a1a0010-12b5-4972-a9bd-e084c3d91a51" />
-  
 <br><em>Figure 2: IP configuration</em></p>
 
 2. Open the LxCameraViewer to test the camera view. Glick the [3D settings] tab. The default camera high exposure value is 650, and the low exposure value is 200. Adjust the camera exposure value based on different application scenarios.
 
 <p align="center">
-
-
+<img  alt="PixPin_2026-06-11_07-52-05" src="https://github.com/user-attachments/assets/e3168c7b-6aa6-4b07-94fe-5b12bf31fbba" />
 <br><em>Figure 3: Camera configuration</em></p>
 
 4. Select the pallet positioning algorithm and set the working mode to [Keep Heartbeat]. Note: LxCameraviewer is only used for configuring camera internal parameters, while PalletPro handles all other algorithm parameters. For better recognition performance, we recommend upgrading to the latest version of PalletPro via a firmware update.
 
 <p align="center">
-  
+<img alt="PixPin_2026-06-11_07-56-54" src="https://github.com/user-attachments/assets/5dd64e77-5fb7-4e64-96e0-7390397f9737" />
 <br><em>Figure 4: Camera configuration</em></p>
 
 ### 4.3 Pallet algorithm configuration (PalletPro)
@@ -461,7 +459,9 @@ As shown in the figure below, it is advisable to mount the camera at a height of
 
 3. Click on [parameter settings] tab, which shows the current position of the camera. If the parameters are all default 0 while connecting the PalletPro to the camera first time, click the [auto-adjusting high] button to get the approximate installation height of the current camera. Then fine-tune it, as shown in the diagram, adjusting the auxiliary line value to the intersection position of the pallet and the ground. Click save parameters, check [real-time display], and [real-time detection] to achieve pallet recognition display functionality.
 
-
+<p align="center">
+<img alt="PixPin_2026-06-11_08-16-15" src="https://github.com/user-attachments/assets/71fe6cb5-6d7c-4cbb-b21d-1bf18f8511aa" />
+<br><em>Figure 5: Parameter Settings</em></p>
 
 ### 4.4 Pallet calibration preparation
 
