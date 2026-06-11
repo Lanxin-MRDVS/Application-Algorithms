@@ -28,53 +28,55 @@
 
 ## Contents
 
-- [Contents](#contents)
-- [Overview](#-overview)
-- [Documentation](#-documentation)
-- [Scenario Guide](#-scenario-guide)
-- [Repository Structure](#️-repository-structure)
-- [Related Repository](#-related-repository)
-- [Notes](#-notes)
+- [Overview](#overview)
+- [Documentation](#documentation)
+- [Repository Structure](#repository-structure)
+- [Notes](#notes)
 
+<a id="overview"></a>
 ## 🔎 Overview
 
 This repository provides application algorithm documentation for MRDVS 3D vision products. It is intended for customers, field application engineers, technical support teams, and internal users who need to deploy, configure, and integrate MRDVS application algorithms in real scenarios.
 
 The current documentation covers obstacle avoidance, pallet recognition, and soft bag/carton unstacking. SDK-related documents, such as CameraSDK developer guides, sample instructions, and LxCameraViewer user manuals, are maintained in the [CameraSDK repository](https://github.com/Lanxin-MRDVS/CameraSDK).
 
+<a id="documentation"></a>
 ## 📚 Documentation
 
-| Category | Document | Description |
-| --- | --- | --- |
-| Obstacle Avoidance | [Deployment Guide](./Obstacle-Avoidance-Algorithm-Deployment-Instruction.md) | Deployment and configuration guide for the obstacle avoidance algorithm. |
-| Pallet Recognition | [User Guide](./pallet-recognition-user-guide-eagle-m-series-camera.md) | User guide for pallet recognition based on Eagle M series cameras, including setup, usage, and parameter configuration. |
-| Softbag / Carton Unstacking | [Deployment Guide](./softbag-carton-unstacking-algorithm-deployment-guide.md) | Deployment guide for soft bag and carton unstacking scenarios, including algorithm setup and integration instructions. |
+### Obstacle Avoidance
 
-## 🧩 Scenario Guide
+**Document:** [Obstacle Avoidance Algorithm Deployment Instruction](./Obstacle-Avoidance-Algorithm-Deployment-Instruction.md)
 
-| Scenario | Typical Use | Recommended Document |
-| --- | --- | --- |
-| Mobile robot obstacle avoidance | Configure obstacle detection, avoidance output, and related deployment parameters. | [Obstacle Avoidance Deployment Guide](./Obstacle-Avoidance-Algorithm-Deployment-Instruction.md) |
-| Forklift pallet recognition | Configure Eagle M series cameras for pallet recognition and positioning. | [Pallet Recognition User Guide](./pallet-recognition-user-guide-eagle-m-series-camera.md) |
-| Robotic depalletizing / unstacking | Deploy algorithms for soft bag and carton unstacking applications. | [Softbag / Carton Unstacking Deployment Guide](./softbag-carton-unstacking-algorithm-deployment-guide.md) |
+This document describes the deployment process, configuration method, and usage notes for the obstacle avoidance algorithm. It is recommended for users who need to configure obstacle detection, obstacle output, and related deployment parameters for mobile robot scenarios.
 
+---
+
+### Pallet Recognition
+
+**Document:** [Pallet Recognition User Guide for Eagle M Series Camera](./pallet-recognition-user-guide-eagle-m-series-camera.md)
+
+This document describes the pallet recognition function based on Eagle M series cameras. It covers environment configuration, operation workflow, parameter settings, and common usage notes for pallet recognition and positioning scenarios.
+
+---
+
+### Softbag / Carton Unstacking
+
+**Document:** [Softbag / Carton Unstacking Algorithm Deployment Guide](./softbag-carton-unstacking-algorithm-deployment.md)
+
+This document describes the algorithm deployment, configuration, and integration process for soft bag and carton unstacking scenarios. It is intended for users who need to integrate MRDVS vision algorithms into depalletizing or unstacking workflows.
+
+<a id="repository-structure"></a>
 ## 🗂️ Repository Structure
 
 ```text
 .
-|-- Obstacle-Avoidance-Algorithm-Deployment-Instruction.md
-|-- pallet-recognition-user-guide-eagle-m-series-camera.md
-|-- softbag-carton-unstacking-algorithm-deployment-guide.md
-|-- assets
-`-- README.md
+├── Obstacle-Avoidance-Algorithm-Deployment-Instruction.md
+├── pallet-recognition-user-guide-eagle-m-series-camera.md
+├── softbag-carton-unstacking-algorithm-deployment.md
+└── README.md
 ```
 
-## 🔗 Related Repository
-
-| Repository | Description |
-| --- | --- |
-| [Lanxin-MRDVS/CameraSDK](https://github.com/Lanxin-MRDVS/CameraSDK) | SDK package, developer guides, sample programs, CameraSDK documents, and LxCameraViewer user manuals. |
-
+<a id="notes"></a>
 ## 📌 Notes
 
 - This repository is used for MRDVS application algorithm documentation.
@@ -90,50 +92,53 @@ The current documentation covers obstacle avoidance, pallet recognition, and sof
 
 - [概览](#概览)
 - [文档索引](#文档索引)
-- [场景导航](#场景导航)
 - [仓库结构](#仓库结构)
-- [相关仓库](#相关仓库)
 - [使用说明](#使用说明)
 
+<a id="概览"></a>
 ## 🔎 概览
 
 本仓库用于维护迈尔微视3D视觉产品的应用算法文档，主要面向客户开发人员、FAE、技术支持人员及内部相关人员，用于查询应用算法的部署、配置和集成说明。
 
 当前文档覆盖避障算法、托盘识别和软包/纸箱拆垛等应用场景。CameraSDK开发指南、示例程序说明、LxCameraViewer用户手册等SDK相关文档统一维护在[CameraSDK仓库](https://github.com/Lanxin-MRDVS/CameraSDK)。
 
+<a id="文档索引"></a>
 ## 📚 文档索引
 
-| 类别 | 文档 | 说明 |
-| --- | --- | --- |
-| 避障算法 | [部署指南](./Obstacle-Avoidance-Algorithm-Deployment-Instruction.md) | 用于说明避障算法的部署流程、配置方法和使用注意事项。 |
-| 托盘识别 | [用户指南](./pallet-recognition-user-guide-eagle-m-series-camera.md) | 用于说明基于Eagle M系列相机的托盘识别功能，包括环境配置、使用流程和参数设置。 |
-| 软包/纸箱拆垛 | [部署指南](./softbag-carton-unstacking-algorithm-deployment-guide.md) | 用于说明软包和纸箱拆垛场景下的算法部署、配置和集成流程。 |
+### 避障算法
 
-## 🧩 场景导航
+**文档：**[Obstacle Avoidance Algorithm Deployment Instruction](./Obstacle-Avoidance-Algorithm-Deployment-Instruction.md)
 
-| 应用场景 | 典型用途 | 推荐文档 |
-| --- | --- | --- |
-| 移动机器人避障 | 配置障碍物检测、避障输出及相关部署参数。 | [避障算法部署指南](./Obstacle-Avoidance-Algorithm-Deployment-Instruction.md) |
-| 叉车托盘识别 | 配置Eagle M系列相机，用于托盘识别和定位。 | [托盘识别用户指南](./pallet-recognition-user-guide-eagle-m-series-camera.md) |
-| 机器人拆垛/拆包 | 部署软包、纸箱等场景下的拆垛应用算法。 | [软包/纸箱拆垛算法部署指南](./softbag-carton-unstacking-algorithm-deployment-guide.md) |
+该文档用于说明避障算法的部署流程、配置方法和使用注意事项，适用于移动机器人场景下的障碍物检测、避障输出及相关部署参数配置。
 
+---
+
+### 托盘识别
+
+**文档：**[Pallet Recognition User Guide for Eagle M Series Camera](./pallet-recognition-user-guide-eagle-m-series-camera.md)
+
+该文档用于说明基于Eagle M系列相机的托盘识别功能，内容包括环境配置、使用流程、参数设置和常见使用注意事项，适用于托盘识别和托盘定位相关场景。
+
+---
+
+### 软包/纸箱拆垛
+
+**文档：**[Softbag / Carton Unstacking Algorithm Deployment Guide](./softbag-carton-unstacking-algorithm-deployment.md)
+
+该文档用于说明软包和纸箱拆垛场景下的算法部署、配置和集成流程，适用于将迈尔微视视觉算法接入拆垛、拆包或相关自动化作业流程的场景。
+
+<a id="仓库结构"></a>
 ## 🗂️ 仓库结构
 
 ```text
 .
-|-- Obstacle-Avoidance-Algorithm-Deployment-Instruction.md
-|-- pallet-recognition-user-guide-eagle-m-series-camera.md
-|-- softbag-carton-unstacking-algorithm-deployment-guide.md
-|-- assets
-`-- README.md
+├── Obstacle-Avoidance-Algorithm-Deployment-Instruction.md
+├── pallet-recognition-user-guide-eagle-m-series-camera.md
+├── softbag-carton-unstacking-algorithm-deployment.md
+└── README.md
 ```
 
-## 🔗 相关仓库
-
-| 仓库 | 说明 |
-| --- | --- |
-| [Lanxin-MRDVS/CameraSDK](https://github.com/Lanxin-MRDVS/CameraSDK) | 用于维护SDK包、开发指南、示例程序、CameraSDK相关文档和LxCameraViewer用户手册。 |
-
+<a id="使用说明"></a>
 ## 📌 使用说明
 
 - 本仓库仅维护MRDVS应用算法相关文档。
@@ -144,7 +149,7 @@ The current documentation covers obstacle avoidance, pallet recognition, and sof
 ---
 
 <p align="center">
-  <sub><em>Last updated: April 2026</em></sub><br>
+  <sub><em>Last updated: June 2026</em></sub><br>
   <sub><em>Hangzhou Lanxin Technology Co., Ltd. & MRDVS Co., Ltd.</em></sub><br>
   <sub><em>All Rights Reserved.</em></sub>
 </p>
