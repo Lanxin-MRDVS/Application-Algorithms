@@ -2,7 +2,7 @@
   <img src="./assets/mrdvs_logo.png" alt="MRDVS Logo" width="300">
 </p>
 
-<h1 align="center">MRDVS Application Algorithm Docs</h1>
+<h1 align="center">MRDVS Algorithm Deployment Guide</h1>
 
 <p align="center">
   Application algorithm documentation for MRDVS 3D vision products.<br>
@@ -10,9 +10,9 @@
 </p>
 
 <p align="center">
-  <a href="https://hub.mrdvs.cn/">MRDVS Hub 2.0</a> |
-  <a href="#english">English</a> |
-  <a href="#中文">中文</a> |
+  <a href="https://hub.mrdvs.cn/">中文知识社区</a> |
+  <a href="#english">English Website</a> |
+  <a href="#中文">中文网站</a> |
   <a href="https://github.com/Lanxin-MRDVS/CameraSDK">CameraSDK</a>
 </p>
 
