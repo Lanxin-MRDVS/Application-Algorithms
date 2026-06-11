@@ -61,17 +61,45 @@ Click External Calibration under Basic Operations. The extrinsic calibration int
 
 Click 'External Calibration' and then select 'Calibration Notes' to display the precautions for external calibration. Please read them carefully to avoid any issues during the process.
 
-<p align="center"><br><em>Figure 5 : External calibration notes</em></p>
+<p align="center">
+  
 
-Information verification at the Bottom of \[Calibration Notes]: Customer Name: It is recommended to use the format "Project Name + Forklift Number" for easier troubleshooting as shown in Figure 5. Minimum Recognition Distance (mm): Keep the default value as shown in Figure 5. (If the calibration distance is relatively short, adjust it to 1.2m.)
+<img alt="PixPin_2026-06-09_12-21-48" src="https://github.com/user-attachments/assets/58904c8f-b0ed-4f78-b862-d80fd9542096" />
+<br><em>Figure 5 : External calibration notes</em></p>
+
+Information verification at the Bottom of [Calibration Notes]: Customer Name: It is recommended to use the format "Project Name + Forklift Number" for easier troubleshooting as shown in Figure 6. Minimum Recognition Distance (mm): Keep the default value as shown in Figure 6. (If the calibration distance is relatively short, adjust it to 1.2m.)
+
+<p align="center">
+<img alt="PixPin_2026-06-10_11-20-50" src="https://github.com/user-attachments/assets/8672da0b-1ff7-4ed6-98ca-5b59104f8923" />
+<br><em>Figure 6 : Information verification</em></p>
+
 
 Distance from Rotation Center to Optical Center: When set to the default value of 0, it represents the coordinate of camera's optical center is overlapping with the forklift's rotation center. You must enter the actual distance from the camera's optical center to the forklift's rotation center.
+Fork Arm Position (Depth to Tray Edge): This parameter defines the additional insertion distance the forklift arm needs to travel after reaching the front edge of the pallet. It acts as a safety margin to ensure the forks are fully and securely inserted under the pallet.
+
+<p align="center">
+
+<img alt="PixPin_2026-06-10_11-31-24" src="https://github.com/user-attachments/assets/cd0cc029-04f3-4801-a8c8-42fc44a7e9b8" />
+<br><em>Figure 7 : Parameters</em></p>
+
 
 Pallet Teaching (It is recommended to perform two calibrations): \[Pallet Teaching (Near)]: Position the pallet 200mm away from the forklift forks to perform near-end calibration. This step determines the pallet's height, lateral offset, heading angle, and roll angle. \[Pallet Teaching (Far)]: After near-end calibration, proceed with far-end calibration (secondary teaching). For example, if the camera recognizes the pallet distance as 1300mm during near-end calibration, drive the forklift straight backward by approximately 400–800mm without any angular or lateral movement. Perform far-end calibration when the distance to the pallet reaches 1.8–2.4m. This step determines the camera's pitch angle. Note: \[Pallet Teaching (Far)] tab is only available after \[Pallet Teaching (Near)] is successful.
 
+<p align="center">
+<img alt="PixPin_2026-06-10_11-31-24" src="https://github.com/user-attachments/assets/eadf1f1c-7927-4a4f-bcd9-3a4572537e45" />
+<br><em>Figure 8 : Pallet Teaching</em></p>
+
+
+
 Clicking 'Reset Calibration' will restore all external calibration parameters to zero.
 
+<p align="center">
+<img  alt="PixPin_2026-06-10_11-10-32" src="https://github.com/user-attachments/assets/17bce3f3-1a9f-4c17-b76d-a716e2a982dd" />
+<br><em>Figure 9 : Reset Calibration</em></p>
+
 Lateral deviation means the literal deviation between the camera's optical center and forklift's coordinate center, and it is automatically determined through the calibration process.
+
+
 
 Note: Method 2 is a custom feature for other client, you can dismiss that.
 
