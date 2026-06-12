@@ -105,8 +105,8 @@ All configuration options in this section are currently under development, and s
 
 Used for managing hand-eye calibration parameters between the camera and the robotic arm. Configurable parameters include Euler angles, translation vector, offsets, and the tool coordinate system RT, which serve as the callibration benchmark for depalletizing pose calculations. Used for initial calibration.
 
-* Euler Angles: Represents the orientation (rotation) of an object in 3D space. It describes how an object is tilted or turned using three specific angles: Roll, Pitch, and Yaw.
-* Translation Vector: Represents the position of an object in 3D space. It defines the object's exact location relative to a reference point (origin) using X, Y, and Z coordinates. It tells the system how far the tool tip is from the robot camera in the length, width, and height directions.
+* Euler Angles: Represents the orientation (rotation) of the robotic arm in 3D space. It describes how the robotic arm is tilted or turned using three specific angles: Roll, Pitch, and Yaw.
+* Translation Vector: Represents the position of the robotic arm in 3D space. It defines the robotic arm's exact location relative to a reference point (origin) using X, Y, and Z coordinates. It tells the system how far the tool tip is from the robot camera in the length, width, and height directions.
 * Offset: Represents an intentional adjustment or shift applied to a target position. It adds a specific distance to the original coordinates to fine-tune the final location (e.g., to avoid collisions or adjust a gripping point).
 
 ![PixPin\_2026-06-03\_08-20-11](https://github.com/user-attachments/assets/bc8e03b4-efba-4134-8a72-c49b4a901501)\
