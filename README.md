@@ -1,5 +1,3 @@
-# Overview
-
 <div align="center"><img src=".gitbook/assets/mrdvs_logo.png" alt="MRDVS Logo" width="300"></div>
 
 <h2 align="center">MRDVS Algorithm Deployment Guide</h2>
