@@ -127,6 +127,51 @@ _&#x46;igure 12：Calibration Settings_
 ![PixPin\_2026-06-03\_08-21-01](https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614)\
 _&#x46;igure 13：Buttons_
 
+## Communication protocol
+
+The product's communication protocol system supports TCP connection customized for client's specific needs. Its core functions are divided into two main modules: "External Trigger Requests" and "Result Publishing." The overall architecture is highly flexible and extensible, supporting various built-in protocols as well as custom extensions. Below is a comprehensive summary of the communication protocol system:
+
+### Triggering Protocols
+
+The system supports multiple formats of TCP triggering protocols. After a client sends a request, the server executes the algorithm and returns the result. All protocols support controlling coordinate system transformations (e.g., left-handed vs. right-handed systems) through parameters such as coordinate_system.
+
+hnpsA Raw Frame Protocol
+- Features: Minimalist text commands with no additional termination characters required.
+- Format: 3D<CameraID><SoftpackCount> (e.g., 3D15).
+- Response: Fixed format 3DA...AOK.
+
+Standard Softpack JSON Protocol (softpack_json)
+- Features: Standard JSON interaction; the response contains only the JSON body without any extra protocol headers.
+- Request: {"action":"3D","type":5}.
+- Response: Supports outputting four values [x,y,z,rz]. Alternatively, it can append length and width to output six values [x,y,z,rz,length,width] via configuration. For multiple targets, the data is expanded sequentially.
+
+Headerless Softpack JSON Protocol (plain_softpack_json)
+- Features: Lightweight JSON; requests only require {"action":"3D"}.
+- Response: Contains only pos and result; the type field is not returned.
+
+Lingzhi Softpack JSON Protocol (lingzhi_softpack_json)
+- Features: Compatible with legacy customer protocols.
+- Response: A mandatory protocol header 0x7F 0x7F is prepended before the JSON. The internal field order within the JSON is strictly fixed as pos, followed by result.
+
+### Architecture Design and Extension Specifications**
+
+The communication framework adopts a highly decoupled design for convenient secondary development:
+
+- Extending Publish Protocols: Inherit the IProtocolPublisher interface, implement the sending logic in the publish method, and register it via the factory class to take effect.
+
+- Extending Trigger Protocols: Inherit the ITriggerProtocol interface to handle listening, request parsing, and calling a unified handler function, eventually encoding and returning the response. This design ensures the protocol layer is completely independent of underlying camera modules, facilitating horizontal replacement.
+
+- Integrating New Algorithms: Supports trigger_only mode, where algorithms execute solely upon receiving external triggers. Algorithms must return a string result, which is distributed by the unified ResultDispatcher. Timeouts return error code -3 by default.
+
+### Key Considerations**
+
+- Port Separation: The listen_port for receiving triggers and the send_port for actively publishing results are two independent configuration items.
+
+- Timeout Control: timeout_ms governs both the trigger wait time and the TCP publish wait time. In production environments, this should be reasonably configured based on the maximum expected execution time of the algorithm.
+
+- Independent Channels: The UI-side CameraPing uses the gRPC protocol, operating independently from the ResultDispatcher, which exclusively handles result publishing and external triggers.
+
+
 ## Deployment example
 
 This chapter provides a complete deployment configuration process for the AW3 platform combined with the PE flexible packaging depalletizing algorithm. It serves as a reference for standardized on-site configuration and is applicable to scenarios such as initial deployment of new machines, site relocation, and cargo template resets.
@@ -139,7 +184,7 @@ Open AlgPlatformViewer.exe to run the AW3 host software.
 
 Ensure that the host computer and the camera algorithm module are on the same local area network (LAN) subnet to guarantee normal communication, discovery, and connection of the devices. For more details about IP and Firewall configuration, please refer to the LxCameraViewer use manual at https://github.com/Lanxin-MRDVS/CameraSDK/wiki/LxCameraViewer-User-Manual
 
-#### Step 3: Deploy Algorithm Firmware \[Under development]
+#### Step 3: Deploy Algorithm Firmware [Under development]
 
 Write the PE depalletizing algorithm to the algorithm module via the platform's firmware upgrade feature. (Note: This feature is currently under development; in the current version, algorithm deployment must be completed in advance by the R\&D team.) The algorithm module will automatically restart after the firmware update is complete.
 
@@ -152,21 +197,21 @@ _&#x46;igure 14: Connection_
 
 #### Step 5: Activate Algorithm Authorization
 
-Switch to the \[Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click \[Algorithm Authentication] button as shown in red box, and obtain the authorization request Key by clicking \[Get request key]. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click \[Apply License] to activate the algorithm.
+Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click [Algorithm Authentication] button as shown in red box, and obtain the authorization request Key by clicking [Get request key]. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/d2762816-727e-4849-9af0-dfb309032f5e)\
 _&#xNAN;_&#x46;igure 15: Acivate algorithm_
 
 #### Step 6: Configure Basic Camera Parameters
 
-Switch to the \[Parameters] tab, select the right camera parameter template matching the business need and camera model at \[camera template] , and click \[Deploy Camera template] to complete the initialization of the camera's parameters.
+Switch to the [Parameters] tab, select the right camera parameter template matching the business need and camera model at [camera template] , and click [Deploy Camera template] to complete the initialization of the camera's parameters.
 
 ![PixPin\_2026-06-04\_05-48-48](https://github.com/user-attachments/assets/08526776-d984-40d4-946c-ea63e5d65862)\
 _&#x46;igure 16: Basic camera parameters_
 
 #### Step 7: Configure Depalletizing Parameters
 
-Enter the \[Depalletizing] tab, select the corresponding cargo template at \[cargo template], for soft-bags, we recommand to use template 6, then select the \[material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined \[cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
+Enter the [Depalletizing] tab, select the corresponding cargo template at [cargo template], for soft-bags, we recommand to use template 6, then select the [material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/56565721-8efe-4fca-b651-06881936c717)\
 _&#x46;igure 17: Depalletizing configuration_
@@ -175,9 +220,9 @@ _&#x46;igure 17: Depalletizing configuration_
 
 Execute the hand-eye calibration process to complete the coordinate alignment between the camera and the robotic arm, as mentioned in Buttons - section in this document. Once the calibration is verified as accurate, click \[Calibration] button to persistently save the calibration parameters to the camera device and automatically set the \[Calibration Settings] parameters.
 
-#### Step 9: Automatic Area Calibration
+#### Step 9: Area Calibration
 
-Click the Area Calibration button. The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completing the region calibration. If you want to manually configure the area, remember to click \[save and send] button after configuration, to send the new area data to the center.
+The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completing the region calibration. If you want to manually configure the area, remember to click [save and send] button after configuration, to send the new area data to the center.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/3dffb6fa-f92a-4253-8d2e-33729aac709e)\
 _&#x46;igure 18 : Area calibration_
