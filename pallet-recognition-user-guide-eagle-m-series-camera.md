@@ -572,6 +572,29 @@ Character explanation: 00 00 00 14 01 00 00 00 00 17 8E 78 00 00 17 70 00 00 28 
 
 ### 5.3 TCP Communication
 
+**Port Configuration:**
+As shown in the figure, the camera acts as a TCP Server on port 5501.
+
+**Commands:**
+Send 0x60 0x04 0x00 0x00 to start the recognition task.
+Send 0x60 0x04 0x00 0x01 to stop the recognition task.
+
+Note: When using TCP communication, you must set the algorithm working mode to [Always-On] Mode in the NetAssist.
+
+### Response Data Structure
+
+**Example Payload:** `00 00 00 14 01 00 00 00 00 17 AA FC 00 00 18 38 00 00 2A 41`
+
+| Byte Position | Content | Description |
+| :--- | :--- | :--- |
+| **1-2** | Code | Returns a 16-bit unsigned integer (`unsigned int`).<br>• `0`: Recognition successful<br>• Other values indicate exceptions:<br>&nbsp;&nbsp;`1`: Camera open exception<br>&nbsp;&nbsp;`2`: Pallet positioning failure<br>&nbsp;&nbsp;`3`: Internal camera exception |
+| **3-4** | Total Byte Length | 16-bit unsigned integer (`unsigned int`). Current value is **20 bytes**. |
+| **5-8** | Sign of X, Y, Theta, Z | Represents the sign for pallet recognition coordinates.<br>`0x00`: Positive<br>`0x01`: Negative |
+| **9-12** | Pallet Front Center X | 4-byte unsigned integer. Unit: **millimeters × 1000**. |
+| **13-16** | Pallet Front Center Y | 4-byte unsigned integer. Unit: **millimeters × 1000**. |
+| **17-20** | Pallet Front Center Angle (Theta) | 4-byte unsigned integer. Unit: **degrees × 1000**. |
+| **21-24** | Pallet Height | Originated from the camera's optical center (positive direction is downwards).<br>4-byte unsigned integer. Unit: **millimeters × 1000**. |
+| **25-32** | Reserved / Extension | 8 bytes reserved for future extension. Default value is set to `0`. |
 
 ### 5.5 CAN Communication
 Please note the Can protocol only supports M4 cameras.
@@ -579,3 +602,90 @@ The communication protocol adopts CANopen. The CANopen protocol is an applicatio
 The underlying communication method uses the CAN standard frame format, where the CAN ID is 11 bits (0x000~7FF), and the data is 8 bytes.
 For the use of CAN IDs:
 Divide the 11-bit ID into a 4-bit function code and a 7-bit node ID. The CAN ID is also called COB ID.
+
+***CAN Communication protocol:**
+
+The CAN communication protocol uses a defined baud rate of 250K.
+SDO communication messages follow the basic CANopen protocol format, and the 8-byte data in the CAN frame is structured as shown below:
+
+```text
++---------------------------------------------------------------+
+|                       CAN Frame ID                            |
++-----------+-----------+-----------+-----------+-------+-------+
+|    10     |     9     |     8     |     7     |   6   | ... 0 |
++-----------+-----------+-----------+-----------+-------+-------+
+|              Function Code                    | Node Number   |
++---------------------------------------------------------------+
+```
+
+CAN baud rate is defined as 250K.
+SDO communication message is a basic protocol format in CANopen. The 8-byte data in the CAN message is defined by the communication protocol as the format shown in the following diagram:
+
+```text
+
++-----------------------------------------------------------------------+
+|                               Data                                    |
++---------------------------+-----------+-----------+-------------------+
+|             0             |     1     |     2     | 3 | 4 | 5 | 6 | 7 |
++---------------------------+-----------+-----------+-------------------+
+|      Command Code         |   Index   | Subindex  |       Data        |
++---------------------------+-----------+-----------+-------------------+
+```
+
+Pallet positioning communication protocol: 
+The main body sends COB ID: 0x212 to the device.
+
+```text
+
++-----------------------------------------------------------------------+
+|                               Data                                    |
++-----------+-----------+-----------+-----------+-----------+-----------+
+|     0     |     1     |     2     |     3     |     4     | ...   7   |
++-----------+-----------+-----------+-----------+-----------+-----------+
+|   0x40    |   0x01    |   0x00    |   0x00    | MODE CTRL |   0x00    |
++-----------+-----------+-----------+-----------+-----------+-----------+
+```
+
+MODE CTRL: 0 for off, 1 for on
+Device to Main Body Device sends COB ID: 0x192, increment count with each query, x, y, yaw are actual values x 1000, of int type.
+
+
+```text
+
++-----------------------------------------------------------------------+
+|                               Data                                    |
++-----------+-----------+-----------+-----------+-----------+-----------+
+|     0     |     1     |     2     |     3     |     4     | ...   7   |
++-----------+-----------+-----------+-----------+-----------+-----------+
+|           count       |          result                   |    yaw    |
++-----------------------+-----------------------------------------------+
+```
+
+
+The device sends to the main body using COB ID: 0x292.
+
+```text
+
++-----------------------------------------------------------------------+
+|                               Data                                    |
++-----------+-----------+-----------+-----------+-----------+-----------+
+|     0     |     1     |     2     |     3     |     4    ...      7   |
++-----------+-----------+-----------+-----------+-----------+-----------+
+|                       X                       |           y           |
++-----------------------------------------------+-----------------------+
+```
+
+## 6. Special Instructions
+
+### 6.1 Black Pallet Recognition
+Due to the TOF principle, M-series cameras are affected by the reflectivity of black pallets. Imaging effects for black pallets with a 5% reflectivity can be achieved within a range of 2m. During debugging, optimize the imaging effect of black pallets by adjusting the high integration time and low signal threshold through the upper computer software.
+The maximum supported lateral offset for black pallet recognition is ±400mm (distance from the camera center to the pallet center), and the maximum supported pallet rotation angle is ±10°.
+
+### 6.2 Deployment of High-Level Pickup and Reflective Columns
+When forklifts pick up and deposit goods in stereo warehouse locations, navigation needs to be achieved through reflective columns for positioning. However, the camera can be easily affected by reflective columns, causing recognition issues. During deployment, it is recommended to avoid the impact of reflective columns on pallet recognition. Deploy reflective columns in a way that they are staggered with pallet legs, as shown in the diagram.
+
+<p align="center">
+<img alt="Picture9" src="https://github.com/user-attachments/assets/eea9eb6c-464d-49d9-82a0-bafeaae31070" />
+<br>
+  <em>Figure 34: Reflective Columns </em>
+</p>
