@@ -526,7 +526,16 @@ The data result is X: -1987; Y: 81; Theta: -2100.
 
 ## 5. Data communication methods 
 
+Here, we used NetAssist as the communication configuration tool for TCP and UDP. You can download it from https://www.cmsoft.cn/resource/102.html, as shown in Figure 33. 
 
+You can also use NetAssistant from https://github.com/luokyme/NetAssistant, which includes English documentation, but it has not been tested with this instruction.
+
+
+<p align="center">
+<img width="50%" height="50%" alt="Näyttökuva 2026-06-02 kello 9 42 36" src="https://github.com/user-attachments/assets/c65c8633-d35c-4e83-b12c-712988e689ae" />
+<br>
+  <em>Figure 33: Download site </em>
+</p>
 
 ### 5.1 API Invocation
 
@@ -539,11 +548,27 @@ The API invocation method supports C++, C#, JAVA, ROS1, ROS2, and other environm
 
 ### 5.2 UDP Communication 
 
-When using the UDP communication method, set the algorithm working mode to open on the  computer.
-Port Configuration:
+Set the algorithm working mode to open on the NetAssist.
 
+**Port Configuration:**
 Host Port Number: 8000
 
+**Sending Content:**
+1.0x60 0x04 0x00 0x00 means Start Recognition Task
+2.0x60 0x04 0x00 0x01 means End Recognition Task
+
+Character explanation: 00 00 00 14 01 00 00 00 00 17 8E 78 00 00 17 70 00 00 28 F5 00
+
+### Response Data Structure
+
+| Byte Position | Content | Description |
+| :--- | :--- | :--- |
+| **1-2** | Code | Returns a 16-bit unsigned integer (`unsigned int`).<br>• `0`: Success<br>• `1`: Camera open exception<br>• `2`: Pallet positioning failure<br>• `3`: Internal camera exception |
+| **3-4** | Total Byte Length | 16-bit unsigned integer (`unsigned int`). Current value is **20 bytes**. |
+| **5-8** | Pallet Recognition (X, Y, Theta) | The sign is represented by `0x00` for positive and `0x01` for negative. The 8th byte is a placeholder (`0x00`). |
+| **9-12** | Pallet Front Center X Position | 4-byte unsigned integer. Unit: **millimeters (mm)**. |
+| **13-16** | Pallet Front Center Y Position | 4-byte unsigned integer. Unit: **millimeters (mm)**. |
+| **17-20** | Pallet Front Center Angle Theta | 4-byte unsigned integer. Unit: **degrees × 1000**. |
 
 ### 5.3 TCP Communication
 
