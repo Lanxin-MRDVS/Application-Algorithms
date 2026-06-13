@@ -286,7 +286,9 @@ _&#x46;igure 19 : Algorithm error code_
 | 19         | Abnormal aspect ratio                             |
 | 99         | Unknown error                                     |
 
-## Safety Detection Function
+## New features coming
+
+### Safety Detection Function
 
 This function detects whether there are any obstructions above the stacked packages. The relevant parameters include:
 
@@ -294,7 +296,7 @@ This function detects whether there are any obstructions above the stacked packa
 * Safe height lift distance
 * Obstruction size threshold
 
-**Detection Logic:** When safety detection is enabled, a safety plane is established by adding the "Safe height lift distance" to the highest detected package. The system then checks if there are any objects between the camera and this safety plane that exceed the "Obstruction size threshold." If an obstruction is detected, all detected package information will be cleared. The RGB display will appear as follows:
+**Detection Logic:** When safety detection is enabled, a safety platform is established by adding the "Safe height lift distance" to the highest detected package. The system then checks if there are any objects between the camera and this safety platform that exceed the "Obstruction size threshold." If an obstruction is detected, all detected package information will be cleared. The RGB display will appear as follows:
 
 ### 2. Transition Point
 
