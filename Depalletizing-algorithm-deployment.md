@@ -128,7 +128,7 @@ _&#x46;igure 12：Calibration Settings_
 _&#x46;igure 13：Buttons_
 
 ## Communication protocol
-Currently, the product's communication protocol system supports TCP connections and custom formats tailored to specific client requirements. Its core functions are divided into two main modules: "External Trigger Requests" and "Result Publishing." The overall architecture is highly flexible and extensible, supporting various built-in protocols as well as custom extensions. Below is a comprehensive summary of the communication protocol system:
+Currently, the product's communication protocol system supports TCP connections and custom formats tailored to specific client requirements. Its core module is External Triggering protocols. The overall architecture is highly flexible and extensible, supporting various built-in protocols as well as custom extensions. Below is a comprehensive summary of the communication protocol system:
 
 ### Triggering Protocols
 
