@@ -152,7 +152,7 @@ Lingzhi Softpack JSON Protocol (lingzhi_softpack_json)
 - Features: Compatible with legacy customer protocols.
 - Response: A mandatory protocol header 0x7F 0x7F is prepended before the JSON. The internal field order within the JSON is strictly fixed as pos, followed by result.
 
-### 5.2 Architecture Design and Extension Specifications**
+### 5.2 Architecture Design and Extension Specifications
 
 The communication framework adopts a highly decoupled design for convenient secondary development:
 
@@ -162,7 +162,7 @@ The communication framework adopts a highly decoupled design for convenient seco
 
 - Integrating New Algorithms: Supports trigger_only mode, where algorithms execute solely upon receiving external triggers. Algorithms must return a string result, which is distributed by the unified ResultDispatcher. Timeouts return error code -3 by default.
 
-### 5.3 Key Considerations**
+### 5.3 Key Considerations
 
 - Port Separation: The listen_port for receiving triggers and the send_port for actively publishing results are two independent configuration items.
 
@@ -199,7 +199,7 @@ _&#x46;igure 14: Connection_
 Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click [Algorithm Authentication] button as shown in red box, and obtain the authorization request Key by clicking [Get request key]. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/d2762816-727e-4849-9af0-dfb309032f5e)\
-_&#xNAN;_&#x46;igure 15: Acivate algorithm_
+_&#x46;igure 15: Acivate algorithm_
 
 #### Step 6: Configure Basic Camera Parameters
 
