@@ -43,7 +43,7 @@ When clicking the Device Connection menu, the content will then be at the right 
 ![PixPin\_2026-06-02\_08-32-02](https://github.com/user-attachments/assets/36f48856-18df-491d-9da3-2466a98f3fc8)\
 _&#x46;igure 4：Connect to center_
 
-* Connect center: By clicking this button, the AlgPlatformViewer will manually by conneted to a selected center. This is for the case if the subnet routing doesn't support UDP broadcast discovery.
+* Connect center: By clicking this button, the AlgPlatformViewer will manually conneted to a selected center. This is for the case if the subnet routing doesn't support UDP broadcast discovery.
 
 ### 4.2 Depalletizing
 
@@ -70,7 +70,7 @@ The Global Settings defines the core filtering and recognition parameters for de
 1. Fill Ratio: Determines the threshold of how well the detected target fill the detection frame. Recommended value is 0.7. Cargo with a fill ratio lower than this threshold will be filtered out to avoid invalid or interfering targets.
 2. Standard Dimensions (L x W mm): Sets the standard length and width benchmarks for the target material.
 3. Length/Width Range (mm): Defines the valid length and width intervals for cargo. Targets falling outside these ranges are automatically filtered.
-4. Layer Height (mm): This parameter is used to filter cargo by layer height and distinguish items across different stacking levels. For example, if the Layer Height is set to 200 mm, it means that when soft-bags are stacked, the height of a single bag (e.g., 200 mm) determines the height of each layer. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from futher computation.
+4. Layer Height (mm): This parameter is used to filter cargo by layer height and distinguish items across different stacking levels. For example, if the Layer Height is set to 200 mm, it means that when soft-bags are stacked, the height of a single bag (e.g., 200 mm) determines the height of each layer. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from further computation.
 5. Arrangement Order: Defines the priority order for the algorithm to recognize cargo. It defaults to "Near to far," meaning the system prioritizes recognizing the nearest cargo first. This setting is crucial in industrial environments where cargo may not be stacked neatly, and items on the same layer might partially overlap. This function prevents the system from attempting to pick up a top layer cargo that has another item partly on top of it, which could cause displacement or instability during retrieval. For example in Figure 5, you can see the arrangement order as the green number.
 6. Advanced Toggles \[Under Development]: Includes options for enabling large-size splitting, parallel alignment correction, multiple results at once, and occlusion detection. In the current version, these are reserved configuration items and are not yet active.
 
@@ -181,7 +181,7 @@ Open AlgPlatformViewer.exe to run the AW3 host software.
 
 #### Step 2：Verify Network Environment
 
-Ensure that the host computer and the camera algorithm module are on the same local area network (LAN) subnet to guarantee normal communication, discovery, and connection of the devices. For more details about IP and Firewall configuration, please refer to the LxCameraViewer use manual at https://github.com/Lanxin-MRDVS/CameraSDK/wiki/LxCameraViewer-User-Manual
+Ensure that the host computer and the camera algorithm module are on the same local area network (LAN) subnet to guarantee normal communication, discovery, and connection of the devices. For more details about IP and Firewall configuration, please refer to the LxCameraViewer user manual at https://github.com/Lanxin-MRDVS/CameraSDK/wiki/LxCameraViewer-User-Manual
 
 #### Step 3: Deploy Algorithm Firmware [Under development]
 
