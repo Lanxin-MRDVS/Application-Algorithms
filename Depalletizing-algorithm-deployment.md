@@ -1,33 +1,33 @@
 # Vision Guided Depalletizing: AW3 Platform & PalletEye Deployment Guide
 
-## Instruction
+## 1. Instruction
 
-AwareSight3 (or so called AW3) is an application management platform designed for industrial vision algorithms. It is responsible for device connection, authentication, camera parameter configuration, and the management and deployment of algorithm parameters. PalletEye （so called PE） is a built-in algorithm module within the platform, specifically tailored for soft bag and carton unstacking. Leveraging RGB-D camera data, it delivers capabilities such as pallet cargo recognition, region calibration, hand-eye calibration, grasp pose estimation, and dimension detection. It is widely applied in industrial pallet unstacking scenarios. This manual serves to guide operators through the entire process of software deployment, device connection, apply for algorithm license, parameter configuration, unstacking function debugging, and template management.
+AwareSight3(or so called AW3) is an application management platform designed for industrial vision algorithms. It is responsible for device connection, authentication, camera parameter configuration, and the management and deployment of algorithm parameters. PalletEye(so called PE） is a built-in algorithm module within the platform, specifically tailored for soft bag and carton unstacking. Leveraging RGB-D camera data, it delivers capabilities such as pallet cargo recognition, region calibration, hand-eye calibration, grasp pose estimation, and dimension detection. It is widely applied in industrial pallet unstacking scenarios. This manual serves to guide operators through the entire process of software deployment, device connection, apply for algorithm license, parameter configuration, unstacking function debugging, and template management.
 
-### Interface overview
+### 1.1 Interface overview
 
 The overall interface of the AW3 platform is primarily divided into four major functional sections: 1. Connection Management Section; 2. Parameter Configuration Section; 3. Display Configuration Section ; and 4. Visualization Section. These sections operate independently yet work in synergy, covering the full operational workflow of device access, parameter configuration, visual observation, and algorithm execution (as shown in Figure 1).
 
 ![PixPin\_2026-06-01\_10-40-42](https://github.com/user-attachments/assets/ad3c08cf-d85c-40c1-b935-9b1b1934ab76)\
 _&#x46;igure 1：Interface overview_
 
-## Display Configuration Section
+## 2. Display Configuration Section
 
 Interface & Language Settings: Used to configure the real-time display type and system language of the software interface. Parameters take effect immediately without requiring additional saving or distribution, adapting to various configuration and observation scenarios.
 
 ![PixPin\_2026-06-04\_08-11-06](https://github.com/user-attachments/assets/48ecdaf1-d922-4c29-9b9e-5997a6b6cf7c)\
 _&#x46;igure 2: Display Configuration_
 
-## Visualization Section
+## 3. Visualization Section
 
 ![PixPin\_2026-06-04\_08-13-07](https://github.com/user-attachments/assets/7541fda0-d06a-4bf3-b985-470161af6616)\
 _&#x46;igure 3: Visualization_
 
-## Parameter Configuration Section
+## 4. Parameter Configuration Section
 
 The Parameter Configuration Section contains five tabs, the Device Connection, the Algorithm enable, the Parameters, the Soft-pack depalletizing, and the Result log.
 
-### Device Connection tab
+### 4.1 Device Connection tab
 
 When clicking the Device Connection menu, the content will then be at the right side of the displays, as shown in Figure 2 red box. The Center Connection section shows the information of the center AlgPlatformViewer is connected to.
 
@@ -45,14 +45,14 @@ _&#x46;igure 4：Connect to center_
 
 * Connect center: By clicking this button, the AlgPlatformViewer will manually by conneted to a selected center. This is for the case if the subnet routing doesn't support UDP broadcast discovery.
 
-### Depalletizing
+### 4.2 Depalletizing
 
 The Depalletizing Configuration Interface is a core feature of the PalletEye algorithm. It integrates task template/mode settings, algorithm parameter configuration, and core operational capabilities. Designed to support parameter configuration, calibration, task template management, and algorithm computation for soft-pack and carton depalletizing scenarios, it is fully adapted to the demands of routine industrial operations and on-site tuning.
 
 ![PixPin\_2026-06-03\_08-14-13](https://github.com/user-attachments/assets/8a8d5f4b-1c5b-426d-b8ee-d078f8e8ffd1)\
 _&#x46;igure 5：Depalletizing Configuration_
 
-#### Choose Template and Mode
+#### 4.2.1 Choose Template and Mode
 
 1. Fetch Current Parameters: By clicking this button, the AlgPlatformViewer fetches all the Global-, Region-, and Calibration parameters saved on the center connected. The fetched parameters are then loaded into the Global-, Calibration-, Region settings for visualization and further configuration if needed.
 2. Template Selection: Selects saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags. For soft-bags, we recommand to use template 6.
@@ -63,7 +63,7 @@ _&#x46;igure 5：Depalletizing Configuration_
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/9ac618ee-a4be-4569-babb-f97960a7bbfc)\
 _&#x46;igure 6：Choose template and mode_
 
-#### Global Settings
+#### 4.2.2 Global Settings
 
 The Global Settings defines the core filtering and recognition parameters for depalletizing target detection. It is used to control cargo detection accuracy and filtering rules. The parameters are described as follows:
 
@@ -82,7 +82,7 @@ If the cargo's volume and size exceed the maximum Length/Width range in the Glob
 ![PixPin\_2026-06-03\_09-32-28](https://github.com/user-attachments/assets/1ef658d4-b981-4902-857e-a5799eaf16c5)\
 _&#x46;igure 8：Error example_
 
-#### Area Settings
+#### 4.2.3 Area Settings
 
 Used to customize the spatial detection region of the algorithm. By setting the maximum and minimum values for the X, Y and Z, it limits the camera's effective recognition space and filters out interfering targets outside the field of detection range.
 
@@ -94,14 +94,14 @@ For example, if the Area is set too small and part of the target cargo falls out
 ![PixPin\_2026-06-03\_10-27-36](https://github.com/user-attachments/assets/35a488b1-513e-4d8f-a0d8-a6a4af056177)\
 _&#x46;igure 10：Error example_
 
-#### Output Settings \[Under Development]
+#### 4.2.4 Output Settings \[Under Development]
 
 All configuration options in this section are currently under development, and settings are not yet active; the interface is reserved for future use, including Euler angle type, RZ range, Reverse range, Output type (3D/2D), rxry tilt range, Output unit (deg/mm), Output precision.
 
 ![PixPin\_2026-06-03\_08-19-45](https://github.com/user-attachments/assets/3dd318a9-3277-48a6-87f8-c64dfab89143)\
 _&#x46;igure 11：Output Settings_
 
-#### Calibration Settings
+#### 4.2.5 Calibration Settings
 
 Used for managing hand-eye calibration parameters between the camera and the robotic arm. Configurable parameters include Euler angles, translation vector, offsets, and the tool coordinate system RT, which serve as the callibration benchmark for depalletizing pose calculations. Used for initial calibration.
 
@@ -112,7 +112,7 @@ Used for managing hand-eye calibration parameters between the camera and the rob
 ![PixPin\_2026-06-03\_08-20-11](https://github.com/user-attachments/assets/bc8e03b4-efba-4134-8a72-c49b4a901501)\
 _&#x46;igure 12：Calibration Settings_
 
-#### Buttons
+#### 4.2.6 Buttons
 
 1. Single trigger: Click the button to execute a single image capture and depalletizing calculation. It updates detection results (such as cargo grasping pose and dimensions) in real-time, suitable for single-run debugging and verification.
 2. Add Template/Delete template:
@@ -127,10 +127,10 @@ _&#x46;igure 12：Calibration Settings_
 ![PixPin\_2026-06-03\_08-21-01](https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614)\
 _&#x46;igure 13：Buttons_
 
-## Communication protocol
+## 5. Communication protocol
 Currently, the product's communication protocol system supports TCP connections and custom formats tailored to specific client requirements. Its core module is External Triggering protocols. The overall architecture is highly flexible and extensible, supporting various built-in protocols as well as custom extensions. Below is a comprehensive summary of the communication protocol system:
 
-### Triggering Protocols
+### 5.1 Triggering Protocols
 
 The system supports multiple formats of TCP triggering protocols. After a client sends a request, the server executes the algorithm and returns the result. All protocols support controlling coordinate system transformations (e.g., left-handed vs. right-handed systems) through parameters such as coordinate_system.
 
@@ -152,7 +152,7 @@ Lingzhi Softpack JSON Protocol (lingzhi_softpack_json)
 - Features: Compatible with legacy customer protocols.
 - Response: A mandatory protocol header 0x7F 0x7F is prepended before the JSON. The internal field order within the JSON is strictly fixed as pos, followed by result.
 
-### Architecture Design and Extension Specifications**
+### 5.2 Architecture Design and Extension Specifications**
 
 The communication framework adopts a highly decoupled design for convenient secondary development:
 
@@ -162,7 +162,7 @@ The communication framework adopts a highly decoupled design for convenient seco
 
 - Integrating New Algorithms: Supports trigger_only mode, where algorithms execute solely upon receiving external triggers. Algorithms must return a string result, which is distributed by the unified ResultDispatcher. Timeouts return error code -3 by default.
 
-### Key Considerations**
+### 5.3 Key Considerations**
 
 - Port Separation: The listen_port for receiving triggers and the send_port for actively publishing results are two independent configuration items.
 
@@ -171,7 +171,7 @@ The communication framework adopts a highly decoupled design for convenient seco
 - Independent Channels: The UI-side CameraPing uses the gRPC protocol, operating independently from the ResultDispatcher, which exclusively handles result publishing and external triggers.
 
 
-## Deployment example
+## 6. Deployment example
 
 This chapter provides a complete deployment configuration process for the AW3 platform combined with the PE flexible packaging depalletizing algorithm. It serves as a reference for standardized on-site configuration and is applicable to scenarios such as initial deployment of new machines, site relocation, and cargo template resets.
 
@@ -238,9 +238,9 @@ Request results directly from the algorithm module according to the communicatio
 
 The latency from sending the request to receiving the result must be less than 2500ms.
 
-## Error codes
+## 7. Error codes
 
-### Algorithm error codes
+### 7.1 Algorithm error codes
 
 | Error Code | Description                                                     |
 | ---------- | --------------------------------------------------------------- |
@@ -260,7 +260,7 @@ The latency from sending the request to receiving the result must be less than 2
 ![93474dbc90f60414541a338171e058eb](https://github.com/user-attachments/assets/61fdbf03-54c3-4119-ba55-46fa3c06eaf7)\
 _&#x46;igure 19 : Algorithm error code_
 
-### Package error codes
+### 7.2 Package error codes
 
 | Error Code | Description                                       |
 | ---------- | ------------------------------------------------- |
@@ -286,9 +286,9 @@ _&#x46;igure 19 : Algorithm error code_
 | 19         | Abnormal aspect ratio                             |
 | 99         | Unknown error                                     |
 
-## New features coming
+## 8. New features coming
 
-### Safety Detection Function
+### 8.1 Safety Detection Function
 
 This function detects whether there are any obstructions above the stacked packages. The relevant parameters include:
 
@@ -298,14 +298,14 @@ This function detects whether there are any obstructions above the stacked packa
 
 **Detection Logic:** When safety detection is enabled, a safety platform is established by adding the "Safe height lift distance" to the highest detected package. The system then checks if there are any objects between the camera and this safety platform that exceed the "Obstruction size threshold." If an obstruction is detected, all detected package information will be cleared. The RGB display will appear as follows:
 
-### 2. Transition Point
+### 8.2 Transition Point
 
 To facilitate robotic arm path planning, the transition point calculation function can be enabled. The adjustable parameters include:
 
 * Output transition point (Enable/Disable)
 * Extension distance
 
-### 3. Package Sorting Method
+### 8.3 Package Sorting Method
 
 Detected packages can be sorted in different ways to adjust the grasping sequence. The specific mapping is as follows:
 
@@ -315,14 +315,14 @@ Detected packages can be sorted in different ways to adjust the grasping sequenc
 * `3`: Y min to max
 * `4`: Y max to min
 
-### 4. Aspect Ratio Limit
+### 8.4 Aspect Ratio Limit
 
 The maximum aspect ratio for packages can be configured. The minimum aspect ratio is fixed at 1.
 
-### 5. PCA for Package Pose Calculation
+### 8.5 PCA for Package Pose Calculation
 
 You can configure whether to enable PCA (Principal Component Analysis) for package pose calculation in the template. While PCA can still calculate the pose even if the package point cloud has voids, excessive incompleteness in the point cloud will affect the accuracy of the pose results.
 
-### 6. Package Merging
+### 8.6 Package Merging
 
 This function addresses the issue where a single soft package with wrinkles is mistakenly recognized as two (or more) separate packages. When enabled, the system will automatically merge them into a single complete package.
