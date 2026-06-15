@@ -238,7 +238,7 @@ Request results directly from the algorithm module according to the communicatio
 
 The latency from sending the request to receiving the result must be less than 2500ms.
 
-## 7. Error codes
+## 7. Visual Inspection
 
 ### 7.1 Algorithm error codes
 
@@ -257,34 +257,64 @@ The latency from sending the request to receiving the result must be less than 2
 | -100       | Unknown / Initial error                                         |
 | -101       | Pipeline parameters not configured                              |
 
-![93474dbc90f60414541a338171e058eb](https://github.com/user-attachments/assets/61fdbf03-54c3-4119-ba55-46fa3c06eaf7)\
-_&#x46;igure 19 : Algorithm error code_
+**Severe Exception Rendering** \
+When critical anomalies are detected, the system triggers two types of visual warning overlay
+
+| Render Content | Error Type |
+| :--- | :--- |
+| 🔴Red semi-transparent background + Centered "OBSTACLE DETECTED!" | OBSTACLE_DETECTED (-6) |
+| 🔴Red semi-transparent background + Centered "BAG OUT OF IMAGE!" | BAG_OUT_OF_IMAGE (-9) |
+| `err code=-5, template: xxx` | NO_VALID_BAG (-5) |
+| `err code=-7, template: xxx` + "UPPER FILTERED - BLOCK LOWER PICK" | UPPER_FILTERED_BLOCK (-7) |
+| `err code=-100, template: xxx` | UNKNOWN (-100) |
+
+![d4e7c26e94fd2aebb9dd145dc012f73b](https://github.com/user-attachments/assets/cbb794c4-d677-4e03-8511-45022ce7d960)\
+Figure 19: Algorithm error code
+
+
 
 ### 7.2 Package error codes
+When a package parameter configuration error occurs, the error text is displayed in black on the package.
 
-| Error Code | Description                                       |
-| ---------- | ------------------------------------------------- |
-| 0          | Normal detection                                  |
-| 1          | No valid depth (q.z < 0.1)                        |
-| 2          | No contour after morphological processing         |
-| 3          | Fill rate does not meet the standard              |
-| 4          | Contour too small (w <= 20 or h <= 20)            |
-| 5          | Out of AOI range                                  |
-| 6          | Too few contour points (< 100)                    |
-| 7          | Point cloud is empty outside the AOI              |
-| 8          | Too few valid plane points after normal filtering |
-| 9          | Multiple vertical clusters                        |
-| 10         | Width mismatch                                    |
-| 11         | Length mismatch                                   |
-| 12         | Both length and width mismatch                    |
-| 13         | Abnormal z-value for p1/p2 points                 |
-| 14         | Classified as a lower-layer package               |
-| 15         | Merged into another package                       |
-| 16         | Center point z-value out of range                 |
-| 17         | Suppressed by NMS (Non-Maximum Suppression)       |
-| 18         | Mask is invalid or empty                          |
-| 19         | Abnormal aspect ratio                             |
-| 99         | Unknown error                                     |
+| Error Code | Description                                       | RGB Render Content |
+| ---------- | ------------------------------------------------- | ------------------ |
+| 0          | Normal detection                                  | — (Not rendered)   |
+| 1          | No valid depth (q.z < 0.1)                        | — (Not rendered)   |
+| 2          | No contour after morphological processing         | — (Not rendered)   |
+| 3          | Fill rate does not meet the standard              | `FR {fill_rate}`   |
+| 4          | Contour too small (w <= 20 or h <= 20)            | — (Not rendered)   |
+| 5          | Out of AOI range                                  | — (Not rendered)   |
+| 6          | Too few contour points (< 100)                    | — (Not rendered)   |
+| 7          | Point cloud is empty outside the AOI              | `NoPC`             |
+| 8          | Too few valid plane points after normal filtering | `NoPlane`          |
+| 9          | Multiple vertical clusters                        | `MultiClu`         |
+| 10         | Width mismatch                                    | `W{width}`         |
+| 11         | Length mismatch                                   | `L{length}`        |
+| 12         | Both length and width mismatch                    | `SZ {L}x{W}`       |
+| 13         | Abnormal z-value for p1/p2 points                 | `PtBad`            |
+| 14         | Classified as a lower-layer package               | `below`            |
+| 15         | Merged into another package                       | — (Not rendered)   |
+| 16         | Center point z-value out of range                 | `BadCtr`           |
+| 17         | Suppressed by NMS (Non-Maximum Suppression)       | — (Not rendered)   |
+| 18         | Mask is invalid or empty                          | — (Not rendered)   |
+| 19         | Abnormal aspect ratio                             | `AR {ratio}`       |
+| 99         | Unknown error                                     | `E{code}`          |
+
+!<img alt="5cb328cb759200ecaac12ae9db5b9e29" src="https://github.com/user-attachments/assets/c05b3e6f-fcde-47ec-bbdc-570dd23a9242" />\
+Figure 20: Package error codes 
+### Status Indicators
+The top HUD provides real-time telemetry regarding the current palletizing stack status.
+
+| Text Indicator | Meaning |
+| :--- | :--- |
+| **top bags** | Actual number of top-layer bags / Total count |
+| **irregular** | Number of bags with non-compliant dimensions (still unqualified after merging) |
+| **invalid_render** | Successfully rendered illegal/invalid bags |
+| **invalid_skip** | Skipped illegal/invalid bags |
+| **is_ok** | Whether the stacking is within the image boundaries |
+
+!<img alt="7c42c22d1705cc40657156525cfc2a44" src="https://github.com/user-attachments/assets/d4ef2369-929c-4c60-8436-38dfb43c9797" />\
+Figure 21: Status indicators 
 
 ## 8. New features coming
 
