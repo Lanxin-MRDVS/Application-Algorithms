@@ -256,10 +256,10 @@ _Figure 2_
   * File extensions: `.pgm` for depth and amplitude images, `.png` for RGB images, `.pcd` for point cloud images
   * Saved depth, amplitude, and point cloud images are raw data without pseudo-coloring
   * Multiple saves are supported, but no more than three consecutive saves are allowed
-* **\[Depth Image]** checkbox: Enables or disables the depth image display /// Checkbox: Enables or disables the real-time depth image display， which is a 2D matrix where each pixel represents the actual physical distance from that point to the camera. Pixel points closer to the camera appears darker in the image, while those further away appears brighter.
-* **\[Amplitude Image]** checkbox: Enables or disables the amplitude image display /// Checkbox: Enables or disables the real-time amplitude image display. The amplitude image is a 2D matrix where each pixel represents the intensity of light returned from the target object's surface to the sensor.
-* **\[Point Cloud]** checkbox: Enables or disables the point cloud image display /// checkbox: Enables or disables the real-time point cloud image display, which contains a collection of discrete data points in 3D space, where each point has its own X, Y, and Z coordinates. Unlike traditional 2D photos, it acts as a digital representation of the physical world's exact shape and spatial relationships.
-* **\[RGB]** checkbox: Enables or disables the RGB image display. /// checkbox: Enables or disables the real-time RGB image display. The RGB image is a 2D matrix where each pixel contains three values representing the intensity of Red, Green, and Blue light, forming a realistic 2D texture of the scene.
+* **\[Depth Image]** Checkbox: Enables or disables the real-time depth image display， which is a 2D matrix where each pixel represents the actual physical distance from that point to the camera. Pixel points closer to the camera appears darker in the image, while those further away appears brighter.
+* **\[Amplitude Image]** Checkbox: Enables or disables the real-time amplitude image display. The amplitude image is a 2D matrix where each pixel represents the signal intensity of light returned from the target object's surface to the sensor.
+* **\[Point Cloud]** checkbox: Enables or disables the real-time point cloud image display, which contains a collection of discrete data points in 3D space, where each point has its own X, Y, and Z coordinates. Unlike traditional 2D photos, it acts as a digital representation of the physical world's exact shape and spatial relationships.
+* **\[RGB]** checkbox: Enables or disables the real-time RGB image display. The RGB image is a 2D matrix where each pixel contains three values representing the intensity of Red, Green, and Blue light, forming a realistic 2D texture of the scene.
 * Unchecking RGB/Amplitude stops the device from capturing those image types. However, the device only stops capturing depth data when both the depth image and point cloud image are disabled
 * In Figure 2, the device is streaming and displaying depth, point cloud, RGB, and amplitude images
 * In Figure 3, the device has stopped streaming and no images are displayed
@@ -278,9 +278,9 @@ _Figure 3_
 * When the depth image is selected, shows the depth image frame rate (Area 4, green in Figure 4)
 * When the amplitude image is selected, shows the amplitude image frame rate (Area 4, blue in Figure 4)
 * When the RGB image is selected, shows the RGB image frame rate (Area 4, magenta in Figure 4)
-* When the depth image is selected, shows the pixel values of the selected pixels in the depth image (Area 4, yellow in Figure 4) /// When the depth image is selected, left-click a pixel to display its value as Dep-value (Area 4, yellow in Figure 4). This value indicates the depth from that point to the camera
-* When the amplitude image is selected, shows the pixel values of the selected pixels in the amplitude image (Area 4, orange in Figure 4) /// When the amplitude image is selected, left-click a pixel to display its value as AMP-value (Area 4, orange in Figure 4). This value reflects the intensity or energy of the light signal reflected from the target object's surface and received by the sensor
-* /// When the point cloud image is selected, shows the point cloud value corresponding to the selected pixel in the depth image (Area 4, black in Figure 4). This value shows the (x,y,z) value of that seleted pixel point in the 3D point cloud image
+* When the depth image is selected, left-click a pixel to display its value as Dep-value (Area 4, yellow in Figure 4). This value indicates the depth from that point to the camera
+* When the amplitude image is selected, left-click a pixel to display its value as AMP-value (Area 4, orange in Figure 4). This value reflects the intensity or energy of the light signal reflected from the target object's surface and received by the sensor
+* When the point cloud image is selected, shows the point cloud value corresponding to the selected pixel in the depth image (Area 4, black in Figure 4). This value shows the (x,y,z) value of that seleted pixel point in the 3D point cloud image
 * When no pixels are selected, the default selection is pixel (0, 0)
 * Frame rate color indicators: green (> 12 fps), orange (6–12 fps), red (< 6 fps)
 
@@ -454,8 +454,7 @@ _Figure 6_
 
 _Figure 7_
 
-**3.7.2.4 Filtering Settings /// \[low signal detect]，\[Smooth Level]，\[Noise Level]，\[Time Level]在操作软件中没有选项**
-
+**3.7.2.4 Filtering Settings [some option may vary depends on different s10 series]
 | Setting                  | Description                                                                                                                                        |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **\[Minimum Depth]**     | Lower limit for pseudo-color or distance in the depth image. Below this value, pseudo-color is displayed as black and the value is set to zero     |
@@ -463,7 +462,7 @@ _Figure 7_
 | **\[Minimum Amplitude]** | Lower limit of intensity values. Below this value, the corresponding pixel in the depth image is set to zero (does not affect the amplitude image) |
 | **\[Maximum Amplitude]** | Upper limit of intensity values. Above this value, the corresponding pixel in the depth image is set to zero (does not affect the amplitude image) |
 | **\[low signal detect]** | Sets the small signal detection level; higher levels detect smaller signals                                                                        |
-| **\[Filtering Mode]**    | /// Sets the filter masking level, there are three options available: Simple, Normal, Expert.                                                      |
+| **\[Filtering Mode]**    | Sets the filter masking level, there are three options available: Simple, Normal, Expert.                                                          |
 | **\[Smooth Level]**      | Controls the smoothing strength of spatial filtering, preserving edge details while reducing noise                                                 |
 | **\[Noise Level]**       | Sets the noise filtering threshold (higher value = more noise filtered)                                                                            |
 | **\[Time Level]**        | Controls the strength of temporal filtering, using historical multi-frame data to improve depth data continuity                                    |
@@ -474,7 +473,7 @@ _Figure 7_
 
 _Figure 8_ /// figure 8 和figure 7 重复了
 
-**3.7.2.5 Hardware Interface /// 我用的中只有Get IO status一个选项**
+**3.7.2.5 Hardware Interface [some option may vary depends on different s10 series]
 
 | Setting                     | Description                                                               |
 | --------------------------- | ------------------------------------------------------------------------- |
@@ -490,7 +489,7 @@ _Figure 8_ /// figure 8 和figure 7 重复了
 
 _Figure 9_
 
-**3.7.2.6 Collection Settings /// trigger mode 在我这个系统中没有**
+**3.7.2.6 Collection Settings [some option may vary depends on different s10 series]
 
 | Setting                          | Description                                                                                                                                                                                                                                |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -498,7 +497,7 @@ _Figure 9_
 | **\[Trigger Mode]**              | Sets the streaming mode to continuous, passive, or active                                                                                                                                                                                  |
 | **\[Cloud Save Method]**         | **Normal** (Unordered Point Cloud): point count unchanged, width = width × height, height = 1 (Figure 3). **Ordered Point Cloud**: point count unchanged, width = ToF width, height = ToF height (Figure 4) /// sparse, dense, compressed? |
 | **\[Cloud Save Format]**         | **BINARY**: saves in binary format. **ASCII**: saves in text-based ASCII format                                                                                                                                                            |
-| **\[Point Cloud numeric Units]** | /// Sets the measurement unit for point cloud saved data, two options available, mm and m                                                                                                                                                  |
+| **\[Point Cloud numeric Units]** | Sets the measurement unit for point cloud saved data, two options available, mm and m                                                                                                                                                  |
 | **\[Start Snap]**                | Continuously saves the currently selected image type                                                                                                                                                                                       |
 | **\[Open Save Path]**            | Opens the folder where **\[Save Single Image]** stores files                                                                                                                                                                               |
 
