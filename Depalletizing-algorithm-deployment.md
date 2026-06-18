@@ -203,7 +203,7 @@ _&#x46;igure 15: Activate algorithm_
 
 #### Step 6: Configure Basic Camera Parameters
 
-Switch to the [Parameters] tab, select the right camera parameter template matching the business need and camera model at [camera template] , and click [Deploy Camera template] to complete the initialization of the camera's parameters.
+Switch to the [Parameters] tab, select the right camera parameter template matching the business need and camera model at [camera template], and click [Deploy Camera template] to complete the initialization of the camera's parameters.
 
 ![PixPin\_2026-06-04\_05-48-48](https://github.com/user-attachments/assets/08526776-d984-40d4-946c-ea63e5d65862)\
 _&#x46;igure 16: Basic camera parameters_
