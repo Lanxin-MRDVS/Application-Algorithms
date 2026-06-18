@@ -221,7 +221,7 @@ Execute the hand-eye calibration process to complete the coordinate alignment be
 
 #### Step 9: Area Calibration
 
-The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completes the region calibration. If you want to manually configure the area, remember to click [save and send] button after configuration, to send the new area data to the center.
+The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically complete the region calibration. If you want to manually configure the area, remember to click [save and send] button after configuration, to send the new area data to the center.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/3dffb6fa-f92a-4253-8d2e-33729aac709e)\
 _&#x46;igure 18 : Area calibration_
