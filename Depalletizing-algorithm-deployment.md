@@ -6,7 +6,7 @@ AwareSight3 (also known as AW3) is an application management platform designed f
 
 ### 1.1 Interface overview
 
-The overall interface of the AW3 platform is primarily divided into four major functional sections: 1. Connection Management Section; 2. Parameter Configuration Section; 3. Display Configuration Section ; and 4. Visualization Section. These sections operate independently yet work in synergy, covering the full operational workflow of device access, parameter configuration, visual observation, and algorithm execution (as shown in Figure 1).
+The overall interface of the AW3 platform is primarily divided into four major functional sections: 1.Connection Management Section; 2.Parameter Configuration Section; 3.Display Configuration Section ; and 4.Visualization Section. These sections operate independently yet work in synergy, covering the full operational workflow of device access, parameter configuration, visual observation, and algorithm execution (as shown in Figure 1).
 
 ![PixPin\_2026-06-01\_10-40-42](https://github.com/user-attachments/assets/ad3c08cf-d85c-40c1-b935-9b1b1934ab76)\
 _&#x46;igure 1：Interface overview_
@@ -29,7 +29,7 @@ The Parameter Configuration Section contains five tabs, the Device Connection, t
 
 ### 4.1 Device Connection tab
 
-When clicking the Device Connection menu, the content will then be at the right side of the displays, as shown in Figure 2 red box. The Center Connection section shows the information of the center AlgPlatformViewer is connected to.
+When clicking the Device Connection menu, the content will then be at the right side of the displays, as shown in Figure 4 red box. The Center Connection section shows the information of the center AlgPlatformViewer is connected to.
 
 * Center Address: The IP address of the center that AlgPlatformViewer is connected to.
 * Center Port: The port number used by the center to transport all operational data streams. This includes sharing information about cameras connected to this center with other centers, as well as importing real-time 3D image data from cameras.
@@ -71,7 +71,7 @@ The Global Settings defines the core filtering and recognition parameters for de
 2. Standard Dimensions (L x W mm): Sets the standard length and width benchmarks for the target material.
 3. Length/Width Range (mm): Defines the valid length and width intervals for cargo. Targets falling outside these ranges are automatically filtered.
 4. Layer Height (mm): This parameter is used to filter cargo by layer height and distinguish items across different stacking levels. For example, if the Layer Height is set to 200 mm, it means that when soft-bags are stacked, the height of a single bag (e.g., 200 mm) determines the height of each layer. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from further computation.
-5. Arrangement Order: Defines the priority order for the algorithm to recognize cargo. It defaults to "Near to far," meaning the system prioritizes recognizing the nearest cargo first. This setting is crucial in industrial environments where cargo may not be stacked neatly, and items on the same layer might partially overlap. This function prevents the system from attempting to pick up a top layer cargo that has another item partly on top of it, which could cause displacement or instability during retrieval. For example in Figure 5, you can see the arrangement order as the green number.
+5. Arrangement Order: Defines the priority order for the algorithm to recognize cargo. It defaults to "Near to far," meaning the system prioritizes recognizing the nearest cargo first. This setting is crucial in industrial environments where cargo may not be stacked neatly, and items on the same layer might partially overlap. This function prevents the system from attempting to pick up a top layer cargo that has another item partly on top of it, which could cause displacement or instability during retrieval. For example in Figure 7, you can see the arrangement order as the green number.
 6. Advanced Toggles \[Under Development]: Includes options for enabling large-size splitting, parallel alignment correction, multiple results at once, and occlusion detection. In the current version, these are reserved configuration items and are not yet active.
 
 ![PixPin\_2026-06-03\_08-19-04](https://github.com/user-attachments/assets/39a12f80-453a-4253-81d5-8497591b3fed)\
@@ -89,7 +89,7 @@ Used to customize the spatial detection region of the algorithm. By setting the 
 ![PixPin\_2026-06-03\_08-20-34](https://github.com/user-attachments/assets/422ed648-a506-43c8-a68f-87bbdc06a61e)\
 _&#x46;igure 9：Area Settings_
 
-For example, if the Area is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 8. If that happened, configure the Area Settings and change the area size, then click Save and Send and Single Trigger.
+For example, if the Area is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 10. If that happened, configure the Area Settings and change the area size, then click Save and Send and Single Trigger.
 
 ![PixPin\_2026-06-03\_10-27-36](https://github.com/user-attachments/assets/35a488b1-513e-4d8f-a0d8-a6a4af056177)\
 _&#x46;igure 10：Error example_
@@ -128,7 +128,7 @@ _&#x46;igure 12：Calibration Settings_
 _&#x46;igure 13：Buttons_
 
 ## 5. Communication protocol
-Currently, the product's communication protocol system supports TCP connections and custom formats tailored to specific client requirements. Its core module is External Triggering protocols. The overall architecture is highly flexible and extensible, supporting various built-in protocols as well as custom extensions. Below is a comprehensive summary of the communication protocol system:
+Currently, the product's communication protocol system supports TCP connections and custom formats tailored to specific client requirements. Its core module is external triggering protocols. The overall architecture is highly flexible and extensible, supporting various built-in protocols as well as custom extensions. Below is a comprehensive summary of the communication protocol system:
 
 ### 5.1 Triggering Protocols
 
@@ -179,7 +179,7 @@ This chapter provides a complete deployment configuration process for the AW3 pl
 
 Open AlgPlatformViewer.exe to run the AW3 host software.
 
-#### Step 2：Verify Network Environment
+#### Step 2: Verify Network Environment
 
 Ensure that the host computer and the camera algorithm module are on the same local area network (LAN) subnet to guarantee normal communication, discovery, and connection of the devices. For more details about IP and Firewall configuration, please refer to the LxCameraViewer user manual at https://github.com/Lanxin-MRDVS/CameraSDK/wiki/LxCameraViewer-User-Manual
 
@@ -212,8 +212,10 @@ _&#x46;igure 16: Basic camera parameters_
 
 Enter the [Depalletizing] tab, select the corresponding cargo template at [cargo template], for soft-bags, we recommend to use template 6, then select the [material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
-![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/56565721-8efe-4fca-b651-06881936c717)\
+
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/9ac618ee-a4be-4569-babb-f97960a7bbfc)\
 _&#x46;igure 17: Depalletizing configuration_
+
 
 #### Step 8: Hand-Eye Calibration
 
