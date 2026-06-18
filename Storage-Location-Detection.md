@@ -1,1 +1,1 @@
-# Storage Location Detection syetm 
+# Storage Location Detection system deployment
