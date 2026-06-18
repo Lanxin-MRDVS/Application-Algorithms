@@ -2,7 +2,7 @@
 
 ## 1. Instruction
 
-AwareSight3 (also known as AW3) is an application management platform designed for industrial vision algorithms. It is responsible for device connection, authentication, camera parameter configuration, and the management and deployment of algorithm parameters. PalletEye (so called PE) is a built-in algorithm module within the platform, specifically tailored for soft bag and carton unstacking. Leveraging RGB-D camera data, it delivers capabilities such as pallet cargo recognition, region calibration, hand-eye calibration, grasp pose estimation, and dimension detection. It is widely applied in industrial pallet unstacking scenarios. This manual serves to guide operators through the entire process of software deployment, device connection, apply for algorithm license, parameter configuration, unstacking function debugging, and template management.
+AwareSight3 (also known as AW3) is an application management platform designed for industrial vision algorithms. It is responsible for device connection, authentication, camera parameter configuration, and the management and deployment of algorithm parameters. PalletEye (also called PE) is a built-in algorithm module within the platform, specifically tailored for soft bag and carton unstacking. Leveraging RGB-D camera data, it delivers capabilities such as pallet cargo recognition, region calibration, hand-eye calibration, grasp pose estimation, and dimension detection. It is widely applied in industrial pallet unstacking scenarios. This manual serves to guide operators through the entire process of software deployment, device connection, apply for algorithm license, parameter configuration, unstacking function debugging, and template management.
 
 ### 1.1 Interface overview
 
@@ -55,7 +55,7 @@ _&#x46;igure 5：Depalletizing Configuration_
 #### 4.2.1 Choose Template and Mode
 
 1. Fetch Current Parameters: By clicking this button, the AlgPlatformViewer fetches all the Global-, Region-, and Calibration parameters saved on the center connected. The fetched parameters are then loaded into the Global-, Calibration-, Region settings for visualization and further configuration if needed.
-2. Template Selection: Selects saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags. For soft-bags, we recommand to use template 6.
+2. Template Selection: Selects saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags. For soft-bags, we recommend to use template 6.
 3. Material Type Switching: Supports switching between two material types—Soft-pack (Bag) and Carton (Box)—to adapt to different depalletizing target recognition logics.
 4. Apply Calibration to All Templates and Distribute: This button applies the Region and Calibration settings to all other templates. The logic is that Global settings contain parameters specific to a depalletizing target, which may change when cargo types change. However, the detection area and camera calibration remain constant since the robot's physical position does not change. Therefore, when the cargo type changes, you only need to update the Global settings, without having to re-enter the Region and Calibration parameters every time.
 5. Operation Mode Switching: Simple Mode: Parameters are fixed. It performs only basic validation on cargo dimensions without advanced algorithm features, making it suitable for standardized, routine depalletizing scenarios. Expert Mode: Unlocks full custom parameter configuration and enables advanced features like parcel merging. This mode is designed for complex working conditions and scenarios requiring refined recognition (UI to be continuously optimized).
@@ -103,7 +103,7 @@ _&#x46;igure 11：Output Settings_
 
 #### 4.2.5 Calibration Settings
 
-Used for managing hand-eye calibration parameters between the camera and the robotic arm. Configurable parameters include Euler angles, translation vector, offsets, and the tool coordinate system RT, which serve as the callibration benchmark for depalletizing pose calculations. Used for initial calibration.
+Used for managing hand-eye calibration parameters between the camera and the robotic arm. Configurable parameters include Euler angles, translation vector, offsets, and the tool coordinate system RT, which serve as the calibration benchmark for depalletizing pose calculations. Used for initial calibration.
 
 * Euler Angles: Represents the orientation (rotation) of the robotic arm in 3D space. It describes how the robotic arm is tilted or turned using three specific angles: Roll, Pitch, and Yaw.
 * Translation Vector: Represents the position of the robotic arm in 3D space. It defines the robotic arm's exact location relative to a reference point (origin) using X, Y, and Z coordinates. It tells the system how far the tool tip is from the robot camera in the length, width, and height directions.
@@ -210,7 +210,7 @@ _&#x46;igure 16: Basic camera parameters_
 
 #### Step 7: Configure Depalletizing Parameters
 
-Enter the [Depalletizing] tab, select the corresponding cargo template at [cargo template], for soft-bags, we recommand to use template 6, then select the [material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
+Enter the [Depalletizing] tab, select the corresponding cargo template at [cargo template], for soft-bags, we recommend to use template 6, then select the [material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/56565721-8efe-4fca-b651-06881936c717)\
 _&#x46;igure 17: Depalletizing configuration_
