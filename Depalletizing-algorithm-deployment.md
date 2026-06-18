@@ -77,7 +77,7 @@ The Global Settings defines the core filtering and recognition parameters for de
 ![PixPin\_2026-06-03\_08-19-04](https://github.com/user-attachments/assets/39a12f80-453a-4253-81d5-8497591b3fed)\
 _&#x46;igure 7：Global Settings_
 
-If the cargo's volume and size exceed the maximum Length/Width range in the Global settings, or if the target cargo is too small and falls below the minimum Length/Width range, the system will filter out the cargo and will not detect it as a target. This is shown in Figure 6. If that happened, switch template or change Global settings parameters, and then click Save and Send, and then Single trigger.
+If the cargo's volume and size exceed the maximum Length/Width range in the Global settings, or if the target cargo is too small and falls below the minimum Length/Width range, the system will filter out the cargo and will not detect it as a target. This is shown in Figure 8. If that happened, switch template or change Global settings parameters, and then click Save and Send, and then Single trigger.
 
 ![PixPin\_2026-06-03\_09-32-28](https://github.com/user-attachments/assets/1ef658d4-b981-4902-857e-a5799eaf16c5)\
 _&#x46;igure 8：Error example_
@@ -125,7 +125,7 @@ _&#x46;igure 12：Calibration Settings_
 5. Save and send: Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
 
 ![PixPin\_2026-06-03\_08-21-01](https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614)\
-_&#x46;igure 13：Buttons_
+_&#x46;igure 13: Buttons_
 
 ## 5. Communication protocol
 Currently, the product's communication protocol system supports TCP connections and custom formats tailored to specific client requirements. Its core module is external triggering protocols. The overall architecture is highly flexible and extensible, supporting various built-in protocols as well as custom extensions. Below is a comprehensive summary of the communication protocol system:
@@ -226,17 +226,17 @@ Execute the hand-eye calibration process to complete the coordinate alignment be
 The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically complete the region calibration. If you want to manually configure the area, remember to click [save and send] button after configuration, to send the new area data to the center.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/3dffb6fa-f92a-4253-8d2e-33729aac709e)\
-_&#x46;igure 18 : Area calibration_
+_&#x46;igure 18: Area calibration_
 
 #### Step 10: Test the result
 
 Click Single Trigger to execute a single algorithm detection. Observe the results, including cargo recognition, grasping pose, and dimension output, to determine whether the detection performance is reasonable and meets the on-site depalletizing requirements. You can also see the results at \[Result log] tab.
 
-#### Communication Verification
+#### Step 11: Communication Verification
 
 Request results directly from the algorithm module according to the communication protocol, and observe the corresponding changes on the AW3 interface.
 
-#### Step 11: Efficiency Verification
+#### Step 12: Efficiency Verification
 
 The latency from sending the request to receiving the result must be less than 2500ms.
 
