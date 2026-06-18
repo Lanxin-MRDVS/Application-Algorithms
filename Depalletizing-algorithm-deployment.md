@@ -67,7 +67,7 @@ _&#x46;igure 6：Choose template and mode_
 
 The Global Settings defines the core filtering and recognition parameters for depalletizing target detection. It is used to control cargo detection accuracy and filtering rules. The parameters are described as follows:
 
-1. Fill Ratio: Determines the threshold of how well the detected target fill the detection frame. Recommended value is 0.7. Cargo with a fill ratio lower than this threshold will be filtered out to avoid invalid or interfering targets.
+1. Fill Ratio: Determines the threshold of how well the detected target fills the detection frame. Recommended value is 0.7. Cargo with a fill ratio lower than this threshold will be filtered out to avoid invalid or interfering targets.
 2. Standard Dimensions (L x W mm): Sets the standard length and width benchmarks for the target material.
 3. Length/Width Range (mm): Defines the valid length and width intervals for cargo. Targets falling outside these ranges are automatically filtered.
 4. Layer Height (mm): This parameter is used to filter cargo by layer height and distinguish items across different stacking levels. For example, if the Layer Height is set to 200 mm, it means that when soft-bags are stacked, the height of a single bag (e.g., 200 mm) determines the height of each layer. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from further computation.
@@ -120,7 +120,7 @@ _&#x46;igure 12：Calibration Settings_
 * Add template： Click the button and enter a custom name to create and save a new template.
 * Delete Current Template: One-click deletion of the currently selected template to clear invalid scene configurations.
 
-3. Region calibration: Click the button to execute the region calibration. The algorithm identifies all cargo targets within the RGB field of view, selects most centered cargo as the base detection area, expands outward by a fixed range, and generates the valid detection area with a visual display of the calibration result.
+3. Region calibration: Click the button to execute the region calibration. The algorithm identifies all cargo targets within the RGB field of view, selects the most centered cargo as the base detection area, expands outward by a fixed range, and generates the valid detection area with a visual display of the calibration result.
 4. Hand-eye calibration: Currently, this feature only supports the Chinese version. During the initial setup, clicking this button will launch the hand-eye calibration tool. The purpose of this tool is to align the separate coordinate systems of the camera and the robot arm. The "Camera Coordinate" section displays the X, Y, Z value of a specific point within the camera's coordinate system showing the camera's location. Below this, an RGB image shows four reference points on the tray. You need to move the robot arm's tip to each of these points and input the corresponding coordinates into the "Robot Coordinate" section. Once you click OK, the algorithm will unify the camera's and robot arm's coordinate systems, determining the precise spatial relationship between them.
 5. Save and send: Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
 
@@ -189,14 +189,14 @@ Write the PE depalletizing algorithm to the algorithm module via the platform's 
 
 #### Step 4: Connect to the Device
 
-After the device restarts, return to the \[Device Connection] interface. Click the \[Discover centers] button to refresh the LAN connection as shown in green box. Select the center which your wanted camera is connected to from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in blue box. Click on the virtual camera option and click the camera you want to establish connection with. Then click \[Connect to Center] button.
+After the device restarts, return to the \[Device Connection] interface. Click the \[Discover centers] button to refresh the LAN connection as shown in green box. Select the center to which your desired camera is connected to from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in blue box. Click on the virtual camera option and click the camera you want to establish connection with. Then click \[Connect to Center] button.
 
 ![PixPin\_2026-06-04\_05-40-02](https://github.com/user-attachments/assets/2c2e76f1-2433-4b01-bcfb-1413211e26d0)\
 _&#x46;igure 14: Connection_
 
 #### Step 5: Activate Algorithm Authorization
 
-Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click [Algorithm Authentication] button as shown in red box, and obtain the authorization request key by clicking [Get request key]. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
+Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click [Algorithm Authentication] button as shown in red box, and obtain the authorization request key by clicking [Get request key]. Submit this key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/d2762816-727e-4849-9af0-dfb309032f5e)\
 _&#x46;igure 15: Activate algorithm_
@@ -221,7 +221,7 @@ Execute the hand-eye calibration process to complete the coordinate alignment be
 
 #### Step 9: Area Calibration
 
-The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completing the region calibration. If you want to manually configure the area, remember to click [save and send] button after configuration, to send the new area data to the center.
+The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically completes the region calibration. If you want to manually configure the area, remember to click [save and send] button after configuration, to send the new area data to the center.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/3dffb6fa-f92a-4253-8d2e-33729aac709e)\
 _&#x46;igure 18 : Area calibration_
