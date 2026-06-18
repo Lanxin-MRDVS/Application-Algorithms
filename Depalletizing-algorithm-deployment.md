@@ -199,7 +199,7 @@ _&#x46;igure 14: Connection_
 Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click [Algorithm Authentication] button as shown in red box, and obtain the authorization request Key by clicking [Get request key]. Submit this Key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/d2762816-727e-4849-9af0-dfb309032f5e)\
-_&#x46;igure 15: Acivate algorithm_
+_&#x46;igure 15: Activate algorithm_
 
 #### Step 6: Configure Basic Camera Parameters
 
