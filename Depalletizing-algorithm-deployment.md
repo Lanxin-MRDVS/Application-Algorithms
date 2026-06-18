@@ -75,7 +75,7 @@ The Global Settings defines the core filtering and recognition parameters for de
 6. Advanced Toggles \[Under Development]: Includes options for enabling large-size splitting, parallel alignment correction, multiple results at once, and occlusion detection. In the current version, these are reserved configuration items and are not yet active.
 
 ![PixPin\_2026-06-03\_08-19-04](https://github.com/user-attachments/assets/39a12f80-453a-4253-81d5-8497591b3fed)\
-_&#x46;igure 7：Clobal Settings_
+_&#x46;igure 7：Global Settings_
 
 If the cargo's volume and size exceed the maximum Length/Width range in the Global settings, or if the target cargo is too small and falls below the minimum Length/Width range, the system will filter out the cargo and will not detect it as a target. This is shown in Figure 6. If that happened, switch template or change Global settings parameters, and then click Save and Send, and then Single trigger.
 
