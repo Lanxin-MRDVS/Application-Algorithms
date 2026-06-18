@@ -300,7 +300,7 @@ When a package parameter configuration error occurs, the error text is displayed
 | 19         | Abnormal aspect ratio                             | `AR {ratio}`       |
 | 99         | Unknown error                                     | `E{code}`          |
 
-!<img alt="5cb328cb759200ecaac12ae9db5b9e29" src="https://github.com/user-attachments/assets/c05b3e6f-fcde-47ec-bbdc-570dd23a9242" />\
+<img alt="5cb328cb759200ecaac12ae9db5b9e29" src="https://github.com/user-attachments/assets/c05b3e6f-fcde-47ec-bbdc-570dd23a9242" />\
 Figure 20: Package error codes 
 ### Status Indicators
 The top HUD provides real-time telemetry regarding the current palletizing stack status.
@@ -313,7 +313,7 @@ The top HUD provides real-time telemetry regarding the current palletizing stack
 | **invalid_skip** | Skipped illegal/invalid bags |
 | **is_ok** | Whether the stacking is within the image boundaries |
 
-!<img alt="7c42c22d1705cc40657156525cfc2a44" src="https://github.com/user-attachments/assets/d4ef2369-929c-4c60-8436-38dfb43c9797" />\
+<img alt="7c42c22d1705cc40657156525cfc2a44" src="https://github.com/user-attachments/assets/d4ef2369-929c-4c60-8436-38dfb43c9797" />\
 Figure 21: Status indicators 
 
 ## 8. New features coming
