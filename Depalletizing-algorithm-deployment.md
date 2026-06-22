@@ -108,11 +108,29 @@ Used for managing hand-eye calibration parameters between the camera and the rob
 * Euler Angles: Represents the orientation (rotation) of the robotic arm in 3D space. It describes how the robotic arm is tilted or turned using three specific angles: Roll, Pitch, and Yaw.
 * Translation Vector: Represents the position of the robotic arm in 3D space. It defines the robotic arm's exact location relative to a reference point (origin) using X, Y, and Z coordinates. It tells the system how far the tool tip is from the robot camera in the length, width, and height directions.
 * Offset: Represents an intentional adjustment or shift applied to a target position. It adds a specific distance to the original coordinates to fine-tune the final location (e.g., to avoid collisions or adjust a gripping point).
+* Tool frame R:
+* Tool frame T：
 
 ![PixPin\_2026-06-03\_08-20-11](https://github.com/user-attachments/assets/bc8e03b4-efba-4134-8a72-c49b4a901501)\
 _&#x46;igure 12：Calibration Settings_
 
-#### 4.2.6 Buttons
+#### 4.2.6 Hand-eye calibration
+
+* Add point: Enter the x,y,z value into the input box, by clicking [Add point] button, you can add a point's coordinate into the corresponding coordinate area. 
+* Import from clipboard
+* Camera coordinate area: Contains the four camera teaching points coordinate.
+* Robot coordinate area: Contains the four robot teaching points coordinate.
+* Delete point/Delete all: Delete one or all coordinates in the coordinate area.
+* Auto add/Detect markers:
+* Left handed coordinate system: By clicking this option, switch the coordinate area into left handed coordinate area. 
+* Calibration: By clicking [Calibration] button, the calibration system merges the robot coordinate area with the camera coordinate area.  
+
+* [Gripper tool offset] section
+* Eular angles: Enter the eular angle details of the robot gripper tool, such as robot wrist.
+* Offset: Enter the robot gripper tool offset. 
+* Camera teaching point coordinates/Robot teaching point coordinates: Mainly used for verify calibration results. By enter an point coordinate from the camera coordinate area, the coordinate will automatically be transformed into corresponding coordinate in the robot coordinate area, and robot teaching point coordinates section will show the corresponding coordinate. This function idea is that the camera and the robot arm has separate coordinate area, and after calibration, the camera coordinate area will be merged with the robot coordinate area, so that when the camera system detects and possible softbag on the pallet and calculates the pickup points coordinate and angle, the coordinates and angle are at camera coordinate area, amd it has to be transformed into robot coordinate area so that the robot area could find the right pickup point. 
+
+#### 4.2.7 Buttons
 
 1. Single trigger: Click the button to execute a single image capture and depalletizing calculation. It updates detection results (such as cargo grasping pose and dimensions) in real-time, suitable for single-run debugging and verification.
 2. Add Template/Delete template:
@@ -121,7 +139,7 @@ _&#x46;igure 12：Calibration Settings_
 * Delete Current Template: One-click deletion of the currently selected template to clear invalid scene configurations.
 
 3. Region calibration: Click the button to execute the region calibration. The algorithm identifies all cargo targets within the RGB field of view, selects the most centered cargo as the base detection area, expands outward by a fixed range, and generates the valid detection area with a visual display of the calibration result.
-4. Hand-eye calibration: Currently, this feature only supports the Chinese version. During the initial setup, clicking this button will launch the hand-eye calibration tool. The purpose of this tool is to align the separate coordinate systems of the camera and the robot arm. The "Camera Coordinate" section displays the X, Y, Z value of a specific point within the camera's coordinate system showing the camera's location. Below this, an RGB image shows four reference points on the tray. You need to move the robot arm's tip to each of these points and input the corresponding coordinates into the "Robot Coordinate" section. Once you click OK, the algorithm will unify the camera's and robot arm's coordinate systems, determining the precise spatial relationship between them.
+4. Hand-eye calibration: During the initial setup, clicking this button will launch the hand-eye calibration tool. The purpose of this tool is to align the separate coordinate systems of the camera and the robot arm. The "Camera Coordinate" section displays the X, Y, Z value of a specific point within the camera's coordinate system showing the camera's location. Below this, an RGB image shows four reference points on the tray. You need to move the robot arm's tip to each of these points and input the corresponding coordinates into the "Robot Coordinate" section. Once you click OK, the algorithm will unify the camera's and robot arm's coordinate systems, determining the precise spatial relationship between them.
 5. Save and send: Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
 
 ![PixPin\_2026-06-03\_08-21-01](https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614)\
