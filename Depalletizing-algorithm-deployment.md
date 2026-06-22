@@ -108,20 +108,20 @@ Used for managing hand-eye calibration parameters between the camera and the rob
 * Euler Angles: Represents the orientation (rotation) of the robotic arm in 3D space. It describes how the robotic arm is tilted or turned using three specific angles: Roll, Pitch, and Yaw.
 * Translation Vector: Represents the position of the robotic arm in 3D space. It defines the robotic arm's exact location relative to a reference point (origin) using X, Y, and Z coordinates. It tells the system how far the tool tip is from the robot camera in the length, width, and height directions.
 * Offset: Represents an intentional adjustment or shift applied to a target position. It adds a specific distance to the original coordinates to fine-tune the final location (e.g., to avoid collisions or adjust a gripping point).
-* Tool frame R:
-* Tool frame T：
+* Tool frame R: It displays the X, Y, and Z distances from the robot's end flange to the robot's gripper tool.
+* Tool frame T：It specifies the rotational angles (expressed in Euler angles: Rx, Ry, Rz) of the tool relative to the robot's end flange.
 
 ![PixPin\_2026-06-03\_08-20-11](https://github.com/user-attachments/assets/bc8e03b4-efba-4134-8a72-c49b4a901501)\
 _&#x46;igure 12：Calibration Settings_
 
 #### 4.2.6 Hand-eye calibration
 
-* Add point: Enter the X, Y, and Z value of the teaching point into the input boxes and click the [Add Point] button to add the point's coordinates to the corresponding coordinate area.
-* Import from clipboard
+* Add point: Enter the X, Y, and Z value of the teaching point into the input box and click the [Add Point] button to add the point's coordinates to the corresponding coordinate area.
+* Import from clipboard: After pasting coordinate data from other devices into the input box, click this button. The system will automatically recognize the format and enter the coordinate data.
 * Camera coordinate area: Displays the coordinates of the four camera teaching points.
 * Robot coordinate area: Displays the coordinates of the four robot teaching points.
 * Delete point/Delete all: Delete a single point or all coordinates in the coordinate area.
-* Auto add/Detect markers:
+* Auto add/Detect markers: When you select the [Auto Add] mode, the hand-eye calibration tool enters auto-add mode. Place a calibration board at the pallet position so that it is fully visible within the camera's field of view. Then, click the [Detect Markers] button. The tool will automatically detect the coordinates of the four corners of the calibration board, eliminating the need to enter them manually.
 * Left handed coordinate system: Check this option to switch the coordinate area to a left-handed coordinate system.
 * Calibration: Click the [Calibration] button to start the hand-eye calibration.
 
@@ -129,6 +129,10 @@ _&#x46;igure 12：Calibration Settings_
 * Euler angles: Enter the Euler angles for the robot gripper tool (e.g., the robot wrist).
 * Offset: Enter the offset values for the robot gripper tool.
 * Camera teaching point coordinates/Robot teaching point coordinates: These sections are primarily used to verify calibration results. By entering a point coordinate from the camera coordinate area, the system will automatically transform it into the corresponding robot coordinate, which will then be displayed in the Robot Teaching Point Coordinates section.
+
+
+![PixPin\_2026-06-03\_08-21-01](https://github.com/user-attachments/assets/4ce00fda-f751-4fae-a83d-4dce1f7a3740)\
+_&#x46;igure 13: Hand-eye calibration_
 
 **Why is hand-eye calibration necessary?** 
 
@@ -149,7 +153,7 @@ Hand-eye calibration is designed to establish the coordinate transformation matr
 5. Save and send: Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
 
 ![PixPin\_2026-06-03\_08-21-01](https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614)\
-_&#x46;igure 13: Buttons_
+_&#x46;igure 14: Buttons_
 
 ## 5. Communication protocol
 Currently, the product's communication protocol system supports TCP connections and custom formats tailored to specific client requirements. Its core module is external triggering protocols. The overall architecture is highly flexible and extensible, supporting various built-in protocols as well as custom extensions. Below is a comprehensive summary of the communication protocol system:
@@ -216,21 +220,21 @@ Write the PE depalletizing algorithm to the algorithm module via the platform's 
 After the device restarts, return to the \[Device Connection] interface. Click the \[Discover centers] button to refresh the LAN connection as shown in green box. Select the center to which your desired camera is connected from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in blue box. Click on the virtual camera option and click the camera you want to establish connection with. Then click \[Connect to Center] button.
 
 ![PixPin\_2026-06-04\_05-40-02](https://github.com/user-attachments/assets/2c2e76f1-2433-4b01-bcfb-1413211e26d0)\
-_&#x46;igure 14: Connection_
+_&#x46;igure 15: Connection_
 
 #### Step 5: Activate Algorithm Authorization
 
 Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click [Algorithm Authentication] button as shown in red box, and obtain the authorization request key by clicking [Get request key]. Submit this key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/d2762816-727e-4849-9af0-dfb309032f5e)\
-_&#x46;igure 15: Activate algorithm_
+_&#x46;igure 166: Activate algorithm_
 
 #### Step 6: Configure Basic Camera Parameters
 
 Switch to the [Parameters] tab, select the right camera parameter template matching the business need and camera model at [camera template], and click [Deploy Camera template] to complete the initialization of the camera's parameters.
 
 ![PixPin\_2026-06-04\_05-48-48](https://github.com/user-attachments/assets/08526776-d984-40d4-946c-ea63e5d65862)\
-_&#x46;igure 16: Basic camera parameters_
+_&#x46;igure 17: Basic camera parameters_
 
 #### Step 7: Configure Depalletizing Parameters
 
@@ -238,19 +242,19 @@ Enter the [Depalletizing] tab, select the corresponding cargo template at [cargo
 
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/9ac618ee-a4be-4569-babb-f97960a7bbfc)\
-_&#x46;igure 17: Depalletizing configuration_
+_&#x46;igure 18: Depalletizing configuration_
 
 
 #### Step 8: Hand-Eye Calibration
 
-Execute the hand-eye calibration process to complete the coordinate alignment between the camera and the robotic arm, as mentioned in Buttons - section in this document. Once the calibration is verified as accurate, click \[Calibration] button to persistently save the calibration parameters to the camera device and automatically set the \[Calibration Settings] parameters.
+Execute the hand-eye calibration process to establish the coordinate alignment between the camera and the robotic arm. First, enter the coordinates of the four corners of the pallet into the camera coordinate area. Note that the origin of this area is the optical center of the camera. Next, manually move the robotic arm to each of the four points, tap the point once, and enter the corresponding robotic arm coordinates into the robot coordinate area. Finally, click the [Calibration] button. This will persistently save the calibration parameters to the camera device and automatically apply the [Calibration Settings].
 
 #### Step 9: Area Calibration
 
 The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically complete the region calibration. If you want to manually configure the area, remember to click [save and send] button after configuration, to send the new area data to the center.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/3dffb6fa-f92a-4253-8d2e-33729aac709e)\
-_&#x46;igure 18: Area calibration_
+_&#x46;igure 19: Area calibration_
 
 #### Step 10: Test the result
 
@@ -295,7 +299,7 @@ When critical anomalies are detected, the system triggers two types of visual wa
 | `err code=-100, template: xxx` | UNKNOWN (-100) |
 
 ![d4e7c26e94fd2aebb9dd145dc012f73b](https://github.com/user-attachments/assets/cbb794c4-d677-4e03-8511-45022ce7d960)\
-Figure 19: Algorithm error code
+Figure 20: Algorithm error code
 
 
 
@@ -327,7 +331,7 @@ When a package parameter configuration error occurs, the error text is displayed
 | 99         | Unknown error                                     | `E{code}`          |
 
 <img alt="5cb328cb759200ecaac12ae9db5b9e29" src="https://github.com/user-attachments/assets/c05b3e6f-fcde-47ec-bbdc-570dd23a9242" />\
-Figure 20: Package error codes 
+Figure 21: Package error codes 
 ### Status Indicators
 The top HUD provides real-time telemetry regarding the current palletizing stack status.
 
@@ -340,7 +344,7 @@ The top HUD provides real-time telemetry regarding the current palletizing stack
 | **is_ok** | Whether the stacking is within the image boundaries |
 
 <img alt="7c42c22d1705cc40657156525cfc2a44" src="https://github.com/user-attachments/assets/d4ef2369-929c-4c60-8436-38dfb43c9797" />\
-Figure 21: Status indicators 
+Figure 22: Status indicators 
 
 ## 8. New features coming
 
