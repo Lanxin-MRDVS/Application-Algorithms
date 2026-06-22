@@ -116,19 +116,25 @@ _&#x46;igure 12：Calibration Settings_
 
 #### 4.2.6 Hand-eye calibration
 
-* Add point: Enter the x,y,z value into the input box, by clicking [Add point] button, you can add a point's coordinate into the corresponding coordinate area. 
+* Add point: Enter the X, Y, and Z value of the teaching point into the input boxes and click the [Add Point] button to add the point's coordinates to the corresponding coordinate area.
 * Import from clipboard
-* Camera coordinate area: Contains the four camera teaching points coordinate.
-* Robot coordinate area: Contains the four robot teaching points coordinate.
-* Delete point/Delete all: Delete one or all coordinates in the coordinate area.
+* Camera coordinate area: Displays the coordinates of the four camera teaching points.
+* Robot coordinate area: Displays the coordinates of the four robot teaching points.
+* Delete point/Delete all: Delete a single point or all coordinates in the coordinate area.
 * Auto add/Detect markers:
-* Left handed coordinate system: By clicking this option, switch the coordinate area into left handed coordinate area. 
-* Calibration: By clicking [Calibration] button, the calibration system merges the robot coordinate area with the camera coordinate area.  
+* Left handed coordinate system: Check this option to switch the coordinate area to a left-handed coordinate system.
+* Calibration: Click the [Calibration] button to start the hand-eye calibration.
 
-* [Gripper tool offset] section
-* Eular angles: Enter the eular angle details of the robot gripper tool, such as robot wrist.
-* Offset: Enter the robot gripper tool offset. 
-* Camera teaching point coordinates/Robot teaching point coordinates: Mainly used for verify calibration results. By enter an point coordinate from the camera coordinate area, the coordinate will automatically be transformed into corresponding coordinate in the robot coordinate area, and robot teaching point coordinates section will show the corresponding coordinate. This function idea is that the camera and the robot arm has separate coordinate area, and after calibration, the camera coordinate area will be merged with the robot coordinate area, so that when the camera system detects and possible softbag on the pallet and calculates the pickup points coordinate and angle, the coordinates and angle are at camera coordinate area, amd it has to be transformed into robot coordinate area so that the robot area could find the right pickup point. 
+[Gripper tool offset] section
+* Euler angles: Enter the Euler angles for the robot gripper tool (e.g., the robot wrist).
+* Offset: Enter the offset values for the robot gripper tool.
+* Camera teaching point coordinates/Robot teaching point coordinates: These sections are primarily used to verify calibration results. By entering a point coordinate from the camera coordinate area, the system will automatically transform it into the corresponding robot coordinate, which will then be displayed in the Robot Teaching Point Coordinates section.
+
+**Why is hand-eye calibration necessary?** 
+
+In practical applications, robots need to combine visual information to execute tasks. The robotic arm operates within its own coordinate system and knows its exact position and orientation (e.g., XYZ values and angles) within it. Similarly, the camera operates within its own coordinate system, with the optical center serving as the origin, and it knows the position and orientation of the target object relative to its lens. However, the camera system does not know its spatial pose relative to the robot's base. This means it can only determine coordinates within its own system and cannot directly map them to the robot's coordinate system.
+
+Hand-eye calibration is designed to establish the coordinate transformation matrix between the "eye" and the "hand". Only after this step is completed can the robot accurately translate the 3D point cloud coordinates captured by the camera into control coordinates that the robotic arm can understand and execute, thereby achieving true "eye-to-hand" coordination.
 
 #### 4.2.7 Buttons
 
