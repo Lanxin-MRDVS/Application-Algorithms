@@ -56,7 +56,7 @@ _&#x46;igure 5：Depalletizing Configuration_
 
 1. Fetch Current Parameters: By clicking this button, the AlgPlatformViewer fetches all the Global-, Region-, and Calibration parameters saved on the center connected. The fetched parameters are then loaded into the Global-, Calibration-, Region settings for visualization and further configuration if needed.
 2. Template Selection: Select saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags. For soft-bags, we recommend to use template 6.
-3. Material Type Switching: Supports switching between two material types—Soft-pack (Bag) and Carton (Box)—to adapt to different depalletizing target recognition logics.
+3. Material Type Switching: Supports switching between two material types—Soft-pack (bag) and Carton (Box)—to adapt to different depalletizing target recognition logics.
 4. Apply Calibration to All Templates and Distribute: This button applies the Region and Calibration settings to all other templates. The logic is that Global settings contain parameters specific to a depalletizing target, which may change when cargo types change. However, the detection area and camera calibration remain constant since the robot's physical position does not change. Therefore, when the cargo type changes, you only need to update the Global settings, without having to re-enter the Region and Calibration parameters every time.
 5. Operation Mode Switching: Simple Mode: Parameters are fixed. It performs only basic validation on cargo dimensions without advanced algorithm features, making it suitable for standardized, routine depalletizing scenarios. Expert Mode: Unlocks full custom parameter configuration and enables advanced features like parcel merging. This mode is designed for complex working conditions and scenarios requiring refined recognition (UI to be continuously optimized).
 
@@ -162,7 +162,7 @@ Currently, the product's communication protocol system supports TCP connections 
 
 The system supports multiple formats of TCP triggering protocols. After a client sends a request, the server executes the algorithm and returns the result. All protocols support controlling coordinate system transformations (e.g., left-handed vs. right-handed systems) through parameters such as coordinate_system.
 
-HnpsA Raw Frame Protocol
+HnpsA Raw Frame Protocol:
 - Features: Minimalist text commands with no additional termination characters required.
 - Format: 3D<CameraID><SoftpackCount> (e.g., 3D15).
 - Response: Fixed format 3DA...AOK.
@@ -227,7 +227,7 @@ _&#x46;igure 15: Connection_
 Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click [Algorithm Authentication] button as shown in red box, and obtain the authorization request key by clicking [Get request key]. Submit this key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/d2762816-727e-4849-9af0-dfb309032f5e)\
-_&#x46;igure 166: Activate algorithm_
+_&#x46;igure 16: Activate algorithm_
 
 #### Step 6: Configure Basic Camera Parameters
 
@@ -287,7 +287,7 @@ The latency from sending the request to receiving the result must be less than 2
 | -100       | Unknown / Initial error                                         |
 | -101       | Pipeline parameters not configured                              |
 
-**Severe Exception Rendering** \
+**Severe Exception Rendering:** \
 When critical anomalies are detected, the system triggers two types of visual warning overlay
 
 | Render Content | Error Type |
