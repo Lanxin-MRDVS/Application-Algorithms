@@ -6,7 +6,7 @@ AwareSight3 (also known as AW3) is an application management platform designed f
 
 ### 1.1 Interface overview
 
-The overall interface of the AW3 platform is primarily divided into four major functional sections: 1.Connection Management Section; 2.Parameter Configuration Section; 3.Display Configuration Section ; and 4.Visualization Section. These sections operate independently yet work in synergy, covering the full operational workflow of device access, parameter configuration, visual observation, and algorithm execution (as shown in Figure 1).
+The overall interface of the AW3 platform is primarily divided into four major functional sections: 1. Connection Management Section; 2. Parameter Configuration Section; 3. Display Configuration Section; and 4. Visualization Section. These sections operate independently yet work in synergy, covering the full operational workflow of device access, parameter configuration, visual observation, and algorithm execution (as shown in Figure 1).
 
 ![PixPin\_2026-06-01\_10-40-42](https://github.com/user-attachments/assets/ad3c08cf-d85c-40c1-b935-9b1b1934ab76)\
 _&#x46;igure 1：Interface overview_
