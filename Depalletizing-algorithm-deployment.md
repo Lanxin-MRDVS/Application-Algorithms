@@ -217,54 +217,84 @@ Write the PE depalletizing algorithm to the algorithm module via the platform's 
 
 #### Step 4: Connect to the Device
 
-After the device restarts, return to the \[Device Connection] interface. Click the \[Discover centers] button to refresh the LAN connection as shown in green box. Select the center to which your desired camera is connected from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in blue box. Click on the virtual camera option and click the camera with which you want to establish a connection. Then click \[Connect to Center] button.
+After the device restarts, return to the \[Device Connection] interface. Click the \[Discover centers] button to refresh the LAN connection as shown Figure 15 in red box. Select the center to which your desired camera is connected from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in Figure 15 red box. Click on the virtual camera option and click the camera with which you want to establish a connection. Then click \[Connect to Center] button as shown in Figure 16.
 
-![PixPin\_2026-06-04\_05-40-02](https://github.com/user-attachments/assets/2c2e76f1-2433-4b01-bcfb-1413211e26d0)\
-_&#x46;igure 15: Connection_
+
+![PixPin\_2026-06-29\_05-43-36](https://github.com/user-attachments/assets/92f56b25-c362-47b3-bcc4-afb5aa4dd1bb)\
+_&#x46;igure 15: Discover centers_
+
+![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/c4b62db1-24dc-45bd-b1e3-ae42e576234f)\
+_&#x46;igure 16: Connect to the center_
 
 #### Step 5: Activate Algorithm Authorization
 
-Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm as shown in blue box, click [Algorithm Authentication] button as shown in red box, and obtain the authorization request key by clicking [Get request key]. Submit this key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
+Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm, click [Algorithm Authentication] button, and obtain the authorization request key by clicking [Get request key]. Submit this key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
 
-![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/d2762816-727e-4849-9af0-dfb309032f5e)\
-_&#x46;igure 16: Activate algorithm_
+![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/b945a501-ddea-4493-bfdb-e3294c2dfb3a)\
+_&#x46;igure 17: Activate algorithm_
+
+
+![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/adab5051-2423-47c8-87ab-000e9d1d40e4 )\
+_&#x46;igure 18: Get request key_
+
 
 #### Step 6: Configure Basic Camera Parameters
 
-Switch to the [Parameters] tab, select the right camera parameter template matching the business need and camera model at [camera template], and click [Deploy Camera template] to complete the initialization of the camera's parameters.
+Switch to the Base Camera] tab, select the right camera parameter template matching the business need and camera model at [Template], and click [Send Base Camera settings] to complete the initialization of the camera's parameters. For depalletizing, we recommand [hnpsA].
 
-![PixPin\_2026-06-04\_05-48-48](https://github.com/user-attachments/assets/08526776-d984-40d4-946c-ea63e5d65862)\
-_&#x46;igure 17: Basic camera parameters_
+![PixPin\_2026-06-04\_05-48-48](https://github.com/user-attachments/assets/49a371f1-0c9b-4a35-ac92-062218cb5562)\
+_&#x46;igure 19: Basic camera parameters_
+
+
 
 #### Step 7: Configure Depalletizing Parameters
 
-Enter the [Depalletizing] tab, select the corresponding cargo template at [cargo template], for soft-bags, we recommend to use template 6, then select the [material type] to "Bag" and switch the application mode to "Expert Mode." Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template], which will automatically set the Global settings parameter or sequentially set Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
+Enter the [Depalletizing] tab, select the corresponding cargo template at [Template], for depalletizing soft-bags, we recommend to use template 1, then select the [material type] to "Bag". Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template] or modify yourself, which will set the Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
+
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/de480b61-ccff-4bba-a563-b44003583364 )\
+_&#x46;igure 20: Depalletizing configuration_
 
 
-![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/9ac618ee-a4be-4569-babb-f97960a7bbfc)\
-_&#x46;igure 18: Depalletizing configuration_
+#### Step 8: Configure Safety Parameters 
+
+Set the safety parameters to configure foreign object detection and prevent personnel or objects from intruding during the gripping process. 
+
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/26718445-2863-4956-8bea-5bb4ac26d5d2 )\
+_&#x46;igure 21: Safety Parameters_
 
 
-#### Step 8: Hand-Eye Calibration
 
-Execute the hand-eye calibration process to establish the coordinate alignment between the camera and the robotic arm. First, enter the coordinates of the four corners of the pallet into the camera coordinate area. Note that the origin of this area is the optical center of the camera. Next, manually move the robotic arm to each of the four points, tap the point once, and enter the corresponding robotic arm coordinates into the robot coordinate area. Finally, click the [Calibration] button. This will persistently save the calibration parameters to the camera device and automatically apply the [Calibration Settings].
+#### Step 9: Hand-Eye Calibration
 
-#### Step 9: Area Calibration
+Execute the hand-eye calibration process to establish the coordinate alignment between the camera and the robotic arm. Follow the instruction above at [Hand-Eye Calibration] section. Finally, click the [Calibration] button. This will persistently save the calibration parameters to the camera device and automatically apply the [Calibration Settings].
 
-The software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically complete the region calibration. If you want to manually configure the area, remember to click [save and send] button after configuration, to send the new area data to the center.
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/6f49ff10-c2e8-427d-8761-39faec256353 )\
+_&#x46;igure 22: Hand-Eye Calibration_
 
-![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/3dffb6fa-f92a-4253-8d2e-33729aac709e)\
-_&#x46;igure 19: Area calibration_
+#### Step 10: Fixed bias correction
 
-#### Step 10: Test the result
+Fine-tune the [Eular angles] and [Translation vector] to correct the XYZ and angle offset. 
+
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/c6200a9e-cc87-4300-a2f1-097ddcda90c4 )\
+_&#x46;igure 23: Configure fixed bias_
+
+
+#### Step 11: Area Calibration
+
+By clicking the [Region Calibration] button the software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically complete the region calibration. If you want to manually configure the area, remember to click [save and send] button after configuration, to send the new area data to the center.
+
+![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/4156e1bd-36de-45ad-ac6d-44dca1c77f07 )\
+_&#x46;igure 24: Area calibration_
+
+#### Step 12: Test the result
 
 Click Single Trigger to execute a single algorithm detection. Observe the results, including cargo recognition, grasping pose, and dimension output, to determine whether the detection performance is reasonable and meets the on-site depalletizing requirements. You can also see the results at \[Result log] tab.
 
-#### Step 11: Communication Verification
+#### Step 13: Communication Verification
 
 Request results directly from the algorithm module according to the communication protocol, and observe the corresponding changes on the AW3 interface.
 
-#### Step 12: Efficiency Verification
+#### Step 14: Efficiency Verification
 
 The latency from sending the request to receiving the result must be less than 2500ms.
 
