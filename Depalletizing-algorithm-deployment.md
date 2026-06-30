@@ -73,7 +73,7 @@ _&#x46;igure 6：Add real cameras_
 The Depalletizing Configuration Interface is a core feature of the PalletEye algorithm. It integrates task template/mode settings, algorithm parameter configuration, and core operational capabilities. Designed to support parameter configuration, calibration, task template management, and algorithm computation for soft-pack and carton depalletizing scenarios, it is fully adapted to the demands of routine industrial operations and on-site tuning.
 
 ![PixPin\_2026-06-03\_08-14-13](https://github.com/user-attachments/assets/6385be79-5621-4538-a9ca-714b46560638 )\
-_&#x46;igure 5：Depalletizing Configuration_
+_&#x46;igure 7：Depalletizing Configuration_
 
 
 
@@ -86,7 +86,7 @@ _&#x46;igure 5：Depalletizing Configuration_
 5. Operation Mode Switching: Simple Mode: Parameters are fixed. It performs only basic validation on cargo dimensions without advanced algorithm features, making it suitable for standardized, routine depalletizing scenarios. Expert Mode: Unlocks full custom parameter configuration and enables advanced features like parcel merging. This mode is designed for complex working conditions and scenarios requiring refined recognition (UI to be continuously optimized).
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/dca70de7-84b6-4e29-a2d2-165a4c95a4b8 )\
-_&#x46;igure 6：Choose template and mode_
+_&#x46;igure 8：Choose template and mode_
 
 
 
@@ -107,14 +107,14 @@ The Global Settings defines the core filtering and recognition parameters for de
 10. Transition Point Extension Distence: The height of the transition point above the package. Recommendation: Set to 1.5 times the thickness of the package.
 
 ![PixPin\_2026-06-03\_08-19-04](https://github.com/user-attachments/assets/9d3073ca-761a-46b8-aa46-51693c03376b )\
-_&#x46;igure 7：Global Settings_
+_&#x46;igure 9：Global Settings_
 
 
 
 If the cargo's volume and size exceed the maximum Length/Width range in the Global settings, or if the target cargo is too small and falls below the minimum Length/Width range, the system will filter out the cargo and will not detect it as a target. This is shown in Figure 8. If that happened, switch template or change Global settings parameters, and then click Save and Send, and then Single trigger.
 
 ![PixPin\_2026-06-03\_09-32-28](https://github.com/user-attachments/assets/e96a7b49-0a9e-42a5-bcf2-3989cc8b4f5a )\
-_&#x46;igure 8：Error example_
+_&#x46;igure 10：Error example_
 
 
      
@@ -126,7 +126,7 @@ Used to customize the spatial detection region of the algorithm. By setting the 
 Note: Before calibration, ensure that the process must be performed with a full stack, and the entire stack must be within the camera's RGB field of view; also region calibration must be re-executed if the position of the camera or robotic arm changes.
 
 ![PixPin\_2026-06-03\_08-20-34](https://github.com/user-attachments/assets/01050228-4a66-4cad-8d03-c18a25234153 )\
-_&#x46;igure 9：Region Settings_
+_&#x46;igure 11：Region Settings_
 
 **There are two ways to perform the region calibraion**
 **1. Automatic Calibration**
@@ -135,7 +135,7 @@ _&#x46;igure 9：Region Settings_
 * If the system prompts a calibration failure, please follow the prompts to resolve the issue and try again: For example if the Region is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 10. If that happened, configure the Region Settings and change the region size, then click Save and Send and Single Trigger.
 
 ![PixPin\_2026-06-03\_10-27-36](https://github.com/user-attachments/assets/e398c733-3ea3-4d60-a3c8-c4f9797aac09 )\
-_&#x46;igure 10：Error example_
+_&#x46;igure 12：Error example_
 
 **2. Manual Calibration**
 * Enter values in "Region Configuration" and adjust the bounding box so that the operating area completely covers the flexible packages on the pallet while excluding irrelevant surrounding data.
@@ -167,7 +167,7 @@ Used for fine-tuning and displaying hand-eye calibration parameters between the 
 * Tool frame T: It specifies the rotational angles (expressed in Euler angles: Rx, Ry, Rz) of the tool relative to the robot's end flange.
 
 ![PixPin\_2026-06-03\_08-20-11](https://github.com/user-attachments/assets/bc8e03b4-efba-4134-8a72-c49b4a901501)\
-_&#x46;igure 12：Calibration Settings_
+_&#x46;igure 13：Calibration Settings_
 
 
 
@@ -194,10 +194,10 @@ _&#x46;igure 12：Calibration Settings_
 4. Check the calibration error in the "Calibration Error" section at the bottom right of the interface. The calibration is considered successful if the maximum error is within the acceptable range (less than 15 mm). If the error is too large, check whether the calibration board has shifted or if the needle touches were inaccurate, and repeat the process.
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/6f49ff10-c2e8-427d-8761-39faec256353 )\
-_&#x46;igure 13: Automatic Hand-Eye Calibration_
+_&#x46;igure 14: Automatic Hand-Eye Calibration_
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/acb65060-fc6c-414b-8c45-a7252d1ec0ca )\
-_&#x46;igure 13: Calibration error_
+_&#x46;igure 15: Calibration error_
 
 **Manual hand-eye calibration**
 1. Install the calibration needle on the Z-axis extension line of the robot arm flange. Place the checkerboard steadily on the surface where the bags are stacked (e.g., the floor or pallet), ensuring it is unobstructed and centered within the camera's field of view.
@@ -206,7 +206,7 @@ _&#x46;igure 13: Calibration error_
 4. Check the results in the "Calibration Error" section at the bottom right of the interface: the calibration is successful if the error is within the acceptable range (less than 15 mm). If the error is too large, please check whether the checkerboard is clearly visible and if the needle touches were accurate, then recalibrate.
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/273410e3-aab2-445f-9dd3-863e92e3f4d5 )\
-_&#x46;igure 13: Manual hand-eye calibration_
+_&#x46;igure 16: Manual hand-eye calibration_
 
 
 
@@ -224,7 +224,7 @@ Because a calibration needle is used during the hand-eye calibration process, th
 3. Calculate the fixed offset between these two poses. Enter the compensation values into the "Euler Angles" and "Translation Vector" fields under "Calibration Configuration" to complete the correction.
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/c6200a9e-cc87-4300-a2f1-097ddcda90c4 )\
-_&#x46;igure 14: Fixed Deviation Correction Example_
+_&#x46;igure 17: Fixed Deviation Correction Example_
 
 #### 4.3.7 Buttons
 
@@ -239,7 +239,7 @@ _&#x46;igure 14: Fixed Deviation Correction Example_
 5. Save and send: Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
 
 ![PixPin\_2026-06-03\_08-21-01](https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614)\
-_&#x46;igure 14: Buttons_
+_&#x46;igure 18: Buttons_
 
 ## 5. Communication protocol
 Currently, the product's communication protocol system supports TCP connections and custom formats tailored to specific client requirements. Its core module is external triggering protocols. The overall architecture is highly flexible and extensible, supporting various built-in protocols as well as custom extensions. Below is a comprehensive summary of the communication protocol system:
@@ -307,21 +307,21 @@ After the device restarts, return to the \[Device Connection] interface. Click t
 
 
 ![PixPin\_2026-06-29\_05-43-36](https://github.com/user-attachments/assets/92f56b25-c362-47b3-bcc4-afb5aa4dd1bb)\
-_&#x46;igure 15: Discover centers_
+_&#x46;igure 19: Discover centers_
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/c4b62db1-24dc-45bd-b1e3-ae42e576234f)\
-_&#x46;igure 16: Connect to the center_
+_&#x46;igure 20: Connect to the center_
 
 #### Step 5: Activate Algorithm Authorization
 
 Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm, click [Algorithm Authentication] button, and obtain the authorization request key by clicking [Get request key]. Submit this key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/b945a501-ddea-4493-bfdb-e3294c2dfb3a)\
-_&#x46;igure 17: Activate algorithm_
+_&#x46;igure 21: Activate algorithm_
 
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/adab5051-2423-47c8-87ab-000e9d1d40e4 )\
-_&#x46;igure 18: Get request key_
+_&#x46;igure 22: Get request key_
 
 
 #### Step 6: Configure Basic Camera Parameters
@@ -329,7 +329,7 @@ _&#x46;igure 18: Get request key_
 Switch to the Base Camera] tab, select the right camera parameter template matching the business need and camera model at [Template], and click [Send Base Camera settings] to complete the initialization of the camera's parameters. For depalletizing, we recommand [hnpsA].
 
 ![PixPin\_2026-06-04\_05-48-48](https://github.com/user-attachments/assets/49a371f1-0c9b-4a35-ac92-062218cb5562)\
-_&#x46;igure 19: Basic camera parameters_
+_&#x46;igure 23: Basic camera parameters_
 
 
 
@@ -338,7 +338,7 @@ _&#x46;igure 19: Basic camera parameters_
 Enter the [Depalletizing] tab, select the corresponding cargo template at [Template], for depalletizing soft-bags, we recommend to use template 1, then select the [material type] to "Bag". Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template] or modify yourself, which will set the Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/de480b61-ccff-4bba-a563-b44003583364 )\
-_&#x46;igure 20: Depalletizing configuration_
+_&#x46;igure 24: Depalletizing configuration_
 
 
 #### Step 8: Configure Safety Parameters 
@@ -346,7 +346,7 @@ _&#x46;igure 20: Depalletizing configuration_
 Set the safety parameters to configure foreign object detection and prevent personnel or objects from intruding during the gripping process. 
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/26718445-2863-4956-8bea-5bb4ac26d5d2 )\
-_&#x46;igure 21: Safety Parameters_
+_&#x46;igure 25: Safety Parameters_
 
 
 
@@ -355,14 +355,14 @@ _&#x46;igure 21: Safety Parameters_
 Execute the hand-eye calibration process to establish the coordinate alignment between the camera and the robotic arm. Follow the instruction above at [Hand-Eye Calibration] section. Finally, click the [Calibration] button. This will persistently save the calibration parameters to the camera device and automatically apply the [Calibration Settings].
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/6f49ff10-c2e8-427d-8761-39faec256353 )\
-_&#x46;igure 22: Hand-Eye Calibration_
+_&#x46;igure 26: Hand-Eye Calibration_
 
 #### Step 10: Fixed bias correction
 
 Fine-tune the [Eular angles] and [Translation vector] to correct the XYZ and angle offset. 
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/c6200a9e-cc87-4300-a2f1-097ddcda90c4 )\
-_&#x46;igure 23: Configure fixed bias_
+_&#x46;igure 27: Configure fixed bias_
 
 
 #### Step 11: Region Calibration
@@ -370,7 +370,7 @@ _&#x46;igure 23: Configure fixed bias_
 By clicking the [Region Calibration] button the software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically complete the region calibration. If you want to manually configure the region, remember to click [save and send] button after configuration, to send the new region data to the center.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/4156e1bd-36de-45ad-ac6d-44dca1c77f07 )\
-_&#x46;igure 24: Area calibration_
+_&#x46;igure 28: Area calibration_
 
 #### Step 12: Test the result
 
@@ -415,7 +415,7 @@ When critical anomalies are detected, the system triggers two types of visual wa
 | `err code=-100, template: xxx` | UNKNOWN (-100) |
 
 ![d4e7c26e94fd2aebb9dd145dc012f73b](https://github.com/user-attachments/assets/cbb794c4-d677-4e03-8511-45022ce7d960)\
-Figure 20: Algorithm error code
+Figure 29: Algorithm error code
 
 
 
@@ -447,7 +447,7 @@ When a package parameter configuration error occurs, the error text is displayed
 | 99         | Unknown error                                     | `E{code}`          |
 
 <img alt="5cb328cb759200ecaac12ae9db5b9e29" src="https://github.com/user-attachments/assets/c05b3e6f-fcde-47ec-bbdc-570dd23a9242" />\
-Figure 21: Package error codes 
+Figure 30: Package error codes 
 ### Status Indicators
 The top HUD provides real-time telemetry regarding the current palletizing stack status.
 
@@ -460,4 +460,4 @@ The top HUD provides real-time telemetry regarding the current palletizing stack
 | **is_ok** | Whether the stacking is within the image boundaries |
 
 <img alt="7c42c22d1705cc40657156525cfc2a44" src="https://github.com/user-attachments/assets/d4ef2369-929c-4c60-8436-38dfb43c9797" />\
-Figure 22: Status indicators 
+Figure 31: Status indicators 
