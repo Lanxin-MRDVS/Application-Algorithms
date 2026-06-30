@@ -33,7 +33,7 @@ _&#x46;igure 3: Visualization_
 
 ### 4.1 Device Connection tab
 
-When clicking the Device Connection menu, the content will then be at the right side of the displays, as shown in Figure 4 red box. The information of the centers AlgPlatformViewer has detected will be displayed under the [Discover Centers] button. 
+When clicking the Device Connection tab, the content will then be at the right side of the displays, as shown in Figure 4 red box. The information of the centers AlgPlatformViewer has detected will be displayed under the [Discover Centers] button. 
 
 * Center Address: The IP address of the center that AlgPlatformViewer is connected to.
 * Center Port: The port number used by the center to transport all operational data streams. This includes sharing information about cameras connected to this center with other centers, as well as importing real-time 3D image data from cameras.
@@ -79,8 +79,8 @@ _&#x46;igure 7：Depalletizing Configuration_
 
 1. [Fetch Current Parameters]: By clicking this button, the AlgPlatformViewer fetches all the Global-, Region-, and Calibration parameters saved on the center connected. The fetched parameters are then loaded into the Global-, Calibration-, Region settings for visualization and further configuration if needed.
 2. Template Selection: Select saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags.
-3. Material Type Switching: Supports switching between two material types—Bag (Soft-pack) and Box (Carton)—to adapt to different depalletizing target recognition logics.
-4. [Apply Calibration to All Templates and Distribute]: This button applies the Region and Calibration settings to all other templates. The logic is that Global settings contain parameters specific to a depalletizing target, which may change when cargo types change. However, the detection area and camera calibration remain constant since the robot's physical position does not change. Therefore, when the cargo type changes, you only need to update the Global settings, without having to re-enter the Region and Calibration parameters every time.
+3. Material Type Switching: Supports switching between two material types—Bag (Soft-pack) and Box (Carton)—to adapt to different depalletizing target detection logics.
+4. [Apply Calibration to All Templates and Distribute]: This button applies the Region and Calibration settings to all other templates. The logic is that Global settings contain parameters specific to a depalletizing target, which may change when bag/box types change. However, the detection area and camera calibration remain constant since the robot's physical position does not change. Therefore, when the bag/box type changes, you only need to update the Global settings, without having to re-enter the Region and Calibration parameters every time.
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/dca70de7-84b6-4e29-a2d2-165a4c95a4b8 )\
 _&#x46;igure 8：Choose template and mode_
@@ -90,14 +90,14 @@ _&#x46;igure 8：Choose template and mode_
 
 #### 4.3.2 Global Settings
 
-The Global Settings defines the core filtering and recognition parameters for depalletizing target detection. It is used to control cargo detection accuracy and filtering rules. The parameters are described as follows:
+The Global Settings defines the core filtering and detection parameters for depalletizing target detection. It is used to control bag/box detection accuracy and filtering rules. The parameters are described as follows:
 
 1. Aspect ratio threshold: Determines the reasonable range for the length-to-width ratio of flexible packages. It is recommanded to use the default value. 
-2. Fill Ratio: Determines the threshold of how well the detected target fills the detection frame. Recommended value is 0.7. Cargo with a fill ratio lower than this threshold will be filtered out to avoid invalid or interfering targets.
+2. Fill Ratio: Determines the threshold of how well the detected target fills the detection frame. Recommended value is 0.7. Bag/box with a fill ratio lower than this threshold will be filtered out to avoid invalid or interfering targets.
 3. Standard Dimensions (L x W mm): Sets the standard length and width benchmarks for the target material.
-4. Length/Width Range (mm): Defines the valid length and width intervals for cargo. Targets falling outside these ranges are automatically filtered.
-5. Layer Height (mm): This parameter is used to filter cargo by layer height and distinguish items across different stacking levels. For example, if the Layer Height is set to 200 mm, it means that when soft-bags are stacked, the height of a single bag (e.g., 200 mm) determines the height of each layer. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from further computation.
-6. Arrangement: Defines the priority order for the algorithm to recognize cargo. It defaults to "Near to far," meaning the system prioritizes recognizing the nearest cargo first. This setting is crucial in industrial environments where cargo may not be stacked neatly, and items on the same layer might partially overlap. This function prevents the system from attempting to pick up a top layer cargo that has another item partly on top of it, which could cause displacement or instability during retrieval. For example in Figure 7, you can see the arrangement order as the green number.
+4. Length/Width Range (mm): Defines the valid length and width intervals for bag/box. Targets falling outside these ranges are automatically filtered.
+5. Layer Height (mm): This parameter is used to filter bag/box by layer height and distinguish items across different stacking levels. For example, if the Layer Height is set to 200 mm, it means that when soft-bags are stacked, the height of a single bag (e.g., 200 mm) determines the height of each layer. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from further computation.
+6. Arrangement: Defines the priority order for the algorithm to detect bag/box. It defaults to "Near to far," meaning the system prioritizes detecting the nearest bag/box first. This setting is crucial in industrial environments where bag/box may not be stacked neatly, and items on the same layer might partially overlap. This function prevents the system from attempting to pick up a top layer bag/box that has another item partly on top of it, which could cause displacement or instability during retrieval. For example in Figure 9, you can see the arrangement order as the green number.
 7. Enable merge: Merges the same package that was incorrectly split into multiple parts due to wrinkles on the stacked packages. Default: Disabled. Enable this only when a single package is mistakenly split into two.
 8. Enable PCA Pose Calculation: Ensures stable positioning when there are voids (missing data) in the point cloud. Default: Keep the default settings.
 9. Enable Transition Points: Moves the robotic arm to a transition point directly above the package before grasping. Enable based on your specific requirements.
@@ -108,17 +108,25 @@ _&#x46;igure 9：Global Settings_
 
 
 
-If the cargo's volume and size exceed the maximum Length/Width range in the Global settings, or if the target cargo is too small and falls below the minimum Length/Width range, the system will filter out the cargo and will not detect it as a target. This is shown in Figure 8. If that happened, switch template or change Global settings parameters, and then click Save and Send, and then Single trigger.
+If the bag/box's volume and size exceed the maximum Length/Width range in the Global settings, or if the target bag/box is too small and falls below the minimum Length/Width range, the system will filter out the bag/box and will not detect it as a target. This is shown in Figure 8. If that happened, switch template or change Global settings parameters, and then click [Save and Send], and then [Single trigger].
 
 ![PixPin\_2026-06-03\_09-32-28](https://github.com/user-attachments/assets/e96a7b49-0a9e-42a5-bcf2-3989cc8b4f5a )\
 _&#x46;igure 10：Error example_
 
 
+#### 4.3.3 Safety configuration
+Safety parameters are used to configure foreign object detection to prevent personnel or objects from intruding into the grasping area. The parameters and configuration recommendations are detailed in the table below. 
+
+| Parameter | Function | Configuration Recommendation |
+| :--- | :--- | :--- |
+| Obstacle Size Threshold (mm) | The minimum size used to identify a foreign object. No alarm will be triggered for objects smaller than this value. | Recommended: 30 mm |
+| Safety Lift Distance (mm) | Foreign object detection is performed in the space above the current package stack, above this height within the calibrated grasping area. | Recommended: 1.5 times the package thickness. |
+| Enable Safety (Obstacle) Detection | Monitors for foreign object intrusion above the package stack. If triggered, the system will stop and issue an alarm. | Default: Disabled. Enable this when safety detection is required. |
      
 
-#### 4.3.3 Region Settings
+#### 4.3.4 Region Settings
 
-Used to customize the spatial detection region of the algorithm. By setting the maximum and minimum values for the X, Y and Z, it limits the camera's effective recognition space and filters out interfering targets outside the field of detection range.
+Used to customize the spatial detection region of the algorithm. By setting the maximum and minimum values for the X, Y and Z, it limits the camera's effective detection space and filters out interfering targets outside the field of detection range.
 
 Note: Before calibration, ensure that the process must be performed with a full stack, and the entire stack must be within the camera's RGB field of view; also region calibration must be re-executed if the position of the camera or robotic arm changes.
 
@@ -126,8 +134,9 @@ Note: Before calibration, ensure that the process must be performed with a full 
 _&#x46;igure 11：Region Settings_
 
 **There are two ways to perform the region calibraion**
+
 **1. Automatic Calibration**
-* Click [Region Calibration]. The system will automatically complete the calibration, save and dispatch the settings, and trigger a single recognition.
+* Click [Region Calibration]. The system will automatically complete the calibration, save and dispatch the settings, and trigger a single detection.
 * Check the "Result Point Cloud" to verify whether the region accurately covers the packages on the pallet.
 * If the system prompts a calibration failure, please follow the prompts to resolve the issue and try again: For example if the Region is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 12. If that happened, configure the Region Settings and change the region size, then click Save and Send and Single Trigger.
 
@@ -142,14 +151,6 @@ _&#x46;igure 12：Error example_
 
 
 
-#### 4.3.4 Safety configuration
-Safety parameters are used to configure foreign object detection to prevent personnel or objects from intruding into the grasping area. The parameters and configuration recommendations are detailed in the table below. 
-
-| Parameter | Function | Configuration Recommendation |
-| :--- | :--- | :--- |
-| Obstacle Size Threshold (mm) | The minimum size used to identify a foreign object. No alarm will be triggered for objects smaller than this value. | Recommended: 30 mm |
-| Safety Lift Distance (mm) | Foreign object detection is performed in the space above the current package stack, above this height within the calibrated grasping area. | Recommended: 1.5 times the package thickness. |
-| Enable Safety (Obstacle) Detection | Monitors for foreign object intrusion above the package stack. If triggered, the system will stop and issue an alarm. | Default: Disabled. Enable this when safety detection is required. |
 
 
 
@@ -186,8 +187,8 @@ _&#x46;igure 13：Calibration Settings_
 
 **Automated hand-eye calibration**
 1. Install the calibration needle on the Z-axis extension line of the robot arm flange. Place the calibration board steadily on the surface where the bags are stacked (e.g., the floor or pallet), ensuring it is unobstructed and centered within the camera's field of view.
-2. In the "Camera Coordinate Area" on the right side of the interface, click "Recognize Markers". The system will automatically capture the four feature points and record their camera coordinates.
-3. First, check the sequence of the feature points in the "Result RGB" image on the main interface. Then, move the robot arm and use the calibration needle to precisely touch each feature point in that exact sequence. After touching each point, enter the corresponding robot arm coordinates in the "Robot Coordinate Area" in X, Y, Z format (separated by commas) and click "Add Point". After successfully collecting all four points, click "Calibrate" to allow the system to automatically calculate the hand-eye matrix.
+2. In the "Camera Coordinate Area" on the right side of the interface, click [Recognize Markers]. The system will automatically capture the four feature points and record their camera coordinates.
+3. First, check the sequence of the feature points in the "Result RGB" image on the main interface. Then, move the robot arm and use the calibration needle to precisely touch each feature point in that exact sequence. After touching each point, enter the corresponding robot arm coordinates in the "Robot Coordinate Area" in X, Y, Z format (separated by commas) and click [Add Point]. After successfully collecting all four points, click [Calibrate] to allow the system to automatically calculate the hand-eye matrix.
 4. Check the calibration error in the "Calibration Error" section at the bottom right of the interface. The calibration is considered successful if the maximum error is within the acceptable range (less than 15 mm). If the error is too large, check whether the calibration board has shifted or if the needle touches were inaccurate, and repeat the process.
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/6f49ff10-c2e8-427d-8761-39faec256353 )\
@@ -198,8 +199,8 @@ _&#x46;igure 15: Calibration error_
 
 **Manual hand-eye calibration**
 1. Install the calibration needle on the Z-axis extension line of the robot arm flange. Place the checkerboard steadily on the surface where the bags are stacked (e.g., the floor or pallet), ensuring it is unobstructed and centered within the camera's field of view.
-2. In the "Normal RGB" image on the main interface, right-click a corner point of the checkerboard to copy its coordinates. Then, navigate to the "Camera Coordinate Area" in the hand-eye calibration interface and paste the camera coordinates (in X, Y, Z format, separated by commas) from the clipboard. Click "Add Point".
-3. Operate the robot arm to touch the exact same corner point with the calibration needle (it is recommended to touch the intersection of the black and white squares for maximum precision). Manually enter the robot arm coordinates for this point in the "Robot Coordinate Area" in X, Y, Z format (separated by commas) and click "Add Point". Repeat this procedure from four different orientations, ensuring that the robot coordinates correspond one-to-one with the sequence of feature points in the "Camera Coordinate Area". After collecting all four points, click "Calibrate".
+2. In the "Normal RGB" image on the main interface, right-click a corner point of the checkerboard to copy its coordinates. Then, navigate to the "Camera Coordinate Area" in the hand-eye calibration interface and paste the camera coordinates (in X, Y, Z format, separated by commas) from the clipboard. Click [Add Point].
+3. Operate the robot arm to touch the exact same corner point with the calibration needle (it is recommended to touch the intersection of the black and white squares for maximum precision). Manually enter the robot arm coordinates for this point in the "Robot Coordinate Area" in X, Y, Z format (separated by commas) and click [Add Point]. Repeat this procedure from four different orientations, ensuring that the robot coordinates correspond one-to-one with the sequence of feature points in the "Camera Coordinate Area". After collecting all four points, click [Calibrate].
 4. Check the results in the "Calibration Error" section at the bottom right of the interface: the calibration is successful if the error is within the acceptable range (less than 15 mm). If the error is too large, please check whether the checkerboard is clearly visible and if the needle touches were accurate, then recalibrate.
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/273410e3-aab2-445f-9dd3-863e92e3f4d5 )\
@@ -371,7 +372,7 @@ _&#x46;igure 28: Area calibration_
 
 #### Step 12: Test the result
 
-Click Single Trigger to execute a single algorithm detection. Observe the results, including cargo recognition, grasping pose, and dimension output, to determine whether the detection performance is reasonable and meets the on-site depalletizing requirements. You can also see the results at \[Result log] tab.
+Click [Single Trigger] to execute a single algorithm detection. Observe the results, including cargo recognition, grasping pose, and dimension output, to determine whether the detection performance is reasonable and meets the on-site depalletizing requirements. You can also see the results at \[Result log] tab.
 
 #### Step 13: Communication Verification
 
