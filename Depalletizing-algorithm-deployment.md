@@ -123,7 +123,7 @@ Note: Before calibration, ensure that the process must be performed with a full 
 _&#x46;igure 9：Region Settings_
 
 **There are two ways to perform the region calibraion**
-1. Automatic Calibration
+**1. Automatic Calibration**
 * Click "Region Calibration". The system will automatically complete the calibration, save and dispatch the settings, and trigger a single recognition.
 * Check the "Result Point Cloud" to verify whether the region accurately covers the packages on the pallet.
 * If the system prompts a calibration failure, please follow the prompts to resolve the issue and try again: For example if the Region is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 10. If that happened, configure the Region Settings and change the region size, then click Save and Send and Single Trigger.
