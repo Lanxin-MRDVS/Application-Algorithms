@@ -187,12 +187,22 @@ _&#x46;igure 12：Calibration Settings_
 3. First, check the sequence of the feature points in the "Result RGB" image on the main interface. Then, move the robot arm and use the calibration needle to precisely touch each feature point in that exact sequence. After touching each point, enter the corresponding robot arm coordinates in the "Robot Coordinate Area" in X, Y, Z format (separated by commas) and click "Add Point". After successfully collecting all four points, click "Calibrate" to allow the system to automatically calculate the hand-eye matrix.
 4. Check the calibration error in the "Calibration Error" section at the bottom right of the interface. The calibration is considered successful if the maximum error is within the acceptable range (less than 15 mm). If the error is too large, check whether the calibration board has shifted or if the needle touches were inaccurate, and repeat the process.
 
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/6f49ff10-c2e8-427d-8761-39faec256353 )\
+_&#x46;igure 13: Automatic Hand-Eye Calibration_
+
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/acb65060-fc6c-414b-8c45-a7252d1ec0ca )\
+_&#x46;igure 13: Calibration error_
 
 **Manual hand-eye calibration**
 1. Install the calibration needle on the Z-axis extension line of the robot arm flange. Place the checkerboard steadily on the surface where the bags are stacked (e.g., the floor or pallet), ensuring it is unobstructed and centered within the camera's field of view.
-2. In the "Normal RGB" image on the main interface, right-click a corner point of the checkerboard to copy its coordinates (see Figure 8). Then, navigate to the "Camera Coordinate Area" in the hand-eye calibration interface and paste the camera coordinates (in X, Y, Z format, separated by commas) from the clipboard. Click "Add Point".
+2. In the "Normal RGB" image on the main interface, right-click a corner point of the checkerboard to copy its coordinates. Then, navigate to the "Camera Coordinate Area" in the hand-eye calibration interface and paste the camera coordinates (in X, Y, Z format, separated by commas) from the clipboard. Click "Add Point".
 3. Operate the robot arm to touch the exact same corner point with the calibration needle (it is recommended to touch the intersection of the black and white squares for maximum precision). Manually enter the robot arm coordinates for this point in the "Robot Coordinate Area" in X, Y, Z format (separated by commas) and click "Add Point". Repeat this procedure from four different orientations, ensuring that the robot coordinates correspond one-to-one with the sequence of feature points in the "Camera Coordinate Area". After collecting all four points, click "Calibrate".
 4. Check the results in the "Calibration Error" section at the bottom right of the interface: the calibration is successful if the error is within the acceptable range (less than 15 mm). If the error is too large, please check whether the checkerboard is clearly visible and if the needle touches were accurate, then recalibrate.
+
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/273410e3-aab2-445f-9dd3-863e92e3f4d5 )\
+_&#x46;igure 13: Manual hand-eye calibration_
+
+
 
 **Why is hand-eye calibration necessary?** 
 
