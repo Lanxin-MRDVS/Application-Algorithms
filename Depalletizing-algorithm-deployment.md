@@ -185,9 +185,16 @@ _&#x46;igure 13：Calibration Settings_
 * Offset: Enter the offset values for the robot gripper tool.
 * Camera teaching point coordinates/Robot teaching point coordinates: These sections are primarily used to verify calibration results. By entering a point coordinate from the camera coordinate area, the system will automatically transform it into the corresponding robot coordinate, which will then be displayed in the Robot Teaching Point Coordinates section.
 
+**Why is hand-eye calibration necessary?** 
+
+In practical applications, robots need to combine visual information to execute tasks. The robotic arm operates within its own coordinate system and knows its exact position and orientation (e.g., XYZ values and angles) within it. Similarly, the camera operates within its own coordinate system, with the optical center serving as the origin, and it knows the position and orientation of the target object relative to its lens. However, the camera system does not know its spatial pose relative to the robot's base. This means it can only determine coordinates within its own system and cannot directly map them to the robot's coordinate system.
+
+Hand-eye calibration is designed to establish the coordinate transformation matrix between the "eye" and the "hand". Only after this step is completed can the robot accurately translate the 3D point cloud coordinates captured by the camera into control coordinates that the robotic arm can understand and execute, thereby achieving true "eye-to-hand" coordination.
+
+
 **Automated hand-eye calibration**
 1. Install the calibration needle on the Z-axis extension line of the robot arm flange. Place the calibration board steadily on the surface where the bags are stacked (e.g., the floor or pallet), ensuring it is unobstructed and centered within the camera's field of view.
-2. In the "Camera Coordinate Area" on the right side of the interface, click [Recognize Markers]. The system will automatically capture the four feature points and record their camera coordinates.
+2. In the "Camera Coordinate Area" on the right side of the interface, click [Detect Markers]. The system will automatically capture the four feature points and record their camera coordinates.
 3. First, check the sequence of the feature points in the "Result RGB" image on the main interface. Then, move the robot arm and use the calibration needle to precisely touch each feature point in that exact sequence. After touching each point, enter the corresponding robot arm coordinates in the "Robot Coordinate Area" in X, Y, Z format (separated by commas) and click [Add Point]. After successfully collecting all four points, click [Calibrate] to allow the system to automatically calculate the hand-eye matrix.
 4. Check the calibration error in the "Calibration Error" section at the bottom right of the interface. The calibration is considered successful if the maximum error is within the acceptable range (less than 15 mm). If the error is too large, check whether the calibration board has shifted or if the needle touches were inaccurate, and repeat the process.
 
@@ -207,13 +214,6 @@ _&#x46;igure 15: Calibration error_
 _&#x46;igure 16: Manual hand-eye calibration_
 
 
-
-**Why is hand-eye calibration necessary?** 
-
-In practical applications, robots need to combine visual information to execute tasks. The robotic arm operates within its own coordinate system and knows its exact position and orientation (e.g., XYZ values and angles) within it. Similarly, the camera operates within its own coordinate system, with the optical center serving as the origin, and it knows the position and orientation of the target object relative to its lens. However, the camera system does not know its spatial pose relative to the robot's base. This means it can only determine coordinates within its own system and cannot directly map them to the robot's coordinate system.
-
-Hand-eye calibration is designed to establish the coordinate transformation matrix between the "eye" and the "hand". Only after this step is completed can the robot accurately translate the 3D point cloud coordinates captured by the camera into control coordinates that the robotic arm can understand and execute, thereby achieving true "eye-to-hand" coordination.
-
 **Fixed Deviation Correction Example**
 Because a calibration needle is used during the hand-eye calibration process, there is typically a fixed XYZ and angular offset between the suction cup and the needle. Therefore, this deviation must be compensated for in this step.
 
@@ -224,7 +224,7 @@ Because a calibration needle is used during the hand-eye calibration process, th
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/c6200a9e-cc87-4300-a2f1-097ddcda90c4 )\
 _&#x46;igure 17: Fixed Deviation Correction Example_
 
-#### 4.3.7 Buttons
+#### 4.3.7 Depalletizing Buttons
 
 1. [Single trigger]: Click the button to execute a single image capture and depalletizing calculation. It updates detection results (such as cargo grasping pose and dimensions) in real-time, suitable for single-run debugging and verification.
 2. Add Template/Delete template:
@@ -239,51 +239,9 @@ _&#x46;igure 17: Fixed Deviation Correction Example_
 ![PixPin\_2026-06-03\_08-21-01](https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614)\
 _&#x46;igure 18: Buttons_
 
-## 5. Communication protocol
-Currently, the product's communication protocol system supports TCP connections and custom formats tailored to specific client requirements. Its core module is external triggering protocols. The overall architecture is highly flexible and extensible, supporting various built-in protocols as well as custom extensions. Below is a comprehensive summary of the communication protocol system:
-
-### 5.1 Triggering Protocols
-
-The system supports multiple formats of TCP triggering protocols. After a client sends a request, the server executes the algorithm and returns the result. All protocols support controlling coordinate system transformations (e.g., left-handed vs. right-handed systems) through parameters such as coordinate_system.
-
-HnpsA Raw Frame Protocol:
-- Features: Minimalist text commands with no additional termination characters required.
-- Format: 3D<CameraID><SoftpackCount> (e.g., 3D15).
-- Response: Fixed format 3DA...AOK.
-
-Standard Softpack JSON Protocol (softpack_json)
-- Features: Standard JSON interaction; the response contains only the JSON body without any extra protocol headers.
-- Request: {"action":"3D","type":5}.
-- Response: Supports outputting four values [x,y,z,rz]. Alternatively, it can append length and width to output six values [x,y,z,rz,length,width] via configuration. For multiple targets, the data is expanded sequentially.
-
-Headerless Softpack JSON Protocol (plain_softpack_json)
-- Features: Lightweight JSON; requests only require {"action":"3D"}.
-- Response: Contains only pos and result; the type field is not returned.
-
-Lingzhi Softpack JSON Protocol (lingzhi_softpack_json)
-- Features: Compatible with legacy customer protocols.
-- Response: A mandatory protocol header 0x7F 0x7F is prepended before the JSON. The internal field order within the JSON is strictly fixed as pos, followed by result.
-
-### 5.2 Architecture Design and Extension Specifications
-
-The communication framework adopts a highly decoupled design for convenient secondary development:
-
-- Extending Publish Protocols: Inherit the IProtocolPublisher interface, implement the sending logic in the publish method, and register it via the factory class to take effect.
-
-- Extending Trigger Protocols: Inherit the ITriggerProtocol interface to handle listening, request parsing, and calling a unified handler function, eventually encoding and returning the response. This design ensures the protocol layer is completely independent of underlying camera modules, facilitating horizontal replacement.
-
-- Integrating New Algorithms: Supports trigger_only mode, where algorithms execute solely upon receiving external triggers. Algorithms must return a string result, which is distributed by the unified ResultDispatcher. Timeouts return error code -3 by default.
-
-### 5.3 Key Considerations
-
-- Port Separation: The listen_port for receiving triggers and the send_port for actively publishing results are two independent configuration items.
-
-- Timeout Control: timeout_ms governs both the trigger wait time and the TCP publish wait time. In production environments, this should be reasonably configured based on the maximum expected execution time of the algorithm.
-
-- Independent Channels: The UI-side CameraPing uses the gRPC protocol, operating independently from the ResultDispatcher, which exclusively handles result publishing and external triggers.
 
 
-## 6. Deployment example
+## 5. Deployment process
 
 This chapter provides a complete deployment configuration process for the AW3 platform combined with the PE flexible packaging depalletizing algorithm. It serves as a reference for standardized on-site configuration and is applicable to scenarios such as initial deployment of new machines, site relocation, and cargo template resets.
 
@@ -297,6 +255,7 @@ Ensure that the host computer and the camera algorithm module are on the same lo
 
 #### Step 3: Change IP address and create virtual cameras in case of dual connection
 
+When a single computing board is connected to two cameras simultaneously, the IP address of one camera must be modified (to avoid a conflict with the other), and a corresponding virtual camera must be created for it (refer to Appendix B for instructions on IP modification and virtual camera creation). The two cameras operate as independent units; consequently, all subsequent processes—including parameter configuration and deployment—must be executed separately for each camera.
 
 
 #### Step 4: Connect to the Device
@@ -324,7 +283,7 @@ _&#x46;igure 22: Get request key_
 
 #### Step 6: Configure Basic Camera Parameters
 
-Switch to the Base Camera] tab, select the right camera parameter template matching the business need and camera model at [Template], and click [Send Base Camera settings] to complete the initialization of the camera's parameters. For depalletizing, we recommand [hnpsA].
+Switch to the Base Camera] tab, select the right camera parameter template matching the business need and camera model at [Template], and click [Send Base Camera settings] to complete the initialization of the camera's parameters. For depalletizing, we recommand [General].
 
 ![PixPin\_2026-06-04\_05-48-48](https://github.com/user-attachments/assets/49a371f1-0c9b-4a35-ac92-062218cb5562)\
 _&#x46;igure 23: Basic camera parameters_
@@ -333,7 +292,7 @@ _&#x46;igure 23: Basic camera parameters_
 
 #### Step 7: Configure Depalletizing Parameters
 
-Enter the [Depalletizing] tab, select the corresponding cargo template at [Template], for depalletizing soft-bags, we recommend to use template 1, then select the [material type] to "Bag". Based on the actual volume and size of the on-site cargo, you can choose the pre-defined [cargo template] or modify yourself, which will set the Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
+Enter the [Depalletizing] tab, select the corresponding bag/box template at [Template], then select the [material type] to "Bag" or "box" based on need. Based on the actual volume and size of the on-site bag/box, you can choose the pre-defined [Template] or modify yourself, which will set the Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/de480b61-ccff-4bba-a563-b44003583364 )\
 _&#x46;igure 24: Depalletizing configuration_
@@ -381,6 +340,40 @@ Request results directly from the algorithm module according to the communicatio
 #### Step 14: Efficiency Verification
 
 The latency from sending the request to receiving the result must be less than 2500ms.
+
+## 6. Communication protocol
+
+The system communicates with external devices (e.g., robot arm controllers) via TCP and supports the following two protocol formats. Communication consists of two main parts: external trigger requests and result publishing.
+
+| Protocol Format | Description |
+| :--- | :--- |
+| **Header/Footer Delimiter Protocol** | Uses custom headers and footers to identify a data frame, with fields separated by delimiters. This format is concise and well-suited for simple text-based interactions. |
+| **JSON Protocol** | Utilizes standard JSON format for communication. It can output results such as center coordinates and angles, featuring clear fields and high scalability. |
+
+**Key Configurations:** 
+* The trigger port and the result publishing port are configured as two independent items. 
+* The timeout duration must be set reasonably based on the maximum execution time of the algorithm. 
+* The protocol supports coordinate system transformations (e.g., left-hand vs. right-hand coordinate systems) controlled via parameters.
+
+
+### 6.1 Architecture Design and Extension Specifications
+
+The communication framework adopts a highly decoupled design for convenient customization:
+
+- Extending Publish Protocols: Inherit the IProtocolPublisher interface, implement the sending logic in the publish method, and register it via the factory class to take effect.
+
+- Extending Trigger Protocols: Inherit the ITriggerProtocol interface to handle listening, request parsing, and calling a unified handler function, eventually encoding and returning the response. This design ensures the protocol layer is completely independent of underlying camera modules, facilitating horizontal replacement.
+
+- Integrating New Algorithms: Supports trigger_only mode, where algorithms execute solely upon receiving external triggers. Algorithms must return a string result, which is distributed by the unified ResultDispatcher. Timeouts return error code -3 by default.
+
+### 6.2 Key Considerations
+
+- Port Separation: The listen_port for receiving triggers and the send_port for actively publishing results are two independent configuration items.
+
+- Timeout Control: timeout_ms governs both the trigger wait time and the TCP publish wait time. In production environments, this should be reasonably configured based on the maximum expected execution time of the algorithm.
+
+- Independent Channels: The UI-side CameraPing uses the gRPC protocol, operating independently from the ResultDispatcher, which exclusively handles result publishing and external triggers.
+
 
 ## 7. Visual Inspection
 
