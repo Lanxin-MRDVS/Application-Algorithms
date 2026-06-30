@@ -8,20 +8,26 @@ AwareSight3 (also known as AW3) is an application management platform designed f
 
 The overall interface of the AW3 platform is primarily divided into four major functional sections: 1. Connection Management Section; 2. Parameter Configuration Section; 3. Display Configuration Section; and 4. Visualization Section. These sections operate independently yet work in synergy, covering the full operational workflow of device access, parameter configuration, visual observation, and algorithm execution (as shown in Figure 1).
 
-![PixPin\_2026-06-01\_10-40-42](https://github.com/user-attachments/assets/ad3c08cf-d85c-40c1-b935-9b1b1934ab76)\
+![PixPin\_2026-06-01\_10-40-42](https://github.com/user-attachments/assets/263e573f-b576-4abe-a9f8-af0d63af96d2 )\
 _&#x46;igure 1：Interface overview_
+
+
 
 ## 2. Display Configuration Section
 
 Interface & Language Settings: Used to configure the real-time display type and system language of the software interface. Parameters take effect immediately without requiring additional saving or distribution, adapting to various configuration and observation scenarios.
 
-![PixPin\_2026-06-04\_08-11-06](https://github.com/user-attachments/assets/48ecdaf1-d922-4c29-9b9e-5997a6b6cf7c)\
+![PixPin\_2026-06-04\_08-11-06](https://github.com/user-attachments/assets/96004e88-1771-401a-895b-b7164973c790 )\
 _&#x46;igure 2: Display Configuration_
+
+
 
 ## 3. Visualization Section
 
-![PixPin\_2026-06-04\_08-13-07](https://github.com/user-attachments/assets/7541fda0-d06a-4bf3-b985-470161af6616)\
+![PixPin\_2026-06-04\_08-13-07](https://github.com/user-attachments/assets/ad330973-579c-47b7-8ea7-dba16c3634de )\
 _&#x46;igure 3: Visualization_
+
+
 
 ## 4. Parameter Configuration Section
 
