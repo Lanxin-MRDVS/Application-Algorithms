@@ -25,7 +25,7 @@ The current documentation covers obstacle avoidance, pallet recognition, and sof
 
 #### Obstacle Avoidance
 
-**Document:** [Obstacle Avoidance Algorithm Deployment Instruction](Obstacle-Avoidance-Algorithm-Deployment-Instruction.md)
+**Document:** [Obstacle Avoidance Algorithm Deployment Instruction](obstacle-avoidance-algorithm-deployment-instruction.md)
 
 This document describes the deployment process, configuration method, and usage notes for the obstacle avoidance algorithm. It is recommended for users who need to configure obstacle detection, obstacle output, and related deployment parameters for mobile robot scenarios.
 
@@ -41,7 +41,7 @@ This document describes the pallet recognition function based on Eagle M series 
 
 #### Softbag / Carton Unstacking
 
-**Document:** [Softbag / Carton Unstacking Algorithm Deployment Guide](softbag-carton-unstacking-algorithm-deployment.md)
+**Document:** [Softbag / Carton Unstacking Algorithm Deployment Guide](vision-guided-depalletizing-aw3-platform-and-palleteye-deployment-guide.md)
 
 This document describes the algorithm deployment, configuration, and integration process for soft bag and carton unstacking scenarios. It is intended for users who need to integrate MRDVS vision algorithms into depalletizing or unstacking workflows.
 
