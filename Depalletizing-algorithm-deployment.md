@@ -6,14 +6,14 @@ AwareSight3 (also known as AW3) is an application management platform designed f
 
 ### 1.1 Interface overview
 
-The overall interface of the AW3 platform is primarily divided into four major functional sections: 1. Connection Management Section; 2. Parameter Configuration Section; 3. Display Configuration Section; and 4. Visualization Section. These sections operate independently yet work in synergy, covering the full operational workflow of device access, parameter configuration, visual observation, and algorithm execution (as shown in Figure 1).
+The overall interface of the AW3 platform is primarily divided into four major functional part: 1. Device Connection Part; 2. Parameter Configuration Part; 3. Display Configuration Part; and 4. Visualization Part. These parts operate independently yet work in synergy, covering the full operational workflow of device access, parameter configuration, visual observation, and algorithm execution (as shown in Figure 1).
 
 ![PixPin\_2026-06-01\_10-40-42](https://github.com/user-attachments/assets/263e573f-b576-4abe-a9f8-af0d63af96d2 )\
 _&#x46;igure 1：Interface overview_
 
 
 
-## 2. Display Configuration Section
+## 2. Display Configuration Part
 
 Interface & Language Settings: Used to configure the real-time display type and system language of the software interface. Parameters take effect immediately without requiring additional saving or distribution, adapting to various configuration and observation scenarios.
 
@@ -22,46 +22,44 @@ _&#x46;igure 2: Display Configuration_
 
 
 
-## 3. Visualization Section
+## 3. Visualization Part
 
 ![PixPin\_2026-06-04\_08-13-07](https://github.com/user-attachments/assets/ad330973-579c-47b7-8ea7-dba16c3634de )\
 _&#x46;igure 3: Visualization_
 
 
 
-## 4. Parameter Configuration Section
-
-The Parameter Configuration Section contains five tabs, the Device Connection, the Algorithm enable, the Parameters, the Soft-pack depalletizing, and the Result log.
+## 4. Parameter Configuration Part
 
 ### 4.1 Device Connection tab
 
-When clicking the Device Connection menu, the content will then be at the right side of the displays, as shown in Figure 4 red box. The Center Connection section shows the information of the center AlgPlatformViewer is connected to.
+When clicking the Device Connection menu, the content will then be at the right side of the displays, as shown in Figure 4 red box. The information of the centers AlgPlatformViewer has detected will be displayed under the [Discover Centers] button. 
 
 * Center Address: The IP address of the center that AlgPlatformViewer is connected to.
 * Center Port: The port number used by the center to transport all operational data streams. This includes sharing information about cameras connected to this center with other centers, as well as importing real-time 3D image data from cameras.
 * Broadcast Address: Defaults to "auto". In this mode, the center automatically broadcasts its IP address and Discovery Port information via a UDP packet.
 * Discovery Port: The port number used by the center to broadcast its IP address and port details to other centers within the same subnet. When a center receives a discovery packet from another center, it sends a response. This mechanism allows centers to discover each other and establish collaboration.
 * Timeout Value: The timeout duration in milliseconds (ms). This defines how long AlgPlatformViewer will attempt to connect to the center before stopping if a connection cannot be established.
-* Discover Centers: Clicking this button detects all centers on the same subnet and displays them below, and AlgPlatformViewer will automatically connect to the first center in the list. By clicking a center in the list, all virtual cameras created by that center will then appear in the Connection Management section. You can switch to a specific virtual camera's view in the Display section by clicking the virtual camera number.
+* [Discover Centers]: Clicking this button detects all centers on the same subnet and displays them below, and AlgPlatformViewer will automatically connect to the first center in the list. By clicking a center in the list, all virtual cameras created by that center will then appear in the Device Connection Part. You can switch to a specific virtual camera's view in the Visualization Part by clicking the virtual camera number.
 
 
 ![PixPin\_2026-06-02\_08-32-02](https://github.com/user-attachments/assets/c705796a-8db2-4514-97a7-fb07f074f8f2 )\
 _&#x46;igure 4：Connect to center_
 
-* Connect center: By clicking this button, the AlgPlatformViewer will manually connect to a selected center. This is for the case if the subnet routing doesn't support UDP broadcast discovery.
+* [Connect center]: By clicking this button, the AlgPlatformViewer will manually connect to a selected center. This is for the case if the subnet routing doesn't support UDP broadcast discovery.
 
 ### 4.2 Create an virtual camera
 
 When a computing board is connected to an camera, you need to create a corresponding virtual camera for it. 
 
-* Go to the "Device Connection" interface and click "Create Virtual Camera" at the bottom. A creation window will pop up.
+* Go to the "Device Connection" interface and click [Create Virtual Camera] at the bottom. A creation window will pop up.
 
 ![PixPin\_2026-06-02\_08-32-02](https://github.com/user-attachments/assets/c21a987d-1778-483b-9bfb-a5204c68f04b )\
 _&#x46;igure 5：Create Virtual Camera_
 
-* In the window, enter the "Camera Name" and click "Search Physical Cameras". Select the target camera from the search results and click "Add Selected" to add it to the "Base Cameras managed by the virtual camera" on the right side.
+* In the window, enter the "Camera Name" and click [Search Physical Cameras]. Select the target camera from the search results and click [Add Selected] to add it to the "Base Cameras managed by the virtual camera" on the right side.
   
-* Select the target Base Camera under "Base Cameras managed by the virtual camera" and click "Create Virtual Camera" to complete the setup. The newly created virtual camera will appear in the virtual camera list on the left, ready for subsequent connection and operation.
+* Select the target Base Camera under "Base Cameras managed by the virtual camera" and click [Create Virtual Camera] to complete the setup. The newly created virtual camera will appear in the virtual camera list on the left, ready for subsequent connection and operation.
 
 ![PixPin\_2026-06-02\_08-32-02](https://github.com/user-attachments/assets/6feedd18-a414-40fb-95f1-9d865c2af870 )\
 _&#x46;igure 6：Add real cameras_
@@ -79,11 +77,10 @@ _&#x46;igure 7：Depalletizing Configuration_
 
 #### 4.3.1 Choose Template and Mode
 
-1. Fetch Current Parameters: By clicking this button, the AlgPlatformViewer fetches all the Global-, Region-, and Calibration parameters saved on the center connected. The fetched parameters are then loaded into the Global-, Calibration-, Region settings for visualization and further configuration if needed.
-2. Template Selection: Select saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags. For soft-bags, we recommend to use template 6.
-3. Material Type Switching: Supports switching between two material types—Soft-pack (bag) and Carton (box)—to adapt to different depalletizing target recognition logics.
-4. Apply Calibration to All Templates and Distribute: This button applies the Region and Calibration settings to all other templates. The logic is that Global settings contain parameters specific to a depalletizing target, which may change when cargo types change. However, the detection area and camera calibration remain constant since the robot's physical position does not change. Therefore, when the cargo type changes, you only need to update the Global settings, without having to re-enter the Region and Calibration parameters every time.
-5. Operation Mode Switching: Simple Mode: Parameters are fixed. It performs only basic validation on cargo dimensions without advanced algorithm features, making it suitable for standardized, routine depalletizing scenarios. Expert Mode: Unlocks full custom parameter configuration and enables advanced features like parcel merging. This mode is designed for complex working conditions and scenarios requiring refined recognition (UI to be continuously optimized).
+1. [Fetch Current Parameters]: By clicking this button, the AlgPlatformViewer fetches all the Global-, Region-, and Calibration parameters saved on the center connected. The fetched parameters are then loaded into the Global-, Calibration-, Region settings for visualization and further configuration if needed.
+2. Template Selection: Select saved Global settings template via a dropdown menu for quick switching between scenario-specific configurations, such as for different shapes of bags.
+3. Material Type Switching: Supports switching between two material types—Bag (Soft-pack) and Box (Carton)—to adapt to different depalletizing target recognition logics.
+4. [Apply Calibration to All Templates and Distribute]: This button applies the Region and Calibration settings to all other templates. The logic is that Global settings contain parameters specific to a depalletizing target, which may change when cargo types change. However, the detection area and camera calibration remain constant since the robot's physical position does not change. Therefore, when the cargo type changes, you only need to update the Global settings, without having to re-enter the Region and Calibration parameters every time.
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/dca70de7-84b6-4e29-a2d2-165a4c95a4b8 )\
 _&#x46;igure 8：Choose template and mode_
@@ -130,17 +127,17 @@ _&#x46;igure 11：Region Settings_
 
 **There are two ways to perform the region calibraion**
 **1. Automatic Calibration**
-* Click "Region Calibration". The system will automatically complete the calibration, save and dispatch the settings, and trigger a single recognition.
+* Click [Region Calibration]. The system will automatically complete the calibration, save and dispatch the settings, and trigger a single recognition.
 * Check the "Result Point Cloud" to verify whether the region accurately covers the packages on the pallet.
-* If the system prompts a calibration failure, please follow the prompts to resolve the issue and try again: For example if the Region is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 10. If that happened, configure the Region Settings and change the region size, then click Save and Send and Single Trigger.
+* If the system prompts a calibration failure, please follow the prompts to resolve the issue and try again: For example if the Region is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 12. If that happened, configure the Region Settings and change the region size, then click Save and Send and Single Trigger.
 
 ![PixPin\_2026-06-03\_10-27-36](https://github.com/user-attachments/assets/e398c733-3ea3-4d60-a3c8-c4f9797aac09 )\
 _&#x46;igure 12：Error example_
 
 **2. Manual Calibration**
 * Enter values in "Region Configuration" and adjust the bounding box so that the operating area completely covers the flexible packages on the pallet while excluding irrelevant surrounding data.
-* Click "Save and Dispatch" to apply the area settings.
-* Click "Single Trigger" and check the results in the "Result Point Cloud".
+* Click [Save and Dispatch] to apply the area settings.
+* Click [Single Trigger] and check the results in the "Result Point Cloud".
 
 
 
@@ -173,14 +170,14 @@ _&#x46;igure 13：Calibration Settings_
 
 #### 4.3.6 Hand-eye calibration
 
-* Add point: Enter the X, Y, and Z value of the teaching point into the input box and click the [Add Point] button to add the point's coordinates to the corresponding coordinate area.
-* Import from Clipboard: Right-click the RGB display to show the coordinate information of a point in the camera coordinate system. After pasting coordinate data from other devices into the input box, click this button. The system will automatically recognize the format and import the data.
+* [Add point]: Enter the X, Y, and Z value of the teaching point into the input box and click the [Add Point] button to add the point's coordinates to the corresponding coordinate area.
+* [Import from Clipboard]: Right-click the RGB display to show the coordinate information of a point in the camera coordinate system. After pasting coordinate data from other devices into the input box, click this button. The system will automatically recognize the format and import the data.
 * Camera coordinate area: Displays the coordinates of the four camera teaching points.
 * Robot coordinate area: Displays the coordinates of the four robot teaching points.
-* Delete point/Delete all: Delete a single point or all coordinates in the coordinate area.
+* [Delete point/Delete all]: Delete a single point or all coordinates in the coordinate area.
 * Auto add/Detect markers: When you select the [Auto Add] mode, the hand-eye calibration tool enters auto-add mode. Place a calibration board at the pallet position so that it is fully visible within the camera's field of view. Then, click the [Detect Markers] button. The tool will automatically detect the coordinates of the four corners of the calibration board, eliminating the need to enter them manually.
-* Left handed coordinate system: Check this option to switch the coordinate area to a left-handed coordinate system.
-* Calibration: Click the [Calibration] button to start the hand-eye calibration.
+* [Left handed coordinate system]: Check this option to switch the coordinate area to a left-handed coordinate system.
+* [Calibration]: Click the [Calibration] button to start the hand-eye calibration.
 
 [Gripper tool offset] section
 * Euler angles: Enter the Euler angles for the robot gripper tool (e.g., the robot wrist).
@@ -220,7 +217,7 @@ Hand-eye calibration is designed to establish the coordinate transformation matr
 Because a calibration needle is used during the hand-eye calibration process, there is typically a fixed XYZ and angular offset between the suction cup and the needle. Therefore, this deviation must be compensated for in this step.
 
 1. Place a soft gripper on the pallet and manually jog the robot arm into the grasping pose. Record the robot's current pose from the robot coordinate system.
-2. Move the robot arm away while keeping the soft gripper in its original position. Manually trigger the camera to capture an image, and obtain the algorithm generated grasping pose fron [Result log] section, which has already been transformed into the robot coordinate system.
+2. Move the robot arm away while keeping the soft gripper in its original position. Manually trigger the camera to capture an image, and obtain the algorithm generated grasping pose from [Result log] tab, which has already been transformed into the robot coordinate system.
 3. Calculate the fixed offset between these two poses. Enter the compensation values into the "Euler Angles" and "Translation Vector" fields under "Calibration Configuration" to complete the correction.
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/c6200a9e-cc87-4300-a2f1-097ddcda90c4 )\
@@ -228,15 +225,15 @@ _&#x46;igure 17: Fixed Deviation Correction Example_
 
 #### 4.3.7 Buttons
 
-1. Single trigger: Click the button to execute a single image capture and depalletizing calculation. It updates detection results (such as cargo grasping pose and dimensions) in real-time, suitable for single-run debugging and verification.
+1. [Single trigger]: Click the button to execute a single image capture and depalletizing calculation. It updates detection results (such as cargo grasping pose and dimensions) in real-time, suitable for single-run debugging and verification.
 2. Add Template/Delete template:
 
-* Add template： Click the button and enter a custom name to create and save a new template.
-* Delete Current Template: One-click deletion of the currently selected template to clear invalid scene configurations.
+* [Add template]： Click the button and enter a custom name to create and save a new template.
+* [Delete Current Template]: One-click deletion of the currently selected template to clear invalid scene configurations.
 
-3. Region calibration: Click the button to execute the region calibration. The algorithm identifies all cargo targets within the RGB field of view, selects the most centered cargo as the base detection area, expands outward by a fixed range, and generates the valid detection area with a visual display of the calibration result.
-4. Hand-eye calibration: During the initial setup, clicking this button will launch the hand-eye calibration tool. The purpose of this tool is to align the separate coordinate systems of the camera and the robot arm. The "Camera Coordinate" section displays the X, Y, Z value of a specific point within the camera's coordinate system showing the camera's location. Below this, an RGB image shows four reference points on the tray. You need to move the robot arm's tip to each of these points and input the corresponding coordinates into the "Robot Coordinate" section. Once you click OK, the algorithm will unify the camera's and robot arm's coordinate systems, determining the precise spatial relationship between them.
-5. Save and send: Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
+3. [Region calibration]: Click the button to execute the region calibration. The algorithm identifies all cargo targets within the RGB field of view, selects the most centered cargo as the base detection area, expands outward by a fixed range, and generates the valid detection area with a visual display of the calibration result.
+4. [Hand-eye calibration]: During the initial setup, clicking this button will launch the hand-eye calibration tool. The purpose of this tool is to align the separate coordinate systems of the camera and the robot arm. The "Camera Coordinate" section displays the X, Y, Z value of a specific point within the camera's coordinate system showing the camera's location. Below this, an RGB image shows four reference points on the tray. You need to move the robot arm's tip to each of these points and input the corresponding coordinates into the "Robot Coordinate" section. Once you click OK, the algorithm will unify the camera's and robot arm's coordinate systems, determining the precise spatial relationship between them.
+5. [Save and send]: Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
 
 ![PixPin\_2026-06-03\_08-21-01](https://github.com/user-attachments/assets/4d7dcb14-2298-4e11-a79e-3f79b4b49614)\
 _&#x46;igure 18: Buttons_
