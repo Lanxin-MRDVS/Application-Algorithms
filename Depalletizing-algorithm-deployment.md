@@ -274,7 +274,7 @@ When a single computing board is connected to two cameras simultaneously, the IP
 
 #### Step 4: Connect to the Device
 
-After the device restarts, return to the \[Device Connection] interface. Click the \[Discover centers] button to refresh the LAN connection as shown Figure 15 in red box. Select the center to which your desired camera is connected from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in Figure 15 red box. Click on the virtual camera option and click the camera with which you want to establish a connection. Then click \[Connect to Center] button as shown in Figure 16.
+After the device restarts, return to the \[Device Connection] interface. Click the \[Discover centers] button to refresh the LAN connection as shown Figure 19 in red box. Select the center to which your desired camera is connected from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in Figure 19 red box. Click on the virtual camera option and click the camera with which you want to establish a connection. Then click \[Connect to Center] button as shown in Figure 20.
 
 
 ![PixPin\_2026-06-29\_05-43-36](https://github.com/user-attachments/assets/92f56b25-c362-47b3-bcc4-afb5aa4dd1bb)\
