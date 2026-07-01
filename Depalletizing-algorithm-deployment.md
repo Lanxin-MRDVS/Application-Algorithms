@@ -144,7 +144,7 @@ _&#x46;igure 11：Region Settings_
 **1. Automatic Calibration**
 * Click [Region Calibration]. The system will automatically complete the calibration, save and dispatch the settings, and trigger a single detection.
 * Check the "Result Point Cloud" to verify whether the region accurately covers the packages on the pallet.
-* If the system prompts a calibration failure, please follow the prompts to resolve the issue and try again: For example if the Region is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 12. If that happened, configure the Region Settings and change the region size, then click Save and Send and Single Trigger.
+* If the system prompts a calibration failure, please follow the prompts to resolve the issue and try again: For example if the Region is set too small and part of the target bag/box falls outside it, the excluded area will not be counted towards the bag/box's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the bag/box will not be detected as a target. This is shown in Figure 12. If that happened, configure the Region Settings and change the region size, then click Save and Send and Single Trigger.
 
 ![PixPin\_2026-06-03\_10-27-36](https://github.com/user-attachments/assets/2ebf15b1-32e7-4812-8fc5-0406914438e0 )\
 _&#x46;igure 12：Error example_
