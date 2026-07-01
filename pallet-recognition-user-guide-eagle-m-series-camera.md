@@ -71,7 +71,7 @@ Fork Arm Position (Depth to Tray Edge): This parameter defines the fork insertio
 
 <p align="center"><img src="https://github.com/user-attachments/assets/cd0cc029-04f3-4801-a8c8-42fc44a7e9b8" alt="PixPin_2026-06-10_11-31-24"><br><em>Figure 7: Parameters</em></p>
 
-Pallet Teaching (It is recommended to perform two calibrations): \[Pallet Teaching (Near)]: Position the pallet 1300mm away from the camera to perform near-end calibration. This step determines the pallet's height, lateral offset, heading angle, and roll angle. \[Pallet Teaching (Far)]: After near-end calibration, proceed with far-end calibration (secondary teaching). For example, if the camera recognizes the pallet distance as 1300mm during near-end calibration, drive the forklift straight backward by approximately 500–800mm without any angular or lateral movement. Perform far-end calibration when the distance to the pallet reaches 1.8–2.4m. This step determines the camera's pitch angle. Note: \[Pallet Teaching (Far)] tab is only available after \[Pallet Teaching (Near)] is successful.
+Pallet Teaching (It is recommended to perform two calibrations): \[Pallet Teaching (Near)]: Position the pallet 1300mm away from the camera to perform near-end calibration. This step determines the pallet's height, lateral offset, heading angle, and roll angle. \[Pallet Teaching (Far)]: After near-end calibration, proceed with far-end calibration (secondary teaching). For example, if the camera recognizes the pallet distance as 1300mm during near-end calibration, drive the forklift straight backward by approximately 700mm–1100mm without any angular or lateral movement. Perform far-end calibration when the distance to the pallet reaches 2.1–2.4m. This step determines the camera's pitch angle. Note: \[Pallet Teaching (Far)] tab is only available after \[Pallet Teaching (Near)] is successful.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/eadf1f1c-7927-4a4f-bcd9-3a4572537e45" alt="PixPin_2026-06-10_11-31-24"><br><em>Figure 8: Pallet Teaching</em></p>
 
@@ -399,11 +399,11 @@ As shown in the figure below, it is advisable to mount the camera at a height of
 
 <p align="center"><img src="https://github.com/user-attachments/assets/1a1a0010-12b5-4972-a9bd-e084c3d91a51" alt="Picture1"><br><em>Figure 22: IP configuration</em></p>
 
-2. Open the LxCameraViewer to test the camera view. Glick the \[3D settings] tab. The default camera high exposure value is 650, and the low exposure value is 200. Adjust the camera exposure value based on different application scenarios.
+2. Open the LxCameraViewer to test the camera view. Click the \[3D settings] tab. The default camera high exposure value is 650, and the low exposure value is 200. Adjust the camera exposure value based on different application scenarios.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/e3168c7b-6aa6-4b07-94fe-5b12bf31fbba" alt="PixPin_2026-06-11_07-52-05"><br><em>Figure 23: Camera configuration</em></p>
 
-4. Select the pallet positioning algorithm and set the working mode to \[Keep Heartbeat]. Note: LxCameraviewer is only used for configuring camera internal parameters, while PalletPro handles all other algorithm parameters. For better recognition performance, we recommend upgrading to the latest version of PalletPro via a firmware update.
+4. Select the pallet positioning algorithm and set the working mode to \[Keep Heartbeat] when using UDP as the communication method. Set the working mode to \[Always-On] when using TCP as the communication method. Note: LxCameraViewer is only used for configuring camera internal parameters, while PalletPro handles all other algorithm parameters. For better recognition performance, we recommend upgrading to the latest version of PalletPro via a software update.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/5dd64e77-5fb7-4e64-96e0-7390397f9737" alt="PixPin_2026-06-11_07-56-54"><br><em>Figure 24: Camera configuration</em></p>
 
@@ -431,7 +431,7 @@ Note: The ground should be relatively flat during calibration. Before calibratio
 
 ### 4.5 Near-end calibration
 
-The near-end calibration scheme uses a so called teaching calibration method. The forklift needs to manually control the docking of the pallet once. First, move the forklift under the pallet, and pick up the pallet once, which makes sure that the forklift is centered in terms of the pallet. Then, lift down the lift arm, and in a straight line, drive the forklift (the pallet is on the ground without lifting) to make the camera about 1300mm away from the front edge of the pallet (as shown in the diagram). At this time, click on the \[pallet teaching (near)] to calibrate the installation height, lateral offset, heading angle, and roll angle. After calibration, click \[Real-time display] and \[Detection] to continue detection.
+The near-end calibration scheme uses a so-called teaching calibration method. The forklift needs to manually control the docking of the pallet once. First, move the forklift under the pallet, and pick up the pallet once, which makes sure that the forklift is aligned with the pallet center. Then, lower the lift arm, and in a straight line, drive the forklift (the pallet is on the ground without lifting) to make the camera about 1300mm away from the front edge of the pallet (as shown in the diagram). At this time, click on the \[pallet teaching (near)] to calibrate the installation height, lateral offset, heading angle, and roll angle. After calibration, click \[Real-time display] and \[Detection] to continue detection.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/405aa2cd-0040-4078-a1ad-b54f6f09fa04" alt="图片3"><br><em>Figure 28: Pickup first</em></p>
 
@@ -451,9 +451,9 @@ Note: The \[Pallet Teaching (far)] is not mandatory, if the forklift's moving ra
 
 ### 4.7 Calibration verification
 
-Once the near-end and far-end calibrations are complete, you can begin verifying the calibration accuracy. Move the forklift back and forth between the near-end and far-end calibration points while monitoring the R output for distance (X value), lateral deviation (Y value), and angle. Calibration is considered successful when the X and Y errors are within 10 mm and the recognition is stable with no missed detections. The forklift can then be put into normal operation.
+Once the near-end and far-end calibrations are complete, you can begin verifying the calibration accuracy. Move the forklift back and forth between the near-end and far-end calibration points while monitoring the R output for distance (X value), lateral deviation (Y value), and angle. Calibration is considered successful when the deviation between the detected position and the actual position is within 10mm and the recognition is stable with no missed detections. The forklift can then be put into normal operation.
 
-Example: x, y, theta = (-1987, 81, -2.1) This signifies that the pallet is 1987 millimeters away from the camera's optical center, shifted right by 81 millimeters, with an angular deviation of -2.3° (top view, counterclockwise direction). The data result is X: -1987; Y: 81; Theta: -2100.
+Example: x, y, theta = (-1987, 81, -2.1) This signifies that the pallet is 1987 millimeters away from the camera's optical center, shifted right by 81 millimeters, with an angular deviation of -2.1° (top view, counterclockwise direction). The data result is X: -1987; Y: 81; Theta: -2100.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/f2c5d344-a009-4461-8671-041f0132e574" alt="PixPin_2026-06-11_08-39-02"><br><em>Figure 33: Verification</em></p>
 
@@ -467,7 +467,7 @@ You can also use NetAssistant from https://github.com/luokyme/NetAssistant, whic
 
 ### 5.1 API Invocation
 
-The API invocation method supports C++, C#, JAVA, ROS1, ROS2, and other environments on Windows, Linux, ARM, etc. For the Windows environment, after installing the upper computer software, SDK files, and sample program codes are available in the installation path (e.g., D:\Program Files\Lanxin-MRDVS).
+The API invocation method supports C++, C#, Java, ROS1, ROS2, and other environments on Windows, Linux, ARM, etc. For the Windows environment, after installing the LxCameraViewer software, SDK files, and sample program codes are available in the installation path (e.g., D:\Program Files\Lanxin-MRDVS).
 
 * Document Folder: Contains SDK and upper computer usage documentation.
 * Firmware Folder: Stores camera firmware packages.
@@ -476,24 +476,27 @@ The API invocation method supports C++, C#, JAVA, ROS1, ROS2, and other environm
 
 ### 5.2 UDP Communication
 
-Set the algorithm working mode to open on the NetAssist.
+Set the algorithm working mode to [Open] using NetAssist.
 
 **Port Configuration:** Host Port Number: 8000
 
-**Sending Content:** 1.0x60 0x04 0x00 0x00 means Start Recognition Task 2.0x60 0x04 0x00 0x01 means End Recognition Task
+**Sending Content:** 
+1. 0x60 0x04 0x00 0x00 means Start Recognition Task
+2. 0x60 0x04 0x00 0x01 means End Recognition Task
 
 Character explanation: 00 00 00 14 01 00 00 00 00 17 8E 78 00 00 17 70 00 00 28 F5 00
 
 ### Response Data Structure
 
-| Byte Position | Content                          | Description                                                                                                                                                                                                                                  |
-| ------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1-2**       | Code                             | <p>Returns a 16-bit unsigned integer (<code>unsigned int</code>).<br>• <code>0</code>: Success<br>• <code>1</code>: Camera open exception<br>• <code>2</code>: Pallet positioning failure<br>• <code>3</code>: Internal camera exception</p> |
-| **3-4**       | Total Byte Length                | 16-bit unsigned integer (`unsigned int`). Current value is **20 bytes**.                                                                                                                                                                     |
-| **5-8**       | Pallet Recognition (X, Y, Theta) | The sign is represented by `0x00` for positive and `0x01` for negative. The 8th byte is a placeholder (`0x00`).                                                                                                                              |
-| **9-12**      | Pallet Front Center X Position   | 4-byte unsigned integer. Unit: **millimeters (mm)**.                                                                                                                                                                                         |
-| **13-16**     | Pallet Front Center Y Position   | 4-byte unsigned integer. Unit: **millimeters (mm)**.                                                                                                                                                                                         |
-| **17-20**     | Pallet Front Center Angle Theta  | 4-byte unsigned integer. Unit: **degrees × 1000**.                                                                                                                                                                                           |
+| Byte Position | Content |
+| :--- | :--- |
+| 1-2 | Code, return value, 16-bit unsigned integer (unsigned int). 0 indicates successful recognition; other values indicate recognition exceptions: 1: Camera open exception 2: Pallet positioning failed 3: Camera internal exception |
+| 3-4 | Total byte length (number of bytes), 16-bit unsigned integer (unsigned int). Currently 21 |
+| 5-8 | Signs for pallet recognition X, Y, theta, Z. 0x00 is positive, 0x01 is negative. |
+| 9-12 | Pallet front center point position X, 4-byte unsigned integer, unit: mm*1000 |
+| 13-16 | Pallet front center point position Y, 4-byte unsigned integer, unit: mm*1000 |
+| 17-20 | Pallet front center point angle theta (unit: degrees), 4-byte unsigned integer, unit: degrees*1000 |
+| 21-24 | Pallet height
 
 ### 5.3 TCP Communication
 
@@ -518,7 +521,7 @@ Note: When using TCP communication, you must set the algorithm working mode to \
 | **21-24**     | Pallet Height                     | <p>Originated from the camera's optical center (positive direction is downwards).<br>4-byte unsigned integer. Unit: <strong>millimeters × 1000</strong>.</p>                                                                                                                                       |
 | **25-32**     | Reserved / Extension              | 8 bytes reserved for future extension. Default value is set to `0`.                                                                                                                                                                                                                                |
 
-### 5.5 CAN Communication
+### 5.4 CAN Communication
 
 Please note the Can protocol only supports M4 cameras. The communication protocol adopts CANopen. The CANopen protocol is an application layer protocol running on the standard CAN bus. Its communication mode is the commonly used "master-slave" mode in industrial communication protocols. In this mode, there is one master station + multiple slave stations, and slave stations do not communicate directly with each other. All communication is between the master station and slave stations. The master station is also referred to as the "client," and the slave station is referred to as the "server." The underlying communication method uses the CAN standard frame format, where the CAN ID is 11 bits (0x000\~7FF), and the data is 8 bytes. For the use of CAN IDs: Divide the 11-bit ID into a 4-bit function code and a 7-bit node ID. The CAN ID is also called COB ID.
 
