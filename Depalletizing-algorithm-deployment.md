@@ -203,11 +203,16 @@ Hand-eye calibration is designed to establish the coordinate transformation matr
 3. First, check the sequence of the feature points in the "Result RGB" image on the main interface. Then, move the robot arm and use the calibration needle to precisely touch each feature point in that exact sequence. After touching each point, enter the corresponding robot arm coordinates in the "Robot Coordinate Area" in X, Y, Z format (separated by commas) and click [Add Point]. After successfully collecting all four points, click [Calibrate] to allow the system to automatically calculate the hand-eye matrix.
 4. Check the calibration error in the "Calibration Error" section at the bottom right of the interface. The calibration is considered successful if the maximum error is within the acceptable range (less than 15 mm). If the error is too large, check whether the calibration board has shifted or if the needle touches were inaccurate, and repeat the process.
 
-![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/6f49ff10-c2e8-427d-8761-39faec256353 )\
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/d96c0cd3-ba91-47d9-bce3-2fef00c7a10d)\
 _&#x46;igure 14: Automatic Hand-Eye Calibration_
 
-![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/acb65060-fc6c-414b-8c45-a7252d1ec0ca )\
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/43c9a454-10af-41e3-9b31-e86e336ae06a )\
 _&#x46;igure 15: Calibration error_
+
+
+
+
+
 
 **Manual hand-eye calibration**
 1. Install the calibration needle on the Z-axis extension line of the robot arm flange. Place the checkerboard steadily on the surface where the bags are stacked (e.g., the floor or pallet), ensuring it is unobstructed and centered within the camera's field of view.
@@ -215,8 +220,10 @@ _&#x46;igure 15: Calibration error_
 3. Operate the robot arm to touch the exact same corner point with the calibration needle (it is recommended to touch the intersection of the black and white squares for maximum precision). Manually enter the robot arm coordinates for this point in the "Robot Coordinate Area" in X, Y, Z format (separated by commas) and click [Add Point]. Repeat this procedure from four different orientations, ensuring that the robot coordinates correspond one-to-one with the sequence of feature points in the "Camera Coordinate Area". After collecting all four points, click [Calibrate].
 4. Check the results in the "Calibration Error" section at the bottom right of the interface: the calibration is successful if the error is within the acceptable range (less than 15 mm). If the error is too large, please check whether the checkerboard is clearly visible and if the needle touches were accurate, then recalibrate.
 
-![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/273410e3-aab2-445f-9dd3-863e92e3f4d5 )\
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/0381f3b9-d974-4fc8-afec-33278a306322 )\
 _&#x46;igure 16: Manual hand-eye calibration_
+
+
 
 
 **Fixed Deviation Correction Example**
@@ -226,8 +233,10 @@ Because a calibration needle is used during the hand-eye calibration process, th
 2. Move the robot arm away while keeping the soft gripper in its original position. Manually trigger the camera to capture an image, and obtain the algorithm generated grasping pose from [Result log] tab, which has already been transformed into the robot coordinate system.
 3. Calculate the fixed offset between these two poses. Enter the compensation values into the "Euler Angles" and "Translation Vector" fields under "Calibration Configuration" to complete the correction.
 
-![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/c6200a9e-cc87-4300-a2f1-097ddcda90c4 )\
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/5badda38-7044-4ee8-a809-fe408b918f66 )\
 _&#x46;igure 17: Fixed Deviation Correction Example_
+
+
 
 #### 4.3.7 Depalletizing Buttons
 
@@ -299,31 +308,31 @@ _&#x46;igure 23: Basic camera parameters_
 
 Enter the [Depalletizing] tab, select the corresponding bag/box template at [Template], then select the [material type] to "Bag" or "box" based on need. Based on the actual volume and size of the on-site bag/box, you can choose the pre-defined [Template] or modify yourself, which will set the Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
-![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/de480b61-ccff-4bba-a563-b44003583364 )\
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/23fa975a-40f2-47bf-b936-9471ce85770c )\
 _&#x46;igure 24: Depalletizing configuration_
+
 
 
 #### Step 8: Configure Safety Parameters 
 
 Set the safety parameters to configure foreign object detection and prevent personnel or objects from intruding during the gripping process. 
 
-![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/26718445-2863-4956-8bea-5bb4ac26d5d2 )\
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/2f461614-7751-4b74-a4ee-86e0554f16ab )\
 _&#x46;igure 25: Safety Parameters_
-
 
 
 #### Step 9: Hand-Eye Calibration
 
 Execute the hand-eye calibration process to establish the coordinate alignment between the camera and the robotic arm. Follow the instruction above at [Hand-Eye Calibration] section. Finally, click the [Calibration] button. This will persistently save the calibration parameters to the camera device and automatically apply the [Calibration Settings].
 
-![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/6f49ff10-c2e8-427d-8761-39faec256353 )\
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/d96c0cd3-ba91-47d9-bce3-2fef00c7a10d )\
 _&#x46;igure 26: Hand-Eye Calibration_
 
 #### Step 10: Fixed bias correction
 
 Fine-tune the [Eular angles] and [Translation vector] to correct the XYZ and angle offset. 
 
-![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/c6200a9e-cc87-4300-a2f1-097ddcda90c4 )\
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/34fe9039-d9b0-40e1-9255-d25733b8096d )\
 _&#x46;igure 27: Configure fixed bias_
 
 
@@ -331,8 +340,10 @@ _&#x46;igure 27: Configure fixed bias_
 
 By clicking the [Region Calibration] button the software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically complete the region calibration. If you want to manually configure the region, remember to click [save and send] button after configuration, to send the new region data to the center.
 
-![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/4156e1bd-36de-45ad-ac6d-44dca1c77f07 )\
+![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/47886f33-627f-450d-8fac-6cc0c114df53 )\
 _&#x46;igure 28: Area calibration_
+
+
 
 #### Step 12: Test the result
 
