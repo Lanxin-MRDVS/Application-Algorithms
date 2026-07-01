@@ -133,8 +133,11 @@ Used to customize the spatial detection region of the algorithm. By setting the 
 
 Note: Before calibration, ensure that the process must be performed with a full stack, and the entire stack must be within the camera's RGB field of view; also region calibration must be re-executed if the position of the camera or robotic arm changes.
 
-![PixPin\_2026-06-03\_08-20-34](https://github.com/user-attachments/assets/01050228-4a66-4cad-8d03-c18a25234153 )\
+![PixPin\_2026-06-03\_08-20-34](https://github.com/user-attachments/assets/1b01b45c-d5a3-49e3-b19f-33c3994839a6 )\
 _&#x46;igure 11：Region Settings_
+
+
+
 
 **There are two ways to perform the region calibraion**
 
@@ -143,16 +146,15 @@ _&#x46;igure 11：Region Settings_
 * Check the "Result Point Cloud" to verify whether the region accurately covers the packages on the pallet.
 * If the system prompts a calibration failure, please follow the prompts to resolve the issue and try again: For example if the Region is set too small and part of the target cargo falls outside it, the excluded area will not be counted towards the cargo's size. If the remaining part inside the region does not meet the minimum Length/Width requirements in the Global Settings, the cargo will not be detected as a target. This is shown in Figure 12. If that happened, configure the Region Settings and change the region size, then click Save and Send and Single Trigger.
 
-![PixPin\_2026-06-03\_10-27-36](https://github.com/user-attachments/assets/e398c733-3ea3-4d60-a3c8-c4f9797aac09 )\
+![PixPin\_2026-06-03\_10-27-36](https://github.com/user-attachments/assets/2ebf15b1-32e7-4812-8fc5-0406914438e0 )\
 _&#x46;igure 12：Error example_
 
+
+
 **2. Manual Calibration**
-* Enter values in "Region Configuration" and adjust the bounding box so that the operating area completely covers the flexible packages on the pallet while excluding irrelevant surrounding data.
+* Enter values in [Region Configuration] and adjust the bounding box so that the operating area completely covers the flexible packages on the pallet while excluding irrelevant surrounding data.
 * Click [Save and Dispatch] to apply the area settings.
 * Click [Single Trigger] and check the results in the "Result Point Cloud".
-
-
-
 
 
 
