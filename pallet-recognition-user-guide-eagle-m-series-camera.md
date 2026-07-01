@@ -65,7 +65,9 @@ Information verification at the Bottom of \[Calibration Notes]: Customer Name: I
 
 <p align="center"><img src="https://github.com/user-attachments/assets/8672da0b-1ff7-4ed6-98ca-5b59104f8923" alt="PixPin_2026-06-10_11-20-50"><br><em>Figure 6 : Information verification</em></p>
 
-Distance from Rotation Center to Optical Center: When set to the default value of 0, it represents the coordinate of camera's optical center is overlapping with the forklift's rotation center. You must enter the actual distance from the camera's optical center to the forklift's rotation center. Fork Arm Position (Depth to Tray Edge): This parameter defines the additional insertion distance the forklift arm needs to travel after reaching the front edge of the pallet. It acts as a safety margin to ensure the forks are fully and securely inserted under the pallet.
+Rotation Center to Optical Center Distance: When set to 0, it assumes the optical center overlaps with the rotation center. If they are not aligned, enter the actual distance. You must enter the actual distance from the camera's optical center to the forklift's rotation center. 
+
+Fork Arm Position (Depth to Tray Edge): This parameter defines the additional insertion distance the forklift arm needs to travel after reaching the front edge of the pallet. It acts as a safety margin to ensure the forks are fully and securely inserted under the pallet.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/cd0cc029-04f3-4801-a8c8-42fc44a7e9b8" alt="PixPin_2026-06-10_11-31-24"><br><em>Figure 7: Parameters</em></p>
 
