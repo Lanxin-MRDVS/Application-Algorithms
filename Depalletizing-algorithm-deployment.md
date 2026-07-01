@@ -240,13 +240,13 @@ _&#x46;igure 17: Fixed Deviation Correction Example_
 
 #### 4.3.7 Depalletizing Buttons
 
-1. [Single trigger]: Click the button to execute a single image capture and depalletizing calculation. It updates detection results (such as cargo grasping pose and dimensions) in real-time, suitable for single-run debugging and verification.
+1. [Single trigger]: Click the button to execute a single image capture and depalletizing calculation. It updates detection results (such as bag/box grasping pose and dimensions) in real-time, suitable for single-run debugging and verification.
 2. Add Template/Delete template:
 
 * [Add template]： Click the button and enter a custom name to create and save a new template.
 * [Delete Current Template]: One-click deletion of the currently selected template to clear invalid scene configurations.
 
-3. [Region calibration]: Click the button to execute the region calibration. The algorithm identifies all cargo targets within the RGB field of view, selects the most centered cargo as the base detection area, expands outward by a fixed range, and generates the valid detection area with a visual display of the calibration result.
+3. [Region calibration]: Click the button to execute the region calibration. The algorithm identifies all bag/box targets within the RGB field of view, selects the most centered bag/box as the base detection area, expands outward by a fixed range, and generates the valid detection area with a visual display of the calibration result.
 4. [Hand-eye calibration]: During the initial setup, clicking this button will launch the hand-eye calibration tool. The purpose of this tool is to align the separate coordinate systems of the camera and the robot arm. The "Camera Coordinate" section displays the X, Y, Z value of a specific point within the camera's coordinate system showing the camera's location. Below this, an RGB image shows four reference points on the tray. You need to move the robot arm's tip to each of these points and input the corresponding coordinates into the "Robot Coordinate" section. Once you click OK, the algorithm will unify the camera's and robot arm's coordinate systems, determining the precise spatial relationship between them.
 5. [Save and send]: Saves and deploys all current template parameters (detection, calibration, and area configurations) to the camera device. Parameters are persisted and will not be lost after a device restart.
 
@@ -257,7 +257,7 @@ _&#x46;igure 18: Buttons_
 
 ## 5. Deployment process
 
-This chapter provides a complete deployment configuration process for the AW3 platform combined with the PE flexible packaging depalletizing algorithm. It serves as a reference for standardized on-site configuration and is applicable to scenarios such as initial deployment of new machines, site relocation, and cargo template resets.
+This chapter provides a complete deployment configuration process for the AW3 platform combined with the PE flexible packaging depalletizing algorithm. It serves as a reference for standardized on-site configuration and is applicable to scenarios such as initial deployment of new machines, site relocation, and bag/box template resets.
 
 #### Step 1: Launch the Software
 
