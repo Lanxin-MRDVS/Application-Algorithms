@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-Pallet recognition is a solution developed by MRDVS using the in-house developed Eagle-M series cameras. It's is designed for forklifts to seamlessly docking pallets. The system boasts adaptive compatibility with a range of pallet specifications, eliminating the need for specific configurations. With dynamic detection capabilities, it can identify structures on the go, eliminating the requirement for the vehicle to come to a complete stop. The system is versatile, supporting recognition in diverse scenarios like floor-to-floor transitions, storage locations, and shelves. Adaptive Pallet Recognition, The system can adaptively recognize pallets of different specifications, including wooden and plastic pallets with different shapes, as shown below.
+Pallet recognition is a solution developed by MRDVS using the in-house developed Eagle-M series cameras. It's designed for forklifts to seamlessly docking with pallets. The system boasts adaptive compatibility with a range of pallet specifications, eliminating the need for specific configurations. With dynamic detection capabilities, it can identify pallets on the go, eliminating the requirement for the vehicle to come to a complete stop. The system is versatile, supporting recognition in diverse scenarios like floor-to-floor transitions, storage locations, and shelves. The system can also adaptively recognize pallets of different specifications, including wooden and plastic pallets with different shapes, as shown below.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/07ea19b2-275a-4697-bbbe-932926c33afc" alt="Picture3"><br></p>
 
@@ -14,7 +14,7 @@ Pallet recognition is a solution developed by MRDVS using the in-house developed
 
 ## 2. Eagle-M camera installation
 
-As shown in the figure below, install the Eagle-M camera at a distance of 35cm to 45cm above the base panel of the fork arm, ensuring it is close to the center of the two fork teeth (with a left-right deviation of no more than 5cm).
+As shown in the figure below, install the Eagle-M camera at a distance of 35cm to 45cm above the base panel of the fork arm, ensuring it is close to the center of the two fork tines (with a left-right deviation of no more than 5cm).
 
 <p align="center"><br><em>Figure 1: Installation example</em></p>
 
