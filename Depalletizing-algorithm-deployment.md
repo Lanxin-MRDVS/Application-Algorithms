@@ -43,8 +43,9 @@ When clicking the Device Connection tab, the content will then be at the right s
 * [Discover Centers]: Clicking this button detects all centers on the same subnet and displays them below, and AlgPlatformViewer will automatically connect to the first center in the list. By clicking a center in the list, all virtual cameras created by that center will then appear in the Device Connection Part. You can switch to a specific virtual camera's view in the Visualization Part by clicking the virtual camera number.
 
 
-![PixPin\_2026-06-02\_08-32-02](https://github.com/user-attachments/assets/c705796a-8db2-4514-97a7-fb07f074f8f2 )\
+![PixPin\_2026-06-02\_08-32-02](https://github.com/user-attachments/assets/7e4dc5e0-3f76-4535-a265-ec2f6339c8de )\
 _&#x46;igure 4：Connect to center_
+
 
 * [Connect center]: By clicking this button, the AlgPlatformViewer will manually connect to a selected center. This is for the case if the subnet routing doesn't support UDP broadcast discovery.
 
@@ -70,9 +71,8 @@ _&#x46;igure 6：Add real cameras_
 
 The Depalletizing Configuration Interface is a core feature of the PalletEye algorithm. It integrates task template/mode settings, algorithm parameter configuration, and core operational capabilities. Designed to support parameter configuration, calibration, task template management, and algorithm computation for soft-pack and carton depalletizing scenarios, it is fully adapted to the demands of routine industrial operations and on-site tuning.
 
-![PixPin\_2026-06-03\_08-14-13](https://github.com/user-attachments/assets/6385be79-5621-4538-a9ca-714b46560638 )\
+![PixPin\_2026-06-03\_08-14-13](https://github.com/user-attachments/assets/ed7ae923-93b9-4c40-92eb-f2922a351392 )\
 _&#x46;igure 7：Depalletizing Configuration_
-
 
 
 #### 4.3.1 Choose Template and Mode
@@ -82,7 +82,7 @@ _&#x46;igure 7：Depalletizing Configuration_
 3. Material Type Switching: Supports switching between two material types—Bag (Soft-pack) and Box (Carton)—to adapt to different depalletizing target detection logics.
 4. [Apply Calibration to All Templates and Distribute]: This button applies the Region and Calibration settings to all other templates. The logic is that Global settings contain parameters specific to a depalletizing target, which may change when bag/box types change. However, the detection area and camera calibration remain constant since the robot's physical position does not change. Therefore, when the bag/box type changes, you only need to update the Global settings, without having to re-enter the Region and Calibration parameters every time.
 
-![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/dca70de7-84b6-4e29-a2d2-165a4c95a4b8 )\
+![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/a95f69b7-ed94-4d1b-a54e-671be46469b6 )\
 _&#x46;igure 8：Choose template and mode_
 
 
@@ -103,15 +103,18 @@ The Global Settings defines the core filtering and detection parameters for depa
 9. Enable Transition Points: Moves the robotic arm to a transition point directly above the package before grasping. Enable based on your specific requirements.
 10. Transition Point Extension Distence: The height of the transition point above the package. Recommendation: Set to 1.5 times the thickness of the package.
 
-![PixPin\_2026-06-03\_08-19-04](https://github.com/user-attachments/assets/9d3073ca-761a-46b8-aa46-51693c03376b )\
+![PixPin\_2026-06-03\_08-19-04](https://github.com/user-attachments/assets/0ebbb23f-5983-4be9-833f-8e9ec71ea282 )\
 _&#x46;igure 9：Global Settings_
+
 
 
 
 If the bag/box's volume and size exceed the maximum Length/Width range in the Global settings, or if the target bag/box is too small and falls below the minimum Length/Width range, the system will filter out the bag/box and will not detect it as a target. This is shown in Figure 8. If that happened, switch template or change Global settings parameters, and then click [Save and Send], and then [Single trigger].
 
-![PixPin\_2026-06-03\_09-32-28](https://github.com/user-attachments/assets/e96a7b49-0a9e-42a5-bcf2-3989cc8b4f5a )\
+![PixPin\_2026-06-03\_09-32-28](https://github.com/user-attachments/assets/c73a3fb9-dc2e-48cc-9bde-4498449ceb6f )\
 _&#x46;igure 10：Error example_
+
+
 
 
 #### 4.3.3 Safety configuration
