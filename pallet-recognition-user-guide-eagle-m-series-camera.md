@@ -32,13 +32,14 @@ The interface includes the following functions:
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | Menu Bar                  | Includes basic operations, advanced applications, extrinsic calibration, camera operations, advanced parameters, and save parameters |
 | Camera Parameter Settings | Includes scanning, embedded mode, camera on/off, real-time display, detection, projection, and camera calibration parameter settings |
-| File Import               | Includes calibration parameter files, recognition images, and folders                                                                |
+| File Import               | Supports importing calibration parameter files, recognition images, and folders                                                                |
 | Log Printing              | Prints detection results, camera firmware version, algorithm version, etc.                                                           |
-| Image Display             | Displays image dat                                                                                                                   |
+| Image Display             | Displays image data                                                                                                                   |
 
 ### 3.2 Menu bar
 
-The five options—External Calibration, Camera Operations, Advanced Parameters, Save Parameters, and Languages—are also included in Basic Operations and Advanced Applications.
+The menu bar includes five options: External Calibration, Camera Operations,
+Advanced Parameters, Save Parameters, and Languages. These options are accessible under Basic Operations and Advanced Applications
 
 <p align="center"><img src="https://github.com/user-attachments/assets/78b106bc-2d67-45bc-9d11-32ce54cee9d5" alt="PixPin_2026-06-09_12-20-32"><br><em>Figure 3: Menu bar</em></p>
 
@@ -50,13 +51,13 @@ The five options—External Calibration, Camera Operations, Advanced Parameters,
 | Basic Operations | Save Parameters       | Save the configured parameters and send them to the camera.                                          |
 | Basic Operations | Camera Operations     | Retrieve the camera IP, camera ID, and software logs.                                                |
 
-#### 3.3.1 External Calibration Module
+#### 3.3.1 Extrinsic Calibration Module
 
-Click External Calibration under Basic Operations. The extrinsic calibration interface will be displayed on the right side of the software window.
+Click Extrinsic Calibration under Basic Operations. The extrinsic calibration interface will be displayed on the right side of the software window.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/f323033b-31cc-4bcc-8650-5b58a19739b9" alt="PixPin_2026-06-09_12-21-07"><br><em>Figure 4: External calibration module</em></p>
 
-Click 'External Calibration' and then select 'Calibration Notes' to display the precautions for external calibration. Please read them carefully to avoid any issues during the process.
+Click 'Extrinsic Calibration' and then select 'Calibration Notes' to display the precautions for extrinsic calibration. Please read them carefully to avoid any issues during the process.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/58904c8f-b0ed-4f78-b862-d80fd9542096" alt="PixPin_2026-06-09_12-21-48"><br><em>Figure 5: External calibration notes</em></p>
 
