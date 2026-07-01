@@ -95,9 +95,9 @@ The Global Settings defines the core filtering and detection parameters for depa
 1. Aspect ratio threshold: Determines the reasonable range for the length-to-width ratio of flexible packages. It is recommanded to use the default value. 
 2. Fill Ratio: Determines the threshold of how well the detected target fills the detection frame. Recommended value is 0.7. Bag/box with a fill ratio lower than this threshold will be filtered out to avoid invalid or interfering targets.
 3. Standard Dimensions (L x W mm): Sets the standard length and width benchmarks for the target material.
-4. Length/Width Range (mm): Defines the valid length and width intervals for bag/box. Targets falling outside these ranges are automatically filtered.
-5. Layer Height (mm): This parameter is used to filter bag/box by layer height and distinguish items across different stacking levels. For example, if the Layer Height is set to 200 mm, it means that when soft-bags are stacked, the height of a single bag (e.g., 200 mm) determines the height of each layer. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from further computation.
-6. Arrangement: Defines the priority order for the algorithm to detect bag/box. It defaults to "Near to far," meaning the system prioritizes detecting the nearest bag/box first. This setting is crucial in industrial environments where bag/box may not be stacked neatly, and items on the same layer might partially overlap. This function prevents the system from attempting to pick up a top layer bag/box that has another item partly on top of it, which could cause displacement or instability during retrieval. For example in Figure 9, you can see the arrangement order as the green number.
+4. Length/Width Range (mm): Defines the valid length and width intervals for bag/box. Targets falling outside these ranges are automatically filtered. For the bag/box length, Leave approx. 25% margin at the limit, based on actual bag/box length. For the bag/box width, Leave approx. 20% margin at the limit, based on actual bag/box width.
+5. Layer Height (mm): This parameter is used to filter bag/box by layer height and distinguish items across different stacking levels. Since the robot picks only one bag from the top of the stack at a time, bags in the second layer and all layers below will be filtered out from further computation. We recommend setting the layer height to 0.6 times the actual bag/box height.
+6. Arrangement: Defines the priority order for the algorithm to detect bag/box. It defaults to "Near to far," meaning the system prioritizes detecting the nearest bag/box first. This setting is crucial in industrial environments where bag/box may not be stacked neatly, and items on the same layer might partially overlap. This function prevents the system from attempting to pick up a top layer bag/box that has another item partly on top of it, which could cause displacement or instability during retrieval. For example in Figure 9, you can see the arrangement order as the green number. Keep this setting as default. 
 7. Enable merge: Merges the same package that was incorrectly split into multiple parts due to wrinkles on the stacked packages. Default: Disabled. Enable this only when a single package is mistakenly split into two.
 8. Enable PCA Pose Calculation: Ensures stable positioning when there are voids (missing data) in the point cloud. Default: Keep the default settings.
 9. Enable Transition Points: Moves the robotic arm to a transition point directly above the package before grasping. Enable based on your specific requirements.
@@ -274,25 +274,23 @@ When a single computing board is connected to two cameras simultaneously, the IP
 
 #### Step 4: Connect to the Device
 
-After the device restarts, return to the \[Device Connection] interface. Click the \[Discover centers] button to refresh the LAN connection as shown Figure 19 in red box. Select the center to which your desired camera is connected from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in Figure 19 red box. Click on the virtual camera option and click the camera with which you want to establish a connection. Then click \[Connect to Center] button as shown in Figure 20.
+After the device starts, return to the \[Device Connection] interface. Click the \[Discover centers] button to refresh the LAN connection as shown Figure 19 in red box. Select the center to which your desired camera is connected from the device list as shown in red box, click it, and camera options connected to that center will display on the left of the screen as shown in Figure 19 red box. Click on the virtual camera option and click the camera with which you want to establish a connection.
 
 
 ![PixPin\_2026-06-29\_05-43-36](https://github.com/user-attachments/assets/92f56b25-c362-47b3-bcc4-afb5aa4dd1bb)\
 _&#x46;igure 19: Discover centers_
 
-![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/c4b62db1-24dc-45bd-b1e3-ae42e576234f)\
-_&#x46;igure 20: Connect to the center_
 
 #### Step 5: Activate Algorithm Authorization
 
 Switch to the [Algorithm enable] tab, select the Soft-bag Depalletizing algorithm, click [Algorithm Authentication] button, and obtain the authorization request key by clicking [Get request key]. Submit this key to the MRDVS FAE personnel to apply for a formal License. Once received, paste the authorization key into the License input box and click [Apply License] to activate the algorithm.
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/b945a501-ddea-4493-bfdb-e3294c2dfb3a)\
-_&#x46;igure 21: Activate algorithm_
+_&#x46;igure 20: Activate algorithm_
 
 
 ![PixPin\_2026-06-04\_05-43-36](https://github.com/user-attachments/assets/adab5051-2423-47c8-87ab-000e9d1d40e4 )\
-_&#x46;igure 22: Get request key_
+_&#x46;igure 21: Get request key_
 
 
 #### Step 6: Configure Basic Camera Parameters
@@ -300,7 +298,7 @@ _&#x46;igure 22: Get request key_
 Switch to the Base Camera] tab, select the right camera parameter template matching the business need and camera model at [Template], and click [Send Base Camera settings] to complete the initialization of the camera's parameters. For depalletizing, we recommand [General].
 
 ![PixPin\_2026-06-04\_05-48-48](https://github.com/user-attachments/assets/49a371f1-0c9b-4a35-ac92-062218cb5562)\
-_&#x46;igure 23: Basic camera parameters_
+_&#x46;igure 22: Basic camera parameters_
 
 
 
@@ -309,7 +307,7 @@ _&#x46;igure 23: Basic camera parameters_
 Enter the [Depalletizing] tab, select the corresponding bag/box template at [Template], then select the [material type] to "Bag" or "box" based on need. Based on the actual volume and size of the on-site bag/box, you can choose the pre-defined [Template] or modify yourself, which will set the Global settings parameters such as standard size, length range, width range, and layer height to adapt to the on-site working conditions.
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/23fa975a-40f2-47bf-b936-9471ce85770c )\
-_&#x46;igure 24: Depalletizing configuration_
+_&#x46;igure 23: Depalletizing configuration_
 
 
 
@@ -318,7 +316,7 @@ _&#x46;igure 24: Depalletizing configuration_
 Set the safety parameters to configure foreign object detection and prevent personnel or objects from intruding during the gripping process. 
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/2f461614-7751-4b74-a4ee-86e0554f16ab )\
-_&#x46;igure 25: Safety Parameters_
+_&#x46;igure 24: Safety Parameters_
 
 
 #### Step 9: Hand-Eye Calibration
@@ -326,14 +324,14 @@ _&#x46;igure 25: Safety Parameters_
 Execute the hand-eye calibration process to establish the coordinate alignment between the camera and the robotic arm. Follow the instruction above at [Hand-Eye Calibration] section. Finally, click the [Calibration] button. This will persistently save the calibration parameters to the camera device and automatically apply the [Calibration Settings].
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/d96c0cd3-ba91-47d9-bce3-2fef00c7a10d )\
-_&#x46;igure 26: Hand-Eye Calibration_
+_&#x46;igure 25: Hand-Eye Calibration_
 
 #### Step 10: Fixed bias correction
 
 Fine-tune the [Eular angles] and [Translation vector] to correct the XYZ and angle offset. 
 
 ![PixPin\_2026-06-03\_08-18-31](https://github.com/user-attachments/assets/34fe9039-d9b0-40e1-9255-d25733b8096d )\
-_&#x46;igure 27: Configure fixed bias_
+_&#x46;igure 26: Configure fixed bias_
 
 
 #### Step 11: Region Calibration
@@ -341,7 +339,7 @@ _&#x46;igure 27: Configure fixed bias_
 By clicking the [Region Calibration] button the software will automatically identify the bag/box within the field of view and generate the valid detection frame, and automatically complete the region calibration. If you want to manually configure the region, remember to click [save and send] button after configuration, to send the new region data to the center.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/47886f33-627f-450d-8fac-6cc0c114df53 )\
-_&#x46;igure 28: Area calibration_
+_&#x46;igure 27: Area calibration_
 
 
 
@@ -422,7 +420,7 @@ When critical anomalies are detected, the system triggers two types of visual wa
 | `err code=-100, template: xxx` | UNKNOWN (-100) |
 
 ![d4e7c26e94fd2aebb9dd145dc012f73b](https://github.com/user-attachments/assets/cbb794c4-d677-4e03-8511-45022ce7d960)\
-Figure 29: Algorithm error code
+Figure 28: Algorithm error code
 
 
 
@@ -454,7 +452,7 @@ When a package parameter configuration error occurs, the error text is displayed
 | 99         | Unknown error                                     | `E{code}`          |
 
 <img alt="5cb328cb759200ecaac12ae9db5b9e29" src="https://github.com/user-attachments/assets/c05b3e6f-fcde-47ec-bbdc-570dd23a9242" />\
-Figure 30: Package error codes 
+Figure 29: Package error codes 
 ### Status Indicators
 The top HUD provides real-time telemetry regarding the current palletizing stack status.
 
@@ -467,4 +465,17 @@ The top HUD provides real-time telemetry regarding the current palletizing stack
 | **is_ok** | Whether the stacking is within the image boundaries |
 
 <img alt="7c42c22d1705cc40657156525cfc2a44" src="https://github.com/user-attachments/assets/d4ef2369-929c-4c60-8436-38dfb43c9797" />\
-Figure 31: Status indicators 
+Figure 30: Status indicators 
+
+
+## 5.2 Troubleshooting and Adjustments
+
+If recognition or grasping anomalies occur, refer to the table below to locate the corresponding parameters and adjust them as recommended. After making adjustments, click [save and send], and verify the results.
+
+| Parameter | Anomaly / Symptom | Recommended Adjustment |
+| :--- | :--- | :--- |
+| **Standard Size / Length & Width Range** | Normal soft bags are incorrectly filtered out. | Widen the range appropriately, or reset it based on the actual dimensions of the soft bags. |
+| **Enable Merging** | A single bag is mistakenly split into two. | Enable the merging function. |
+| **Enable Transition Points / Transition Point Extension Distance** | Grasping causes scraping/collision with the bag, or the cycle time is too slow. | Enable transition points. If scraping occurs, increase the extension distance; if the cycle time is too slow, decrease it. |
+| **Calibration Area** | Target bags are filtered out, or surrounding debris is mistakenly selected. | Move the pallet stack to the center of the area, or recalibrate the area. |
+| **Safety Detection Parameters** | Foreign objects above fail to trigger an alarm, or irrelevant objects cause false alarms. | For missed detections: Enable safety detection or decrease the occlusion size threshold. For false alarms: Increase the size threshold or raise the distance threshold. |
