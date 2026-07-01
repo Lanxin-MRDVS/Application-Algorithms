@@ -338,7 +338,7 @@ _&#x46;igure 27: Configure fixed bias_
 
 #### Step 11: Region Calibration
 
-By clicking the [Region Calibration] button the software will automatically identify the cargo within the field of view and generate the valid detection frame, and automatically complete the region calibration. If you want to manually configure the region, remember to click [save and send] button after configuration, to send the new region data to the center.
+By clicking the [Region Calibration] button the software will automatically identify the bag/box within the field of view and generate the valid detection frame, and automatically complete the region calibration. If you want to manually configure the region, remember to click [save and send] button after configuration, to send the new region data to the center.
 
 ![PixPin\_2026-06-04\_05-56-00](https://github.com/user-attachments/assets/47886f33-627f-450d-8fac-6cc0c114df53 )\
 _&#x46;igure 28: Area calibration_
@@ -347,7 +347,7 @@ _&#x46;igure 28: Area calibration_
 
 #### Step 12: Test the result
 
-Click [Single Trigger] to execute a single algorithm detection. Observe the results, including cargo recognition, grasping pose, and dimension output, to determine whether the detection performance is reasonable and meets the on-site depalletizing requirements. You can also see the results at \[Result log] tab.
+Click [Single Trigger] to execute a single algorithm detection. Observe the results, including bag/box recognition, grasping pose, and dimension output, to determine whether the detection performance is reasonable and meets the on-site depalletizing requirements. You can also see the results at \[Result log] tab.
 
 #### Step 13: Communication Verification
 
