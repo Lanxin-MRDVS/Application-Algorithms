@@ -583,16 +583,16 @@ The device reports status and positioning data back to the main body using two d
 
 | Byte Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Data** | count (Low) | count (High) | result (Low) | result (High) | yaw (Low) | ... | yaw (High) | Reserved |
+| **Data** | count  |  | result  |  | yaw  | ... |  |  |
 
-> **Note:** Based on standard integer mapping, Bytes 0-1 likely represent `count`, Bytes 2-3 represent `result`, and Bytes 4-5 (or 4-7 depending on bit-width) represent `yaw`.
+> **Note:** Based on standard integer mapping, Bytes 0-1 likely represent `count`, Bytes 2-3 represent `result`, and Bytes 4-7 represent `yaw`.
 
 **B. Position Feedback**
 **COB ID: `0x292`**
 
 | Byte Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Data** | x (Low) | ... | x (High) | y (Low) | ... | y (High) | Reserved | Reserved |
+| **Data** | x  | ... |  | y  | ... |  | |  |
 
 > **Note:** `x` and `y` coordinates are transmitted as integers (Actual Value × 1000).
 
