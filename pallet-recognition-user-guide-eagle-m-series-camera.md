@@ -463,7 +463,6 @@ Here, we used NetAssist as the communication configuration tool for TCP and UDP.
 
 You can also use NetAssistant from https://github.com/luokyme/NetAssistant, which includes English documentation, but it has not been tested with this instruction.
 
-<p align="center"><br><em>Figure 34: Download site</em></p>
 
 ### 5.1 API Invocation
 
@@ -607,4 +606,4 @@ Due to the TOF principle, M-series cameras are affected by the reflectivity of b
 
 When forklifts pick up and deposit goods in stereoscopic warehouse locations, navigation is achieved using reflective columns for positioning. However, the camera can be easily affected by reflective columns, causing recognition issues. During deployment, it is recommended to avoid the impact of reflective columns on pallet recognition. Deploy reflective columns in a way that they are staggered relative to pallet legs, as shown in the diagram.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/eea9eb6c-464d-49d9-82a0-bafeaae31070" alt="Picture9"><br><em>Figure 35: Reflective Columns</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/eea9eb6c-464d-49d9-82a0-bafeaae31070" alt="Picture9"><br><em>Figure 34: Reflective Columns</em></p>
