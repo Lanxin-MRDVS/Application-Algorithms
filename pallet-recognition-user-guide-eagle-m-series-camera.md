@@ -403,7 +403,7 @@ As shown in the figure below, it is advisable to mount the camera at a height of
 
 <p align="center"><img src="https://github.com/user-attachments/assets/e3168c7b-6aa6-4b07-94fe-5b12bf31fbba" alt="PixPin_2026-06-11_07-52-05"><br><em>Figure 23: Camera configuration</em></p>
 
-4. Select the pallet positioning algorithm and set the working mode to \[Keep Heartbeat] when using UDP as the communication method. Set the working mode to \[Always-On] when using TCP as the communication method. Note: LxCameraViewer is only used for configuring camera internal parameters, while PalletPro handles all other algorithm parameters. For better recognition performance, we recommend upgrading to the latest version of PalletPro via a software update.
+4. Select the pallet positioning algorithm and set the working mode to \[Always-On]. Note: LxCameraViewer is only used for configuring camera internal parameters, while PalletPro handles all other algorithm parameters. For better recognition performance, we recommend upgrading to the latest version of PalletPro via a software update.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/5dd64e77-5fb7-4e64-96e0-7390397f9737" alt="PixPin_2026-06-11_07-56-54"><br><em>Figure 24: Camera configuration</em></p>
 
@@ -478,25 +478,28 @@ The API invocation method supports C++, C#, Java, ROS1, ROS2, and other environm
 
 Set the algorithm working mode to [Open] using NetAssist.
 
-**Port Configuration:** Host Port Number: 8000
+**Port Configuration:** Camera Host Port Number: 8000
 
 **Sending Content:** 
 1. 0x60 0x04 0x00 0x00 means Start Recognition Task
 2. 0x60 0x04 0x00 0x01 means End Recognition Task
 
-Character explanation: 00 00 00 14 01 00 00 00 00 17 8E 78 00 00 17 70 00 00 28 F5 00
+Note: When using UDP communication, you must set the algorithm working mode to [Always-On] Mode in the NetAssist.
+
+
 
 ### Response Data Structure
 
 | Byte Position | Content |
 | :--- | :--- |
-| 1-2 | Code, return value, 16-bit unsigned integer (unsigned int). 0 indicates successful recognition; other values indicate recognition exceptions: 1: Camera open exception 2: Pallet positioning failed 3: Camera internal exception |
-| 3-4 | Total byte length (number of bytes), 16-bit unsigned integer (unsigned int). Currently 21 |
-| 5-8 | Signs for pallet recognition X, Y, theta, Z. 0x00 is positive, 0x01 is negative. |
-| 9-12 | Pallet front center point position X, 4-byte unsigned integer, unit: mm*1000 |
-| 13-16 | Pallet front center point position Y, 4-byte unsigned integer, unit: mm*1000 |
-| 17-20 | Pallet front center point angle theta (unit: degrees), 4-byte unsigned integer, unit: degrees*1000 |
-| 21-24 | Pallet height
+| 1-2 | Code, return value, 16-bit unsigned integer (unsigned int). 0 indicates successful recognition; other values indicate recognition errors: 1: Camera open error 2: Tray positioning failed 3: Camera internal error |
+| 3-4 | Total byte length (number of bytes), 16-bit unsigned integer (unsigned int). Currently 32 |
+| 5-8 | Signs for tray recognition X, Y, theta, Z. 0x00 is positive, 0x01 is negative. |
+| 9-12 | Tray front center point position X, 4-byte unsigned integer, unit: mm*1000 |
+| 13-16 | Tray front center point position Y, 4-byte unsigned integer, unit: mm*1000 |
+| 17-20 | Tray front center point angle theta (unit: degrees), 4-byte unsigned integer, unit: degrees*1000 |
+| 21-24 | Tray height (distance from camera optical center as origin to tray crossbeam, downwards is positive), 4-byte unsigned integer, unit: mm*1000 |
+| 25-32 | 8 bytes of extension, set to 0 |
 
 ### 5.3 TCP Communication
 
@@ -508,97 +511,102 @@ Note: When using TCP communication, you must set the algorithm working mode to \
 
 ### Response Data Structure
 
-**Example Payload:** `00 00 00 14 01 00 00 00 00 17 AA FC 00 00 18 38 00 00 2A 41`
 
-| Byte Position | Content                           | Description                                                                                                                                                                                                                                                                                        |
-| ------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1-2**       | Code                              | <p>Returns a 16-bit unsigned integer (<code>unsigned int</code>).<br>• <code>0</code>: Recognition successful<br>• Other values indicate exceptions:<br>  <code>1</code>: Camera open exception<br>  <code>2</code>: Pallet positioning failure<br>  <code>3</code>: Internal camera exception</p> |
-| **3-4**       | Total Byte Length                 | 16-bit unsigned integer (`unsigned int`). Current value is **20 bytes**.                                                                                                                                                                                                                           |
-| **5-8**       | Sign of X, Y, Theta, Z            | <p>Represents the sign for pallet recognition coordinates.<br><code>0x00</code>: Positive<br><code>0x01</code>: Negative</p>                                                                                                                                                                       |
-| **9-12**      | Pallet Front Center X             | 4-byte unsigned integer. Unit: **millimeters × 1000**.                                                                                                                                                                                                                                             |
-| **13-16**     | Pallet Front Center Y             | 4-byte unsigned integer. Unit: **millimeters × 1000**.                                                                                                                                                                                                                                             |
-| **17-20**     | Pallet Front Center Angle (Theta) | 4-byte unsigned integer. Unit: **degrees × 1000**.                                                                                                                                                                                                                                                 |
-| **21-24**     | Pallet Height                     | <p>Originated from the camera's optical center (positive direction is downwards).<br>4-byte unsigned integer. Unit: <strong>millimeters × 1000</strong>.</p>                                                                                                                                       |
-| **25-32**     | Reserved / Extension              | 8 bytes reserved for future extension. Default value is set to `0`.                                                                                                                                                                                                                                |
+| Byte Position | Content |
+| :--- | :--- |
+| 1-2 | Code, return value, 16-bit unsigned integer (unsigned int). 0 indicates successful recognition; other values indicate recognition errors: 1: Camera open error 2: Tray positioning failed 3: Camera internal error |
+| 3-4 | Total byte length (number of bytes), 16-bit unsigned integer (unsigned int). Currently 32 |
+| 5-8 | Signs for tray recognition X, Y, theta, Z. 0x00 is positive, 0x01 is negative. |
+| 9-12 | Tray front center point position X, 4-byte unsigned integer, unit: mm*1000 |
+| 13-16 | Tray front center point position Y, 4-byte unsigned integer, unit: mm*1000 |
+| 17-20 | Tray front center point angle theta (unit: degrees), 4-byte unsigned integer, unit: degrees*1000 |
+| 21-24 | Tray height (distance from camera optical center as origin to tray crossbeam, downwards is positive), 4-byte unsigned integer, unit: mm*1000 |
+| 25-32 | 8 bytes of extension, set to 0 |
+
 
 ### 5.4 CAN Communication
 
-Please note the Can protocol only supports M4 cameras. The communication protocol adopts CANopen. The CANopen protocol is an application layer protocol running on the standard CAN bus. Its communication mode is the commonly used "master-slave" mode in industrial communication protocols. In this mode, there is one master station + multiple slave stations, and slave stations do not communicate directly with each other. All communication is between the master station and slave stations. The master station is also referred to as the "client," and the slave station is referred to as the "server." The underlying communication method uses the CAN standard frame format, where the CAN ID is 11 bits (0x000\~7FF), and the data is 8 bytes. For the use of CAN IDs: Divide the 11-bit ID into a 4-bit function code and a 7-bit node ID. The CAN ID is also called COB ID.
 
-\***CAN Communication protocol:**
+**Note:** The current CAN protocol only supports the **M4/M4mega** series cameras.
 
-The CAN communication protocol uses a defined baud rate of 250K. SDO communication messages follow the basic CANopen protocol format, and the 8-byte data in the CAN frame is structured as shown below:
+The communication protocol uses **CANopen**, which is an application layer protocol running on top of the standard CAN bus. Its communication mode follows the "Master-Slave" architecture commonly used in industrial communication protocols. In this network, there is one Master station and multiple Slave stations. Slave stations do not communicate directly with each other; all communication occurs between the Master and the Slaves. The Master station is also referred to as the "Client," and the Slave station is referred to as the "Server."
 
-```
-+---------------------------------------------------------------+
-|                       CAN Frame ID                            |
-+-----------+-----------+-----------+-----------+-------+-------+
-|    10     |     9     |     8     |     7     |   6   | ... 0 |
-+-----------+-----------+-----------+-----------+-------+-------+
-|              Function Code                    | Node Number   |
-+---------------------------------------------------------------+
-```
+The underlying communication uses the **CAN Standard Frame format**, meaning the CAN ID is 11 bits (0x000 ~ 0x7FF) and the data payload is 8 bytes.
 
-CAN baud rate is defined as 250K. SDO communication message is a basic protocol format in CANopen. The 8-byte data in the CAN message is defined by the communication protocol as the format shown in the following diagram:
 
-```
 
-+-----------------------------------------------------------------------+
-|                               Data                                    |
-+---------------------------+-----------+-----------+-------------------+
-|             0             |     1     |     2     | 3 | 4 | 5 | 6 | 7 |
-+---------------------------+-----------+-----------+-------------------+
-|      Command Code         |   Index   | Subindex  |       Data        |
-+---------------------------+-----------+-----------+-------------------+
-```
+#### CAN Communication protocol:
 
-Pallet positioning communication protocol: The main body sends COB ID: 0x212 to the device.
+**1. CAN ID Usage Convention**
 
-```
+The 11-bit ID is divided into a **4-bit Function Code** and a **7-bit Node ID**. The CAN ID is also referred to as the **COB-ID**:
 
-+-----------------------------------------------------------------------+
-|                               Data                                    |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-|     0     |     1     |     2     |     3     |     4     | ...   7   |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-|   0x40    |   0x01    |   0x00    |   0x00    | MODE CTRL |   0x00    |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-```
+| Bit Position | 10 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | ... (down to 0) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Field Name** | **Function Code** | | | | **Node ID** | | | | |
 
-MODE CTRL: 0 for off, 1 for on Device to Main Body Device sends COB ID: 0x192, increment count with each query, x, y, yaw are actual values x 1000, of int type.
+**Note:** The CAN baud rate is defined as **250K**.
 
-```
 
-+-----------------------------------------------------------------------+
-|                               Data                                    |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-|     0     |     1     |     2     |     3     |     4     | ...   7   |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-|           count       |          result                   |    yaw    |
-+-----------------------+-----------------------------------------------+
-```
+The **SDO (Service Data Object)** communication message is a basic protocol format in CANopen. The 8-byte data payload in the CAN message is defined by the communication protocol as shown below:
 
-The device sends to the main body using COB ID: 0x292.
+| Byte Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Content** | **Command Specifier (CS)** | **Index (Low Byte)** | **Index (High Byte)** | **Sub-index** | **Data** | | | |
 
-```
+---
 
-+-----------------------------------------------------------------------+
-|                               Data                                    |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-|     0     |     1     |     2     |     3     |     4    ...      7   |
-+-----------+-----------+-----------+-----------+-----------+-----------+
-|                       X                       |           y           |
-+-----------------------------------------------+-----------------------+
-```
+**2. Host to Device (Control Command)**
+
+The main host sends the control command to the device via **COB ID: `0x212`**.
+
+| Byte Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Data** | `0x40` | `0x00` | `0x01` | `0x00` | MODE CTRL | `0x00` | `0x00` | `0x00` |
+
+**Parameter Definition**
+- **MODE CTRL**: Controls the switching state.
+  - `0`: OFF
+  - `1`: ON
+
+**Reference Example**
+To enable the mode (send `1`), the hex string is:
+`40 00 01 00 01 00 00 00`
+
+---
+
+**3. Device to Host (Feedback Data)**
+
+The device reports status and positioning data back to the main body using two different COB IDs. The variables `x`, `y`, and `yaw` represent actual physical values multiplied by 1000 (Integer type).
+
+**A. Status Feedback**
+**COB ID: `0x192`**
+*Note: The `count` value increments by 1 for each query/response cycle.*
+
+| Byte Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Data** | count (Low) | count (High) | result (Low) | result (High) | yaw (Low) | ... | yaw (High) | Reserved |
+
+> **Note:** Based on standard integer mapping, Bytes 0-1 likely represent `count`, Bytes 2-3 represent `result`, and Bytes 4-5 (or 4-7 depending on bit-width) represent `yaw`.
+
+**B. Position Feedback**
+**COB ID: `0x292`**
+
+| Byte Index | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Data** | x (Low) | ... | x (High) | y (Low) | ... | y (High) | Reserved | Reserved |
+
+> **Note:** `x` and `y` coordinates are transmitted as integers (Actual Value × 1000).
+
 
 ## 6. Special Instructions
 
 ### 6.1 Black Pallet Recognition
 
-Due to the TOF principle, M-series cameras are affected by the reflectivity of black pallets. Imaging effects for black pallets with a 5% reflectivity can be achieved within a range of 2m. During debugging, optimize the imaging effect of black pallets by adjusting the high integration time and low signal threshold through the upper computer software. The maximum supported lateral offset for black pallet recognition is ±400mm (distance from the camera center to the pallet center), and the maximum supported pallet rotation angle is ±10°.
+Due to the TOF principle, M-series cameras are affected by the reflectivity of black pallets. Imaging effects for black pallets with 5% reflectivity can be effectively imaged within a range of 2m. During debugging, optimize the imaging effect of black pallets by adjusting the high integration time and low signal threshold through the upper computer software. The maximum supported lateral offset for black pallet recognition is ±400mm (distance from the camera center to the pallet center), and the maximum supported pallet rotation angle is ±10°.
 
 ### 6.2 Deployment of High-Level Pickup and Reflective Columns
 
-When forklifts pick up and deposit goods in stereo warehouse locations, navigation needs to be achieved through reflective columns for positioning. However, the camera can be easily affected by reflective columns, causing recognition issues. During deployment, it is recommended to avoid the impact of reflective columns on pallet recognition. Deploy reflective columns in a way that they are staggered with pallet legs, as shown in the diagram.
+When forklifts pick up and deposit goods in stereoscopic warehouse locations, navigation is achieved using reflective columns for positioning. However, the camera can be easily affected by reflective columns, causing recognition issues. During deployment, it is recommended to avoid the impact of reflective columns on pallet recognition. Deploy reflective columns in a way that they are staggered relative to pallet legs, as shown in the diagram.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/eea9eb6c-464d-49d9-82a0-bafeaae31070" alt="Picture9"><br><em>Figure 34: Reflective Columns</em></p>
