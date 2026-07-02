@@ -34,7 +34,7 @@ The interface includes the following functions:
 | Function Module           | Specific Functions/Description                                                                                                       |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | Menu Bar                  | Includes basic operations, advanced applications, external calibration, camera operations, advanced parameters, and save parameters |
-| Camera Parameter Settings | Includes scanning, embedded mode, camera on/off, real-time display, detection, projection, and camera calibration parameter settings |
+| Camera Settings | Includes scanning, embedded mode, camera on/off, real-time display, detection, projection, and camera calibration parameter settings |
 | File Import               | Supports importing calibration parameter files, recognition images, and folders                                                                |
 | Log Printing              | Prints detection results, camera firmware version, algorithm version, etc.                                                           |
 | Image Display             | Displays image data                                                                                                                   |
@@ -434,7 +434,7 @@ Note: The ground should be relatively flat during calibration. Before calibratio
 
 ### 4.5 Near-end calibration
 
-The near-end calibration scheme uses a so-called teaching calibration method. The forklift needs to manually control the docking of the pallet once. First, move the forklift under the pallet, and pick up the pallet once, which makes sure that the forklift is aligned with the pallet center. Then, lower the lift arm, and in a straight line, drive the forklift (the pallet is on the ground without lifting) to make the camera about 1300mm away from the front edge of the pallet (as shown in the diagram). At this time, click on the \[pallet teaching (near)] to calibrate the installation height, lateral offset, heading angle, and roll angle. After calibration, click \[Real-time display] and \[Detection] to continue detection.
+The near-end calibration scheme uses a so-called teaching calibration method. The forklift needs to manually control the docking of the pallet once. First, move the forklift under the pallet, and pick up the pallet once, which makes sure that the forklift is aligned with the pallet center. Then, lower the lift arm, and in a straight line, drive the forklift (the pallet is on the ground without lifting) to make the camera about 1300mm - 1500mm away from the front edge of the pallet (as shown in the diagram). At this time, click on the \[pallet teaching (near)] to calibrate the installation height, lateral offset, heading angle, and roll angle. After calibration, click \[Real-time display] and \[Detection] to continue detection.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/405aa2cd-0040-4078-a1ad-b54f6f09fa04" alt="图片3"><br><em>Figure 28: Pickup first</em></p>
 
@@ -444,13 +444,13 @@ The near-end calibration scheme uses a so-called teaching calibration method. Th
 
 ### 4.6 Far-end calibration
 
-The far-end calibration function is to calibrate the pitch angle of the camera installation. After completing the near-end calibration, ensure that the pallet position remains unchanged, control the forklift to move away from the pallet, and click on the \[pallet teaching (far)] when the distance displayed on PalletPro is in the range of 2000mm-2400mm. This will calibrate the pitch angle of the camera installation. Click save parameters to complete the calibration. As shown in the diagram.
+The far-end calibration function is to calibrate the pitch angle of the camera installation. After completing the near-end calibration, ensure that the pallet position remains unchanged, control the forklift to further move away from the pallet, about 500mm, and click on the \[pallet teaching (far)] when the distance displayed on PalletPro is in the range of 1800mm-2000mm. This will calibrate the pitch angle of the camera installation. Click save parameters to complete the calibration. As shown in the diagram.
 
 Note: The \[Pallet Teaching (far)] is not mandatory, if the forklift's moving range is within 2000 mm of the pallet.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/16605e1f-868b-40f1-b0c2-039135965f06" alt="Picture7"><br><em>Figure 31: Distance 2000mm - 2400mm</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/16605e1f-868b-40f1-b0c2-039135965f06" alt="Picture7"><br><em>Figure 31: Distance 2000mm</em></p>
 
-<p align="center"><img src="https://github.com/user-attachments/assets/f021bd37-7b8d-44b3-b031-939c86794d87" alt="PixPin_2026-06-11_08-36-59"><br><em>Figure 32: Distance 2000mm - 2400mm</em></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/f021bd37-7b8d-44b3-b031-939c86794d87" alt="PixPin_2026-06-11_08-36-59"><br><em>Figure 32: Far-end Calibration Distance</em></p>
 
 ### 4.7 Calibration verification
 
