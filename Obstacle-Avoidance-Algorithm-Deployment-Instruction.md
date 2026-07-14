@@ -97,8 +97,7 @@ Furthermore, the system can output precise bounding boxes for these semantically
 
 - Version 2.0: Designed for advanced operation scenarios featuring complex terrains, diverse obstacle types, and frequent scene switching. It is ideal for applications requiring precise recognition, anti-false-trigger capabilities, ground void danger prevention, and intelligent obstacle avoidance. Its safety, stability, and flexibility are comprehensively superior to Version 1.0.
 
-
-**Note: For Obstacle Avoidance 1.0, only the S10 and S11 camera systems support it. For Obstacle Avoidance 2.0, we have the S10 Pro, which is customized for this algorithm version.** 
+**Note: For Obstacle Avoidance 2.0, the S10 and S11 do not support it, but we provide the S10 Pro, which supports the Obstacle Avoidance 2.0 algorithm.**
  
 ---
 
