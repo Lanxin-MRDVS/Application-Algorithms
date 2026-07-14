@@ -59,7 +59,7 @@ The two algorithms share a same underlying architecture. They rely entirely on t
 
 - Zone Intrusion Detection: Supports customizable detection zone models for obstacle avoidance, including rectangular bounding boxes and fan-shaped zones. These adaptable models cater to various operational scenarios such as straight-line navigation, turning, and wide-angle detection.
 
-- Tiered Obstacle Avoidance Output signal: The system continuously monitors intrusion points within the target area in real time. Based on the detected obstacles, it outputs three levels of control signals via IO interfaces or other standard communication protocols. The unified signal definitions are:
+- Tiered Obstacle Avoidance Output signal: The system continuously monitors intrusion points within the target area in real time. Based on the detected obstacles, it outputs three levels of control signals standard communication protocols. The unified signal definitions are:
 
      - 0: No obstacles detected; the robot proceeds normally.
      - 1: Minor/distant obstacle detected; the robot slows down.
