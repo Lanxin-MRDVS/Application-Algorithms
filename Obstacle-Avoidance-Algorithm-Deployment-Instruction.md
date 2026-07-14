@@ -273,8 +273,7 @@ zones. [Algorithm index] are shown in Figure 12 in the blue box. The
 a obstacle avoidance zone configuration set as shown in Figure 10 in the green
 box. Number 0 - 6 are seven ready-made obstacle avoidance zone configuration
 sets that you can choose, number 6 - 19 are the same configurations. You can
-modify each set yourself based on your need, click [Set Parameters] to save the modifications. (Note: If you use TCP, UDP, API as the connection method, you can change index from 0-19, but if you use
-IO as the connection, you can only change index 0, 1, 2, 3.
+modify each set yourself based on your need, click [Set Parameters] to save the modifications.
 
 <p align="center">
 <img alt="PixPin_2026-05-27_18-40-41" src="https://github.com/user-attachments/assets/aa89a431-f283-4eff-81e2-e6a9eca6cddf" />
