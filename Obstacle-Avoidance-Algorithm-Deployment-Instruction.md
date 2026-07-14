@@ -12,7 +12,7 @@ Visual obstacle avoidance is a system developed by MRDVS. Based on its self-deve
 **Key Features:**
 - Real-time dynamic detection & tracking
 - Adaptive ground detection
-- Support for multiple signal outputs (UDP, TCP, API, IO)
+- Support for multiple signal outputs (UDP, TCP, API)
 - Multi-device collaborative operation
 - Five operational modes with predictive capabilities
 
