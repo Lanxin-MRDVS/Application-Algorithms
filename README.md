@@ -25,7 +25,7 @@ The current documentation covers obstacle avoidance, pallet recognition, and sof
 
 #### Obstacle Avoidance
 
-**Document:** [Obstacle Avoidance Algorithm Deployment Instruction](obstacle-avoidance-algorithm-deployment-instruction.md)
+**Document:** [Obstacle Avoidance Algorithm Deployment Instruction](Obstacle-Avoidance-Algorithm-Deployment-Instruction.md)
 
 This document describes the deployment process, configuration method, and usage notes for the obstacle avoidance algorithm. It is recommended for users who need to configure obstacle detection, obstacle output, and related deployment parameters for mobile robot scenarios.
 
