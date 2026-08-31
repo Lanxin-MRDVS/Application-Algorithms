@@ -17,4 +17,6 @@ The SVG files are stored in this repository and linked from the documentation ho
 
 Keep the same style and colors when adding another `button-*.svg`, and use labels that describe its actual destination. The SDK version and ROS text in the reference badges are not PalletPro compatibility claims. Preserve SVG titles and meaningful image alt text in the referring page. Plain text navigation remains available alongside the image links.
 
+The documentation homepage uses four algorithm badges: `button-pallet-docking.svg`, `button-obstacle-avoidance.svg`, `button-depalletizing.svg`, and `button-storage-location.svg`. All four use the **Algorithm** label and blue documentation color. Keep product names, document types, and download actions out of this primary classification; camera setup tools and software downloads have separate sections. Previously published badge files remain available to preserve existing image URLs.
+
 `mrdvs_logo.png` is the existing MRDVS logo. Product screenshots belong in the relevant application's image folder, such as `PalletPro/images/`.
