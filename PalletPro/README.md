@@ -1,6 +1,10 @@
-# PalletPro: Pallet Recognition and Docking
+# PalletPro
+
+[Documentation Home](../README.md) / PalletPro
 
 PalletPro is the Windows application used to configure and calibrate pallet recognition and docking with MRDVS Eagle-M series cameras. Start here for software downloads, deployment instructions, and update notes.
+
+**[User Guide](user-guide.md)** · **[Release Notes](release-notes.md)** · **[Download Installer](#software-download)**
 
 ## Software download
 
@@ -13,7 +17,7 @@ PalletPro is the Windows application used to configure and calibrate pallet reco
 | Release page | [PalletPro releases and assets](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/tag/PalletPro) |
 | Earlier package | [PalletPro_1.4.8.zip](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro_1.4.8.zip) |
 
-The installer product version above was read from the supplied executable's Windows version metadata. See the [1.4.8_260828 release notes](PalletProUpdateNote.md) for the documented English-localization and terminology improvements, known limitation, and upgrade guidance. The earlier detailed localization record dated 2026-08-21 remains available through the historical reference in the release notes. The installer has not been run as part of this documentation update.
+The installer product version above was read from the supplied executable's Windows version metadata. See the [1.4.8_260828 release notes](release-notes.md) for the documented English-localization and terminology improvements, known limitation, and upgrade guidance. The earlier detailed localization record dated 2026-08-21 remains available through the historical reference in the release notes. The installer has not been run as part of this documentation update.
 
 **SHA-256**
 
@@ -31,8 +35,9 @@ Get-FileHash -LiteralPath '.\PalletPro-install-v1.4.8_260828.exe' -Algorithm SHA
 
 | Resource | Purpose |
 | --- | --- |
-| [Pallet Recognition User Guide](pallet-recognition-user-guide-eagle-m-series-camera.md) | Camera installation, application interfaces, parameter configuration, near/far teaching, calibration verification, and API/UDP/TCP/CAN communication. |
-| [PalletPro Release Notes](PalletProUpdateNote.md) | English and Chinese release notes for 1.4.8_260828, including changes, terminology updates, the known limitation, and upgrade guidance. |
+| [User Guide](user-guide.md) | Camera installation, application interfaces, parameter configuration, near/far teaching, calibration verification, and API/UDP/TCP/CAN communication. |
+| [Release Notes](release-notes.md) | English and Chinese release notes for 1.4.8_260828, including changes, terminology updates, the known limitation, and upgrade guidance. |
+| [LxCameraViewer User Guide](../LxCameraViewer/README.md) | Camera connection, network configuration, parameter settings, and image/point-cloud inspection. |
 | [CameraSDK](https://github.com/Lanxin-MRDVS/CameraSDK) | Camera SDK and LxCameraViewer resources. The user guide explains when to use LxCameraViewer for camera configuration and when to switch to PalletPro. |
 
 The storage-location detection and depalletizing manuals in this repository describe separate application workflows; they are not PalletPro installation or release notes.
@@ -42,8 +47,8 @@ The storage-location detection and depalletizing manuals in this repository desc
 1. **Distribute installers through GitHub Releases.** Keep executables out of the Git file history. Preserve earlier assets and their download URLs when adding a new build.
 2. **Use this page as the download index.** Update the installer filename, product version, byte size, and SHA-256 together after verifying the uploaded asset.
 3. **Keep user instructions in the user guide.** Update affected procedures, screenshots, and UI labels when behavior changes, and record which application/embedded-algorithm versions were checked.
-4. **Keep release history in the update note.** Add a dated section for each confirmed release or build, describing changes, compatibility, known limitations, and its installer. Preserve previous entries and do not infer changes from a filename.
-5. **Keep navigation connected.** Check the PalletPro links in `README.md` and `SUMMARY.md` whenever pages are added or renamed.
+4. **Keep release history in `release-notes.md`.** Add a dated section for each confirmed release or build, describing changes, compatibility, known limitations, and its installer. Preserve previous entries and do not infer changes from a filename.
+5. **Keep navigation connected.** Check the PalletPro links on the [documentation homepage](../README.md), in the [GitBook navigation](../SUMMARY.md), and on the GitHub release page whenever pages are added or renamed.
 6. **Use versioned tags for future releases.** A tag such as `PalletPro-v<version>-<build>` keeps each package and its notes traceable. Keep the existing `PalletPro` release available so current download links continue to work.
 
 ## Documentation items to verify
