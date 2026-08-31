@@ -1,11 +1,17 @@
 # Table of contents
 
 * [Documentation Home](README.md)
-* [PalletPro — Pallet Recognition & Docking](PalletPro/README.md)
-  * [User Guide](PalletPro/user-guide.md)
-  * [Release Notes](PalletPro/release-notes.md)
+
+## Application algorithms
+
+* [Pallet Recognition & Docking](PalletPro/README.md)
+  * [PalletPro User Guide](PalletPro/user-guide.md)
+  * [PalletPro Release Notes](PalletPro/release-notes.md)
 * [Obstacle Avoidance](Obstacle-Avoidance/README.md)
-* [Depalletizing — AW3 & PalletEye](Depalletizing/README.md)
+* [Depalletizing](Depalletizing/README.md)
   * [User Guide](Depalletizing/user-guide.md)
 * [Storage Location Detection](Storage-Location/README.md)
-* [LxCameraViewer — Camera Setup](LxCameraViewer/README.md)
+
+## Camera setup & tools
+
+* [LxCameraViewer](LxCameraViewer/README.md)
