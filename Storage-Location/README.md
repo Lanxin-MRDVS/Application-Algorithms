@@ -1,4 +1,6 @@
-# MRDVS Storage Location Detection User Manual
+# Storage Location Detection User Guide
+
+[Documentation Home](../README.md) / Storage Location Detection
 
 Source last modified: March 4, 2025
 
