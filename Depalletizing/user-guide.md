@@ -1,4 +1,8 @@
-# Vision Guided Depalletizing: AW3 Platform & PalletEye Deployment Guide
+# Depalletizing User Guide
+
+[Documentation Home](../README.md) / [Depalletizing](README.md) / User Guide
+
+For the AW3 (AwareSight3) platform and PalletEye module.
 
 ## 1. Instruction
 
