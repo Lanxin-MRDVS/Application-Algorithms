@@ -6,7 +6,7 @@ For MRDVS Eagle-M series cameras.
 
 **[Software Downloads](README.md#software-download)** · **[Release Notes](release-notes.md)**
 
-Some screenshots and interface labels in this guide reflect earlier software versions. See the release notes for the revised English terminology in 1.4.8.
+Figures 4–14 use refreshed English-interface screenshots. Other screenshots and some instructions may reflect earlier software versions. Values displayed in screenshots are examples, not universal defaults. See the [release notes](release-notes.md) for the revised English terminology in 1.4.8.
 
 ## 1. Introduction
 
@@ -66,29 +66,29 @@ Advanced Parameters, Save Parameters, and Languages. These options are accessibl
 
 Click External Calibration under Basic Operations. The external calibration interface will be displayed on the right side of the software window.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/f323033b-31cc-4bcc-8650-5b58a19739b9" alt="PixPin_2026-06-09_12-21-07"><br><em>Figure 4: External calibration module</em></p>
+<p align="center"><img src="images/external-calibration.png" alt="External Calibration panel with near and far pallet teaching controls"><br><em>Figure 4: External calibration module</em></p>
 
 Click 'External Calibration' and then select 'Calibration Notes' to display the precautions for external calibration. Please read them carefully to avoid any issues during the process.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/58904c8f-b0ed-4f78-b862-d80fd9542096" alt="PixPin_2026-06-09_12-21-48"><br><em>Figure 5: External calibration notes</em></p>
+<p align="center"><img src="images/calibration-notes.png" alt="Calibration Notes dialog with English teaching instructions"><br><em>Figure 5: External calibration notes</em></p>
 
-Information verification at the Bottom of \[Calibration Notes]: Customer Name: It is recommended to use the format "Project Name + Forklift Number" for easier troubleshooting as shown in Figure 6. Minimum Recognition Distance (mm): Keep the default value as shown in Figure 6. (If the calibration distance is relatively short, adjust it to 1.2m.)
+Information verification at the bottom of \[Calibration Notes]: \[Client name (English + ID)]: It is recommended to use the format "Project Name + Forklift Number" for easier troubleshooting as shown in Figure 6. The minimum recognition-distance field is now labeled \[Minimum detection distance (greater than camera-to-fork-tip distance, mm)]. The earlier procedure recommends 1.2m if the calibration distance is relatively short; confirm that any selected value also satisfies the condition displayed by the application. The 1300mm shown in Figure 6 is a screenshot example.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/8672da0b-1ff7-4ed6-98ca-5b59104f8923" alt="PixPin_2026-06-10_11-20-50"><br><em>Figure 6 : Information verification</em></p>
+<p align="center"><img src="images/calibration-information.png" alt="Client name and minimum detection distance fields highlighted in Calibration Notes"><br><em>Figure 6: Information verification</em></p>
 
 Rotation Center to Optical Center Distance: When set to 0, it assumes the optical center overlaps with the rotation center. If they are not aligned, enter the actual distance. You must enter the actual distance from the camera's optical center to the forklift's rotation center. 
 
 Fork Arm Position (Depth to Tray Edge): This parameter defines the fork insertion depth, which means the distance forklift arms need to travel after reaching the front edge of the pallet. It acts as a safety margin to ensure the forks are fully and securely inserted under the pallet.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/cd0cc029-04f3-4801-a8c8-42fc44a7e9b8" alt="PixPin_2026-06-10_11-31-24"><br><em>Figure 7: Parameters</em></p>
+<p align="center"><img src="images/calibration-offsets.png" alt="Rotation-center distance and fork-arm position fields highlighted beside the Calibration dialog"><br><em>Figure 7: Rotation-center distance and fork-arm position</em></p>
 
 Pallet Teaching (It is recommended to perform two calibrations): \[Pallet Teaching (Near)]: Position the pallet 1300mm away from the camera to perform near-end calibration. This step determines the pallet's height, lateral offset, heading angle, and roll angle. \[Pallet Teaching (Far)]: After near-end calibration, proceed with far-end calibration (secondary teaching). For example, if the camera recognizes the pallet distance as 1300mm during near-end calibration, drive the forklift straight backward by approximately 700mm–1100mm without any angular or lateral movement. Perform far-end calibration when the distance to the pallet reaches 2.1–2.4m. This step determines the camera's pitch angle. Note: \[Pallet Teaching (Far)] tab is only available after \[Pallet Teaching (Near)] is successful.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/eadf1f1c-7927-4a4f-bcd9-3a4572537e45" alt="PixPin_2026-06-10_11-31-24"><br><em>Figure 8: Pallet Teaching</em></p>
+<p align="center"><img src="images/external-calibration.png" alt="Pallet Teaching Near and Far controls in the External Calibration panel"><br><em>Figure 8: Pallet teaching controls</em></p>
 
 Clicking 'Reset Calibration' will restore all external calibration parameters to zero.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/17bce3f3-1a9f-4c17-b76d-a716e2a982dd" alt="PixPin_2026-06-10_11-10-32"><br><em>Figure 9: Reset Calibration</em></p>
+<p align="center"><img src="images/reset-calibration.png" alt="Reset Calibration button highlighted in the External Calibration panel"><br><em>Figure 9: Reset Calibration</em></p>
 
 Lateral deviation means the lateral deviation between the camera's optical center and forklift's coordinate center, and it is automatically determined through the calibration process.
 
@@ -97,21 +97,21 @@ Lateral deviation means the lateral deviation between the camera's optical cente
 
 The \[Camera Operations] section displays the camera's internal parameters.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/ac58f77e-8e79-4be4-a964-437275a58079" alt="PixPin_2026-06-11_10-17-01"><br><em>Figure 10: Camera Operations</em></p>
+<p align="center"><img src="images/camera-operations.png" alt="Camera Internal dialog opened from Camera Operations in PalletPro"><br><em>Figure 10: Camera Operations — Camera Internal dialog</em></p>
 
 \[Camera IP]: Displays the IP address of the connected camera.
 
 \[Camera ID]: Displays the ID of the connected camera.
 
-\[Get lanxin vision log]: Click this button to save the camera detection log to the platform folder as file lanxin\_vision\_log.
+\[Download lanxin vision Logs] (previously \[Get lanxin vision log]): Click this button to save the camera detection log to the platform folder as file lanxin\_vision\_log.
 
-\[Camera docking system Configuration]: This section is for administrators only to configure the docking system. Do not modify these settings.
+\[Parameter Editing] (previously \[Camera docking system Configuration]): This section is for administrators only to configure the docking system. Do not modify these settings.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/a71bdc4d-1a84-4f7d-b182-1cb3bba83f04" alt="PixPin_2026-06-11_10-32-07"><br><em>Figure 11: Camera docking system Configuration</em></p>
+<p align="center"><img src="images/application-parameters.png" alt="Parameter Editing section highlighted in the Camera Internal dialog"><br><em>Figure 11: Application parameter editing</em></p>
 
-\[Advanced Parameters Configuration]: By clicking \[Pull], the current advanced parameters will be loaded into the platform folder as /docking\_config.json. Next, click \[Configure the algorithm parameters] to show and adjust the parameters within the platform, and finally click \[Upload].
+\[Algorithm Parameters (Advanced)] (previously \[Advanced Parameters Configuration]): Click \[Download] (previously \[Pull]) to download the current algorithm parameters. Next, click \[Edit Algorithm Parameters] (previously \[Configure the algorithm parameters]) to show and adjust the parameters within the platform, and finally click \[Upload]. Earlier instructions used /docking\_config.json; use the parameter filename displayed for the connected camera and application, as it may differ.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/1db72dff-ae36-44af-bc77-41c57164e152" alt="PixPin_2026-06-11_10-33-41"><br><em>Figure 12: Advanced Parameters Configuration</em></p>
+<p align="center"><img src="images/algorithm-parameters.png" alt="Algorithm Parameters Advanced download, edit, and upload controls highlighted"><br><em>Figure 12: Algorithm parameter configuration</em></p>
 
 ### 3.4 Advanced applications Interface
 
@@ -144,7 +144,7 @@ Crossbar width: The width of the pallet crossbar on the side facing the camera.
 |                              | Very Thin          | 60%                               |
 |                              | Sparse             | 10%                               |
 
-<p align="center"><img src="https://github.com/user-attachments/assets/bd6adef2-26da-43b7-9450-1ba390c8a584" alt="PixPin_2026-06-11_05-13-00"><br><em>Figure 13: Advanced parameters 1</em></p>
+<p align="center"><img src="images/advanced-parameter-settings.png" alt="Configuration file, camera identity, leg width, pallet width, and crossbar controls highlighted"><br><em>Figure 13: Advanced parameter settings</em></p>
 
 **Camera algorithm parameters which can be modified in advanced settings:**
 
@@ -166,7 +166,7 @@ Crossbar width: The width of the pallet crossbar on the side facing the camera.
 
 Expanded Parameters: Expansion of existing parameters, but modification is not recommended.
 
-<p align="center"><img src="https://github.com/user-attachments/assets/144d5cf2-489e-4231-862a-9942d83cd89a" alt="PixPin_2026-06-11_05-13-20"><br><em>Figure 14: Advanced parameters 2</em></p>
+<p align="center"><img src="images/advanced-parameter-values.png" alt="Parameter names, example values, and English descriptions highlighted in Advanced Parameter Settings"><br><em>Figure 14: Advanced parameter values and descriptions</em></p>
 
 #### 3.4.2 Display 3D
 
