@@ -31,9 +31,13 @@ This document describes the deployment process, configuration method, and usage 
 
 ***
 
-#### Pallet Recognition
+#### Pallet Recognition / Docking (PalletPro)
 
-**Document:** [Pallet Recognition User Guide for Eagle M Series Camera](pallet-recognition-user-guide-eagle-m-series-camera.md)
+**Downloads and overview:** [PalletPro](PalletPro.md)
+
+**User guide:** [Pallet Recognition User Guide for Eagle M Series Camera](pallet-recognition-user-guide-eagle-m-series-camera.md)
+
+**Update notes:** [PalletPro Update Note](PalletProUpdateNote.md)
 
 This document describes the pallet recognition function based on Eagle M series cameras. It covers environment configuration, operation workflow, parameter settings, and common usage notes for pallet recognition and positioning scenarios.
 
@@ -50,8 +54,11 @@ This document describes the algorithm deployment, configuration, and integration
 ```
 .
 ├── Obstacle-Avoidance-Algorithm-Deployment-Instruction.md
+├── PalletPro.md
+├── PalletProUpdateNote.md
 ├── pallet-recognition-user-guide-eagle-m-series-camera.md
-├── softbag-carton-unstacking-algorithm-deployment.md
+├── vision-guided-depalletizing-aw3-platform-and-palleteye-deployment-guide.md
+├── SUMMARY.md
 └── README.md
 ```
 
@@ -64,4 +71,4 @@ This document describes the algorithm deployment, configuration, and integration
 
 ***
 
-<p align="center"><sub><em>Last updated: June 2026</em></sub><br><sub><em>Hangzhou Lanxin Technology Co., Ltd. & MRDVS Co., Ltd.</em></sub><br><sub><em>All Rights Reserved.</em></sub></p>
+<p align="center"><sub><em>Last updated: August 2026</em></sub><br><sub><em>Hangzhou Lanxin Technology Co., Ltd. & MRDVS Co., Ltd.</em></sub><br><sub><em>All Rights Reserved.</em></sub></p>

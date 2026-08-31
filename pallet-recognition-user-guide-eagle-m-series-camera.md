@@ -1,5 +1,11 @@
 # Pallet Recognition User Guide Eagle M Series Camera
 
+**Software downloads and version information:** [PalletPro](PalletPro.md)
+
+**Update notes:** [PalletPro Update Note](PalletProUpdateNote.md)
+
+Some screenshots and interface labels in this guide reflect earlier software versions. See the update note for the revised English terminology in 1.4.8.
+
 ## 1. Introduction
 
 Pallet recognition is a solution developed by MRDVS using the in-house developed Eagle-M series cameras. It's designed for forklifts to seamlessly docking with pallets. The system boasts adaptive compatibility with a range of pallet specifications, eliminating the need for specific configurations. With dynamic detection capabilities, it can identify pallets on the go, eliminating the requirement for the vehicle to come to a complete stop. The system is versatile, supporting recognition in diverse scenarios like floor-to-floor transitions, storage locations, and shelves. The system can also adaptively recognize pallets of different specifications, including wooden and plastic pallets with different shapes, as shown below.
