@@ -5,9 +5,9 @@
 Deployment guides, software downloads, and release notes for MRDVS vision applications.
 
 <p align="center">
-  <a href="PalletPro/README.md"><img src="https://img.shields.io/badge/PalletPro-1765EF?style=for-the-badge" alt="Open PalletPro documentation"></a>
-  <a href="#find-your-application"><img src="https://img.shields.io/badge/User_Guides-334155?style=for-the-badge" alt="Browse all user guides"></a>
-  <a href="#software-downloads"><img src="https://img.shields.io/badge/Downloads-087E8B?style=for-the-badge" alt="Find software downloads"></a>
+  <a href="PalletPro/README.md"><img src="assets/button-palletpro.svg" alt="Open PalletPro documentation" height="20"></a>
+  <a href="#find-your-application"><img src="assets/button-user-guides.svg" alt="Browse all user guides" height="20"></a>
+  <a href="#software-downloads"><img src="assets/button-downloads.svg" alt="Find software downloads" height="20"></a>
 </p>
 
 Choose an application below. Each application page brings its related guides and resources together.
