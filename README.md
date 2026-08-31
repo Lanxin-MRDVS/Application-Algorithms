@@ -5,11 +5,11 @@
 Deployment guides, software downloads, and release notes organized by MRDVS application algorithm.
 
 <p align="center">
-  <a href="PalletPro/README.md"><img src="assets/button-pallet-docking.svg" alt="Pallet Recognition &amp; Docking algorithm" height="20"></a>
-  <a href="Obstacle-Avoidance/README.md"><img src="assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance algorithm" height="20"></a>
+  <a href="PalletPro/README.md"><img src="assets/button-pallet-docking.svg" alt="Pallet Recognition &amp; Docking algorithm" width="248" height="20"></a>
+  <a href="Obstacle-Avoidance/README.md"><img src="assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance algorithm" width="248" height="20"></a>
   <br>
-  <a href="Depalletizing/README.md"><img src="assets/button-depalletizing.svg" alt="Depalletizing algorithm" height="20"></a>
-  <a href="Storage-Location/README.md"><img src="assets/button-storage-location.svg" alt="Storage Location Detection algorithm" height="20"></a>
+  <a href="Depalletizing/README.md"><img src="assets/button-depalletizing.svg" alt="Depalletizing algorithm" width="248" height="20"></a>
+  <a href="Storage-Location/README.md"><img src="assets/button-storage-location.svg" alt="Storage Location Detection algorithm" width="248" height="20"></a>
 </p>
 
 Choose an algorithm application below. Each entry brings together its deployment instructions, related software, and user guides.
