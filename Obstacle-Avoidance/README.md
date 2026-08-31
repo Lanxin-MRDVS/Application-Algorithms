@@ -1,3 +1,7 @@
+# Obstacle Avoidance Deployment Guide
+
+[Documentation Home](../README.md) / Obstacle Avoidance
+
 **Version:**  1.1
 **Author:** Junhao Shao, Ruiyang Liu    
 **Date:** May 2026

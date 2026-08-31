@@ -1,10 +1,12 @@
-# Pallet Recognition User Guide Eagle M Series Camera
+# PalletPro User Guide
 
-**Software downloads and version information:** [PalletPro](PalletPro.md)
+[Documentation Home](../README.md) / [PalletPro](README.md) / User Guide
 
-**Update notes:** [PalletPro Update Note](PalletProUpdateNote.md)
+For MRDVS Eagle-M series cameras.
 
-Some screenshots and interface labels in this guide reflect earlier software versions. See the update note for the revised English terminology in 1.4.8.
+**[Software Downloads](README.md#software-download)** · **[Release Notes](release-notes.md)**
+
+Some screenshots and interface labels in this guide reflect earlier software versions. See the release notes for the revised English terminology in 1.4.8.
 
 ## 1. Introduction
 
