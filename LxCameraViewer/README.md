@@ -1,4 +1,8 @@
-# LxCameraViewer User Manual
+# LxCameraViewer User Guide
+
+[Documentation Home](../README.md) / LxCameraViewer
+
+Camera SDK and software packages: [CameraSDK](https://github.com/Lanxin-MRDVS/CameraSDK).
 
 **Table of Contents**
 
