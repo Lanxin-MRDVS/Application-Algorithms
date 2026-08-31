@@ -1,5 +1,7 @@
 # PalletPro Release Notes
 
+[Documentation Home](../README.md) / [PalletPro](README.md) / Release Notes
+
 ## Version 1.4.8_260828
 
 [English](#english) | [中文](#中文)
@@ -12,7 +14,7 @@
 | Installer | [PalletPro-install-v1.4.8_260828.exe](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) |
 | File size | 118,296,332 bytes (112.82 MiB) |
 | Downloads | [PalletPro Release](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/tag/PalletPro) |
-| User guide | [Pallet Recognition User Guide for Eagle M Series Cameras](pallet-recognition-user-guide-eagle-m-series-camera.md) |
+| User guide | [PalletPro User Guide — Eagle-M Series Cameras](user-guide.md) |
 
 ## English
 
