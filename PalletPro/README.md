@@ -1,4 +1,4 @@
-<p align="center"><img src="../.gitbook/assets/mrdvs_logo.png" alt="MRDVS Logo" width="240"></p>
+<p align="center"><img src="../assets/mrdvs-logo-en.webp" alt="MRDVS Mobile Robot Vision Expert" width="300"></p>
 
 [Documentation Home](../README.md) / PalletPro
 
