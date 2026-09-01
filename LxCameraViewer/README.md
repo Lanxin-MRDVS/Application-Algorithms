@@ -2,6 +2,8 @@
 
 [Documentation Home](../README.md) / LxCameraViewer
 
+**Download:** [LxCameraViewer for Windows](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/MRDVS-2.4.60.260126-windows-installer.exe)
+
 Camera SDK and software packages: [CameraSDK](https://github.com/Lanxin-MRDVS/CameraSDK).
 
 **Table of Contents**
