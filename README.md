@@ -1,15 +1,14 @@
-<p align="center"><img src=".gitbook/assets/mrdvs_logo.png" alt="MRDVS Logo" width="300"></p>
+<p align="center"><img src="assets/mrdvs-logo-en.webp" alt="MRDVS Mobile Robot Vision Expert" width="360"></p>
 
-# MRDVS Application Algorithms
+<h1 align="center">MRDVS Application Algorithms</h1>
 
 Deployment guides, software downloads, and release notes organized by MRDVS application algorithm.
 
 <p align="center">
-  <a href="PalletPro/README.md"><img src="assets/button-pallet-docking.svg" alt="Pallet Recognition &amp; Docking algorithm" width="248" height="20"></a>
-  <a href="Obstacle-Avoidance/README.md"><img src="assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance algorithm" width="248" height="20"></a>
-  <br>
-  <a href="Depalletizing/README.md"><img src="assets/button-depalletizing.svg" alt="Depalletizing algorithm" width="248" height="20"></a>
-  <a href="Storage-Location/README.md"><img src="assets/button-storage-location.svg" alt="Storage Location Detection algorithm" width="248" height="20"></a>
+  <a href="PalletPro/README.md"><img src="assets/button-pallet-docking.svg" alt="Pallet Docking" width="190" height="20"></a>
+  <a href="Obstacle-Avoidance/README.md"><img src="assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance" width="190" height="20"></a>
+  <a href="Depalletizing/README.md"><img src="assets/button-depalletizing.svg" alt="Depalletizing" width="190" height="20"></a>
+  <a href="Storage-Location/README.md"><img src="assets/button-storage-location.svg" alt="Storage Detection" width="190" height="20"></a>
 </p>
 
 Choose an algorithm application below. Each entry brings together its deployment instructions, related software, and user guides.
@@ -29,7 +28,7 @@ These shared tools support camera setup and integration across algorithm applica
 
 | Tool | Use it for | Resources |
 | --- | --- | --- |
-| **LxCameraViewer** | Camera connection, network setup, and image / point-cloud inspection. | [User guide](LxCameraViewer/README.md) |
+| **LxCameraViewer** | Camera connection, network setup, and image / point-cloud inspection. | [User guide](LxCameraViewer/README.md) · [Download for Windows](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/MRDVS-2.4.60.260126-windows-installer.exe) |
 | **Camera SDK & tools** | Camera SDK packages and related tools. | [CameraSDK repository](https://github.com/Lanxin-MRDVS/CameraSDK) |
 
 New to camera setup? Start with the [LxCameraViewer guide](LxCameraViewer/README.md), then follow the deployment instructions for your application.
