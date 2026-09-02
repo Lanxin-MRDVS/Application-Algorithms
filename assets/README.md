@@ -17,7 +17,7 @@ The SVG files are stored in this repository and linked from the documentation ho
 
 Keep the same badge style when adding another `button-*.svg`, and use labels that describe its actual destination. Use the general colors above for document and download actions, and the category colors below for the primary algorithm navigation. The SDK version and ROS text in the reference badges are not PalletPro compatibility claims. Preserve SVG titles and meaningful image alt text in the referring page. Plain text navigation remains available alongside the image links.
 
-The documentation homepage uses five equal-width algorithm navigation buttons. Each is **180 × 36px**, uses bold `14px` type, and appears in one row on a standard desktop GitHub README. The colors stay within the blue-to-cyan MRDVS brand range derived from the English logo (`#1964FF` and `#15D1FF`). The labels describe the application directly and do not repeat the word “Algorithm”; narrow screens can wrap naturally.
+The documentation homepage uses five equal-width algorithm navigation buttons. Each is **170 × 36px**, uses bold `14px` type, and appears in one row on a standard desktop GitHub README. The colors stay within the blue-to-cyan MRDVS brand range derived from the English logo (`#1964FF` and `#15D1FF`). The labels describe the application directly and do not repeat the word “Algorithm”; narrow screens can wrap naturally.
 
 | Algorithm application | Navigation label | SVG file | Brand gradient |
 | --- | --- | --- | --- |

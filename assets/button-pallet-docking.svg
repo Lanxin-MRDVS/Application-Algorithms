@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="36" viewBox="0 0 180 36" role="img" aria-label="Pallet Docking">
+<svg xmlns="http://www.w3.org/2000/svg" width="170" height="36" viewBox="0 0 170 36" role="img" aria-label="Pallet Docking">
   <title>Pallet Docking</title>
   <defs>
     <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
@@ -6,7 +6,7 @@
       <stop offset="1" stop-color="#167DEB"/>
     </linearGradient>
   </defs>
-  <rect width="180" height="36" rx="7" fill="url(#brand)"/>
-  <rect x="0.75" y="0.75" width="178.5" height="34.5" rx="6.25" fill="none" stroke="#FFFFFF" stroke-opacity="0.20" stroke-width="1.5"/>
-  <text x="90" y="18" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="Verdana, Geneva, DejaVu Sans, sans-serif" font-size="14" font-weight="700">Pallet Docking</text>
+  <rect width="170" height="36" rx="7" fill="url(#brand)"/>
+  <rect x="0.75" y="0.75" width="168.5" height="34.5" rx="6.25" fill="none" stroke="#FFFFFF" stroke-opacity="0.20" stroke-width="1.5"/>
+  <text x="85" y="18" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="Verdana, Geneva, DejaVu Sans, sans-serif" font-size="14" font-weight="700">Pallet Docking</text>
 </svg>
