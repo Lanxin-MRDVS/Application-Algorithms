@@ -1,10 +1,10 @@
 <p align="center"><img src="../assets/mrdvs-logo-en.webp" alt="MRDVS Mobile Robot Vision Expert" width="300"></p>
 
-[Documentation Home](../README.md) / PalletPro
+[Documentation Home](../README.md) / Pallet Docking
 
 # PalletPro
 
-**Pallet Recognition & Docking · Eagle-M Series Cameras**
+**Pallet Docking · Eagle-M Series Cameras**
 
 Configure cameras, teach pallet positions, and calibrate docking with the PalletPro Windows application.
 
