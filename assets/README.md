@@ -1,32 +1,40 @@
-# Shared brand assets
+# Shared Assets
 
-The navigation links use the compact Shields badge style from the supplied MRDVS brand references: [SDK badge](https://img.shields.io/badge/SDK-2.4.60.260126-2563EB) and [robotics badge](https://img.shields.io/badge/robotics-ROS%20%7C%20ROS2-0891B2).
+[Documentation Home](../README.md) / Shared Assets
 
-The SVG files are stored in this repository and linked from the documentation home and PalletPro overview. GitHub handles navigation without custom JavaScript or page CSS; rendering the pages does not require a live Shields image request.
+This directory contains repository-wide MRDVS brand and navigation graphics. Application screenshots belong under the relevant application's `docs/images/` directory.
 
-| Badge property | Value |
+## Brand
+
+| File | Purpose |
 | --- | --- |
-| Style | Shields default `flat` |
-| Label background | `#555555` |
-| Documentation content background | `#2563EB` |
-| Download content background | `#0891B2` |
-| Text | White |
-| Height | `20px` |
-| Corner radius | `3px` |
-| Font family | Verdana, Geneva, DejaVu Sans, sans-serif |
+| `mrdvs-logo-en.webp` | English MRDVS logo used on the documentation homepage. |
+| `mrdvs-logo-cn.png` | Chinese MRDVS logo retained as a brand asset; not used on the documentation homepage. |
 
-Keep the same badge style when adding another `button-*.svg`, and use labels that describe its actual destination. Use the general colors above for document and download actions, and the category colors below for the primary algorithm navigation. The SDK version and ROS text in the reference badges are not PalletPro compatibility claims. Preserve SVG titles and meaningful image alt text in the referring page. Plain text navigation remains available alongside the image links.
+## Homepage navigation
 
-The documentation homepage uses five equal-width algorithm navigation buttons. Each is **160 × 36px**, uses bold `14px` type, and appears in one row on a standard desktop GitHub README. The colors stay within the blue-to-cyan MRDVS brand range derived from the English logo (`#1964FF` and `#15D1FF`). The labels describe the application directly and do not repeat the word “Algorithm”; narrow screens can wrap naturally.
+The five application buttons are equal-width SVG assets. Their colors stay within the blue-to-cyan MRDVS brand range derived from the English logo (`#1964FF` and `#15D1FF`).
 
-| Algorithm application | Navigation label | SVG file | Brand gradient |
-| --- | --- | --- | --- |
-| Depalletizing | Depalletizing | `button-depalletizing.svg` | `#1964FF` → `#286FFF` |
-| Pallet Docking | Pallet Docking | `button-pallet-docking.svg` | `#1964FF` → `#167DEB` |
-| Volume Measurement | Volume Measurement | `button-volume-measurement.svg` | `#1964FF` → `#138FD9` |
-| Slot Monitoring | Slot Monitoring | `button-storage-location.svg` | `#1964FF` → `#10A8DA` |
-| Obstacle Avoidance | Obstacle Avoidance | `button-obstacle-avoidance.svg` | `#1964FF` → `#15D1FF` |
+| Application | SVG | Size |
+| --- | --- | --- |
+| Depalletizing | `button-depalletizing.svg` | 160 × 36 px |
+| Pallet Docking | `button-pallet-docking.svg` | 160 × 36 px |
+| Volume Measurement | `button-volume-measurement.svg` | 160 × 36 px |
+| Slot Monitoring | `button-slot-monitoring.svg` | 160 × 36 px |
+| Obstacle Avoidance | `button-obstacle-avoidance.svg` | 160 × 36 px |
 
-All five buttons use white text and retain meaningful alt text in the homepage links. Navigation therefore remains understandable without relying on color alone. Keep product names, document types, and download actions out of this primary classification; camera setup tools and software downloads have separate sections. Previously published badge files remain available to preserve existing image URLs.
+All buttons use white text, meaningful SVG titles, and meaningful image alt text in the referring page. The homepage also provides text links, so navigation does not rely on color alone.
 
-`mrdvs-logo-en.webp` is the English logo used in repository README pages. Product screenshots belong in the relevant application's image folder, such as `PalletPro/images/`.
+## Homepage downloads and diagrams
+
+| File | Purpose |
+| --- | --- |
+| `button-download-aw3.svg` | Current AW3 platform download. |
+| `button-download-palletpro-latest.svg` | Current PalletPro download. |
+| `button-release-history.svg` | Central or local release-history navigation. |
+| `button-user-guide-large.svg` | Prominent user-guide navigation. |
+| `aw3-application-model.svg` | Target AW3 application-delivery diagram. |
+
+New shared assets should use short lowercase kebab-case names, the MRDVS palette, accessible titles, and source-controlled SVG where practical.
+
+Do not place product screenshots here. For example, Pallet Docking screenshots are stored in `applications/pallet-docking/docs/images/`.
