@@ -17,14 +17,14 @@ The SVG files are stored in this repository and linked from the documentation ho
 
 Keep the same badge style when adding another `button-*.svg`, and use labels that describe its actual destination. Use the general colors above for document and download actions, and the category colors below for the primary algorithm navigation. The SDK version and ROS text in the reference badges are not PalletPro compatibility claims. Preserve SVG titles and meaningful image alt text in the referring page. Plain text navigation remains available alongside the image links.
 
-The documentation homepage uses four equal-size algorithm navigation bars. Each is **194 × 38px**, uses centered **15px bold** text, and appears in one row on a standard GitHub README. The labels are intentionally concise so the row remains readable; narrow screens can wrap naturally.
+The documentation homepage uses four content-width algorithm navigation bars. Each is **40px high**, uses centered **13px bold** text, and appears in one row on a standard GitHub README. The labels match the formal application names used by their destination pages; narrow screens can wrap naturally.
 
 | Algorithm application | Navigation label | SVG file | MRDVS color |
 | --- | --- | --- | --- |
-| Pallet Recognition & Docking | Pallet Docking | `button-pallet-docking.svg` | Primary blue `#1964FF` |
+| Pallet Recognition & Docking | Pallet Recognition & Docking | `button-pallet-docking.svg` | Primary blue `#1964FF` |
 | Obstacle Avoidance | Obstacle Avoidance | `button-obstacle-avoidance.svg` | Cyan `#15D1FF` |
 | Depalletizing | Depalletizing | `button-depalletizing.svg` | Deep blue `#2057CC` |
-| Storage Location Detection | Storage Detection | `button-storage-location.svg` | Light cyan `#5DE8FF` |
+| Storage Location Detection | Storage Location Detection | `button-storage-location.svg` | Light cyan `#5DE8FF` |
 
 The two blue bars use white text; the two cyan bars use the logo's dark gray `#343132` text for contrast. Navigation therefore remains understandable without relying on color alone. Keep product names, document types, and download actions out of this primary classification; camera setup tools and software downloads have separate sections. Previously published badge files remain available to preserve existing image URLs.
 
