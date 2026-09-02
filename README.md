@@ -5,11 +5,11 @@
 Deployment guides, software downloads, and release notes organized by MRDVS application algorithm.
 
 <p align="center">
-  <a href="Depalletizing/README.md"><img src="assets/button-depalletizing.svg" alt="Depalletizing" width="180" height="36"></a>
-  <a href="PalletPro/README.md"><img src="assets/button-pallet-docking.svg" alt="Pallet Docking" width="180" height="36"></a>
-  <a href="Volume-Measurement/README.md"><img src="assets/button-volume-measurement.svg" alt="Volume Measurement" width="180" height="36"></a>
-  <a href="Storage-Location/README.md"><img src="assets/button-storage-location.svg" alt="Slot Monitoring" width="180" height="36"></a>
-  <a href="Obstacle-Avoidance/README.md"><img src="assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance" width="180" height="36"></a>
+  <a href="Depalletizing/README.md"><img src="assets/button-depalletizing.svg" alt="Depalletizing" width="170" height="36"></a>
+  <a href="PalletPro/README.md"><img src="assets/button-pallet-docking.svg" alt="Pallet Docking" width="170" height="36"></a>
+  <a href="Volume-Measurement/README.md"><img src="assets/button-volume-measurement.svg" alt="Volume Measurement" width="170" height="36"></a>
+  <a href="Storage-Location/README.md"><img src="assets/button-storage-location.svg" alt="Slot Monitoring" width="170" height="36"></a>
+  <a href="Obstacle-Avoidance/README.md"><img src="assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance" width="170" height="36"></a>
 </p>
 
 Choose an algorithm application below. Each entry brings together its deployment instructions, related software, and user guides.
