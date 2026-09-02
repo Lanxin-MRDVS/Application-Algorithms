@@ -1,16 +1,16 @@
-# Storage Location Detection User Guide
+# Slot Monitoring User Guide
 
-[Documentation Home](../README.md) / Storage Location Detection
+[Documentation Home](../README.md) / Slot Monitoring
 
 Source last modified: March 4, 2025
 
 ## 1 Introduction
 
-The storage location detection algorithm is independently developed by MRDVS for warehousing and logistics applications. The algorithm runs inside the camera and does not require an external industrial PC.
+The MRDVS slot monitoring application is designed to monitor storage locations in warehousing and logistics. Its detection algorithm runs inside the camera and does not require an external industrial PC.
 
 Users only need to perform camera extrinsic calibration and define multiple storage locations. A single camera can monitor 6–8 storage locations, and multiple cameras can be deployed in the same warehouse. The calibration results are generated automatically during extrinsic calibration.
 
-This document describes how to deploy and use the MRDVS storage location detection function.
+This document describes how to deploy and use MRDVS slot monitoring for storage-location status and occupancy detection.
 
 ## 2 System Components
 
