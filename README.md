@@ -20,12 +20,7 @@
   <a href="RELEASES.md"><img src="assets/button-release-history.svg" alt="View all release history" width="240" height="40"></a>
 </p>
 
-| Product | Latest public version | Distribution | Release notes |
-| --- | --- | --- | --- |
-| **AW3** | `3.0.1` | [Download platform package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) | [AW3 3.0.1](platform/aw3/releases/v3.0.1.md) |
-| **PalletPro** | `1.4.8_260828` | [Download Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) | [PalletPro 1.4.8_260828](applications/pallet-docking/releases/v1.4.8_260828.md) |
-
-Packages are stored in **GitHub Releases**, not in the Git source tree. The [central release index](RELEASES.md) records current and historical versions without hiding earlier download links.
+Packages are stored in **GitHub Releases**, not in the Git source tree. The buttons show the current public versions; the [central release index](RELEASES.md) preserves complete version history and earlier download links.
 
 ## Application delivery model
 

@@ -14,6 +14,8 @@ This policy separates the AW3 platform lifecycle from faster application updates
 
 Depalletizing, Pallet Docking, Volume Measurement, and Slot Monitoring use AW3 as their target runtime. Obstacle Avoidance remains a camera application until its verified packaging changes.
 
+GitHub provides one repository-wide **Latest Release** rather than a separate latest marker for every application. Treat `/RELEASES.md` and each application's `releases/README.md` as the authoritative component-level indexes. Prefix every GitHub Release title with its platform or application scope, and never create an empty Release only to make an application appear in the repository sidebar.
+
 ## 2. Version rules
 
 Use semantic versioning where the product exposes a three-part version:
@@ -31,6 +33,9 @@ A build identifier may follow the version when the delivered product already use
 | AW3 tag | `aw3-v<major>.<minor>.<patch>` |
 | Application tag | `<application>-v<major>.<minor>.<patch>` |
 | Tool tag | `<tool>-v<version>` |
+| AW3 release title | `AW3 v<version> · <primary scope>` |
+| Application release title | `<Application> · v<version>` |
+| Application-specific tool title | `<Application> · <Tool> v<version>` |
 | Platform asset | `aw3-v<version>-<os>-<arch>.<ext>` |
 | Application asset | `<application>-v<version>-for-aw3-<range>.<ext>` |
 | Tool asset | `<tool>-v<version>-<os>-<arch>.<ext>` |

@@ -4,5 +4,5 @@
   <rect width="240" height="40" rx="8" fill="url(#brand)"/>
   <rect x="0.75" y="0.75" width="238.5" height="38.5" rx="7.25" fill="none" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="1.5"/>
   <path d="M22 10v12m-5-5 5 5 5-5M15 28h14" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="132" y="20" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Download AW3 3.0.1</text>
+  <text x="132" y="20" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">AW3 3.0.1</text>
 </svg>
