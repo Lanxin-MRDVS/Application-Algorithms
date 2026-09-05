@@ -13,7 +13,7 @@ This directory contains repository-wide MRDVS brand and navigation graphics. App
 
 ## Homepage navigation
 
-The five application buttons are equal-width SVG assets. Their colors stay within the blue-to-cyan MRDVS brand range derived from the English logo (`#1964FF` and `#15D1FF`).
+The five application buttons and the AW3 platform button are equal-width SVG assets. Their colors stay within the blue-to-cyan MRDVS brand range derived from the English logo (`#1964FF` and `#15D1FF`).
 
 | Application | SVG | Size |
 | --- | --- | --- |
@@ -22,6 +22,7 @@ The five application buttons are equal-width SVG assets. Their colors stay withi
 | Volume Measurement | `button-volume-measurement.svg` | 160 × 36 px |
 | Slot Monitoring | `button-slot-monitoring.svg` | 160 × 36 px |
 | Obstacle Avoidance | `button-obstacle-avoidance.svg` | 160 × 36 px |
+| AW3 | `button-aw3.svg` | 160 × 36 px |
 
 All buttons use white text, meaningful SVG titles, and meaningful image alt text in the referring page. The homepage also provides text links, so navigation does not rely on color alone.
 
