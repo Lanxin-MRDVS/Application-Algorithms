@@ -5,12 +5,13 @@
 <p align="center"><strong>Application documentation, verified downloads, and release history for MRDVS 3D vision products.</strong></p>
 
 <p align="center">
+  <a href="aw3/README.md"><img src="user-guides/assets/button-aw3.svg" alt="AW3 Platform" width="160" height="36"></a>
   <a href="depalletizing/README.md"><img src="user-guides/assets/button-depalletizing.svg" alt="Depalletizing" width="160" height="36"></a>
   <a href="pallet-docking/README.md"><img src="user-guides/assets/button-pallet-docking.svg" alt="Pallet Docking" width="160" height="36"></a>
+  <br>
   <a href="volume-measurement/README.md"><img src="user-guides/assets/button-volume-measurement.svg" alt="Volume Measurement" width="160" height="36"></a>
   <a href="slot-monitoring/README.md"><img src="user-guides/assets/button-slot-monitoring.svg" alt="Slot Monitoring" width="160" height="36"></a>
   <a href="obstacle-avoidance/README.md"><img src="user-guides/assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance" width="160" height="36"></a>
-  <a href="aw3/README.md"><img src="user-guides/assets/button-aw3.svg" alt="AW3 Platform" width="160" height="36"></a>
 </p>
 
 ## Latest downloads

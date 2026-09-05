@@ -17,12 +17,12 @@ The five application buttons and the AW3 platform button are equal-width SVG ass
 
 | Application | SVG | Size |
 | --- | --- | --- |
+| AW3 | `button-aw3.svg` | 160 × 36 px |
 | Depalletizing | `button-depalletizing.svg` | 160 × 36 px |
 | Pallet Docking | `button-pallet-docking.svg` | 160 × 36 px |
 | Volume Measurement | `button-volume-measurement.svg` | 160 × 36 px |
 | Slot Monitoring | `button-slot-monitoring.svg` | 160 × 36 px |
 | Obstacle Avoidance | `button-obstacle-avoidance.svg` | 160 × 36 px |
-| AW3 | `button-aw3.svg` | 160 × 36 px |
 
 All buttons use white text, meaningful SVG titles, and meaningful image alt text in the referring page. The homepage also provides text links, so navigation does not rely on color alone.
 
