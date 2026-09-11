@@ -27,9 +27,9 @@ The historical Depalletizing asset is named `AW3-V3.0.1-20260624.zip`, but its c
 
 Future Depalletizing, Pallet Docking, Volume Measurement, and Slot Monitoring use AW3 as their target delivery. Obstacle Avoidance follows its dedicated host-application lifecycle.
 
-For Volume Measurement, formal TorusMetric software versions are owned by the AW3 release that contains them. The Volume Measurement release history is reserved for application-specific patches and hotfixes and must retain all previous version rows.
+For Volume Measurement, the application release history records both formal TorusMetric versions and standalone updates in one table. Formal versions are owned by the AW3 release that contains them, so their release-note and download links point to that AW3 Release. Standalone update packages remain with the application. Every previous version row must be retained.
 
-GitHub provides one repository-wide **Latest Release**, so component-level latest versions are defined by `latest-downloads/README.md` and each application's `releases/README.md`. Prefix every GitHub Release title with its product scope, and never publish an empty Release only to change the sidebar.
+GitHub provides one repository-wide **Latest Release**, so component-level latest versions are defined by `latest-downloads/README.md` and each application's `releases/README.md`. The homepage software update history is the cross-product index for published and scheduled software versions. Prefix every GitHub Release title with its product scope, and never publish an empty Release only to change the sidebar.
 
 ## 3. Version and naming rules
 

@@ -14,14 +14,16 @@
   <a href="obstacle-avoidance/README.md"><img src="user-guides/assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance" width="160" height="36"></a>
 </p>
 
-## Latest downloads
+## Software update history
 
-| Application | Current version | Package | Release note |
-| --- | --- | --- | --- |
-| [**Depalletizing**](depalletizing/README.md) | `3.0.1` · Standalone | [Download ZIP](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) | [3.0.1](depalletizing/releases/v3.0.1.md) |
-| [**Pallet Docking**](pallet-docking/README.md) | `PalletPro 1.4.8_260828` · Windows | [Download EXE](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) | [1.4.8_260828](pallet-docking/releases/v1.4.8_260828.md) |
+| Product | Version | Release type | Release date | Status | Release note | Download |
+| --- | --- | --- | --- | --- | --- | --- |
+| [**AW3**](aw3/README.md) | _Pending assignment_ | Platform release | Planned: end of September 2026 | Planned | [AW3 history](aw3/releases/README.md) | _Not published_ |
+| [**Volume Measurement**](volume-measurement/README.md) | _Pending assignment_ | AW3 bundled release | Planned: end of September 2026 | Planned | [Software history](volume-measurement/releases/README.md) | _Provided by the corresponding AW3 Release_ |
+| [**Pallet Docking**](pallet-docking/README.md) | `PalletPro 1.4.8_260828` | Standalone host application | 2026-08-24 | Current | [Release note](pallet-docking/releases/v1.4.8_260828.md) | [Download EXE](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) |
+| [**Depalletizing**](depalletizing/README.md) | `3.0.1` | Standalone application package | 2026-07-03 | Current | [Release note](depalletizing/releases/v3.0.1.md) | [Download ZIP](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) |
 
-Packages are stored in **GitHub Releases**, not in the Git source tree. Open [Latest Downloads](latest-downloads/README.md) for the current package index or the owning application's `releases/` folder for version history.
+This table records software releases and scheduled software versions only; documentation revisions are tracked separately. Keep every published version as an immutable row. Binary packages remain in **GitHub Releases**, while [Latest Downloads](latest-downloads/README.md) provides the short list of current verified installers.
 
 ## Applications
 
@@ -29,7 +31,7 @@ Packages are stored in **GitHub Releases**, not in the Git source tree. Open [La
 | --- | --- | --- | --- |
 | [**Depalletizing**](depalletizing/README.md) | [Deployment Guide](depalletizing/docs/deployment-guide.md) | [Standalone 3.0.1](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) | [3.0.1](depalletizing/releases/v3.0.1.md) · [History](depalletizing/releases/README.md) |
 | [**Pallet Docking**](pallet-docking/README.md) | [User Guide](pallet-docking/docs/user-guide.md) | [PalletPro 1.4.8_260828](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) | [1.4.8_260828](pallet-docking/releases/v1.4.8_260828.md) · [History](pallet-docking/releases/README.md) |
-| [**Volume Measurement**](volume-measurement/README.md) | [User Manual](volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) · [White Paper](volume-measurement/docs/torusmetric-white-paper-v0.1.pdf) | _Planned with AW3_ | [AW3 releases](aw3/releases/README.md) · [Patch history](volume-measurement/releases/README.md) |
+| [**Volume Measurement**](volume-measurement/README.md) | [User Manual](volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) · [White Paper](volume-measurement/docs/torusmetric-white-paper-v0.1.pdf) | _Planned with AW3_ | [Software history](volume-measurement/releases/README.md) |
 | [**Slot Monitoring**](slot-monitoring/README.md) | [User Guide](slot-monitoring/docs/user-guide.md) | _Not published_ | [History](slot-monitoring/releases/README.md) |
 | [**Obstacle Avoidance**](obstacle-avoidance/README.md) | [Deployment Guide](obstacle-avoidance/docs/deployment-guide.md) | _Not published_ | [History](obstacle-avoidance/releases/README.md) |
 
