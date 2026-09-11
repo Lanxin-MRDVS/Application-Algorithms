@@ -45,6 +45,24 @@ Use semantic versioning where the product exposes a three-part version. A build 
 
 Keep the historical tags `Depalletizing-Algorithm-V3.0.1` and `PalletPro` unchanged so existing download URLs remain valid.
 
+### Product-page release status
+
+Each application product page uses the same compact release-status structure:
+
+1. **Latest documentation:** show the current document version, publication date, applicable formal software version, and links to the latest user manual and white paper when available.
+2. **Latest formal software:** show one latest formal application version and the AW3 version that delivers it, or one next planned version before the first formal release.
+3. **Applicable standalone updates:** show active, non-superseded updates that explicitly reference the latest formal software version and its compatible AW3 version, or `Not published`.
+
+The status card has strict display limits:
+
+- **Latest documentation:** at most two links, consisting of one current User Manual and one current White Paper.
+- **Latest formal software:** exactly one latest published formal version. Before the first formal release, show one next planned version instead.
+- **Applicable standalone updates:** up to three active, non-superseded updates for the latest formal version. If more than three apply, show the three newest and route users to the complete history. If none applies, show `Not published`.
+
+Do not show earlier versions in the status card. Provide one link to the complete software version history, which retains every formal version and standalone update. Keep previous versions, checksums, detailed changes, compatibility, upgrade instructions, and rollback instructions on the version-history and version-note pages. Earlier document versions remain in the application's documentation index.
+
+Formal software is the application baseline. Each formal version records the AW3 release that delivers it. Each standalone update records its own version, its formal-version baseline, its compatible AW3 version, whether it remains active, and any update it supersedes. Each document version records the formal software versions, standalone updates, and AW3 versions to which it applies. Use `TBC` until an identifier is assigned and verified; never infer a relationship from an asset filename.
+
 ## 4. Required release metadata
 
 Every published version must include its version and publication date, release type, delivery status, compatibility, supported environment when verified, summary, changes and fixes, upgrade and rollback guidance, known issues, asset filenames, file sizes, SHA-256 checksums, and applicable documentation links. Write **Not verified** or **Not published** for unknown information; never infer it.

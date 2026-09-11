@@ -2,14 +2,14 @@
 
 [Documentation Home](../../README.md) / [Volume Measurement](../README.md) / Documentation
 
-The product-page buttons always open the latest published documents. When a new document version becomes current, update the button target and add a new row here. Preserve earlier files and rows; never overwrite a published document.
+The product page shows one latest User Manual and one latest White Paper. Every document row identifies the formal software version, standalone update, and AW3 version to which it applies. When a new document version becomes current, update the product-page links and add a new row here. Preserve earlier files and rows; never overwrite a published document.
 
 ## Document version history
 
-| Document | Version | Publication date | Status | Audience | File |
+| Document | Version | Applies to | Publication date | Status | File |
 | --- | --- | --- | --- | --- | --- |
-| TorusMetric User Manual | `V0.1` | 2026-09-09 | Current | Deployment engineers, integrators, and operators | [PDF](torusmetric-user-manual-v0.1.pdf) |
-| TorusMetric Volume Measurement Solution White Paper | `V0.1` | 2026-09-09 | Current | Solution evaluation, project planning, sales, and technical review | [PDF](torusmetric-white-paper-v0.1.pdf) |
+| TorusMetric User Manual | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](torusmetric-user-manual-v0.1.pdf) |
+| TorusMetric Volume Measurement Solution White Paper | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](torusmetric-white-paper-v0.1.pdf) |
 
 ## File verification
 

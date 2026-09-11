@@ -11,7 +11,10 @@
 | Publication date | `YYYY-MM-DD` |
 | Release type | `AW3 platform` / `Application package` / `Application host software` / `Shared tool` |
 | Stability | `Stable` / `Pre-release` / `Hotfix` |
-| Compatible AW3 versions | `<range>` / `Not applicable` / `Not verified` |
+| Formal software baseline | `<version>` / `This version` / `Not applicable` / `TBC` |
+| Delivered with / compatible AW3 | `<version or range>` / `Not applicable` / `Not verified` / `TBC` |
+| Supersedes | `<standalone update versions>` / `None` / `Not applicable` |
+| Applicable documentation | `<document versions and links>` / `Not published` |
 | Supported OS / architecture | `<verified platforms>` |
 | Camera / firmware requirements | `<verified requirements>` |
 
