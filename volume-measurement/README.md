@@ -12,28 +12,35 @@
 
 </div>
 
-TorusMetric turns calibrated RGB-D point clouds into repeatable object dimensions and volume data. It is designed for fixed measurement stations in warehouses and automated lines, including palletized goods, packages, and large or irregular rigid objects. A single AW3 project can use one or multiple cameras and configure up to five detection areas.
-
-<p align="center">
-  <a href="docs/torusmetric-white-paper-v0.1.pdf"><img src="docs/images/torusmetric-applications.png" alt="TorusMetric application scenarios for warehouses, automated lines, palletized loads, and large objects" width="860"></a>
-</p>
-
-## Release status
-
-| Item | Status | Location |
-| --- | --- | --- |
-| Product documentation | `V0.1` · Published 2026-09-09 | [User Manual](docs/torusmetric-user-manual-v0.1.pdf) · [White Paper](docs/torusmetric-white-paper-v0.1.pdf) |
-| Formal software release | Planned with the AW3 release at the end of September 2026 | [Software version history](releases/README.md) |
-| Standalone application update | No public package yet | [Software version history](releases/README.md) |
-
-No software package is linked until its AW3 release or standalone update has been published and verified.
+<table>
+  <tr>
+    <td width="66%" valign="top">
+      <strong>Designed for operational 3D measurement</strong><br><br>
+      TorusMetric turns calibrated RGB-D point clouds into repeatable object dimensions and volume data. It is designed for fixed measurement stations in warehouses and automated lines, including palletized goods, packages, and large or irregular rigid objects. A single AW3 project can use one or multiple cameras and configure up to five detection areas.<br><br>
+      <a href="docs/torusmetric-white-paper-v0.1.pdf"><img src="docs/images/torusmetric-deployment-scenes.png" alt="TorusMetric deployment scenes for warehouses, automated lines, and large objects" width="650"></a>
+    </td>
+    <td width="34%" valign="top">
+      <strong>Release status</strong><br><br>
+      <strong>Documentation</strong><br>
+      <code>V0.1</code> · 2026-09-09<br>
+      <a href="docs/torusmetric-user-manual-v0.1.pdf">User Manual</a> · <a href="docs/torusmetric-white-paper-v0.1.pdf">White Paper</a><br><br>
+      <strong>Formal software</strong><br>
+      Planned with AW3<br>
+      End of September 2026<br><br>
+      <strong>Standalone application update</strong><br>
+      No public package<br><br>
+      <a href="releases/README.md"><strong>View software version history →</strong></a><br><br>
+      <small>Packages are linked only after the AW3 release or standalone update is published and verified.</small>
+    </td>
+  </tr>
+</table>
 
 ## How it works
 
 The application captures one or more depth point clouds, applies the AW3 calibration, filters each detection area, separates objects, and calculates structured results. The optional **Real Volume** estimate uses surfaces visible to the cameras; it does not represent net material volume.
 
 <p align="center">
-  <a href="docs/torusmetric-white-paper-v0.1.pdf"><img src="docs/images/torusmetric-measurement-principle.png" alt="TorusMetric point-cloud processing and volume measurement flow" width="860"></a>
+  <a href="docs/torusmetric-white-paper-v0.1.pdf"><img src="docs/images/torusmetric-measurement-flow.png" alt="TorusMetric point-cloud processing and volume measurement flow" width="860"></a>
 </p>
 
 ## Outputs and capabilities
