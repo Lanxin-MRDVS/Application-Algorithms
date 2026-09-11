@@ -65,8 +65,25 @@ AW3 manages devices, camera groups, calibration, application settings, monitorin
 
 ## Start here
 
-| Step | Link |
-| --- | --- |
-| 1. Review product fit | [White Paper V0.1](docs/torusmetric-white-paper-v0.1.pdf) |
-| 2. Verify camera data | [LxCameraViewer](../tools/lxcameraviewer/README.md) |
-| 3. Deploy and validate in AW3 | [User Manual V0.1](docs/torusmetric-user-manual-v0.1.pdf) |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="65%">Step</th>
+      <th width="35%">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Review product fit</td>
+      <td><a href="docs/torusmetric-white-paper-v0.1.pdf">White Paper V0.1</a></td>
+    </tr>
+    <tr>
+      <td>2. Verify camera data</td>
+      <td><a href="../tools/lxcameraviewer/README.md">LxCameraViewer</a></td>
+    </tr>
+    <tr>
+      <td>3. Deploy and validate in AW3</td>
+      <td><a href="docs/torusmetric-user-manual-v0.1.pdf">User Manual V0.1</a></td>
+    </tr>
+  </tbody>
+</table>
