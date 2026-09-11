@@ -67,6 +67,6 @@ AW3 manages devices, camera groups, calibration, application settings, monitorin
 
 | Step | Link |
 | --- | --- |
-| 1. Confirm that the measurement range, accuracy class, object surface, and installation conditions fit the project. | [White Paper V0.1](docs/torusmetric-white-paper-v0.1.pdf) |
-| 2. Connect the cameras and verify RGB, depth, and point-cloud data. | [LxCameraViewer](../tools/lxcameraviewer/README.md) |
-| 3. Install, calibrate, configure, and validate TorusMetric in AW3. | [User Manual V0.1](docs/torusmetric-user-manual-v0.1.pdf) |
+| 1. Review product fit | [White Paper V0.1](docs/torusmetric-white-paper-v0.1.pdf) |
+| 2. Verify camera data | [LxCameraViewer](../tools/lxcameraviewer/README.md) |
+| 3. Deploy and validate in AW3 | [User Manual V0.1](docs/torusmetric-user-manual-v0.1.pdf) |
