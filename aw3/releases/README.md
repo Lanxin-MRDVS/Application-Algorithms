@@ -1,21 +1,7 @@
-# AW3 Release History
+# AW3 Release Files
 
-[Documentation Home](../../README.md) / [AW3](../README.md) / Release History
+[Documentation Home](../../README.md) / [AW3](../README.md) / Release Files
 
-No verified public AW3 platform package has been published in this repository.
+The public [Software update history](../README.md#software-update-history) is maintained at the bottom of the AW3 product page. This folder stores one immutable `v<version>.md` release note for every published AW3 formal software version.
 
-## Upcoming release
-
-| Planned window | Application scope | AW3 version | Release notes | Package |
-| --- | --- | --- | --- | --- |
-| End of September 2026 | [TorusMetric Volume Measurement](../../volume-measurement/README.md) | _To be confirmed_ | _Not published_ | _Not published_ |
-
-The planned window records the current publication plan. Add the confirmed version, date, compatibility, release note, and package only after release verification.
-
-## Published releases
-
-| Version | Publication date | Included applications | Release notes | Download |
-| --- | --- | --- | --- | --- |
-| _No public release yet_ | — | — | — | — |
-
-Every future AW3 version must receive a separate release-note file and record the included application versions, upgrade path, rollback path, compatibility, asset size, and SHA-256 checksum.
+Each version note records the included application versions, applicable documents, compatibility, package filename, file size, SHA-256 checksum, upgrade steps, rollback steps, and GitHub Release link.

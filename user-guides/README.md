@@ -6,6 +6,7 @@ Use this page to find the latest public guide for each application. Version-spec
 
 | Application or tool | Latest guide | Public package status |
 | --- | --- | --- |
+| [AW3](../aw3/README.md) | [Deployment User Manual V0.1](../aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) | No public formal software package |
 | [Depalletizing](../depalletizing/README.md) | [Deployment Guide](../depalletizing/docs/deployment-guide.md) | Standalone `3.0.1` |
 | [Pallet Docking](../pallet-docking/README.md) | [PalletPro User Guide](../pallet-docking/docs/user-guide.md) | PalletPro `1.4.8_260828` |
 | [Volume Measurement](../volume-measurement/README.md) | [TorusMetric User Manual V0.1](../volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) · [White Paper V0.1](../volume-measurement/docs/torusmetric-white-paper-v0.1.pdf) | Formal software release planned with AW3 |

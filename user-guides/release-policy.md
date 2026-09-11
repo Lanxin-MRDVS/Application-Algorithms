@@ -27,9 +27,9 @@ The historical Depalletizing asset is named `AW3-V3.0.1-20260624.zip`, but its c
 
 Future Depalletizing, Pallet Docking, Volume Measurement, and Slot Monitoring use AW3 as their target delivery. Obstacle Avoidance follows its dedicated host-application lifecycle.
 
-For Volume Measurement, the application release history records both formal TorusMetric versions and standalone updates in one table. Formal versions are owned by the AW3 release that contains them, so their release-note and download links point to that AW3 Release. Standalone update packages remain with the application. Every previous version row must be retained.
+For Volume Measurement, the product-page software history records both formal TorusMetric versions and standalone updates in one table. Formal versions are owned by the AW3 release that contains them, so their release-note and download links point to that AW3 Release. Standalone update packages and immutable version notes remain in the application's `releases/` folder. Every previous version row must be retained.
 
-GitHub provides one repository-wide **Latest Release**, so component-level latest versions are defined by `latest-downloads/README.md` and each application's `releases/README.md`. The homepage software update history is the cross-product index for published and scheduled software versions. Prefix every GitHub Release title with its product scope, and never publish an empty Release only to change the sidebar.
+GitHub provides one repository-wide **Latest Release**, so component-level latest versions are defined by `latest-downloads/README.md` and the owning product page. The homepage **Latest software** table shows the latest AW3 formal release, the latest separately distributed update for each AW3 application, and the latest Obstacle Avoidance host application. It is a current-release view, not a historical index. Prefix every GitHub Release title with its product scope, and never publish an empty Release only to change the sidebar.
 
 ## 3. Version and naming rules
 
@@ -59,7 +59,7 @@ The status card has strict display limits:
 - **Latest formal software:** exactly one latest published formal version. Before the first formal release, show one next planned version instead.
 - **Applicable standalone updates:** up to three active, non-superseded updates for the latest formal version. If more than three apply, show the three newest and route users to the complete history. If none applies, show `Not published`.
 
-Do not show earlier versions in the status card. Provide one link to the complete software version history, which retains every formal version and standalone update. Keep previous versions, checksums, detailed changes, compatibility, upgrade instructions, and rollback instructions on the version-history and version-note pages. Earlier document versions remain in the application's documentation index.
+Do not show earlier versions in the status card. Provide one in-page link to the complete software update history at the bottom of the product page, which retains every formal version and standalone update. Keep detailed changes, checksums, compatibility, upgrade instructions, and rollback instructions in immutable `releases/v<version>.md` notes. Keep the document update history at the bottom of the product page and retain earlier document files in `docs/`.
 
 Formal software is the application baseline. Each formal version records the AW3 release that delivers it. Each standalone update records its own version, its formal-version baseline, its compatible AW3 version, whether it remains active, and any update it supersedes. Each document version records the formal software versions, standalone updates, and AW3 versions to which it applies. Use `TBC` until an identifier is assigned and verified; never infer a relationship from an asset filename.
 

@@ -5,35 +5,27 @@
 <p align="center"><strong>Application documentation, verified downloads, and release history for MRDVS 3D vision products.</strong></p>
 
 <p align="center">
-  <a href="aw3/README.md"><img src="user-guides/assets/button-aw3.svg" alt="AW3 Platform" width="160" height="36"></a>
-  <a href="depalletizing/README.md"><img src="user-guides/assets/button-depalletizing.svg" alt="Depalletizing" width="160" height="36"></a>
-  <a href="pallet-docking/README.md"><img src="user-guides/assets/button-pallet-docking.svg" alt="Pallet Docking" width="160" height="36"></a>
+  <a href="aw3/README.md"><img src="user-guides/assets/button-aw3.svg" alt="AW3 Platform" width="220" height="44"></a>
+  <a href="depalletizing/README.md"><img src="user-guides/assets/button-depalletizing.svg" alt="Depalletizing" width="220" height="44"></a>
+  <a href="pallet-docking/README.md"><img src="user-guides/assets/button-pallet-docking.svg" alt="Pallet Docking" width="220" height="44"></a>
   <br>
-  <a href="volume-measurement/README.md"><img src="user-guides/assets/button-volume-measurement.svg" alt="Volume Measurement" width="160" height="36"></a>
-  <a href="slot-monitoring/README.md"><img src="user-guides/assets/button-slot-monitoring.svg" alt="Slot Monitoring" width="160" height="36"></a>
-  <a href="obstacle-avoidance/README.md"><img src="user-guides/assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance" width="160" height="36"></a>
+  <a href="volume-measurement/README.md"><img src="user-guides/assets/button-volume-measurement.svg" alt="Volume Measurement" width="220" height="44"></a>
+  <a href="slot-monitoring/README.md"><img src="user-guides/assets/button-slot-monitoring.svg" alt="Slot Monitoring" width="220" height="44"></a>
+  <a href="obstacle-avoidance/README.md"><img src="user-guides/assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance" width="220" height="44"></a>
 </p>
 
-## Software update history
+## Latest software
 
-| Product | Version | Release type | Release date | Status | Release note | Download |
-| --- | --- | --- | --- | --- | --- | --- |
-| [**AW3**](aw3/README.md) | _Pending assignment_ | Platform release | Planned: end of September 2026 | Planned | [AW3 history](aw3/releases/README.md) | _Not published_ |
-| [**Volume Measurement**](volume-measurement/README.md) | _Pending assignment_ | AW3 bundled release | Planned: end of September 2026 | Planned | [Software history](volume-measurement/releases/README.md) | _Provided by the corresponding AW3 Release_ |
-| [**Pallet Docking**](pallet-docking/README.md) | `PalletPro 1.4.8_260828` | Standalone host application | 2026-08-24 | Current | [Release note](pallet-docking/releases/v1.4.8_260828.md) | [Download EXE](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) |
-| [**Depalletizing**](depalletizing/README.md) | `3.0.1` | Standalone application package | 2026-07-03 | Current | [Release note](depalletizing/releases/v3.0.1.md) | [Download ZIP](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) |
-
-This table records software releases and scheduled software versions only; documentation revisions are tracked separately. Keep every published version as an immutable row. Binary packages remain in **GitHub Releases**, while [Latest Downloads](latest-downloads/README.md) provides the short list of current verified installers.
-
-## Applications
-
-| Application | Latest guide | Current package | Release note |
+| Product | Latest version | Release date | Download |
 | --- | --- | --- | --- |
-| [**Depalletizing**](depalletizing/README.md) | [Deployment Guide](depalletizing/docs/deployment-guide.md) | [Standalone 3.0.1](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) | [3.0.1](depalletizing/releases/v3.0.1.md) · [History](depalletizing/releases/README.md) |
-| [**Pallet Docking**](pallet-docking/README.md) | [User Guide](pallet-docking/docs/user-guide.md) | [PalletPro 1.4.8_260828](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) | [1.4.8_260828](pallet-docking/releases/v1.4.8_260828.md) · [History](pallet-docking/releases/README.md) |
-| [**Volume Measurement**](volume-measurement/README.md) | [User Manual](volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) · [White Paper](volume-measurement/docs/torusmetric-white-paper-v0.1.pdf) | _Planned with AW3_ | _Not published_ |
-| [**Slot Monitoring**](slot-monitoring/README.md) | [User Guide](slot-monitoring/docs/user-guide.md) | _Not published_ | [History](slot-monitoring/releases/README.md) |
-| [**Obstacle Avoidance**](obstacle-avoidance/README.md) | [Deployment Guide](obstacle-avoidance/docs/deployment-guide.md) | _Not published_ | [History](obstacle-avoidance/releases/README.md) |
+| [**AW3**](aw3/README.md) | _Not published_ | — | _Package not published_ · [User Manual](aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) |
+| [**Depalletizing**](depalletizing/README.md) | [3.0.1](depalletizing/releases/v3.0.1.md) · legacy standalone | 2026-07-03 | [ZIP package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) · [Deployment Guide](depalletizing/docs/deployment-guide.md) |
+| [**Pallet Docking**](pallet-docking/README.md) | [PalletPro 1.4.8_260828](pallet-docking/releases/v1.4.8_260828.md) · legacy standalone | 2026-08-24 | [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) · [User Guide](pallet-docking/docs/user-guide.md) |
+| [**Volume Measurement**](volume-measurement/README.md) | _No standalone update_ | — | [User Manual](volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) |
+| [**Slot Monitoring**](slot-monitoring/README.md) | _No standalone update_ | — | [User Guide](slot-monitoring/docs/user-guide.md) |
+| [**Obstacle Avoidance**](obstacle-avoidance/README.md) | _Host application not published_ | — | [Deployment Guide](obstacle-avoidance/docs/deployment-guide.md) |
+
+AW3 is the formal release. Each AW3 application row shows the latest compatible patch distributed separately from that formal release. Until the first AW3 delivery, the current legacy standalone packages remain listed. Obstacle Avoidance uses its latest dedicated host application. Select a published version to read its release notes.
 
 ## Required tools
 

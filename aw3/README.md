@@ -1,22 +1,108 @@
-# AW3 Platform
-
 [Documentation Home](../README.md) / AW3
 
-AW3 is the target shared runtime and delivery platform for MRDVS 3D vision applications. It is intended to manage device connections, configuration, calibration, algorithm execution, result visualization, and task templates.
+<div align="center">
 
-## Application plan
+# AW3 Application Algorithm Platform
 
-| Application | Current public delivery | Target delivery |
+**Industrial vision deployment for device integration, algorithm operation, and system management.**
+
+</div>
+
+<table>
+  <tr>
+    <td width="66%" valign="top">
+      <strong>One platform for application algorithm deployment</strong><br><br>
+      AW3 connects devices, manages camera groups, displays RGB images and depth point clouds, controls algorithm authorization, configures communication protocols, and exports diagnostic logs. The delivered package and license determine which algorithms and features are available.<br><br>
+      <img src="docs/images/aw3-main-interface.png" alt="AW3 main interface with camera groups, image and point-cloud views, and algorithm status" width="650">
+    </td>
+    <td width="34%" valign="top">
+      <strong>Release status</strong><br><br>
+      <strong>Latest documentation</strong><br>
+      <code>V0.1</code> · 2026-08-31<br>
+      <a href="docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf">User Manual</a><br><br>
+      <strong>Latest formal software</strong><br>
+      Not published<br>
+      Next window: End of September 2026<br>
+      Version: <code>TBC</code><br><br>
+      <strong>Planned application scope</strong><br>
+      <a href="../volume-measurement/README.md">Volume Measurement</a><br><br>
+      <a href="#software-update-history"><strong>View update history ↓</strong></a>
+    </td>
+  </tr>
+</table>
+
+## Deployment workflow
+
+AW3 follows a five-stage deployment path: prepare the host and cameras, connect the Central Service and devices, install the selected components, configure the licensed application, and verify images, point clouds, results, and logs.
+
+<p align="center">
+  <img src="docs/images/aw3-deployment-workflow.png" alt="AW3 deployment workflow from preparation through verification" width="860">
+</p>
+
+## Core capabilities
+
+| Capability | Purpose |
+| --- | --- |
+| Device connection | Connect the Central Service, discover base cameras, and verify device status. |
+| Camera groups | Group one or more cameras and assign the licensed application used by the project. |
+| Image and point-cloud view | Check live RGB data, depth point clouds, and application results before commissioning. |
+| Algorithm authorization | Generate license requests, apply license keys, and verify validity periods. |
+| System configuration | Configure display options, language, operating mode, and Central Service upgrades. |
+| Communication protocol | Receive external triggers and forward structured results to external systems. |
+| Log and data export | Export selected diagnostic categories and time ranges for support and maintenance. |
+
+<p align="center">
+  <img src="docs/images/aw3-image-and-point-cloud.png" alt="AW3 RGB image and depth point-cloud verification view" width="860">
+</p>
+
+## Supported applications
+
+| Application | Current public delivery | AW3 direction |
 | --- | --- | --- |
-| [Depalletizing](../depalletizing/README.md) | Standalone package `3.0.1` | AW3 |
-| [Pallet Docking](../pallet-docking/README.md) | Standalone PalletPro `1.4.8_260828` | AW3 |
-| [Volume Measurement](../volume-measurement/README.md) | Documentation V0.1 published; software release planned for the end of September 2026 | AW3 |
-| [Slot Monitoring](../slot-monitoring/README.md) | No public package | AW3 |
+| [**Depalletizing**](../depalletizing/README.md) | Legacy standalone `3.0.1` package | Target AW3 application |
+| [**Pallet Docking**](../pallet-docking/README.md) | Legacy standalone PalletPro `1.4.8_260828` | Target AW3 application |
+| [**Volume Measurement**](../volume-measurement/README.md) | Documentation `V0.1`; software not published | Planned with the next AW3 formal release |
+| [**Slot Monitoring**](../slot-monitoring/README.md) | User guide published; software not published | Target AW3 application |
 
-## Public release status
+Obstacle Avoidance follows a separate dedicated host-application lifecycle and is not part of the AW3 delivery model recorded here.
 
-No verified public AW3 platform release is currently recorded in this repository. The next release is planned for the end of September 2026 and includes TorusMetric Volume Measurement; its version and package are not published yet. See the [AW3 release history](releases/README.md) for release status.
+## Start here
 
-The historical file `AW3-V3.0.1-20260624.zip` is managed as the current standalone Depalletizing package because its confirmed delivery is outside AW3. Its published filename and GitHub tag are preserved so existing links continue to work.
+<table>
+  <thead>
+    <tr>
+      <th width="620" align="left">Step</th>
+      <th width="240" align="left">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Prepare, install, and connect AW3</td>
+      <td><a href="docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf">User Manual</a></td>
+    </tr>
+    <tr>
+      <td>2. Find cameras and verify the network</td>
+      <td><a href="../tools/lxcameraviewer/README.md">LxCameraViewer</a></td>
+    </tr>
+    <tr>
+      <td>3. Select the application workflow</td>
+      <td><a href="../README.md">Application catalog</a></td>
+    </tr>
+  </tbody>
+</table>
 
-Future platform releases should use `aw3-v<major>.<minor>.<patch>` and include a manifest of the application versions delivered in the package.
+## Software update history
+
+The Release status above shows the latest formal AW3 software. This table retains every planned and published platform version and the application versions delivered with it.
+
+| AW3 version | Release date | Included applications | Release note / download |
+| --- | --- | --- | --- |
+| `TBC` | Planned: end of September 2026 | Volume Measurement: `TBC` | _Not published_ |
+
+Every published AW3 version receives an immutable release note with its application manifest, compatibility, asset filename, file size, SHA-256 checksum, upgrade steps, and rollback steps.
+
+## Document update history
+
+| Document | Version | Publication date | Applies to | File |
+| --- | --- | --- | --- | --- |
+| AW3 Application Algorithm Platform Deployment User Manual | `V0.1` | 2026-08-31 | AW3 formal version: `TBC` | [PDF](docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) |
