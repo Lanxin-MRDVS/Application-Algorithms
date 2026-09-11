@@ -35,6 +35,7 @@ All buttons use white text, meaningful SVG titles, and meaningful image alt text
 | `button-torusmetric-user-manual.svg` | TorusMetric user-manual navigation. |
 | `button-torusmetric-white-paper.svg` | TorusMetric white-paper navigation. |
 | `button-aw3-release-history.svg` | AW3 release-history navigation. |
+| `button-version-history.svg` | Application software-version history navigation. |
 | `aw3-application-model.svg` | Current and target application-delivery model. |
 
 New shared assets should use short lowercase kebab-case names, the MRDVS palette, accessible titles, and source-controlled SVG where practical.
