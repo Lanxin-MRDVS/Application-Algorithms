@@ -15,6 +15,8 @@
   * [Release History](pallet-docking/releases/README.md)
   * [PalletPro 1.4.8_260828](pallet-docking/releases/v1.4.8_260828.md)
 * [Volume Measurement](volume-measurement/README.md)
+  * [TorusMetric User Manual V0.1](volume-measurement/docs/torusmetric-user-manual-v0.1.pdf)
+  * [TorusMetric White Paper V0.1](volume-measurement/docs/torusmetric-white-paper-v0.1.pdf)
   * [Release History](volume-measurement/releases/README.md)
 * [Slot Monitoring](slot-monitoring/README.md)
   * [User Guide](slot-monitoring/docs/user-guide.md)

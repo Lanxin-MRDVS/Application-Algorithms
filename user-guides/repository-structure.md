@@ -36,6 +36,7 @@ Every application folder must contain:
 - Use stable filenames such as `deployment-guide.md`, `user-guide.md`, and `protocol.md`.
 - Use one release-note file per version, such as `releases/v1.2.3.md`.
 - Keep application-specific screenshots in `<application>/docs/images/` and shared visual assets in `user-guides/assets/`.
+- Keep versioned public manuals and white papers in the owning application's `docs/` folder when their file sizes are suitable for Git. Use lowercase, descriptive filenames.
 - Keep only the current package index in `latest-downloads/`; keep all historical version records under the owning product's `releases/` folder.
 - Attach `.exe`, `.zip`, firmware, models, and other binaries to GitHub Releases. Do not commit them to the Git tree.
 - Do not commit customer configurations, logs, credentials, or calibration backups.

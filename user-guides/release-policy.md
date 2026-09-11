@@ -10,7 +10,7 @@ This policy keeps current standalone products available while establishing clear
 | --- | --- | --- |
 | Depalletizing | Standalone `3.0.1` package | AW3 |
 | Pallet Docking | Standalone PalletPro `1.4.8_260828` host application | AW3 |
-| Volume Measurement | No public package | AW3 |
+| Volume Measurement | Documentation `V0.1`; software planned for end of September 2026 | AW3 |
 | Slot Monitoring | No public package | AW3 |
 | Obstacle Avoidance | No public package; current camera-side guide | Dedicated host application |
 
@@ -26,6 +26,8 @@ The historical Depalletizing asset is named `AW3-V3.0.1-20260624.zip`, but its c
 | **Shared tool release** | Tool | Camera setup, diagnostic, or integration utilities used by multiple applications. | `lxcameraviewer-v2.5.0` |
 
 Future Depalletizing, Pallet Docking, Volume Measurement, and Slot Monitoring use AW3 as their target delivery. Obstacle Avoidance follows its dedicated host-application lifecycle.
+
+For Volume Measurement, formal TorusMetric software versions are owned by the AW3 release that contains them. The Volume Measurement release history is reserved for application-specific patches and hotfixes and must retain all previous version rows.
 
 GitHub provides one repository-wide **Latest Release**, so component-level latest versions are defined by `latest-downloads/README.md` and each application's `releases/README.md`. Prefix every GitHub Release title with its product scope, and never publish an empty Release only to change the sidebar.
 
@@ -50,7 +52,7 @@ Every published version must include its version and publication date, release t
 ## 5. Storage model
 
 - Attach installers, archives, firmware, and models to GitHub Releases or the official download service.
-- Keep Markdown release notes and small documentation assets in Git.
+- Keep Markdown release notes, public manuals, white papers, and reasonably sized documentation assets in Git.
 - Keep one immutable release-note file per version inside the owning AW3, application, or tool folder.
 - Keep application-specific software under its application; reserve `tools/` for shared utilities such as LxCameraViewer.
 - Keep the current package index in `latest-downloads/README.md`; retain `RELEASES.md` as a compatibility entry that routes users to product-owned histories.
