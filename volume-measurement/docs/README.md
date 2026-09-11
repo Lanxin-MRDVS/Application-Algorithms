@@ -2,12 +2,14 @@
 
 [Documentation Home](../../README.md) / [Volume Measurement](../README.md) / Documentation
 
-These are the current public documents for the AW3 TorusMetric Volume Measurement application.
+The product-page buttons always open the latest published documents. When a new document version becomes current, update the button target and add a new row here. Preserve earlier files and rows; never overwrite a published document.
 
-| Document | Version | Date | Audience | Open |
-| --- | --- | --- | --- | --- |
-| TorusMetric User Manual | `V0.1` | 2026-09-09 | Deployment engineers, integrators, and operators | [PDF](torusmetric-user-manual-v0.1.pdf) |
-| TorusMetric Volume Measurement Solution White Paper | `V0.1` | 2026-09-09 | Solution evaluation, project planning, sales, and technical review | [PDF](torusmetric-white-paper-v0.1.pdf) |
+## Document version history
+
+| Document | Version | Publication date | Status | Audience | File |
+| --- | --- | --- | --- | --- | --- |
+| TorusMetric User Manual | `V0.1` | 2026-09-09 | Current | Deployment engineers, integrators, and operators | [PDF](torusmetric-user-manual-v0.1.pdf) |
+| TorusMetric Volume Measurement Solution White Paper | `V0.1` | 2026-09-09 | Current | Solution evaluation, project planning, sales, and technical review | [PDF](torusmetric-white-paper-v0.1.pdf) |
 
 ## File verification
 
@@ -18,4 +20,4 @@ These are the current public documents for the AW3 TorusMetric Volume Measuremen
 
 The PDFs identify TorusMetric as an AW3 application and document centimeter-class measurement, multi-camera stitching, operating limits, calibration, configuration, monitoring, protocol output, troubleshooting, and validation. Software downloads and version-specific changes are maintained in one [software version history](../releases/README.md).
 
-The product-page illustrations are indexed in [images/README.md](images/README.md). They are presentation crops from the published white paper, not separate technical specifications.
+The product-page illustrations are indexed in [images/README.md](images/README.md). They are original assets extracted from the source white paper, not separate technical specifications.

@@ -14,10 +14,4 @@ No standalone application update has been published.
 - **Standalone application update:** retain its compatible AW3 baseline and publish its release note and package with this application.
 - Add one immutable row and one `v<version>.md` file for every published software version. Record the asset filename, size, SHA-256 checksum, upgrade steps, rollback steps, compatibility, and GitHub Release link. Never overwrite or remove an earlier version row.
 
-## Documentation versions
-
-Documentation versions are tracked separately because they do not represent a software release.
-
-| Version | Date | User manual | White paper |
-| --- | --- | --- | --- |
-| `V0.1` | 2026-09-09 | [PDF](../docs/torusmetric-user-manual-v0.1.pdf) | [PDF](../docs/torusmetric-white-paper-v0.1.pdf) |
+Document versions are maintained separately in the [documentation index](../docs/README.md).

@@ -32,8 +32,8 @@ All buttons use white text, meaningful SVG titles, and meaningful image alt text
 | --- | --- |
 | `button-download-palletpro-latest.svg` | Current PalletPro download. |
 | `button-user-guide-large.svg` | Prominent user-guide navigation. |
-| `button-torusmetric-user-manual.svg` | TorusMetric user-manual navigation. |
-| `button-torusmetric-white-paper.svg` | TorusMetric white-paper navigation. |
+| `button-torusmetric-user-manual.svg` | Latest published TorusMetric user manual. |
+| `button-torusmetric-white-paper.svg` | Latest published TorusMetric white paper. |
 | `button-aw3-release-history.svg` | AW3 release-history navigation. |
 | `aw3-application-model.svg` | Current and target application-delivery model. |
 

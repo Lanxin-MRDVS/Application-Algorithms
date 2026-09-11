@@ -6,8 +6,10 @@
 
 **AW3-based 3D dimension and volume measurement for fixed stations, large objects, and multi-camera layouts.**
 
-<a href="docs/torusmetric-user-manual-v0.1.pdf"><img src="../user-guides/assets/button-torusmetric-user-manual.svg" alt="Open the TorusMetric User Manual" width="240" height="40"></a>
-<a href="docs/torusmetric-white-paper-v0.1.pdf"><img src="../user-guides/assets/button-torusmetric-white-paper.svg" alt="Open the TorusMetric White Paper" width="240" height="40"></a>
+<a href="docs/torusmetric-user-manual-v0.1.pdf"><img src="../user-guides/assets/button-torusmetric-user-manual.svg" alt="Open the latest TorusMetric User Manual" width="240" height="40"></a>
+<a href="docs/torusmetric-white-paper-v0.1.pdf"><img src="../user-guides/assets/button-torusmetric-white-paper.svg" alt="Open the latest TorusMetric White Paper" width="240" height="40"></a>
+
+<sub>Latest published documents · V0.1 · 2026-09-09</sub>
 
 </div>
 
@@ -22,7 +24,7 @@
       <strong>Release status</strong><br><br>
       <strong>Documentation</strong><br>
       <code>V0.1</code> · 2026-09-09<br>
-      User Manual · White Paper<br><br>
+      <a href="docs/torusmetric-user-manual-v0.1.pdf">User Manual</a> · <a href="docs/torusmetric-white-paper-v0.1.pdf">White Paper</a><br><br>
       <strong>Formal software</strong><br>
       Planned with AW3<br>
       End of September 2026<br><br>
