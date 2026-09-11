@@ -20,10 +20,10 @@
 | --- | --- | --- | --- |
 | [**AW3**](aw3/README.md) | _Not published_ | — | _Package not published_ · [User Manual](aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) |
 | [**Depalletizing**](depalletizing/README.md) | [3.0.1](depalletizing/releases/v3.0.1.md) · legacy standalone | 2026-07-03 | [ZIP package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) · [Deployment Guide](depalletizing/docs/deployment-guide.md) |
-| [**Pallet Docking**](pallet-docking/README.md) | [PalletPro 1.4.8_260828](pallet-docking/releases/v1.4.8_260828.md) · legacy standalone | 2026-08-24 | [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) · [User Guide](pallet-docking/docs/user-guide.md) |
-| [**Volume Measurement**](volume-measurement/README.md) | _No standalone update_ | — | [User Manual](volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) |
-| [**Slot Monitoring**](slot-monitoring/README.md) | _No standalone update_ | — | [User Guide](slot-monitoring/docs/user-guide.md) |
-| [**Obstacle Avoidance**](obstacle-avoidance/README.md) | _Host application not published_ | — | [Deployment Guide](obstacle-avoidance/docs/deployment-guide.md) |
+| [**Pallet&nbsp;Docking**](pallet-docking/README.md) | [PalletPro 1.4.8_260828](pallet-docking/releases/v1.4.8_260828.md) · legacy standalone | 2026-08-24 | [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) · [User Guide](pallet-docking/docs/user-guide.md) |
+| [**Volume&nbsp;Measurement**](volume-measurement/README.md) | _No standalone update_ | — | [User Manual](volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) |
+| [**Slot&nbsp;Monitoring**](slot-monitoring/README.md) | _No standalone update_ | — | [User Guide](slot-monitoring/docs/user-guide.md) |
+| [**Obstacle&nbsp;Avoidance**](obstacle-avoidance/README.md) | _Host application not published_ | — | [Deployment Guide](obstacle-avoidance/docs/deployment-guide.md) |
 
 AW3 is the formal release. Each AW3 application row shows the latest compatible patch distributed separately from that formal release. Until the first AW3 delivery, the current legacy standalone packages remain listed. Obstacle Avoidance uses its latest dedicated host application. Select a published version to read its release notes.
 
