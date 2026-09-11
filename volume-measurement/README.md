@@ -8,7 +8,6 @@
 
 <a href="docs/torusmetric-user-manual-v0.1.pdf"><img src="../user-guides/assets/button-torusmetric-user-manual.svg" alt="Open the TorusMetric User Manual" width="240" height="40"></a>
 <a href="docs/torusmetric-white-paper-v0.1.pdf"><img src="../user-guides/assets/button-torusmetric-white-paper.svg" alt="Open the TorusMetric White Paper" width="240" height="40"></a>
-<a href="releases/README.md"><img src="../user-guides/assets/button-version-history.svg" alt="Open the software version history" width="240" height="40"></a>
 
 </div>
 
@@ -23,7 +22,7 @@
       <strong>Release status</strong><br><br>
       <strong>Documentation</strong><br>
       <code>V0.1</code> · 2026-09-09<br>
-      <a href="docs/torusmetric-user-manual-v0.1.pdf">User Manual</a> · <a href="docs/torusmetric-white-paper-v0.1.pdf">White Paper</a><br><br>
+      User Manual · White Paper<br><br>
       <strong>Formal software</strong><br>
       Planned with AW3<br>
       End of September 2026<br><br>
@@ -66,16 +65,8 @@ AW3 manages devices, camera groups, calibration, application settings, monitorin
 
 ## Start here
 
-| Task | Resource |
-| --- | --- |
-| Evaluate capabilities, scope, and operating limits | [TorusMetric White Paper V0.1](docs/torusmetric-white-paper-v0.1.pdf) |
-| Install, calibrate, configure, and validate the application | [TorusMetric User Manual V0.1](docs/torusmetric-user-manual-v0.1.pdf) |
-| Review document files and verification data | [Documentation index](docs/README.md) |
-| Track every formal release and standalone update | [Software version history](releases/README.md) |
-| Review AW3 platform releases | [AW3 release history](../aw3/releases/README.md) |
-| Configure cameras and inspect point clouds | [LxCameraViewer](../tools/lxcameraviewer/README.md) |
-| Integrate camera data | [CameraSDK](https://github.com/Lanxin-MRDVS/CameraSDK) |
-
-## Release model
-
-Every TorusMetric software version is recorded in one chronological [software version history](releases/README.md). Formal versions are delivered with AW3, so their release-note and download links point to the corresponding AW3 Release. Short-cycle updates distributed independently keep their package, checksum, compatibility, release note, and rollback guidance with this application. Earlier version rows remain available after new versions are published.
+| Step | Workflow |
+| ---: | --- |
+| 1 | Confirm that the measurement range, accuracy class, object surface, and installation conditions fit the project. |
+| 2 | Connect the cameras and use [LxCameraViewer](../tools/lxcameraviewer/README.md) to verify RGB, depth, and point-cloud data. |
+| 3 | Follow the User Manual above to install, calibrate, configure, and validate TorusMetric in AW3. |
