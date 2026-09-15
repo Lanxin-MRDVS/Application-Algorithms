@@ -8,7 +8,7 @@ The public [Document update history](../README.md#document-update-history) is ma
 
 | File | Version | Publication date | Size | SHA-256 |
 | --- | --- | --- | --- | --- |
-| `aw3-application-algorithm-platform-user-manual-v0.1.pdf` | `V0.1` | 2026-08-31 | 1,844,030 bytes (1.76 MiB) | `80de6b5982fb537463a3476179a367e5ecfd8d37c44a71e43b32dbb447756783` |
+| `aw3-application-algorithm-platform-user-manual-v0.1.pdf` | `V0.1` | 2026-08-31 | 13,253,089 bytes (12.64 MiB) | `78dbdebb44323b068d0e636eaf94ad43f91d6f7b80ec3552a0d1c036234a9ab2` |
 
 ## Page images
 
