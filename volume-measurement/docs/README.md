@@ -2,14 +2,14 @@
 
 [Documentation Home](../../README.md) / [Volume Measurement](../README.md) / Documentation
 
-The public [Document update history](../README.md#document-update-history) is maintained at the bottom of the Volume Measurement product page. This folder stores the published document files and their supporting images. Preserve earlier files; never overwrite a published document.
+The public [Document update history](../README.md#document-update-history) is maintained at the bottom of the Volume Measurement product page. This folder stores the published document files and their supporting images. Preserve earlier versioned files. When an approved document is refreshed without a version change, replace it in place and update the verification data below without adding a history entry.
 
 ## File verification
 
 | File | Size | SHA-256 |
 | --- | ---: | --- |
-| `torusmetric-user-manual-v0.1.pdf` | 11,096,296 bytes (10.58 MiB) | `466f7171fc723a7ab98d45a4e8b903f99fdf5a660441d8c5053e046706c1ce4f` |
-| `torusmetric-white-paper-v0.1.pdf` | 4,583,814 bytes (4.37 MiB) | `2768ef489e1b59aff15013013f7ecf9152f7893ca5499478dae550572ee47c63` |
+| `torusmetric-user-manual-v0.1.pdf` | 10,832,879 bytes (10.33 MiB) | `4d54c6c33d7e26110d28995b90871c87c3d9840a97428fc27b40d148046c7398` |
+| `torusmetric-white-paper-v0.1.pdf` | 4,317,834 bytes (4.12 MiB) | `8d32fe74c52dbcc956c98f3b29ffb035c68e657d39313e706d0dc97b6c9bd4e1` |
 
 The PDFs identify TorusMetric as an AW3 application and document centimeter-class measurement, multi-camera stitching, operating limits, calibration, configuration, monitoring, protocol output, troubleshooting, and validation. Software downloads and version-specific changes are maintained in the [Software update history](../README.md#software-update-history).
 
