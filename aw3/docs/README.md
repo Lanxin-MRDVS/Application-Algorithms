@@ -2,13 +2,14 @@
 
 [Documentation Home](../../README.md) / [AW3](../README.md) / Documents
 
-The public [Document update history](../README.md#document-update-history) is maintained at the bottom of the AW3 product page. Preserve earlier published files; never overwrite a released document.
+The public [Document update history](../README.md#document-update-history) is maintained at the bottom of the AW3 product page. Preserve earlier versioned files. When an approved document is refreshed without a version change, replace it in place and update the verification data below without adding a history entry.
 
 ## File verification
 
-| File | Version | Publication date | Size | SHA-256 |
-| --- | --- | --- | --- | --- |
-| `aw3-application-algorithm-platform-user-manual-v0.1.pdf` | `V0.1` | 2026-08-31 | 13,253,089 bytes (12.64 MiB) | `78dbdebb44323b068d0e636eaf94ad43f91d6f7b80ec3552a0d1c036234a9ab2` |
+| File | Language | Version | Publication date | Size | SHA-256 |
+| --- | --- | --- | --- | ---: | --- |
+| `aw3-application-algorithm-platform-user-manual-v0.1.pdf` | English | `V0.1` | 2026-08-31 | 13,232,918 bytes (12.62 MiB) | `79974f9790f961ac44976a481206a40b185962f5540623e233c1d51dda348dab` |
+| `aw3-application-algorithm-platform-user-manual-zh-cn-v0.1.pdf` | 中文 | `V0.1` | 2026-08-31 | 13,416,768 bytes (12.80 MiB) | `1a2636e576937ec3bb1bdb6b6bb3b3e707549c5dbf2b476e1a04f887da994fdd` |
 
 ## Page images
 

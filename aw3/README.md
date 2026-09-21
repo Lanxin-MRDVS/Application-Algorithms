@@ -19,7 +19,7 @@
       <strong>Release status</strong><br><br>
       <strong>Latest documentation</strong><br>
       <code>V0.1</code> · 2026-08-31<br>
-      <a href="docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf">User Manual</a><br><br>
+      User Manual: <a href="docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf">English</a> · <a href="docs/aw3-application-algorithm-platform-user-manual-zh-cn-v0.1.pdf">中文</a><br><br>
       <strong>Latest formal software</strong><br>
       Not published<br>
       Next window: End of September 2026<br>
@@ -78,7 +78,7 @@ Obstacle Avoidance follows a separate dedicated host-application lifecycle and i
   <tbody>
     <tr>
       <td>1. Prepare, install, and connect AW3</td>
-      <td><a href="docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf">User Manual</a></td>
+      <td>User Manual: <a href="docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf">English</a> · <a href="docs/aw3-application-algorithm-platform-user-manual-zh-cn-v0.1.pdf">中文</a></td>
     </tr>
     <tr>
       <td>2. Find cameras and verify the network</td>
@@ -105,4 +105,4 @@ Every published AW3 version receives an immutable release note with its applicat
 
 | Document | Version | Publication date | Applies to | File |
 | --- | --- | --- | --- | --- |
-| AW3 Application Algorithm Platform Deployment User Manual | `V0.1` | 2026-08-31 | AW3 formal version: `TBC` | [PDF](docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) |
+| AW3 Application Algorithm Platform Deployment User Manual | `V0.1` | 2026-08-31 | AW3 formal version: `TBC` | [English PDF](docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) · [中文 PDF](docs/aw3-application-algorithm-platform-user-manual-zh-cn-v0.1.pdf) |
