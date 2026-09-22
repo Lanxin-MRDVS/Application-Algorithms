@@ -82,7 +82,7 @@ Every published version must include its version and publication date, release t
 
 Public manual, white-paper, guide, and release-note links use attachments in the **Documentation** GitHub Release so clicking a document downloads the file. Product READMEs and navigation indexes remain browsable pages. GitHub's repository file list still uses its built-in preview behavior.
 
-The Documentation release is a document download collection, not a software version, and must not be marked as the latest software release. Preserve versioned document assets. Keep PDFs in the owning product's docs folder; Word sources may be stored as release attachments only. When updating a document, publish and verify its download attachment as well as its repository copy. Keep file sizes and checksums in the corresponding document index current.
+The Documentation release is a document download collection, not a software version, and must not be marked as the latest software release. Preserve versioned document assets. Keep PDFs in the owning product's docs folder; Word source files are not published. When updating a document, publish and verify its download attachment as well as its repository copy. Keep file sizes and checksums in the corresponding document index current.
 
 ### Software publication
 

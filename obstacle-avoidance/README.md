@@ -113,8 +113,8 @@ Published host applications and subsequent patches will be retained in this tabl
 
 | Document | Version | Publication date | Status | Download |
 | --- | --- | --- | --- | --- |
-| Obstacle Avoidance Solution User Manual | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-user-manual-v0.1.pdf) · [Word](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-user-manual-v0.1.docx) |
-| Obstacle Avoidance Solution White Paper | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-white-paper-v0.1.pdf) · [Word](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-white-paper-v0.1.docx) |
+| Obstacle Avoidance Solution User Manual | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-user-manual-v0.1.pdf) |
+| Obstacle Avoidance Solution White Paper | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-white-paper-v0.1.pdf) |
 | Legacy Camera-side Deployment Guide | v0.0 archive | May 2026 | Superseded | [Markdown](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-deployment-guide-v0.0.md) |
 
 v0.0 is the repository archive identifier assigned to the previous guide. Its original text, including the internal Version 1.1 label, is preserved. It is not a software release number.
