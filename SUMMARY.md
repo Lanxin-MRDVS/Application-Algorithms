@@ -19,7 +19,7 @@
 
 ## Maintainer documentation
 
-* [Repository Structure](user-guides/repository-structure.md)
-* [Release Policy](user-guides/release-policy.md)
-* [Release-note Template](user-guides/release-note-template.md)
+* [Repository Structure](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/user-guides-repository-structure.md)
+* [Release Policy](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/user-guides-release-policy.md)
+* [Release-note Template](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/user-guides-release-note-template.md)
 * [Compatibility Release Index](RELEASES.md)

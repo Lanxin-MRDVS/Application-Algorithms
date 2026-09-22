@@ -14,10 +14,10 @@ Slot Monitoring detects storage-location occupancy, placement, alignment, and ou
 
 | Task | Resource |
 | --- | --- |
-| Install and deploy the current application | [Slot Monitoring user guide](docs/user-guide.md) |
-| Configure camera networking and calibration | [Deployment procedure](docs/user-guide.md#6-storage-location-detection-deployment-procedure) |
-| Configure detection areas | [Storage-location configuration](docs/user-guide.md#65-storage-location-configuration) |
-| Integrate TCP, UDP, or HTTP results | [Communication protocols](docs/user-guide.md#7-communication-protocols) |
+| Install and deploy the current application | [Slot Monitoring user guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/slot-monitoring-user-guide.md) |
+| Configure camera networking and calibration | [Deployment procedure](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/slot-monitoring-user-guide.md) |
+| Configure detection areas | [Storage-location configuration](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/slot-monitoring-user-guide.md) |
+| Integrate TCP, UDP, or HTTP results | [Communication protocols](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/slot-monitoring-user-guide.md) |
 | Check published versions | [Slot Monitoring release history](releases/README.md) |
 
 Future major AW3 delivery will be recorded in the AW3 platform history. Slot Monitoring-only fixes and feature packages will remain in this application folder and declare their compatible AW3 range.

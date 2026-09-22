@@ -2,7 +2,7 @@
 
 [Documentation Home](../../../README.md) / [Volume Measurement](../../README.md) / [Documentation](../README.md) / Images
 
-These are the original image assets embedded in the source TorusMetric white paper DOCX. They are extracted without page screenshots, cropping, or recompression for use on the Volume Measurement landing page. Refer to the published [TorusMetric Volume Measurement Solution White Paper V0.1](../torusmetric-white-paper-v0.1.pdf) for context and technical qualifications.
+These are the original image assets embedded in the source TorusMetric white paper DOCX. They are extracted without page screenshots, cropping, or recompression for use on the Volume Measurement landing page. Refer to the published [TorusMetric Volume Measurement Solution White Paper V0.1](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/torusmetric-white-paper-v0.1.pdf) for context and technical qualifications.
 
 | File | DOCX source asset | White-paper page | Content |
 | --- | --- | --- | --- |

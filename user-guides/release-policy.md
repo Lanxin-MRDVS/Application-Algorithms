@@ -12,7 +12,7 @@ This policy keeps current standalone products available while establishing clear
 | Pallet Docking | Standalone PalletPro `1.4.8_260828` host application | AW3 |
 | Volume Measurement | Documentation `V0.1`; software planned for end of September 2026 | AW3 |
 | Slot Monitoring | No public package | AW3 |
-| Obstacle Avoidance | No public package; current camera-side guide | Dedicated host application |
+| Obstacle Avoidance | No public package; V0.1 workstation manual and white paper | Dedicated Obstacle Workstation host application |
 
 The historical Depalletizing asset is named `AW3-V3.0.1-20260624.zip`, but its confirmed product ownership is the standalone Depalletizing lifecycle. Preserve the filename and published tag for compatibility.
 
@@ -22,7 +22,7 @@ The historical Depalletizing asset is named `AW3-V3.0.1-20260624.zip`, but its c
 | --- | --- | --- | --- |
 | **AW3 platform release** | AW3 | Future major shared runtime delivery or a coordinated application bundle. | `aw3-v3.1.0` |
 | **Application release** | One algorithm | Standalone delivery or a short-cycle algorithm fix or feature package. | `depalletizing-v3.0.2` |
-| **Application host software** | Owning algorithm | Independent desktop software such as PalletPro or the planned Obstacle Avoidance host application. | `palletpro-v1.4.9` |
+| **Application host software** | Owning algorithm | Independent desktop software such as PalletPro or Obstacle Workstation. | `palletpro-v1.4.9` |
 | **Shared tool release** | Tool | Camera setup, diagnostic, or integration utilities used by multiple applications. | `lxcameraviewer-v2.5.0` |
 
 Future Depalletizing, Pallet Docking, Volume Measurement, and Slot Monitoring use AW3 as their target delivery. Obstacle Avoidance follows its dedicated host-application lifecycle.
@@ -78,9 +78,17 @@ Every published version must include its version and publication date, release t
 
 ## 6. Publication workflow
 
+### Document downloads
+
+Public manual, white-paper, guide, and release-note links use attachments in the **Documentation** GitHub Release so clicking a document downloads the file. Product READMEs and navigation indexes remain browsable pages. GitHub's repository file list still uses its built-in preview behavior.
+
+The Documentation release is a document download collection, not a software version, and must not be marked as the latest software release. Preserve versioned document assets. Keep PDFs in the owning product's docs folder; Word sources may be stored as release attachments only. When updating a document, publish and verify its download attachment as well as its repository copy. Keep file sizes and checksums in the corresponding document index current.
+
+### Software publication
+
 1. Confirm the owner: AW3, application, application host software, or shared tool.
 2. Freeze the version, compatibility, and asset filenames.
-3. Create the version note from [the template](release-note-template.md).
+3. Create the version note from [the template](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/user-guides-release-note-template.md).
 4. Build and test the package through the approved release process.
 5. Record file sizes and SHA-256 values.
 6. Create the immutable Git tag and GitHub Release.

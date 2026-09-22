@@ -9,7 +9,7 @@ Release information is managed in product-owned locations:
 - [Pallet Docking release history](pallet-docking/releases/README.md)
 - [Volume Measurement release history](volume-measurement/README.md#software-update-history)
 - [Slot Monitoring release history](slot-monitoring/releases/README.md)
-- [Obstacle Avoidance release history](obstacle-avoidance/releases/README.md)
+- [Obstacle Avoidance release history](obstacle-avoidance/README.md#software-update-history)
 - [AW3 platform release history](aw3/README.md#software-update-history)
 
-This page remains as a stable compatibility link. See the [release policy](user-guides/release-policy.md) for version ownership, required metadata, and publication workflow.
+This page remains as a stable compatibility link. See the [release policy](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/user-guides-release-policy.md) for version ownership, required metadata, and publication workflow.

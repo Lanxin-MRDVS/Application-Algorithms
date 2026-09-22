@@ -1,9 +1,7 @@
-# Obstacle Avoidance Release History
+# Obstacle Avoidance Release Files
 
-[Documentation Home](../../README.md) / [Obstacle Avoidance](../README.md) / Release History
+[Documentation Home](../../README.md) / [Obstacle Avoidance](../README.md) / Release Files
 
-No public Obstacle Avoidance host-application package has been published in this repository. The deployment guide compares capabilities labeled 1.0 and 2.0, but those labels are not treated as downloadable releases without verified packages and release metadata.
+The [Software update history](../README.md#software-update-history) is maintained at the bottom of the Obstacle Avoidance product page. No verified public Obstacle Workstation installer has been published in this repository.
 
-| Version | Delivery | Publication date | Release notes | Download |
-| --- | --- | --- | --- | --- |
-| _No public release yet_ | Dedicated host application | — | — | — |
+Future host-application and patch releases must record the package version, compatible cameras and firmware, release date, release notes, and verified download. V1/V2 camera compatibility labels and document versions are separate from software release numbers.

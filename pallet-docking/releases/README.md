@@ -6,7 +6,7 @@
 
 | Version | Type | Notes | Download | GitHub Release |
 | --- | --- | --- | --- | --- |
-| `1.4.8_260828` | Standalone Windows host application | [Release notes](v1.4.8_260828.md) | [Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) | [PalletPro](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/tag/PalletPro) |
+| `1.4.8_260828` | Standalone Windows host application | [Release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/pallet-docking-release-v1.4.8_260828.md) | [Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) | [PalletPro](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/tag/PalletPro) |
 
 ## AW3 application packages
 

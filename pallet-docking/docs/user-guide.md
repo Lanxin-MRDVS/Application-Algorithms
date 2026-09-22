@@ -6,9 +6,9 @@
 
 For MRDVS Eagle-M series cameras.
 
-**[Software Downloads](../README.md#latest-download)** · **[Release Notes](../releases/v1.4.8_260828.md)**
+**[Software Downloads](../README.md#latest-download)** · **[Release Notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/pallet-docking-release-v1.4.8_260828.md)**
 
-Figures 4–14 use refreshed English-interface screenshots. Other screenshots and some instructions may reflect earlier software versions. Values displayed in screenshots are examples, not universal defaults. See the [release notes](../releases/v1.4.8_260828.md) for the revised English terminology in 1.4.8.
+Figures 4–14 use refreshed English-interface screenshots. Other screenshots and some instructions may reflect earlier software versions. Values displayed in screenshots are examples, not universal defaults. See the [release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/pallet-docking-release-v1.4.8_260828.md) for the revised English terminology in 1.4.8.
 
 ## 1. Introduction
 

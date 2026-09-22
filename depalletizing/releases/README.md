@@ -6,7 +6,7 @@
 
 | Version | Delivery | Release notes | Download |
 | --- | --- | --- | --- |
-| `3.0.1` | Standalone application package | [Release notes](v3.0.1.md) | [ZIP package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) |
+| `3.0.1` | Standalone application package | [Release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/depalletizing-release-v3.0.1.md) | [ZIP package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) |
 
 ## Future AW3 delivery
 

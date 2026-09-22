@@ -4,6 +4,6 @@
 
 | Document | Scope |
 | --- | --- |
-| [User Guide](user-guide.md) | Deployment, calibration, storage-location configuration, result validation, and TCP, UDP, or HTTP integration. |
+| [User Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/slot-monitoring-user-guide.md) | Deployment, calibration, storage-location configuration, result validation, and TCP, UDP, or HTTP integration. |
 
 Downloads and version-specific changes are recorded in the [Slot Monitoring release history](../releases/README.md).

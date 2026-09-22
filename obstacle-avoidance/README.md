@@ -1,24 +1,120 @@
-# Obstacle Avoidance
-
 [Documentation Home](../README.md) / Obstacle Avoidance
 
-Obstacle Avoidance provides obstacle detection, configurable detection zones, calibration, network communication, and result outputs for mobile robots and forklifts. The current technical guide describes camera-side configuration and integration; the planned delivery will use a dedicated host application.
+<div align="center">
 
-| Status | Value |
+# Obstacle Avoidance
+
+**3D obstacle detection, configurable zones, and perception outputs for mobile robots and forklifts.**
+
+</div>
+
+<table>
+  <tr>
+    <td width="66%" valign="top">
+      <strong>Designed for mobile robot perception</strong><br><br>
+      The MRDVS Obstacle Avoidance Solution detects occupied space inside configured 3D zones and reports Safe, Warning, or Alarm. Obstacle Workstation connects to the camera, supports calibration and zone configuration, and displays live results. Applications include warehouse AGVs and AMRs, forklifts, and commercial cleaning and service robots.<br><br>
+      <img src="docs/images/obstacle-applications.png" alt="Warehouse robots, cleaning and delivery, and close-range coverage" width="650"><br><br>
+      <img src="docs/images/warehouse-forklift.png" alt="Forklift application in warehouse logistics" width="310">
+      <img src="docs/images/cleaning-robot.jpg" alt="Commercial cleaning robot with illustrative coverage overlay" width="310"><br>
+      <small>The blue overlay illustrates coverage, not a specified detection range.</small>
+    </td>
+    <td width="34%" valign="top">
+      <strong>Release status</strong><br><br>
+      <strong>Latest documentation</strong><br>
+      <code>V0.1</code> · 2026-09-21<br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-user-manual-v0.1.pdf">User Manual</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-white-paper-v0.1.pdf">White Paper</a><br><br>
+      <strong>Latest host application</strong><br>
+      Obstacle Workstation<br>
+      Public installer: not published<br><br>
+      <strong>Applicable standalone updates</strong><br>
+      Not published<br><br>
+      <a href="#software-update-history"><strong>View software history ↓</strong></a><br>
+      <a href="#document-update-history">View document history ↓</a><br><br>
+      <small>V1 / V2 identify camera compatibility and output features. Software package versions are recorded separately.</small>
+    </td>
+  </tr>
+</table>
+
+## How it works
+
+Depth data forms a 3D point cloud. Camera alignment and ground calibration establish the spatial reference; the active template defines the zones to evaluate. Detection reports occupied space without classifying objects as people, pallets, or other categories.
+
+<p align="center">
+  <img src="docs/images/obstacle-detection-flow.png" alt="Depth capture, alignment, zone detection, and results" width="860">
+</p>
+
+## Outputs and capabilities
+
+| Output or capability | Purpose |
 | --- | --- |
-| Current public package | No public release yet |
-| Current documentation | Camera-side deployment and integration guide |
-| Target delivery | Dedicated host application |
+| Zone status | Safe, Warning, or Alarm within the configured zones. |
+| Rectangle and sector zones | Define danger and warning areas with distance, width or angle, and height limits. |
+| Up to 20 templates | Store zone configurations with IDs 0–19 and select the active template. |
+| Camera alignment and ground calibration | Align detection zones to the vehicle and floor. |
+| V2 obstacle geometry | Provide obstacle bounding boxes and depth point clouds for processing in the user system. |
+| TCP / UDP | Exchange zone status, validity, and template information; select templates. |
+| S10 physical I/O | Output digital status and select templates through wired inputs. |
+
+<p align="center">
+  <img src="docs/images/obstacle-detection-zones.png" alt="Rectangular and sector danger and warning zones" width="860">
+</p>
+
+## Camera compatibility and integration
+
+| Camera | Algorithm family | Outputs |
+| --- | --- | --- |
+| S10 / S11 | V1 | Zone status; physical I/O is available on S10 only. |
+| S10 Pro | V2 | Zone status, obstacle bounding boxes, and depth point clouds. |
+
+V1 and V2 have the same zone detection capabilities and algorithm performance. TCP/UDP status packets do not contain bounding-box details or depth point clouds. With V2 Simple output enabled, the camera returns only obstacle status and the bounding-box count.
+
+<p align="center">
+  <img src="docs/images/obstacle-system-integration.png" alt="Obstacle Workstation and camera provide perception; the user controller handles planning and vehicle execution" width="860">
+</p>
+
+The solution supplies perception and configuration tools. The user-provided controller implements path planning, motion decisions, and execution. Validate usable coverage, target surfaces, mounting, and the complete vehicle response. Safe status applies to the configured zones with valid depth data; it does not establish that hidden or unseen space is clear.
 
 ## Start here
 
-| Task | Resource |
-| --- | --- |
-| Review application capabilities and versions 1.0 versus 2.0 | [Deployment guide](docs/deployment-guide.md#2-comparison-between-obstacle-avoidance-10-and-obstacle-avoidance-20) |
-| Configure the algorithm and working mode | [Algorithm configuration](docs/deployment-guide.md#4-algorithm-configuration) |
-| Calibrate the camera | [Extrinsic calibration](docs/deployment-guide.md#5-extrinsic-calibration) |
-| Configure obstacle zones | [Zone configuration](docs/deployment-guide.md#6-obstacle-avoidance-zone-configuration) |
-| Integrate API, UDP, or TCP results | [Networking](docs/deployment-guide.md#7-networking) |
-| Check published packages | [Obstacle Avoidance release history](releases/README.md) |
+<table>
+  <thead>
+    <tr>
+      <th width="620" align="left">Step</th>
+      <th width="240" align="left">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Review the application, camera, and output requirements</td>
+      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-white-paper-v0.1.pdf">White Paper</a></td>
+    </tr>
+    <tr>
+      <td>2. Configure the camera network and verify live data</td>
+      <td><a href="../tools/lxcameraviewer/README.md">LxCameraViewer</a></td>
+    </tr>
+    <tr>
+      <td>3. Set up Obstacle Workstation, calibrate, and validate detection</td>
+      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-user-manual-v0.1.pdf">User Manual</a></td>
+    </tr>
+  </tbody>
+</table>
 
-The guide documents current behavior but does not establish a downloadable package version. The first dedicated host-application release will be added only after its package, version, and compatibility information are verified.
+## Software update history
+
+Obstacle Workstation follows a dedicated host-application release lifecycle. A document version or a V1/V2 camera label does not establish a software package version.
+
+| Version | Category | Compatible baseline | Release date | Release note / download |
+| --- | --- | --- | --- | --- |
+| — | Host application | — | — | No public installer published |
+
+Published host applications and subsequent patches will be retained in this table with their verified versions, dates, compatibility, release notes, and downloads.
+
+## Document update history
+
+| Document | Version | Publication date | Status | Download |
+| --- | --- | --- | --- | --- |
+| Obstacle Avoidance Solution User Manual | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-user-manual-v0.1.pdf) · [Word](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-user-manual-v0.1.docx) |
+| Obstacle Avoidance Solution White Paper | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-white-paper-v0.1.pdf) · [Word](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-white-paper-v0.1.docx) |
+| Legacy Camera-side Deployment Guide | v0.0 archive | May 2026 | Superseded | [Markdown](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-deployment-guide-v0.0.md) |
+
+v0.0 is the repository archive identifier assigned to the previous guide. Its original text, including the internal Version 1.1 label, is preserved. It is not a software release number.
