@@ -53,7 +53,7 @@ Depth data forms a 3D point cloud. Camera alignment and ground calibration estab
 | Camera alignment and ground calibration | Align detection zones to the vehicle and floor. |
 | V2 obstacle geometry | Provide obstacle bounding boxes and depth point clouds for processing in the user system. |
 | TCP / UDP | Exchange zone status, validity, and template information; select templates. |
-| S10 physical I/O | Output digital status and select templates through wired inputs. |
+| S10 Lite physical I/O | Output digital status and select templates through wired inputs. |
 
 <p align="center">
   <img src="docs/images/obstacle-detection-zones.png" alt="Rectangular and sector danger and warning zones" width="860">
@@ -63,14 +63,18 @@ Depth data forms a 3D point cloud. Camera alignment and ground calibration estab
 
 | Camera | Algorithm family | Outputs |
 | --- | --- | --- |
-| S10 / S11 | V1 | Zone status; physical I/O is available on S10 only. |
+| S10 / S10 Lite / S11 | V1 | Zone status; physical I/O is available on S10 Lite only. |
 | S10 Pro | V2 | Zone status, obstacle bounding boxes, and depth point clouds. |
+
+S10 provides RGB images but no physical I/O. S10 Lite provides physical I/O but no RGB images.
 
 V1 and V2 have the same zone detection capabilities and algorithm performance. TCP/UDP status packets do not contain bounding-box details or depth point clouds. With V2 Simple output enabled, the camera returns only obstacle status and the bounding-box count.
 
 <p align="center">
   <img src="docs/images/obstacle-system-integration.png" alt="Obstacle Workstation and camera provide perception; the user controller handles planning and vehicle execution" width="860">
 </p>
+
+The original diagram retains the older label "I/O (S10)"; this interface applies to S10 Lite only, not S10.
 
 The solution supplies perception and configuration tools. The user-provided controller implements path planning, motion decisions, and execution. Validate usable coverage, target surfaces, mounting, and the complete vehicle response. Safe status applies to the configured zones with valid depth data; it does not establish that hidden or unseen space is clear.
 
