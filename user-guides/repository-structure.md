@@ -38,7 +38,7 @@ Every application folder must contain:
 - Keep application-specific screenshots in `<application>/docs/images/` and shared visual assets in `user-guides/assets/`.
 - Keep versioned public manuals and white papers in the owning application's `docs/` folder when their file sizes are suitable for Git. Use lowercase, descriptive filenames.
 - Keep only the current package index in `latest-downloads/`; keep all historical version records under the owning product's `releases/` folder.
-- Attach `.exe`, `.zip`, firmware, models, and other binaries to GitHub Releases. Do not commit them to the Git tree.
+- Attach software installers, software ZIP packages, firmware, models, and other application binaries to software GitHub Releases. Do not commit them to the Git tree. Small document-only ZIP downloads may sit beside their Markdown sources.
 - Do not commit customer configurations, logs, credentials, or calibration backups.
 
 ## Link maintenance

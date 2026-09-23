@@ -19,7 +19,7 @@
       <strong>Release status</strong><br><br>
       <strong>Latest documentation</strong><br>
       <code>V0.1</code> · 2026-08-31<br>
-      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/aw3-application-algorithm-platform-user-manual-v0.1.pdf">User Manual</a><br><br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf?download=1">User Manual</a><br><br>
       <strong>Latest formal software</strong><br>
       Not published<br>
       Next window: End of September 2026<br>
@@ -78,7 +78,7 @@ Obstacle Avoidance follows a separate dedicated host-application lifecycle and i
   <tbody>
     <tr>
       <td>1. Prepare, install, and connect AW3</td>
-      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/aw3-application-algorithm-platform-user-manual-v0.1.pdf">User Manual</a></td>
+      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf?download=1">User Manual</a></td>
     </tr>
     <tr>
       <td>2. Find cameras and verify the network</td>
@@ -105,4 +105,4 @@ Every published AW3 version receives an immutable release note with its applicat
 
 | Document | Version | Publication date | Applies to | File |
 | --- | --- | --- | --- | --- |
-| AW3 Application Algorithm Platform Deployment User Manual | `V0.1` | 2026-08-31 | AW3 formal version: `TBC` | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/aw3-application-algorithm-platform-user-manual-v0.1.pdf) |
+| AW3 Application Algorithm Platform Deployment User Manual | `V0.1` | 2026-08-31 | AW3 formal version: `TBC` | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf?download=1) |

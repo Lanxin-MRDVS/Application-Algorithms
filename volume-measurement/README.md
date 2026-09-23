@@ -20,7 +20,7 @@
       <strong>Latest documentation</strong><br>
       <code>V0.1</code> · 2026-09-09<br>
       Formal version: <code>TBC</code><br>
-      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/torusmetric-user-manual-v0.1.pdf">User Manual</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/torusmetric-white-paper-v0.1.pdf">White Paper</a><br><br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf?download=1">User Manual</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/volume-measurement/docs/torusmetric-white-paper-v0.1.pdf?download=1">White Paper</a><br><br>
       <strong>Latest formal software</strong><br>
       Version: <code>TBC</code> · Planned<br>
       AW3: <code>TBC</code> · End of September 2026<br><br>
@@ -73,7 +73,7 @@ AW3 manages devices, camera groups, calibration, application settings, monitorin
   <tbody>
     <tr>
       <td>1. Review product fit</td>
-      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/torusmetric-white-paper-v0.1.pdf">White Paper</a></td>
+      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/volume-measurement/docs/torusmetric-white-paper-v0.1.pdf?download=1">White Paper</a></td>
     </tr>
     <tr>
       <td>2. Verify camera data</td>
@@ -81,7 +81,7 @@ AW3 manages devices, camera groups, calibration, application settings, monitorin
     </tr>
     <tr>
       <td>3. Deploy and validate in AW3</td>
-      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/torusmetric-user-manual-v0.1.pdf">User Manual</a></td>
+      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf?download=1">User Manual</a></td>
     </tr>
   </tbody>
 </table>
@@ -103,5 +103,5 @@ The Release status shows the latest document set. This table retains every publi
 
 | Document | Version | Applies to | Publication date | Status | File |
 | --- | --- | --- | --- | --- | --- |
-| TorusMetric User Manual | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/torusmetric-user-manual-v0.1.pdf) |
-| TorusMetric Volume Measurement Solution White Paper | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/torusmetric-white-paper-v0.1.pdf) |
+| TorusMetric User Manual | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf?download=1) |
+| TorusMetric Volume Measurement Solution White Paper | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/volume-measurement/docs/torusmetric-white-paper-v0.1.pdf?download=1) |

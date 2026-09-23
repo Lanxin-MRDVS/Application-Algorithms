@@ -80,15 +80,23 @@ Every published version must include its version and publication date, release t
 
 ### Document downloads
 
-Public manual, white-paper, guide, and release-note links use attachments in the **Documentation** GitHub Release so clicking a document downloads the file. Product READMEs and navigation indexes remain browsable pages. GitHub's repository file list still uses its built-in preview behavior.
+The Releases list contains software publications only. Never create a documentation-only Release. Manuals and guides remain owned by their product, and document revisions do not create software versions.
 
-The Documentation release is a document download collection, not a software version, and must not be marked as the latest software release. Preserve versioned document assets. Keep PDFs in the owning product's docs folder; Word source files are not published. When updating a document, publish and verify its download attachment as well as its repository copy. Keep file sizes and checksums in the corresponding document index current.
+Attach relevant documentation to an existing software Release when it belongs to that product. Keep PDFs in the owning product's docs folder. Products without a software release use direct raw-file PDF links. Word source files are not published.
+
+For Markdown documents without an owning software Release, provide a clearly labeled ZIP download beside the Markdown source. The ZIP contains the existing Markdown document with absolute supporting links; it is a document download, not an installation package. Rebuild it whenever its source changes. Product READMEs and navigation indexes remain browsable pages. GitHub's repository file list retains its built-in preview behavior.
+
+Before removing a download location, migrate links in repository pages, software Release descriptions, and downloadable Markdown copies. Verify downloads and checksums before deleting the obsolete entry. Preserve software installers, version numbers, historical tags, and release dates. Documentation link repairs must not change technical claims.
+
+### Release presentation
+
+Use the existing product title, centered consistently. Show the current release's existing delivery information, changes, and document links clearly; fold long installation and verification details where useful. Preserve existing wording and important limitations. Do not invent features, compatibility, test results, dates, or new documentation sections solely to fill a layout. Keep the latest published software marked as Latest; product-specific latest versions remain on the homepage and product pages.
 
 ### Software publication
 
 1. Confirm the owner: AW3, application, application host software, or shared tool.
 2. Freeze the version, compatibility, and asset filenames.
-3. Create the version note from [the template](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/user-guides-release-note-template.md).
+3. Create the version note from [the template (ZIP)](https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/user-guides/release-note-template.md.zip?download=1).
 4. Build and test the package through the approved release process.
 5. Record file sizes and SHA-256 values.
 6. Create the immutable Git tag and GitHub Release.

@@ -15,7 +15,7 @@ Pallet Docking provides pallet recognition and precise forklift docking for MRDV
 
 <p align="center">
   <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe"><img src="../user-guides/assets/button-download-palletpro-latest.svg" alt="Download PalletPro 1.4.8_260828" width="240" height="40"></a>
-  <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/pallet-docking-user-guide.md"><img src="../user-guides/assets/button-user-guide-large.svg" alt="Download the Pallet Docking user guide" width="240" height="40"></a>
+  <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/pallet-docking-user-guide.md"><img src="../user-guides/assets/button-user-guide-large.svg" alt="Download the Pallet Docking user guide" width="240" height="40"></a>
 </p>
 
 | Item | Details |
@@ -23,7 +23,7 @@ Pallet Docking provides pallet recognition and precise forklift docking for MRDV
 | Installer | [PalletPro-install-v1.4.8_260828.exe](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) |
 | File size | 118,296,332 bytes (112.82 MiB) |
 | SHA-256 | `c1bcc40900eb0c3f282c5657a7c3d06b69629483ec1674f4da347a295485dc3c` |
-| Version notes | [PalletPro 1.4.8_260828](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/pallet-docking-release-v1.4.8_260828.md) |
+| Version notes | [PalletPro 1.4.8_260828](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/pallet-docking-release-v1.4.8_260828.md) |
 | Historical package | [PalletPro_1.4.8.zip](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro_1.4.8.zip) |
 
 ## Start here
@@ -31,8 +31,8 @@ Pallet Docking provides pallet recognition and precise forklift docking for MRDV
 | Task | Resource |
 | --- | --- |
 | Install and verify PalletPro | [Latest download](#latest-download) |
-| Install the camera and perform teaching or calibration | [User guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/pallet-docking-user-guide.md) |
-| Integrate API, UDP, TCP, or CAN results | [Communication guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/pallet-docking-user-guide.md) |
+| Install the camera and perform teaching or calibration | [User guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/pallet-docking-user-guide.md) |
+| Integrate API, UDP, TCP, or CAN results | [Communication guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/pallet-docking-user-guide.md) |
 | Configure the camera network and inspect point clouds | [LxCameraViewer](../tools/lxcameraviewer/README.md) |
 | Review every published version | [Pallet Docking release history](releases/README.md) |
 

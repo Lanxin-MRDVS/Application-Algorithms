@@ -1,6 +1,6 @@
 # PalletPro screenshots
 
-[Pallet Docking](../../README.md) / [User Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/pallet-docking-user-guide.md) / Screenshots
+[Pallet Docking](../../README.md) / [User Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/pallet-docking-user-guide.md) / Screenshots
 
 English-interface screenshots supplied for the PalletPro user guide, refreshed on 2026-08-31. The main-window title shows `PalletPro: V1.4.8_spy`; the screenshots alone do not verify the full installer build or camera firmware version. Values shown are examples, not default configuration recommendations.
 

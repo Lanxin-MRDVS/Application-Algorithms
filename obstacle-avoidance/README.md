@@ -22,7 +22,7 @@
       <strong>Release status</strong><br><br>
       <strong>Latest documentation</strong><br>
       <code>V0.1</code> · 2026-09-21<br>
-      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-user-manual-v0.1.pdf">User Manual</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-white-paper-v0.1.pdf">White Paper</a><br><br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/obstacle-avoidance-user-manual-v0.1.pdf">User Manual</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/obstacle-avoidance-white-paper-v0.1.pdf">White Paper</a><br><br>
       <strong>Latest host application</strong><br>
       AW3 Obstacle Workstation <code>1.0.19</code><br>
       2026-09-23 · Windows x64<br>
@@ -91,7 +91,7 @@ The solution supplies perception and configuration tools. The user-provided cont
   <tbody>
     <tr>
       <td>1. Review the application, camera, and output requirements</td>
-      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-white-paper-v0.1.pdf">White Paper</a></td>
+      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/obstacle-avoidance-white-paper-v0.1.pdf">White Paper</a></td>
     </tr>
     <tr>
       <td>2. Configure the camera network and verify live data</td>
@@ -99,7 +99,7 @@ The solution supplies perception and configuration tools. The user-provided cont
     </tr>
     <tr>
       <td>3. Set up Obstacle Workstation, calibrate, and validate detection</td>
-      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-user-manual-v0.1.pdf">User Manual</a></td>
+      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/obstacle-avoidance-user-manual-v0.1.pdf">User Manual</a></td>
     </tr>
   </tbody>
 </table>
@@ -118,8 +118,8 @@ Published host applications and subsequent patches will be retained in this tabl
 
 | Document | Version | Publication date | Status | Download |
 | --- | --- | --- | --- | --- |
-| Obstacle Avoidance Solution User Manual | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-user-manual-v0.1.pdf) |
-| Obstacle Avoidance Solution White Paper | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-white-paper-v0.1.pdf) |
-| Legacy Camera-side Deployment Guide | v0.0 archive | May 2026 | Superseded | [Markdown](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-deployment-guide-v0.0.md) |
+| Obstacle Avoidance Solution User Manual | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/obstacle-avoidance-user-manual-v0.1.pdf) |
+| Obstacle Avoidance Solution White Paper | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/obstacle-avoidance-white-paper-v0.1.pdf) |
+| Legacy Camera-side Deployment Guide | v0.0 archive | May 2026 | Superseded | [Markdown (ZIP)](https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/obstacle-avoidance/docs/deployment-guide-v0.0.md.zip?download=1) |
 
 v0.0 is the repository archive identifier assigned to the previous guide. Its original text, including the internal Version 1.1 label, is preserved. It is not a software release number.
