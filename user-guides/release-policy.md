@@ -12,7 +12,7 @@ This policy keeps current standalone products available while establishing clear
 | Pallet Docking | Standalone PalletPro `1.4.8_260828` host application | AW3 |
 | Volume Measurement | Documentation `V0.1`; software planned for end of September 2026 | AW3 |
 | Slot Monitoring | No public package | AW3 |
-| Obstacle Avoidance | No public package; V0.1 workstation manual and white paper | Dedicated Obstacle Workstation host application |
+| Obstacle Avoidance | AW3 Obstacle Workstation `1.0.19`; V0.1 manual and white paper | Dedicated Obstacle Workstation host application |
 
 The historical Depalletizing asset is named `AW3-V3.0.1-20260624.zip`, but its confirmed product ownership is the standalone Depalletizing lifecycle. Preserve the filename and published tag for compatibility.
 

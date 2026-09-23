@@ -24,8 +24,9 @@
       <code>V0.1</code> · 2026-09-21<br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-user-manual-v0.1.pdf">User Manual</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Documentation/obstacle-avoidance-white-paper-v0.1.pdf">White Paper</a><br><br>
       <strong>Latest host application</strong><br>
-      Obstacle Workstation<br>
-      Public installer: not published<br><br>
+      AW3 Obstacle Workstation <code>1.0.19</code><br>
+      2026-09-23 · Windows x64<br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe">Windows installer</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/aw3-obstacle-workstation-v1.0.19-release-notes.md">Release notes</a><br><br>
       <strong>Applicable standalone updates</strong><br>
       Not published<br><br>
       <a href="#software-update-history"><strong>View software history ↓</strong></a><br>
@@ -109,7 +110,7 @@ Obstacle Workstation follows a dedicated host-application release lifecycle. A d
 
 | Version | Category | Compatible baseline | Release date | Release note / download |
 | --- | --- | --- | --- | --- |
-| — | Host application | — | — | No public installer published |
+| 1.0.19 | Host application | Camera / firmware compatibility not verified | 2026-09-23 | [Release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/aw3-obstacle-workstation-v1.0.19-release-notes.md) · [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe) |
 
 Published host applications and subsequent patches will be retained in this table with their verified versions, dates, compatibility, release notes, and downloads.
 

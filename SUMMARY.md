@@ -10,7 +10,7 @@
 * [Pallet Docking](pallet-docking/README.md)
 * [Volume Measurement](volume-measurement/README.md)
 * [Slot Monitoring](slot-monitoring/README.md)
-* [Obstacle Avoidance](obstacle-avoidance/README.md)
+* [Obstacle Avoidance](obstacle-avoidance/README.md) · [Software history](obstacle-avoidance/README.md#software-update-history)
 
 ## Platform and tools
 
