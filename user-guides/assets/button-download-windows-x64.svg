@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="48" viewBox="0 0 280 48" role="img" aria-label="Download Windows x64">
+  <title>Download Windows x64</title>
+  <defs><linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1964FF"/><stop offset="1" stop-color="#15D1FF"/></linearGradient></defs>
+  <rect width="280" height="48" rx="8" fill="url(#brand)"/>
+  <rect x="0.75" y="0.75" width="278.5" height="46.5" rx="7.25" fill="none" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1.5"/>
+  <path d="M28 12v17m-6-6 6 6 6-6M19 33v4h18v-4" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="163" y="24" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Download Windows x64</text>
+</svg>

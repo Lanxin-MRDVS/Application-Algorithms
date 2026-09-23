@@ -30,6 +30,7 @@ All buttons use white text, meaningful SVG titles, and meaningful image alt text
 
 | File | Purpose |
 | --- | --- |
+| `button-download-windows-x64.svg` | Windows x64 installer action for product Release descriptions; 280 × 48 px. |
 | `button-download-palletpro-latest.svg` | Current PalletPro download. |
 | `button-user-guide-large.svg` | Prominent user-guide navigation. |
 | `button-aw3-release-history.svg` | AW3 release-history navigation. |
@@ -38,3 +39,5 @@ All buttons use white text, meaningful SVG titles, and meaningful image alt text
 New shared assets should use short lowercase kebab-case names, the MRDVS palette, accessible titles, and source-controlled SVG where practical.
 
 Do not place product screenshots here. For example, Pallet Docking screenshots are stored in `pallet-docking/docs/images/`.
+
+Release descriptions link these graphics with an absolute URL pinned to a repository commit. Keep downloads and version information in text as well. Presentation-only edits must preserve published tags, installers, release-note attachments, and checksums.
