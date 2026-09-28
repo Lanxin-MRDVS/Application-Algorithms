@@ -6,5 +6,5 @@ Shared tools are kept separate from algorithm applications so developers can dis
 
 | Tool | Purpose | Documentation |
 | --- | --- | --- |
-| [LxCameraViewer](lxcameraviewer/README.md) | Camera discovery, network configuration, parameter setup, and image or point-cloud inspection. | [User guide (ZIP)](https://github.com/Lanxin-MRDVS/Application-Algorithms/raw/refs/heads/main/tools/lxcameraviewer/docs/user-guide.md.zip?download=1) |
+| [LxCameraViewer](lxcameraviewer/README.md) | Camera discovery, network configuration, parameter setup, and image or point-cloud inspection. | [User guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/tools/lxcameraviewer/docs/user-guide.md) |
 | [CameraSDK](https://github.com/Lanxin-MRDVS/CameraSDK) | Camera APIs, SDK packages, and integration examples. | External repository |
