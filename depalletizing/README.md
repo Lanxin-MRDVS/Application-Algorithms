@@ -15,7 +15,7 @@ Depalletizing provides vision-guided soft-bag and carton unstacking. The current
 
 | Task | Resource |
 | --- | --- |
-| Download the current standalone package | [AW3-V3.0.1-20260624.zip](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) |
+| Download the current standalone package | [Depalletizing Package (ZIP)](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) |
 | Review this application release | [3.0.1 release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/releases/README.md#legacy-standalone-301) |
 | Deploy the application | [Deployment procedure](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/docs/deployment-guide.md#5-deployment-process) |
 | Configure recognition and calibration | [Parameter configuration](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/docs/deployment-guide.md#4-parameter-configuration-part) |

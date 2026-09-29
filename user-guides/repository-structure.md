@@ -41,6 +41,10 @@ Every application folder must contain:
 - Attach software installers, software ZIP packages, firmware, models, and other application binaries to software GitHub Releases. Do not commit them to the Git tree. Document links open Markdown or PDF previews; do not add document-only ZIP downloads.
 - Do not commit customer configurations, logs, credentials, or calibration backups.
 
+## Download labels
+
+Use **Product + Installer** for Windows setup programs, **Product + Package** for device algorithm archives, and **Product + Package (ZIP)** for a standalone ZIP delivery. Keep release versions in the version column or Release status, not in the download label. Omit platform identifiers from current download labels; retain technical platform requirements in installation instructions and release metadata. Examples: **AW3 Installer**, **SmartDocking Package**, **StockSync Package**. Use **User Manual**, **White Paper**, or **Deployment Guide** for document links. Preserve exact asset filenames in package metadata and checksum records; display-name changes must not rename assets or alter download URLs.
+
 ## Link maintenance
 
 When publishing or moving content, update the application page, its release index, the root homepage, `latest-downloads/README.md` when the current package changes, and `SUMMARY.md`. Run the repository link check before publishing and preserve existing GitHub Release asset URLs.

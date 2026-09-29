@@ -23,9 +23,9 @@
       <strong>Latest algorithm package</strong><br>
       SmartDocking <code>3.0.2</code><br>
       2026-09-29 · RKU20 / Linux ARM64<br>
-      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz">Algorithm package</a> · <a href="releases/README.md#smartdocking-302">Release notes</a><br><br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz">SmartDocking Package</a> · <a href="releases/README.md#smartdocking-302">Release notes</a><br><br>
       <strong>Required frontend</strong><br>
-      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">AW3 3.1.2 · Windows x64</a><br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">AW3 Installer</a><br>
       Frontend only; no AW3 PC backend<br><br>
       <a href="#software-update-history"><strong>View software history ↓</strong></a><br>
       <a href="#document-update-history">View document history ↓</a>
@@ -56,8 +56,8 @@ Validate the installed camera, pallet types, entry-face visibility, calibration,
 
 | Download | Target | Installation |
 | --- | --- | --- |
-| [AW3 3.1.2 installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) | Windows x64 PC | Install the frontend only; clear **AW3 Backend Download**. |
-| [SmartDocking 3.0.2 algorithm package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz) | RKU20, Linux ARM64 | Deploy the `.tar.gz` to the matching device / center via SSH, following the User Manual. |
+| [AW3 Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) | Windows x64 PC | Install the frontend only; clear **AW3 Backend Download**. |
+| [SmartDocking Package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz) | RKU20, Linux ARM64 | Deploy the `.tar.gz` to the matching device / center via SSH, following the User Manual. |
 
 Both packages are required. Do not install the AW3 PC backend for this application. The algorithm archive contains the device-side service and runtime dependencies; it is not a Windows installer. Confirm the device platform before updating and back up its configuration. Hardware deployment has not been tested as part of this publication.
 
@@ -78,7 +78,7 @@ SmartDocking algorithm versions and legacy PalletPro host versions are separate 
 
 | Version | Category | Target | Publication date | Release note / download |
 | --- | --- | --- | --- | --- |
-| SmartDocking `3.0.2` | Device algorithm package | RKU20 / Linux ARM64; AW3 frontend | 2026-09-29 | [Notes](releases/README.md#smartdocking-302) · [tar.gz](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz) |
+| SmartDocking `3.0.2` | Device algorithm package | RKU20 / Linux ARM64; AW3 frontend | 2026-09-29 | [Notes](releases/README.md#smartdocking-302) · [SmartDocking Package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz) |
 | SmartDocking `3.0.1` | Algorithm record | Package not published | Not supplied | [Notes](releases/README.md#smartdocking-301) |
 | PalletPro `1.4.8_260828` | Legacy standalone host | Windows | 2026-08-24 | [Notes](releases/README.md#palletpro-148-260828) · [Historical Release](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/tag/PalletPro) |
 
@@ -98,11 +98,11 @@ PalletPro is a separate, earlier host application. It is not the AW3 frontend or
 
 | Item | Details |
 | --- | --- |
-| Installer | [PalletPro-install-v1.4.8_260828.exe](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) |
+| Installer | [PalletPro Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) |
 | File size | 118,296,332 bytes (112.82 MiB) |
 | SHA-256 | `c1bcc40900eb0c3f282c5657a7c3d06b69629483ec1674f4da347a295485dc3c` |
 | Version notes | [PalletPro 1.4.8_260828](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/releases/README.md#palletpro-148-260828) |
-| Historical package | [PalletPro_1.4.8.zip](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro_1.4.8.zip) |
+| Historical package | [PalletPro Archive (ZIP)](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro_1.4.8.zip) |
 
 
 </details>

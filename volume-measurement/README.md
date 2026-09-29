@@ -22,7 +22,7 @@
       Formal version: <code>TBC</code><br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf">User Manual</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-white-paper-v0.1.pdf">White Paper</a><br><br>
       <strong>Latest formal software</strong><br>
-      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">AW3 3.1.2 installer</a> · 2026-09-29<br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">AW3 Installer</a> · 2026-09-29<br>
       Recorded algorithm: <a href="releases/README.md#torusmetric-201">TorusMetric 2.0.1</a><br>
       Delivery: AW3 installer (frontend + backend)<br><br>
       <strong>Applicable standalone updates</strong><br>
@@ -56,7 +56,7 @@ Final performance depends on the installation, camera layout, point-cloud qualit
 
 ## AW3 deployment
 
-**Download the [AW3 installer](../aw3/README.md#installation) only. Install both the AW3 frontend and backend.** Volume Measurement does not require a separate algorithm `.tar.gz`. The current download is [AW3 3.1.2 for Windows x64](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe).
+**Download the [AW3 installer](../aw3/README.md#installation) only. Install both the AW3 frontend and backend.** Volume Measurement does not require a separate algorithm `.tar.gz`. The current download is [AW3 Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe).
 
 AW3 manages devices, camera groups, calibration, application settings, monitoring, and protocol output. TorusMetric runs as an AW3 application, calculates the measurement result, and passes configured data to the customer's business system.
 
