@@ -22,8 +22,9 @@
       Formal version: <code>TBC</code><br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf">User Manual</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-white-paper-v0.1.pdf">White Paper</a><br><br>
       <strong>Latest formal software</strong><br>
-      Version: <code>TBC</code> · Planned<br>
-      AW3: <code>TBC</code> · End of September 2026<br><br>
+      Public package not published<br>
+      Recorded algorithm: <a href="releases/README.md#torusmetric-201">TorusMetric 2.0.1</a><br>
+      AW3 bundle: Not verified<br><br>
       <strong>Applicable standalone updates</strong><br>
       Not published<br><br>
       <a href="#software-update-history"><strong>View update history ↓</strong></a><br><br>
@@ -88,11 +89,11 @@ AW3 manages devices, camera groups, calibration, application settings, monitorin
 
 ## Software update history
 
-The Release status above shows one latest formal software version and up to three active standalone updates that apply to it. This table retains every planned, published, and superseded software version.
+This table retains formal versions and standalone updates. The supplied TorusMetric 2.0.1 notes describe cumulative algorithm capabilities; they do not identify a published AW3 bundle or a standalone patch package.
 
 | Version | Category | Formal baseline | AW3 | Release date | Status / supersedes | Release note / download |
 | --- | --- | --- | --- | --- | --- | --- |
-| `TBC` | Formal software | This version | `TBC` | Planned: end of September 2026 | Planned | _Provided by the corresponding AW3 Release_ |
+| `2.0.1` | Algorithm version; delivery type not supplied | Not verified | Not verified | Not supplied | Notes available; package not published | [Release notes](releases/README.md#torusmetric-201) |
 
 - **Formal software** is delivered with AW3 and becomes the application baseline.
 - **Standalone update** is a patch for a named formal baseline and compatible AW3 version. Its status shows whether it is active or superseded.

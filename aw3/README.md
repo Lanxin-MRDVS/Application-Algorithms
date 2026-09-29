@@ -21,9 +21,8 @@
       <code>V0.1</code> · 2026-08-31<br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf">User Manual</a><br><br>
       <strong>Latest formal software</strong><br>
-      Not published<br>
-      Next window: End of September 2026<br>
-      Version: <code>TBC</code><br><br>
+      Public installer not published in this repository<br>
+      Latest recorded frontend: <a href="releases/README.md#aw3-311">3.1.1</a><br><br>
       <strong>Planned application scope</strong><br>
       <a href="../volume-measurement/README.md">Volume Measurement</a><br><br>
       <a href="#software-update-history"><strong>View update history ↓</strong></a>
@@ -93,13 +92,16 @@ Obstacle Avoidance follows a separate dedicated host-application lifecycle and i
 
 ## Software update history
 
-The Release status above shows the latest formal AW3 software. This table retains every planned and published platform version and the application versions delivered with it.
+This table records the supplied platform and frontend history. Release-note availability does not establish public installer availability or a verified application bundle. Component versions are independent.
 
-| AW3 version | Release date | Included applications | Release note / download |
+| Version | Scope | Release date | Release notes |
 | --- | --- | --- | --- |
-| `TBC` | Planned: end of September 2026 | Volume Measurement: `TBC` | _Not published_ |
+| `3.1.1` | AW3Viewer frontend; build reference `20260922` | Not supplied | [Changes](releases/README.md#aw3-311) |
+| `3.1.0` | Initial release and later maintenance | Not supplied | [Changes](releases/README.md#aw3-310) |
+| `3.0.1` | Cumulative platform changes | Not supplied | [Changes](releases/README.md#aw3-301) |
+| Legacy UI | AlgPlatformViewer; version not supplied | Not supplied | [Historical scope](releases/README.md#legacy-ui) |
 
-Every published AW3 version receives an immutable release note with its application manifest, compatibility, asset filename, file size, SHA-256 checksum, upgrade steps, and rollback steps.
+All versions share one [AW3 Release Notes](releases/README.md) file. Add verified bundle manifests, compatibility, downloads, checksums, and upgrade instructions to the corresponding version section when software is published. The supplied notes were compiled on 2026-09-22; this is not a software release date.
 
 ## Document update history
 

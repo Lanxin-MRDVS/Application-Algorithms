@@ -2,7 +2,7 @@
 
 [Documentation Home](../README.md) / User Guides
 
-Use this page to find the latest public guide for each application. Version-specific notes remain in the owning application's `releases/` folder.
+Use this page to find the latest public guide for each application. Each product has one `releases/README.md` containing its complete version notes.
 
 | Application or tool | Latest guide | Public package status |
 | --- | --- | --- |
@@ -22,4 +22,4 @@ Use this page to find the latest public guide for each application. Version-spec
 | [Release Policy](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/user-guides/release-policy.md) | Defines platform, application, host-software, and tool publication rules. |
 | [Release-note Template](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/user-guides/release-note-template.md) | Required structure for every new public version. |
 
-Keep the current user guide in the application's `docs/` folder. Preserve version-specific behavior, compatibility, downloads, and upgrade notes in immutable files under the application's `releases/` folder.
+Keep the current user guide in the application's `docs/` folder. Preserve version-specific behavior, compatibility, downloads, and upgrade notes in retained version sections within the application's single `releases/README.md` file.

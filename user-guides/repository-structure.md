@@ -27,14 +27,14 @@ Every application folder must contain:
 <application>/
 ├── README.md       # Purpose, delivery status, latest verified package, and key links
 ├── docs/           # Current technical or user guide
-└── releases/       # Local release index and one immutable note per version
+└── releases/       # One README.md containing all release-note version sections
 ```
 
 ## Naming and storage rules
 
 - Use lowercase kebab-case for folders, such as `pallet-docking` and `slot-monitoring`.
 - Use stable filenames such as `deployment-guide.md`, `user-guide.md`, and `protocol.md`.
-- Use one release-note file per version, such as `releases/v1.2.3.md`.
+- Use one Release Notes file per product: `releases/README.md`. Append each version as a section, newest first, and retain earlier sections. Use component-specific anchors when different components share a version number.
 - Keep application-specific screenshots in `<application>/docs/images/` and shared visual assets in `user-guides/assets/`.
 - Keep versioned public manuals and white papers in the owning application's `docs/` folder when their file sizes are suitable for Git. Use lowercase, descriptive filenames.
 - Keep only the current package index in `latest-downloads/`; keep all historical version records under the owning product's `releases/` folder.

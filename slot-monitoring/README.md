@@ -8,6 +8,7 @@ Slot Monitoring detects storage-location occupancy, placement, alignment, and ou
 | --- | --- |
 | Target runtime | AW3 |
 | Public application package | No public release yet |
+| Latest recorded algorithm | [StockSync `3.1.1`](releases/README.md#stocksync-311); notes available |
 | Current documentation | User and deployment guide |
 
 ## Start here

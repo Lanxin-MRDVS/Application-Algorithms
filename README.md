@@ -19,11 +19,11 @@
 | Product | Latest version | Release date | Download |
 | --- | --- | --- | --- |
 | [**AW3**](aw3/README.md) | _Not published_ | — | _Package not published_ · [User Manual](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) |
-| [**Depalletizing**](depalletizing/README.md) | [3.0.1](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/releases/v3.0.1.md) · legacy standalone | 2026-07-03 | [ZIP package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) · [Deployment Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/docs/deployment-guide.md) |
-| [**Pallet&nbsp;Docking**](pallet-docking/README.md) | [PalletPro 1.4.8_260828](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/releases/v1.4.8_260828.md) · legacy standalone | 2026-08-24 | [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) · [User Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/docs/user-guide.md) |
+| [**Depalletizing**](depalletizing/README.md) | [3.0.1](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/releases/README.md#legacy-standalone-301) · legacy standalone | 2026-07-03 | [ZIP package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) · [Deployment Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/docs/deployment-guide.md) |
+| [**Pallet&nbsp;Docking**](pallet-docking/README.md) | [PalletPro 1.4.8_260828](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/releases/README.md#palletpro-148-260828) · legacy standalone | 2026-08-24 | [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) · [User Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/docs/user-guide.md) |
 | [**Volume&nbsp;Measurement**](volume-measurement/README.md) | _No standalone update_ | — | [User Manual](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) |
 | [**Slot&nbsp;Monitoring**](slot-monitoring/README.md) | _No standalone update_ | — | [User Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/slot-monitoring/docs/user-guide.md) |
-| [**Obstacle&nbsp;Avoidance**](obstacle-avoidance/README.md) | [Workstation 1.0.19](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/releases/v1.0.19.md) | 2026-09-23 | [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe) · [User Manual](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/docs/obstacle-avoidance-user-manual-v0.1.pdf) |
+| [**Obstacle&nbsp;Avoidance**](obstacle-avoidance/README.md) | [Workstation 1.0.19](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/releases/README.md#workstation-1019) | 2026-09-23 | [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe) · [User Manual](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/docs/obstacle-avoidance-user-manual-v0.1.pdf) |
 
 AW3 is the formal release. Each AW3 application row shows the latest compatible patch distributed separately from that formal release. Until the first AW3 delivery, the current legacy standalone packages remain listed. Obstacle Avoidance uses its latest dedicated host application. Select a published version to read its release notes.
 
@@ -56,7 +56,7 @@ user-guides/         Current documentation index and shared visuals
 latest-downloads/    Current verified installation packages
 ```
 
-Every application folder follows the same contract: `README.md` is the entry page, `docs/` stores the current guide, and `releases/` stores the latest and historical version notes.
+Every application folder follows the same contract: `README.md` is the entry page, `docs/` stores the current guide, and `releases/README.md` is the single Release Notes file containing every version for that product.
 
 ---
 

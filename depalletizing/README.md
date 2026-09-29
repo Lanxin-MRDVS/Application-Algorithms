@@ -7,7 +7,8 @@ Depalletizing provides vision-guided soft-bag and carton unstacking. The current
 | Status | Value |
 | --- | --- |
 | Current public delivery | Standalone application package |
-| Latest public version | `3.0.1` |
+| Latest public version | `3.0.1` (legacy standalone package) |
+| Latest recorded algorithm | [PalletEye `3.0.1`](releases/README.md#palleteye-301); separate from the legacy package |
 | Target delivery | AW3 |
 
 ## Start here
@@ -15,7 +16,7 @@ Depalletizing provides vision-guided soft-bag and carton unstacking. The current
 | Task | Resource |
 | --- | --- |
 | Download the current standalone package | [AW3-V3.0.1-20260624.zip](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) |
-| Review this application release | [3.0.1 release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/releases/v3.0.1.md) |
+| Review this application release | [3.0.1 release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/releases/README.md#legacy-standalone-301) |
 | Deploy the application | [Deployment procedure](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/docs/deployment-guide.md#5-deployment-process) |
 | Configure recognition and calibration | [Parameter configuration](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/docs/deployment-guide.md#4-parameter-configuration-part) |
 | Integrate communication | [Communication protocol](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/docs/deployment-guide.md#6-communication-protocol) |

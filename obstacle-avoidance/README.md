@@ -26,7 +26,7 @@
       <strong>Latest host application</strong><br>
       AW3 Obstacle Workstation <code>1.0.19</code><br>
       2026-09-23 · Windows x64<br>
-      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe">Windows installer</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/releases/v1.0.19.md">Release notes</a><br><br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe">Windows installer</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/releases/README.md#workstation-1019">Release notes</a><br><br>
       <strong>Applicable standalone updates</strong><br>
       Not published<br><br>
       <a href="#software-update-history"><strong>View software history ↓</strong></a><br>
@@ -110,7 +110,7 @@ Obstacle Workstation follows a dedicated host-application release lifecycle. A d
 
 | Version | Category | Compatible baseline | Release date | Release note / download |
 | --- | --- | --- | --- | --- |
-| 1.0.19 | Host application | Camera / firmware compatibility not verified | 2026-09-23 | [Release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/releases/v1.0.19.md) · [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe) |
+| 1.0.19 | Host application | Camera / firmware compatibility not verified | 2026-09-23 | [Release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/releases/README.md#workstation-1019) · [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe) |
 
 Published host applications and subsequent patches will be retained in this table with their verified versions, dates, compatibility, release notes, and downloads.
 
