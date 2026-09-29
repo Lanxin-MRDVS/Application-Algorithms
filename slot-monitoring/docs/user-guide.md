@@ -2,7 +2,7 @@
 
 [Documentation Home](../../README.md) / [Slot Monitoring](../README.md) / User Guide
 
-> **Delivery note:** This guide describes the current camera-side workflow. Slot Monitoring is planned for AW3, but no verified public package is recorded in this repository yet.
+> **Delivery note:** This guide describes the camera-side workflow. For AW3-based Slot Monitoring, use the [installation overview](../README.md#installation): AW3 frontend only plus the separate StockSync algorithm `.tar.gz`; do not install the AW3 backend. The packages are not yet published in this repository. Use the AW3 manual for frontend controls.
 
 Source last modified: March 4, 2025
 

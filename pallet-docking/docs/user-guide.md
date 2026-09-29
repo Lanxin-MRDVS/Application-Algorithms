@@ -2,11 +2,11 @@
 
 [Documentation Home](../../README.md) / [Pallet Docking](../README.md) / User Guide
 
-> **Delivery note:** This guide covers the current standalone PalletPro workflow. Pallet Docking is planned to move to AW3, but no public AW3-integrated Pallet Docking package is recorded yet.
+> **Legacy guide:** This document describes the standalone PalletPro workflow, not the AW3 interface. For AW3-based Pallet Docking, use the [installation overview](../README.md#installation): AW3 frontend only plus the separate SmartDocking algorithm `.tar.gz`; do not install the AW3 backend. The new packages are not yet published in this repository.
 
 For MRDVS Eagle-M series cameras.
 
-**[Software Downloads](../README.md#latest-download)** · **[Release Notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/releases/README.md#palletpro-148-260828)**
+**[Software Downloads](../README.md#legacy-palletpro)** · **[Release Notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/releases/README.md#palletpro-148-260828)**
 
 Figures 4–14 use refreshed English-interface screenshots. Other screenshots and some instructions may reflect earlier software versions. Values displayed in screenshots are examples, not universal defaults. See the [release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/releases/README.md#palletpro-148-260828) for the revised English terminology in 1.4.8.
 

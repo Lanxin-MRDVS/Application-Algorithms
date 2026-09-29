@@ -13,6 +13,10 @@ This is the single release-note file for AW3. Versions are retained below, newes
 
 AW3 frontend, device service, and algorithm versions are independent. Matching version numbers do not establish that components belong to the same package. Application manifests and package-specific compatibility must be checked separately.
 
+### Installation and package ownership
+
+Volume Measurement uses the AW3 installer with both frontend and backend. Slot Monitoring and Pallet Docking use the AW3 frontend only plus their separate algorithm `.tar.gz`; do not install the AW3 backend for those applications. See [installation requirements](../README.md#installation). This delivery model does not verify the contents or compatibility of any unpublished installer.
+
 <a id="aw3-311"></a>
 
 ## AW3 3.1.1

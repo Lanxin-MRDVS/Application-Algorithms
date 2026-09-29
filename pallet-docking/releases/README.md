@@ -11,6 +11,10 @@ This is the single release-note file for Pallet Docking. SmartDocking algorithm 
 
 A PalletPro version does not identify the SmartDocking algorithm installed on the device. The source notes do not establish a new public SmartDocking package or a verified AW3 bundle manifest.
 
+### Installation and package ownership
+
+For SmartDocking, use the [AW3 installer](../../aw3/README.md#installation) for the frontend only, plus the SmartDocking algorithm `.tar.gz`. Do not install the AW3 backend. New SmartDocking software Releases own only the algorithm package; legacy PalletPro installers remain available in their existing Release.
+
 <a id="smartdocking-301"></a>
 
 ## SmartDocking 3.0.1

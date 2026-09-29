@@ -23,8 +23,9 @@
       <strong>Latest formal software</strong><br>
       Public installer not published in this repository<br>
       Latest recorded frontend: <a href="releases/README.md#aw3-311">3.1.1</a><br><br>
-      <strong>Planned application scope</strong><br>
-      <a href="../volume-measurement/README.md">Volume Measurement</a><br><br>
+      <strong>Installation by application</strong><br>
+      Volume Measurement: frontend + backend<br>
+      Slot Monitoring / Pallet Docking: frontend + separate algorithm package<br><br>
       <a href="#software-update-history"><strong>View update history ↓</strong></a>
     </td>
   </tr>
@@ -54,14 +55,23 @@ AW3 follows a five-stage deployment path: prepare the host and cameras, connect 
   <img src="docs/images/aw3-image-and-point-cloud.png" alt="AW3 RGB image and depth point-cloud verification view" width="860">
 </p>
 
-## Supported applications
+## Installation
 
-| Application | Current public delivery | AW3 direction |
+Download the AW3 installer from this platform's software Release. Choose the components for the application you are deploying:
+
+| Application | Required downloads | AW3 components to install |
 | --- | --- | --- |
-| [**Depalletizing**](../depalletizing/README.md) | Legacy standalone `3.0.1` package | Target AW3 application |
-| [**Pallet Docking**](../pallet-docking/README.md) | Legacy standalone PalletPro `1.4.8_260828` | Target AW3 application |
-| [**Volume Measurement**](../volume-measurement/README.md) | Documentation `V0.1`; software not published | Planned with the next AW3 formal release |
-| [**Slot Monitoring**](../slot-monitoring/README.md) | User guide published; software not published | Target AW3 application |
+| [Volume Measurement](../volume-measurement/README.md) | AW3 installer only | Frontend and backend |
+| [Slot Monitoring](../slot-monitoring/README.md#installation) | AW3 installer + StockSync algorithm `.tar.gz` | Frontend only; do not install the AW3 backend |
+| [Pallet Docking](../pallet-docking/README.md#installation) | AW3 installer + SmartDocking algorithm `.tar.gz` | Frontend only; do not install the AW3 backend |
+
+Slot Monitoring and Pallet Docking use their separate algorithm packages; these are required installation packages, not merely optional AW3 patches. Follow the package's deployment instructions for the target device. Do not install an algorithm `.tar.gz` as a Windows frontend installer.
+
+**Package availability:** The AW3 installer and the two algorithm packages are not yet published in this repository. Download links will be added after the actual packages and versions are verified. Existing release-note version numbers alone do not establish a compatible package combination.
+
+AW3 installation and component selection: [User Manual](docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf).
+
+Depalletizing retains its [legacy standalone package](../depalletizing/README.md) and remains a target AW3 application; this installation matrix does not change its delivery.
 
 Obstacle Avoidance follows a separate dedicated host-application lifecycle and is not part of the AW3 delivery model recorded here.
 

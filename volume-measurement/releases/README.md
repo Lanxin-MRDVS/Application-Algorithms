@@ -8,6 +8,10 @@ This is the single release-note file for TorusMetric. The supplied notes were co
 | --- | --- | --- | --- |
 | [2.0.1](#torusmetric-201) | Cumulative algorithm capabilities and fixes | Not supplied | Not published |
 
+### Installation and package ownership
+
+Use the [AW3 installer](../../aw3/README.md#installation) and install both frontend and backend. No separate TorusMetric algorithm `.tar.gz` is required. The exact AW3 package and bundled algorithm version must be confirmed when the installer is published.
+
 <a id="torusmetric-201"></a>
 
 ## TorusMetric 2.0.1

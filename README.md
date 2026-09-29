@@ -20,12 +20,12 @@
 | --- | --- | --- | --- |
 | [**AW3**](aw3/README.md) | _Not published_ | — | _Package not published_ · [User Manual](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) |
 | [**Depalletizing**](depalletizing/README.md) | [3.0.1](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/releases/README.md#legacy-standalone-301) · legacy standalone | 2026-07-03 | [ZIP package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/Depalletizing-Algorithm-V3.0.1/AW3-V3.0.1-20260624.zip) · [Deployment Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/depalletizing/docs/deployment-guide.md) |
-| [**Pallet&nbsp;Docking**](pallet-docking/README.md) | [PalletPro 1.4.8_260828](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/releases/README.md#palletpro-148-260828) · legacy standalone | 2026-08-24 | [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) · [User Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/docs/user-guide.md) |
-| [**Volume&nbsp;Measurement**](volume-measurement/README.md) | _No standalone update_ | — | [User Manual](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) |
-| [**Slot&nbsp;Monitoring**](slot-monitoring/README.md) | _No standalone update_ | — | [User Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/slot-monitoring/docs/user-guide.md) |
+| [**Pallet&nbsp;Docking**](pallet-docking/README.md) | [SmartDocking 3.0.1](pallet-docking/releases/README.md#smartdocking-301) · notes available | — | Algorithm `.tar.gz`: _not published_ · [AW3 frontend](aw3/README.md#installation) |
+| [**Volume&nbsp;Measurement**](volume-measurement/README.md) | [TorusMetric 2.0.1](volume-measurement/releases/README.md#torusmetric-201) · notes available | — | [AW3 installer](aw3/README.md#installation): _not published_ · [User Manual](volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) |
+| [**Slot&nbsp;Monitoring**](slot-monitoring/README.md) | [StockSync 3.1.1](slot-monitoring/releases/README.md#stocksync-311) · notes available | — | Algorithm `.tar.gz`: _not published_ · [AW3 frontend](aw3/README.md#installation) · [User Guide](slot-monitoring/docs/user-guide.md) |
 | [**Obstacle&nbsp;Avoidance**](obstacle-avoidance/README.md) | [Workstation 1.0.19](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/releases/README.md#workstation-1019) | 2026-09-23 | [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe) · [User Manual](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/docs/obstacle-avoidance-user-manual-v0.1.pdf) |
 
-AW3 is the formal release. Each AW3 application row shows the latest compatible patch distributed separately from that formal release. Until the first AW3 delivery, the current legacy standalone packages remain listed. Obstacle Avoidance uses its latest dedicated host application. Select a published version to read its release notes.
+Volume Measurement requires the AW3 installer only, with both frontend and backend installed. Slot Monitoring and Pallet Docking require the AW3 frontend plus their own algorithm `.tar.gz`; do not install the AW3 backend for these applications. Notes-only versions are not downloadable releases. Earlier [PalletPro packages](pallet-docking/README.md#legacy-palletpro) remain available for existing deployments. Obstacle Avoidance uses its dedicated host application.
 
 ## Required tools
 
@@ -36,9 +36,9 @@ AW3 is the formal release. Each AW3 application row shows the latest compatible 
 
 ## Application delivery model
 
-<p align="center"><img src="user-guides/assets/aw3-application-model.svg" alt="Delivery model showing four target AW3 applications, a dedicated Obstacle Avoidance host application, and separate shared tools" width="820"></p>
+<p align="center"><img src="user-guides/assets/aw3-application-model.svg" alt="Volume Measurement uses AW3 frontend and backend; Slot Monitoring and Pallet Docking use AW3 frontend plus separate algorithm packages without the AW3 backend" width="820"></p>
 
-AW3 is the target runtime for **Depalletizing, Pallet Docking, Volume Measurement, and Slot Monitoring**. The currently published Depalletizing and Pallet Docking packages are standalone deliveries outside AW3. Future major shared releases belong to AW3; application-specific patches remain under the affected application. Obstacle Avoidance has its own host-application lifecycle.
+The shared AW3 installer is published once under AW3. Slot Monitoring and Pallet Docking publish their own algorithm packages under their respective software Releases. Depalletizing retains its legacy standalone delivery pending its AW3 migration; Obstacle Avoidance retains its dedicated host application.
 
 Maintainers: [Release policy](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/user-guides/release-policy.md) · [Release-note template](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/user-guides/release-note-template.md) · [Repository structure](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/user-guides/repository-structure.md)
 

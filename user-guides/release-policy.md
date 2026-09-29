@@ -2,16 +2,16 @@
 
 [Documentation Home](../README.md) / [User Guides](README.md) / Release Policy
 
-This policy keeps current standalone products available while establishing clear ownership for future AW3 and host-application releases.
+This policy defines package ownership and installation requirements while retaining earlier standalone releases.
 
 ## 1. Current and target delivery
 
 | Application | Current public delivery | Target delivery |
 | --- | --- | --- |
 | Depalletizing | Standalone `3.0.1` package | AW3 |
-| Pallet Docking | Standalone PalletPro `1.4.8_260828` host application | AW3 |
-| Volume Measurement | Documentation `V0.1`; TorusMetric `2.0.1` notes available, public package not published | AW3 |
-| Slot Monitoring | No public package | AW3 |
+| Pallet Docking | SmartDocking package pending; legacy PalletPro retained | AW3 frontend only + SmartDocking `.tar.gz`; no AW3 backend |
+| Volume Measurement | Documentation `V0.1`; TorusMetric `2.0.1` notes available, public package not published | AW3 installer only; install frontend + backend |
+| Slot Monitoring | StockSync notes available; no public package | AW3 frontend only + StockSync `.tar.gz`; no AW3 backend |
 | Obstacle Avoidance | AW3 Obstacle Workstation `1.0.19`; V0.1 manual and white paper | Dedicated Obstacle Workstation host application |
 
 The historical Depalletizing asset is named `AW3-V3.0.1-20260624.zip`, but its confirmed product ownership is the standalone Depalletizing lifecycle. Preserve the filename and published tag for compatibility.
@@ -20,16 +20,18 @@ The historical Depalletizing asset is named `AW3-V3.0.1-20260624.zip`, but its c
 
 | Release type | Owner | Use it for | Example |
 | --- | --- | --- | --- |
-| **AW3 platform release** | AW3 | Future major shared runtime delivery or a coordinated application bundle. | `aw3-v3.1.0` |
-| **Application release** | One algorithm | Standalone delivery or a short-cycle algorithm fix or feature package. | `depalletizing-v3.0.2` |
+| **AW3 platform release** | AW3 | Shared frontend installer and the backend used for Volume Measurement. | `aw3-v3.1.0` |
+| **Application release** | One algorithm | Application algorithm installation packages, including StockSync and SmartDocking `.tar.gz`, or application-specific updates. | `depalletizing-v3.0.2` |
 | **Application host software** | Owning algorithm | Independent desktop software such as PalletPro or Obstacle Workstation. | `palletpro-v1.4.9` |
 | **Shared tool release** | Tool | Camera setup, diagnostic, or integration utilities used by multiple applications. | `lxcameraviewer-v2.5.0` |
 
-Future Depalletizing, Pallet Docking, Volume Measurement, and Slot Monitoring use AW3 as their target delivery. Obstacle Avoidance follows its dedicated host-application lifecycle.
+AW3 is the shared frontend for Volume Measurement, Slot Monitoring, and Pallet Docking. Volume Measurement additionally installs the AW3 backend and needs no separate algorithm package. Slot Monitoring and Pallet Docking do not install the AW3 backend: each requires its own algorithm `.tar.gz`. These are application installation packages, not necessarily patches. Depalletizing remains a target AW3 application; its existing standalone delivery is unchanged. Obstacle Avoidance follows its dedicated host-application lifecycle.
+
+Publish the AW3 installer once under an AW3 software Release. Publish StockSync and SmartDocking algorithm archives under their respective application software Releases, without copying the AW3 installer into them. Product folders hold documentation and package links, not binary copies. Preserve legacy PalletPro assets in their historical Release.
 
 For Volume Measurement, the product-page software history records both formal TorusMetric versions and standalone updates in one table. Formal versions are owned by the AW3 release that contains them; installer links point to that AW3 Release. Algorithm-specific changes remain in the application's single `releases/README.md`, with a link to the corresponding AW3 version when verified. Standalone update packages belong to software Release assets, and their notes are sections in the same application file. Every previous version row must be retained.
 
-GitHub provides one repository-wide **Latest Release**, so component-level latest versions are defined by `latest-downloads/README.md` and the owning product page. The homepage **Latest software** table shows the latest AW3 formal release, the latest separately distributed update for each AW3 application, and the latest Obstacle Avoidance host application. It is a current-release view, not a historical index. Prefix every GitHub Release title with its product scope, and never publish an empty Release only to change the sidebar.
+GitHub provides one repository-wide **Latest Release**, so component-level latest versions are defined by `latest-downloads/README.md` and the owning product page. The homepage **Latest software** table shows the latest AW3 formal release, the latest separately distributed algorithm installation package or update for each application, and the latest Obstacle Avoidance host application. It is a current-release view, not a historical index. Prefix every GitHub Release title with its product scope, and never publish an empty Release only to change the sidebar.
 
 ## 3. Version and naming rules
 
@@ -50,7 +52,7 @@ Keep the historical tags `Depalletizing-Algorithm-V3.0.1` and `PalletPro` unchan
 Each application product page uses the same compact release-status structure:
 
 1. **Latest documentation:** show the current document version, publication date, applicable formal software version, and links to the latest user manual and white paper when available.
-2. **Latest formal software:** show one latest formal application version and the AW3 version that delivers it, or one next planned version before the first formal release.
+2. **Latest formal software:** show one latest formal application version and its delivery relationship: bundled AW3 version for Volume Measurement, or compatible AW3 frontend plus separate algorithm package for Slot Monitoring and Pallet Docking. Mark unpublished packages explicitly.
 3. **Applicable standalone updates:** show active, non-superseded updates that explicitly reference the latest formal software version and its compatible AW3 version, or `Not published`.
 
 The status card has strict display limits:
@@ -61,7 +63,7 @@ The status card has strict display limits:
 
 Do not show earlier versions in the status card. Provide one in-page link to the complete software update history at the bottom of the product page, which retains every formal version and standalone update. Keep detailed changes, checksums, compatibility, upgrade instructions, and rollback instructions in the owning product's single `releases/README.md`, organized into retained version sections. Keep the document update history at the bottom of the product page and retain earlier document files in `docs/`.
 
-Formal software is the application baseline. Each formal version records the AW3 release that delivers it. Each standalone update records its own version, its formal-version baseline, its compatible AW3 version, whether it remains active, and any update it supersedes. Each document version records the formal software versions, standalone updates, and AW3 versions to which it applies. Use `TBC` until an identifier is assigned and verified; never infer a relationship from an asset filename.
+Formal software is the application baseline. Each formal version records its delivery relationship: the containing AW3 release for Volume Measurement, or the compatible AW3 frontend plus its separately delivered algorithm package for Slot Monitoring and Pallet Docking. Each standalone update records its own version, its formal-version baseline, its compatible AW3 version, whether it remains active, and any update it supersedes. Each document version records the formal software versions, standalone updates, and AW3 versions to which it applies. Use `TBC` until an identifier is assigned and verified; never infer a relationship from an asset filename.
 
 ## 4. Required release metadata
 

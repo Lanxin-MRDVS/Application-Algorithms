@@ -8,6 +8,10 @@ This is the single release-note file for StockSync. The supplied notes were comp
 | --- | --- | --- | --- |
 | [3.1.1](#stocksync-311) | Volume-box orientation fix; companion changes identified separately | Not supplied | Not published |
 
+### Installation and package ownership
+
+Use the [AW3 installer](../../aw3/README.md#installation) for the frontend only, plus the StockSync algorithm `.tar.gz`. Do not install the AW3 backend. StockSync software Releases own the algorithm package; the AW3 installer remains under AW3.
+
 <a id="stocksync-311"></a>
 
 ## StockSync 3.1.1
