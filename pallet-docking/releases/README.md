@@ -6,14 +6,42 @@ This is the single release-note file for Pallet Docking. SmartDocking algorithm 
 
 | Component / version | Scope | Public package |
 | --- | --- | --- |
+| [SmartDocking 3.0.2](#smartdocking-302) | RKU20 / Linux ARM64; published 2026-09-29 | [Algorithm tar.gz](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz) |
 | [SmartDocking 3.0.1](#smartdocking-301) | Algorithm update relative to 2.0.1 | Not supplied with this record |
 | [PalletPro 1.4.8_260828](#palletpro-148-260828) | Existing standalone Windows host application | [Windows installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) |
 
-A PalletPro version does not identify the SmartDocking algorithm installed on the device. The source notes do not establish a new public SmartDocking package or a verified AW3 bundle manifest.
+A PalletPro version does not identify the SmartDocking algorithm installed on the device. Earlier algorithm notes alone do not establish package availability. The published 3.0.2 device package is identified separately below.
 
 ### Installation and package ownership
 
 For SmartDocking, use the [AW3 installer](../../aw3/README.md#installation) for the frontend only, plus the SmartDocking algorithm `.tar.gz`. Do not install the AW3 backend. New SmartDocking software Releases own only the algorithm package; legacy PalletPro installers remain available in their existing Release.
+
+<a id="smartdocking-302"></a>
+
+## SmartDocking 3.0.2
+
+| Item | Value |
+| --- | --- |
+| Publication date | 2026-09-29 |
+| Target | RKU20 / Linux ARM64 |
+| Package | [SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz) |
+| Size | 193,070,781 bytes |
+| Supplied release note | [SmartDocking 3.0.1 · supplied 2026-09-22](#smartdocking-301) |
+
+Use the AW3 PC frontend only; do not install the AW3 PC backend. Deploy this package to the matching RKU20 device / center. The packaged algorithm record confirms 3.0.2. The source `.bin` is a valid gzip-compressed tar archive; only its filename suffix changed, with no content changes.
+
+The supplied change record retains its original version. This package entry adds download metadata only; it does not assign those changes to a new version.
+
+<details>
+<summary><strong>SHA-256</strong></summary>
+
+```text
+67d00e8c347d7fb71791854d712265e22719281f6f3da7f291ec6b0d30f67f9d
+```
+
+[SHA256SUMS.txt](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SHA256SUMS.txt)
+
+</details>
 
 <a id="smartdocking-301"></a>
 

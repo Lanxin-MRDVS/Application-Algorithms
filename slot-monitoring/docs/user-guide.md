@@ -2,7 +2,7 @@
 
 [Documentation Home](../../README.md) / [Slot Monitoring](../README.md) / User Guide
 
-> **Delivery note:** This guide describes the camera-side workflow. For AW3-based Slot Monitoring, use the [installation overview](../README.md#installation): AW3 frontend only plus the separate StockSync algorithm `.tar.gz`; do not install the AW3 backend. The packages are not yet published in this repository. Use the AW3 manual for frontend controls.
+> **Delivery note:** This guide describes the camera-side workflow. For AW3-based Slot Monitoring, use the [installation overview](../README.md#installation): AW3 frontend only plus the separate StockSync algorithm `.tar.gz`; do not install the AW3 backend. See the [current StockSync User Manual](stocksync-user-manual-v0.1.pdf) for AW3-based deployment; this older guide remains a historical reference.
 
 Source last modified: March 4, 2025
 

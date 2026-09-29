@@ -2,7 +2,7 @@
 
 [Documentation Home](../../README.md) / [Pallet Docking](../README.md) / User Guide
 
-> **Legacy guide:** This document describes the standalone PalletPro workflow, not the AW3 interface. For AW3-based Pallet Docking, use the [installation overview](../README.md#installation): AW3 frontend only plus the separate SmartDocking algorithm `.tar.gz`; do not install the AW3 backend. The new packages are not yet published in this repository.
+> **Legacy guide:** This document describes the standalone PalletPro workflow, not the AW3 interface. For AW3-based Pallet Docking, use the [installation overview](../README.md#installation): AW3 frontend only plus the separate SmartDocking algorithm `.tar.gz`; do not install the AW3 backend. Current packages and the new AW3-based User Manual are linked from the product overview.
 
 For MRDVS Eagle-M series cameras.
 

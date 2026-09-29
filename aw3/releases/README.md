@@ -2,10 +2,11 @@
 
 [Documentation Home](../../README.md) / [AW3](../README.md) / Release Notes
 
-This is the single release-note file for AW3. Versions are retained below, newest first. The supplied notes were compiled on **2026-09-22**; that date is not the publication date of every version. No new installer was supplied with these notes, and no AW3 installer is currently published in this repository.
+This is the single release-note file for AW3. Versions are retained below, newest first. Earlier change records were compiled on **2026-09-22**; that date is not the publication date of every version. AW3 3.1.2 is published below with the supplied installer metadata.
 
 | Version | Scope | Public package in this repository |
 | --- | --- | --- |
+| [3.1.2](#aw3-312) | Windows x64 frontend installer; build `260929` | [Download](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) |
 | [3.1.1](#aw3-311) | AW3Viewer Windows x64 frontend; 2026-09-22 build reference | Not published |
 | [3.1.0](#aw3-310) | Initial delivery and later maintenance builds with the same version | Not published |
 | [3.0.1](#aw3-301) | New AW3Viewer UI and cumulative platform changes from the legacy UI baseline | Not published |
@@ -16,6 +17,33 @@ AW3 frontend, device service, and algorithm versions are independent. Matching v
 ### Installation and package ownership
 
 Volume Measurement uses the AW3 installer with both frontend and backend. Slot Monitoring and Pallet Docking use the AW3 frontend only plus their separate algorithm `.tar.gz`; do not install the AW3 backend for those applications. See [installation requirements](../README.md#installation). This delivery model does not verify the contents or compatibility of any unpublished installer.
+
+<a id="aw3-312"></a>
+
+## AW3 3.1.2
+
+| Item | Value |
+| --- | --- |
+| Publication date | 2026-09-29 |
+| Target | Windows x64 |
+| Package | [AW3-V3.1.2_260929_win_x64.exe](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) |
+| Size | 40,522,862 bytes |
+| Supplied release note | [AW3 3.1.1 · supplied 2026-09-22](#aw3-311) |
+
+Volume Measurement installs the AW3 frontend and backend. Slot Monitoring and Pallet Docking install the frontend only and use their separate device algorithm packages. The installer is unsigned; installation and hardware operation were not tested during publication.
+
+The supplied change record retains its original version. This package entry adds download metadata only; it does not assign those changes to a new version.
+
+<details>
+<summary><strong>SHA-256</strong></summary>
+
+```text
+bb9e2c55afa907582adeaf337ae02a7ff25224202199b3f9b4c205b94b169436
+```
+
+[SHA256SUMS.txt](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/SHA256SUMS.txt)
+
+</details>
 
 <a id="aw3-311"></a>
 

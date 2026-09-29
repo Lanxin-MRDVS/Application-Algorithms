@@ -22,7 +22,7 @@
       Formal version: <code>TBC</code><br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf">User Manual</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-white-paper-v0.1.pdf">White Paper</a><br><br>
       <strong>Latest formal software</strong><br>
-      Public package not published<br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">AW3 3.1.2 installer</a> · 2026-09-29<br>
       Recorded algorithm: <a href="releases/README.md#torusmetric-201">TorusMetric 2.0.1</a><br>
       Delivery: AW3 installer (frontend + backend)<br><br>
       <strong>Applicable standalone updates</strong><br>
@@ -56,7 +56,7 @@ Final performance depends on the installation, camera layout, point-cloud qualit
 
 ## AW3 deployment
 
-**Download the [AW3 installer](../aw3/README.md#installation) only. Install both the AW3 frontend and backend.** Volume Measurement does not require a separate algorithm `.tar.gz`. The AW3 installer is not yet published in this repository.
+**Download the [AW3 installer](../aw3/README.md#installation) only. Install both the AW3 frontend and backend.** Volume Measurement does not require a separate algorithm `.tar.gz`. The current download is [AW3 3.1.2 for Windows x64](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe).
 
 AW3 manages devices, camera groups, calibration, application settings, monitoring, and protocol output. TorusMetric runs as an AW3 application, calculates the measurement result, and passes configured data to the customer's business system.
 
@@ -95,7 +95,7 @@ This table retains formal versions and standalone updates. The supplied TorusMet
 
 | Version | Category | Formal baseline | AW3 | Release date | Status / supersedes | Release note / download |
 | --- | --- | --- | --- | --- | --- | --- |
-| `2.0.1` | AW3-bundled algorithm | Not verified | Not verified | Not supplied | Notes available; package not published | [Release notes](releases/README.md#torusmetric-201) |
+| `2.0.1` | AW3-bundled algorithm | Not verified | Not verified | Not supplied | Algorithm notes available; exact AW3 bundle mapping not verified | [Release notes](releases/README.md#torusmetric-201) |
 
 - **Formal software** is delivered with AW3 and becomes the application baseline.
 - **Standalone update** is a patch for a named formal baseline and compatible AW3 version. Its status shows whether it is active or superseded.

@@ -21,8 +21,9 @@
       <code>V0.1</code> · 2026-08-31<br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf">User Manual</a><br><br>
       <strong>Latest formal software</strong><br>
-      Public installer not published in this repository<br>
-      Latest recorded frontend: <a href="releases/README.md#aw3-311">3.1.1</a><br><br>
+      AW3 <code>3.1.2</code> · 2026-09-29<br>
+      Windows x64 · build <code>260929</code><br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">Windows installer</a> · <a href="releases/README.md#aw3-312">Release notes</a><br><br>
       <strong>Installation by application</strong><br>
       Volume Measurement: frontend + backend<br>
       Slot Monitoring / Pallet Docking: frontend + separate algorithm package<br><br>
@@ -57,17 +58,17 @@ AW3 follows a five-stage deployment path: prepare the host and cameras, connect 
 
 ## Installation
 
-Download the AW3 installer from this platform's software Release. Choose the components for the application you are deploying:
+Download the [AW3 3.1.2 Windows x64 installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) from the AW3 software Release. Choose the components for the application you are deploying:
 
 | Application | Required downloads | AW3 components to install |
 | --- | --- | --- |
-| [Volume Measurement](../volume-measurement/README.md) | AW3 installer only | Frontend and backend |
-| [Slot Monitoring](../slot-monitoring/README.md#installation) | AW3 installer + StockSync algorithm `.tar.gz` | Frontend only; do not install the AW3 backend |
-| [Pallet Docking](../pallet-docking/README.md#installation) | AW3 installer + SmartDocking algorithm `.tar.gz` | Frontend only; do not install the AW3 backend |
+| [Volume Measurement](../volume-measurement/README.md) | [AW3 installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) only | Frontend and backend |
+| [Slot Monitoring](../slot-monitoring/README.md#installation) | [AW3](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) + [StockSync 3.1.1 tar.gz](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.tar.gz) (RK3588) | Frontend only; do not install the AW3 backend |
+| [Pallet Docking](../pallet-docking/README.md#installation) | [AW3](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) + [SmartDocking 3.0.2 tar.gz](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz) (RKU20) | Frontend only; do not install the AW3 backend |
 
 Slot Monitoring and Pallet Docking use their separate algorithm packages; these are required installation packages, not merely optional AW3 patches. Follow the package's deployment instructions for the target device. Do not install an algorithm `.tar.gz` as a Windows frontend installer.
 
-**Package availability:** The AW3 installer and the two algorithm packages are not yet published in this repository. Download links will be added after the actual packages and versions are verified. Existing release-note version numbers alone do not establish a compatible package combination.
+**Package verification:** Version metadata, archive formats, and upload checksums were checked. The AW3 installer is unsigned. RKU20 and RK3588 packages are platform-specific; hardware deployment and a complete compatibility matrix have not been tested as part of this publication.
 
 AW3 installation and component selection: [User Manual](docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf).
 
@@ -106,6 +107,7 @@ This table records the supplied platform and frontend history. Release-note avai
 
 | Version | Scope | Release date | Release notes |
 | --- | --- | --- | --- |
+| `3.1.2` | Windows x64 installer; build `260929` | 2026-09-29 | [Release notes](releases/README.md#aw3-312) · [Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) |
 | `3.1.1` | AW3Viewer frontend; build reference `20260922` | Not supplied | [Changes](releases/README.md#aw3-311) |
 | `3.1.0` | Initial release and later maintenance | Not supplied | [Changes](releases/README.md#aw3-310) |
 | `3.0.1` | Cumulative platform changes | Not supplied | [Changes](releases/README.md#aw3-301) |
@@ -117,4 +119,4 @@ All versions share one [AW3 Release Notes](releases/README.md) file. Add verifie
 
 | Document | Version | Publication date | Applies to | File |
 | --- | --- | --- | --- | --- |
-| AW3 Application Algorithm Platform Deployment User Manual | `V0.1` | 2026-08-31 | AW3 formal version: `TBC` | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) |
+| AW3 Application Algorithm Platform Deployment User Manual | `V0.1` | 2026-08-31 | AW3 platform setup; check component-specific instructions | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) |

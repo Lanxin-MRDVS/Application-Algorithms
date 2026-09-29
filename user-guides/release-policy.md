@@ -9,9 +9,9 @@ This policy defines package ownership and installation requirements while retain
 | Application | Current public delivery | Target delivery |
 | --- | --- | --- |
 | Depalletizing | Standalone `3.0.1` package | AW3 |
-| Pallet Docking | SmartDocking package pending; legacy PalletPro retained | AW3 frontend only + SmartDocking `.tar.gz`; no AW3 backend |
-| Volume Measurement | Documentation `V0.1`; TorusMetric `2.0.1` notes available, public package not published | AW3 installer only; install frontend + backend |
-| Slot Monitoring | StockSync notes available; no public package | AW3 frontend only + StockSync `.tar.gz`; no AW3 backend |
+| Pallet Docking | SmartDocking `3.0.2` RKU20 package; legacy PalletPro retained | AW3 frontend only + SmartDocking `.tar.gz`; no AW3 backend |
+| Volume Measurement | AW3 `3.1.2` installer; TorusMetric algorithm notes tracked separately | AW3 installer only; install frontend + backend |
+| Slot Monitoring | StockSync `3.1.1` full RK3588 update | AW3 frontend only + StockSync `.tar.gz`; no AW3 backend |
 | Obstacle Avoidance | AW3 Obstacle Workstation `1.0.19`; V0.1 manual and white paper | Dedicated Obstacle Workstation host application |
 
 The historical Depalletizing asset is named `AW3-V3.0.1-20260624.zip`, but its confirmed product ownership is the standalone Depalletizing lifecycle. Preserve the filename and published tag for compatibility.
