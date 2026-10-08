@@ -8,6 +8,38 @@
 
 </div>
 
+> **Before you update:** Check your installed AW3 and algorithm versions against the software history below. Confirm that the document version applies to your deployment before following installation or configuration steps.
+
+<a id="software-update-history"></a>
+
+<details>
+<summary><strong>Software history</strong> · TorusMetric version records</summary>
+
+This table retains formal versions and standalone updates. The supplied TorusMetric 2.0.1 notes describe cumulative algorithm capabilities; they do not identify a published AW3 bundle or a standalone patch package.
+
+| Version | Category | Formal baseline | AW3 | Release date | Status / supersedes | Release note / download |
+| --- | --- | --- | --- | --- | --- | --- |
+| `2.0.1` | AW3-bundled algorithm | Not verified | Not verified | Not supplied | Algorithm notes available; exact AW3 bundle mapping not verified | [Release notes](releases/README.md#torusmetric-201) |
+
+- **Formal software** is delivered with AW3 and becomes the application baseline.
+- **Standalone update** is a patch for a named formal baseline and compatible AW3 version. Its status shows whether it is active or superseded.
+
+</details>
+
+<a id="document-update-history"></a>
+
+<details>
+<summary><strong>Document history</strong> · V0.1</summary>
+
+The Release status shows the latest document set. This table retains every published document version and its software applicability.
+
+| Document | Version | Applies to | Publication date | Status | File |
+| --- | --- | --- | --- | --- | --- |
+| TorusMetric User Manual | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) |
+| TorusMetric Volume Measurement Solution White Paper | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-white-paper-v0.1.pdf) |
+
+</details>
+
 <table>
   <tr>
     <td width="66%" valign="top">
@@ -27,7 +59,7 @@
       Delivery: AW3 installer (frontend + backend)<br><br>
       <strong>Applicable standalone updates</strong><br>
       Not published<br><br>
-      <a href="#software-update-history"><strong>View update history ↓</strong></a><br><br>
+      <a href="#software-update-history"><strong>View update history ↑</strong></a><br><br>
       <small>Download AW3 only and install both frontend and backend. No separate TorusMetric algorithm package is required.</small>
     </td>
   </tr>
@@ -88,23 +120,3 @@ AW3 manages devices, camera groups, calibration, application settings, monitorin
     </tr>
   </tbody>
 </table>
-
-## Software update history
-
-This table retains formal versions and standalone updates. The supplied TorusMetric 2.0.1 notes describe cumulative algorithm capabilities; they do not identify a published AW3 bundle or a standalone patch package.
-
-| Version | Category | Formal baseline | AW3 | Release date | Status / supersedes | Release note / download |
-| --- | --- | --- | --- | --- | --- | --- |
-| `2.0.1` | AW3-bundled algorithm | Not verified | Not verified | Not supplied | Algorithm notes available; exact AW3 bundle mapping not verified | [Release notes](releases/README.md#torusmetric-201) |
-
-- **Formal software** is delivered with AW3 and becomes the application baseline.
-- **Standalone update** is a patch for a named formal baseline and compatible AW3 version. Its status shows whether it is active or superseded.
-
-## Document update history
-
-The Release status shows the latest document set. This table retains every published document version and its software applicability.
-
-| Document | Version | Applies to | Publication date | Status | File |
-| --- | --- | --- | --- | --- | --- |
-| TorusMetric User Manual | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) |
-| TorusMetric Volume Measurement Solution White Paper | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-white-paper-v0.1.pdf) |

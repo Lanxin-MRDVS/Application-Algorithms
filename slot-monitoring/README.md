@@ -8,6 +8,34 @@
 
 </div>
 
+> **Before you update:** Check your installed AW3 and algorithm versions against the software history below. Confirm that the document version applies to your deployment before following installation or configuration steps.
+
+<a id="software-update-history"></a>
+
+<details>
+<summary><strong>Software history</strong> · StockSync 3.1.1</summary>
+
+The full device update includes StockSync, camera SDK libraries, and the device service. AW3 frontend and device-side versions are independent. Detailed changes remain in one [Release Notes](releases/README.md) file.
+
+| Version | Category | Target | Publication date | Release note / download |
+| --- | --- | --- | --- | --- |
+| StockSync `3.1.1` | Full device update; build 2026-09-24 | RK3588 / Linux ARM64; AW3 frontend | 2026-09-29 | [Notes](releases/README.md#stocksync-311) · [StockSync Package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.tar.gz) |
+
+</details>
+
+<a id="document-update-history"></a>
+
+<details>
+<summary><strong>Document history</strong> · V0.1 · files updated 2026-10-08</summary>
+
+| Document | Version | Document date | File updated | Read |
+| --- | --- | --- | --- | --- |
+| StockSync User Manual | V0.1 | 2026-09-24 | 2026-10-08 | [PDF](docs/stocksync-user-manual-v0.1.pdf) |
+| StockSync White Paper | V0.1 | 2026-09-24 | 2026-10-08 | [PDF](docs/stocksync-white-paper-v0.1.pdf) |
+| Legacy Camera-side User Guide | Original, unversioned | Not supplied | — | [Markdown](docs/user-guide.md) |
+
+</details>
+
 <table>
   <tr>
     <td width="66%" valign="top">
@@ -20,6 +48,7 @@
       <strong>Release status</strong><br><br>
       <strong>Latest documentation</strong><br>
       <code>V0.1</code> · 2026-09-24<br>
+      Files updated: 2026-10-08<br>
       <a href="docs/stocksync-user-manual-v0.1.pdf">User Manual</a> · <a href="docs/stocksync-white-paper-v0.1.pdf">White Paper</a><br><br>
       <strong>Latest algorithm package</strong><br>
       StockSync <code>3.1.1</code><br>
@@ -28,8 +57,8 @@
       <strong>Required frontend</strong><br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">AW3 Installer</a><br>
       Frontend only; no AW3 PC backend<br><br>
-      <a href="#software-update-history"><strong>View software history ↓</strong></a><br>
-      <a href="#document-update-history">View document history ↓</a>
+      <a href="#software-update-history"><strong>View software history ↑</strong></a><br>
+      <a href="#document-update-history">View document history ↑</a>
     </td>
   </tr>
 </table>
@@ -58,7 +87,7 @@ The white paper specifies S10 Pro as the standard camera. Confirm the device pla
 | Download | Target | Installation |
 | --- | --- | --- |
 | [AW3 Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) | Windows x64 PC | Install the frontend only; clear **AW3 Backend Download**. |
-| [StockSync Package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.tar.gz) | RK3588, Linux ARM64 | Deploy the `.tar.gz` to the matching device / center via SSH, following the User Manual. |
+| [StockSync Package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.tar.gz) | RK3588, Linux ARM64 | Deploy the `.tar.gz` to the matching device / center via SSH, using the device package deployment instructions. |
 
 Both packages are required. Do not install the AW3 PC backend for this application. The algorithm archive contains the device-side service and runtime dependencies; it is not a Windows installer. Confirm the device platform before updating and back up its configuration. Hardware deployment has not been tested as part of this publication.
 
@@ -72,19 +101,3 @@ Both packages are required. Do not install the AW3 PC backend for this applicati
     <tr><td>3. Configure, calibrate, and validate the application</td><td><a href="docs/stocksync-user-manual-v0.1.pdf">User Manual</a></td></tr>
   </tbody>
 </table>
-
-## Software update history
-
-The full device update includes StockSync, camera SDK libraries, and the device service. AW3 frontend and device-side versions are independent. Detailed changes remain in one [Release Notes](releases/README.md) file.
-
-| Version | Category | Target | Publication date | Release note / download |
-| --- | --- | --- | --- | --- |
-| StockSync `3.1.1` | Full device update; build 2026-09-24 | RK3588 / Linux ARM64; AW3 frontend | 2026-09-29 | [Notes](releases/README.md#stocksync-311) · [StockSync Package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.tar.gz) |
-
-## Document update history
-
-| Document | Version | Document date | Status | Read |
-| --- | --- | --- | --- | --- |
-| StockSync User Manual | V0.1 | 2026-09-24 | Current AW3 workflow | [PDF](docs/stocksync-user-manual-v0.1.pdf) |
-| StockSync White Paper | V0.1 | 2026-09-24 | Current | [PDF](docs/stocksync-white-paper-v0.1.pdf) |
-| Camera-side User Guide | Original, unversioned | Not supplied | Legacy reference | [Markdown](docs/user-guide.md) |
