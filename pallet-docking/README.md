@@ -79,7 +79,6 @@ SmartDocking algorithm versions and legacy PalletPro host versions are separate 
 | Version | Category | Target | Publication date | Release note / download |
 | --- | --- | --- | --- | --- |
 | SmartDocking `3.0.2` | Device algorithm package | RKU20 / Linux ARM64; AW3 frontend | 2026-09-29 | [Notes](releases/README.md#smartdocking-302) · [SmartDocking Package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz) |
-| SmartDocking `3.0.1` | Algorithm record | Package not published | Not supplied | [Notes](releases/README.md#smartdocking-301) |
 | PalletPro `1.4.8_260828` | Legacy standalone host | Windows | 2026-08-24 | [Notes](releases/README.md#palletpro-148-260828) · [Historical Release](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/tag/PalletPro) |
 
 <a id="latest-download"></a>
