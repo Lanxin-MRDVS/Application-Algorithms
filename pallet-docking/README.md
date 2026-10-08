@@ -8,6 +8,54 @@
 
 </div>
 
+> **Before you update:** Check your installed AW3 and algorithm versions against the software history below. PalletPro users should use the legacy downloads and guide for their deployment.
+
+<a id="legacy-palletpro"></a>
+<a id="latest-download"></a>
+
+<details>
+<summary><strong>Legacy PalletPro</strong> · 1.4.8_260828 · downloads and user guide</summary>
+
+PalletPro is a separate, earlier host application. It is not the AW3 frontend or the SmartDocking algorithm package. The following downloads and guide are retained for existing PalletPro deployments; their UI instructions do not describe the AW3 workflow.
+
+| Item | Details |
+| --- | --- |
+| Installer | [PalletPro Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) |
+| User guide | [PalletPro User Guide](docs/user-guide.md) |
+| File size | 118,296,332 bytes (112.82 MiB) |
+| SHA-256 | `c1bcc40900eb0c3f282c5657a7c3d06b69629483ec1674f4da347a295485dc3c` |
+| Version notes | [PalletPro 1.4.8_260828](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/releases/README.md#palletpro-148-260828) |
+| Historical package | [PalletPro Archive (ZIP)](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro_1.4.8.zip) |
+
+</details>
+
+<a id="software-update-history"></a>
+
+<details>
+<summary><strong>Software history</strong> · SmartDocking / PalletPro</summary>
+
+SmartDocking algorithm versions and legacy PalletPro host versions are separate components. All detailed notes remain in one [Release Notes](releases/README.md) file.
+
+| Version | Category | Target | Publication date | Release note / download |
+| --- | --- | --- | --- | --- |
+| SmartDocking `3.0.2` | Device algorithm package | RKU20 / Linux ARM64; AW3 frontend | 2026-09-29 | [Notes](releases/README.md#smartdocking-302) · [SmartDocking Package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz) |
+| PalletPro `1.4.8_260828` | Legacy standalone host | Windows | 2026-08-24 | [Notes](releases/README.md#palletpro-148-260828) · [Historical Release](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/tag/PalletPro) |
+
+</details>
+
+<a id="document-update-history"></a>
+
+<details>
+<summary><strong>Document history</strong> · V0.1 / legacy PalletPro guide</summary>
+
+| Document | Version | Document date | Status | Read |
+| --- | --- | --- | --- | --- |
+| Smart Docking User Manual | V0.1 | 2026-09-28 | Current AW3 workflow | [PDF](docs/smartdocking-user-manual-v0.1.pdf) |
+| Pallet Docking Solution White Paper | V0.1 | 2026-09-28 | Current | [PDF](docs/smartdocking-white-paper-v0.1.pdf) |
+| PalletPro User Guide | Original, unversioned | Not supplied | Legacy PalletPro workflow | [Markdown](docs/user-guide.md) |
+
+</details>
+
 <table>
   <tr>
     <td width="66%" valign="top">
@@ -27,8 +75,8 @@
       <strong>Required frontend</strong><br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">AW3 Installer</a><br>
       Frontend only; no AW3 PC backend<br><br>
-      <a href="#software-update-history"><strong>View software history ↓</strong></a><br>
-      <a href="#document-update-history">View document history ↓</a>
+      <a href="#software-update-history"><strong>View software history ↑</strong></a><br>
+      <a href="#document-update-history">View document history ↑</a>
     </td>
   </tr>
 </table>
@@ -71,45 +119,3 @@ Both packages are required. Do not install the AW3 PC backend for this applicati
     <tr><td>3. Configure, calibrate, and validate the application</td><td><a href="docs/smartdocking-user-manual-v0.1.pdf">User Manual</a></td></tr>
   </tbody>
 </table>
-
-## Software update history
-
-SmartDocking algorithm versions and legacy PalletPro host versions are separate components. All detailed notes remain in one [Release Notes](releases/README.md) file.
-
-| Version | Category | Target | Publication date | Release note / download |
-| --- | --- | --- | --- | --- |
-| SmartDocking `3.0.2` | Device algorithm package | RKU20 / Linux ARM64; AW3 frontend | 2026-09-29 | [Notes](releases/README.md#smartdocking-302) · [SmartDocking Package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/smartdocking-v3.0.2/SmartDocking-RKU20-V3.0.2_260929_linux_arm64.tar.gz) |
-| PalletPro `1.4.8_260828` | Legacy standalone host | Windows | 2026-08-24 | [Notes](releases/README.md#palletpro-148-260828) · [Historical Release](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/tag/PalletPro) |
-
-<a id="latest-download"></a>
-
-## Legacy PalletPro
-
-PalletPro is a separate, earlier host application. It is not the AW3 frontend or the SmartDocking algorithm package. The following downloads and guide are retained for existing PalletPro deployments; their UI instructions do not describe the AW3 workflow.
-
-<details>
-<summary><strong>PalletPro downloads and user guide</strong></summary>
-
-<p align="center">
-  <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe"><img src="../user-guides/assets/button-download-palletpro-latest.svg" alt="Download PalletPro 1.4.8_260828" width="240" height="40"></a>
-  <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/docs/user-guide.md"><img src="../user-guides/assets/button-user-guide-large.svg" alt="Read the legacy PalletPro user guide" width="240" height="40"></a>
-</p>
-
-| Item | Details |
-| --- | --- |
-| Installer | [PalletPro Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro-install-v1.4.8_260828.exe) |
-| File size | 118,296,332 bytes (112.82 MiB) |
-| SHA-256 | `c1bcc40900eb0c3f282c5657a7c3d06b69629483ec1674f4da347a295485dc3c` |
-| Version notes | [PalletPro 1.4.8_260828](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/pallet-docking/releases/README.md#palletpro-148-260828) |
-| Historical package | [PalletPro Archive (ZIP)](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/PalletPro/PalletPro_1.4.8.zip) |
-
-
-</details>
-
-## Document update history
-
-| Document | Version | Document date | Status | Read |
-| --- | --- | --- | --- | --- |
-| Smart Docking User Manual | V0.1 | 2026-09-28 | Current AW3 workflow | [PDF](docs/smartdocking-user-manual-v0.1.pdf) |
-| Pallet Docking Solution White Paper | V0.1 | 2026-09-28 | Current | [PDF](docs/smartdocking-white-paper-v0.1.pdf) |
-| PalletPro User Guide | Original, unversioned | Not supplied | Legacy PalletPro workflow | [Markdown](docs/user-guide.md) |
