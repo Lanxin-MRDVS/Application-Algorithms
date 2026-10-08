@@ -8,6 +8,38 @@
 
 </div>
 
+> **Before you update:** Check your installed AW3 and application versions against the software history below. Confirm that the User Manual applies to your deployment.
+
+<a id="software-update-history"></a>
+
+<details>
+<summary><strong>Software history · AW3 3.1.2</strong></summary>
+
+This table records the supplied platform and frontend history. Release-note availability does not establish public installer availability or a verified application bundle. Component versions are independent.
+
+| Version | Scope | Release date | Release notes |
+| --- | --- | --- | --- |
+| `3.1.2` | Windows x64 installer; build `260929` | 2026-09-29 | [Release notes](releases/README.md#aw3-312) · [AW3 Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) |
+| `3.1.1` | AW3Viewer frontend; build reference `20260922` | Not supplied | [Changes](releases/README.md#aw3-311) |
+| `3.1.0` | Initial release and later maintenance | Not supplied | [Changes](releases/README.md#aw3-310) |
+| `3.0.1` | Cumulative platform changes | Not supplied | [Changes](releases/README.md#aw3-301) |
+| Legacy UI | AlgPlatformViewer; version not supplied | Not supplied | [Historical scope](releases/README.md#legacy-ui) |
+
+All versions share one [AW3 Release Notes](releases/README.md) file. Add verified bundle manifests, compatibility, downloads, checksums, and upgrade instructions to the corresponding version section when software is published. The supplied notes were compiled on 2026-09-22; this is not a software release date.
+
+</details>
+
+<a id="document-update-history"></a>
+
+<details>
+<summary><strong>Document history · V0.1</strong></summary>
+
+| Document | Version | Publication date | Applies to | File |
+| --- | --- | --- | --- | --- |
+| AW3 Application Algorithm Platform Deployment User Manual | `V0.1` | 2026-08-31 | AW3 platform setup; check component-specific instructions | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) |
+
+</details>
+
 <table>
   <tr>
     <td width="66%" valign="top">
@@ -27,7 +59,7 @@
       <strong>Installation by application</strong><br>
       Volume Measurement: frontend + backend<br>
       Slot Monitoring / Pallet Docking: frontend + separate algorithm package<br><br>
-      <a href="#software-update-history"><strong>View update history ↓</strong></a>
+      <a href="#software-update-history"><strong>View update history ↑</strong></a>
     </td>
   </tr>
 </table>
@@ -100,23 +132,3 @@ Obstacle Avoidance follows a separate dedicated host-application lifecycle and i
     </tr>
   </tbody>
 </table>
-
-## Software update history
-
-This table records the supplied platform and frontend history. Release-note availability does not establish public installer availability or a verified application bundle. Component versions are independent.
-
-| Version | Scope | Release date | Release notes |
-| --- | --- | --- | --- |
-| `3.1.2` | Windows x64 installer; build `260929` | 2026-09-29 | [Release notes](releases/README.md#aw3-312) · [AW3 Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) |
-| `3.1.1` | AW3Viewer frontend; build reference `20260922` | Not supplied | [Changes](releases/README.md#aw3-311) |
-| `3.1.0` | Initial release and later maintenance | Not supplied | [Changes](releases/README.md#aw3-310) |
-| `3.0.1` | Cumulative platform changes | Not supplied | [Changes](releases/README.md#aw3-301) |
-| Legacy UI | AlgPlatformViewer; version not supplied | Not supplied | [Historical scope](releases/README.md#legacy-ui) |
-
-All versions share one [AW3 Release Notes](releases/README.md) file. Add verified bundle manifests, compatibility, downloads, checksums, and upgrade instructions to the corresponding version section when software is published. The supplied notes were compiled on 2026-09-22; this is not a software release date.
-
-## Document update history
-
-| Document | Version | Publication date | Applies to | File |
-| --- | --- | --- | --- | --- |
-| AW3 Application Algorithm Platform Deployment User Manual | `V0.1` | 2026-08-31 | AW3 platform setup; check component-specific instructions | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/aw3/docs/aw3-application-algorithm-platform-user-manual-v0.1.pdf) |

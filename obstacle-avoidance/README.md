@@ -8,6 +8,38 @@
 
 </div>
 
+> **Before you update:** Check your installed Obstacle Workstation version and camera compatibility before updating. Confirm that the document version applies to your deployment.
+
+<a id="software-update-history"></a>
+
+<details>
+<summary><strong>Software history · Obstacle Workstation 1.0.19</strong></summary>
+
+Obstacle Workstation follows a dedicated host-application release lifecycle. A document version or a V1/V2 camera label does not establish a software package version.
+
+| Version | Category | Compatible baseline | Release date | Release note / download |
+| --- | --- | --- | --- | --- |
+| 1.0.19 | Host application | Camera / firmware compatibility not verified | 2026-09-23 | [Release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/releases/README.md#workstation-1019) · [Obstacle Workstation Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe) |
+
+Published host applications and subsequent patches will be retained in this table with their verified versions, dates, compatibility, release notes, and downloads.
+
+</details>
+
+<a id="document-update-history"></a>
+
+<details>
+<summary><strong>Document history · V0.1</strong></summary>
+
+| Document | Version | Publication date | Status | Read |
+| --- | --- | --- | --- | --- |
+| Obstacle Avoidance Solution User Manual | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/docs/obstacle-avoidance-user-manual-v0.1.pdf) |
+| Obstacle Avoidance Solution White Paper | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/docs/obstacle-avoidance-white-paper-v0.1.pdf) |
+| Legacy Camera-side Deployment Guide | v0.0 archive | May 2026 | Superseded | [Markdown](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/docs/deployment-guide-v0.0.md) |
+
+v0.0 is the repository archive identifier assigned to the previous guide. Its original text, including the internal Version 1.1 label, is preserved. It is not a software release number.
+
+</details>
+
 <table>
   <tr>
     <td width="66%" valign="top">
@@ -29,8 +61,8 @@
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe">Obstacle Workstation Installer</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/releases/README.md#workstation-1019">Release notes</a><br><br>
       <strong>Applicable standalone updates</strong><br>
       Not published<br><br>
-      <a href="#software-update-history"><strong>View software history ↓</strong></a><br>
-      <a href="#document-update-history">View document history ↓</a><br><br>
+      <a href="#software-update-history"><strong>View software history ↑</strong></a><br>
+      <a href="#document-update-history">View document history ↑</a><br><br>
       <small>V1 / V2 identify camera compatibility and output features. Software package versions are recorded separately.</small>
     </td>
   </tr>
@@ -103,23 +135,3 @@ The solution supplies perception and configuration tools. The user-provided cont
     </tr>
   </tbody>
 </table>
-
-## Software update history
-
-Obstacle Workstation follows a dedicated host-application release lifecycle. A document version or a V1/V2 camera label does not establish a software package version.
-
-| Version | Category | Compatible baseline | Release date | Release note / download |
-| --- | --- | --- | --- | --- |
-| 1.0.19 | Host application | Camera / firmware compatibility not verified | 2026-09-23 | [Release notes](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/releases/README.md#workstation-1019) · [Obstacle Workstation Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe) |
-
-Published host applications and subsequent patches will be retained in this table with their verified versions, dates, compatibility, release notes, and downloads.
-
-## Document update history
-
-| Document | Version | Publication date | Status | Read |
-| --- | --- | --- | --- | --- |
-| Obstacle Avoidance Solution User Manual | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/docs/obstacle-avoidance-user-manual-v0.1.pdf) |
-| Obstacle Avoidance Solution White Paper | V0.1 | 2026-09-21 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/docs/obstacle-avoidance-white-paper-v0.1.pdf) |
-| Legacy Camera-side Deployment Guide | v0.0 archive | May 2026 | Superseded | [Markdown](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/docs/deployment-guide-v0.0.md) |
-
-v0.0 is the repository archive identifier assigned to the previous guide. Its original text, including the internal Version 1.1 label, is preserved. It is not a software release number.
