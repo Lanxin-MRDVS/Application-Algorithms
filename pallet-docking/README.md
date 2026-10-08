@@ -10,11 +10,11 @@
 
 > **Before you update:** Check your installed AW3 and algorithm versions against the software history below. PalletPro users should use the legacy downloads and guide for their deployment.
 
-<a id="legacy-palletpro"></a>
-<a id="latest-download"></a>
-
 <details>
 <summary><strong>Legacy PalletPro</strong> · 1.4.8_260828 · downloads and user guide</summary>
+
+<a id="legacy-palletpro"></a>
+<a id="latest-download"></a>
 
 PalletPro is a separate, earlier host application. It is not the AW3 frontend or the SmartDocking algorithm package. The following downloads and guide are retained for existing PalletPro deployments; their UI instructions do not describe the AW3 workflow.
 
@@ -29,10 +29,10 @@ PalletPro is a separate, earlier host application. It is not the AW3 frontend or
 
 </details>
 
-<a id="software-update-history"></a>
-
 <details>
 <summary><strong>Software history</strong> · SmartDocking / PalletPro</summary>
+
+<a id="software-update-history"></a>
 
 SmartDocking algorithm versions and legacy PalletPro host versions are separate components. All detailed notes remain in one [Release Notes](releases/README.md) file.
 
@@ -43,10 +43,10 @@ SmartDocking algorithm versions and legacy PalletPro host versions are separate 
 
 </details>
 
-<a id="document-update-history"></a>
-
 <details>
 <summary><strong>Document history</strong> · V0.1 / legacy PalletPro guide</summary>
+
+<a id="document-update-history"></a>
 
 | Document | Version | Document date | Status | Read |
 | --- | --- | --- | --- | --- |

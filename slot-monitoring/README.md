@@ -10,10 +10,10 @@
 
 > **Before you update:** Check your installed AW3 and algorithm versions against the software history below. Confirm that the document version applies to your deployment before following installation or configuration steps.
 
-<a id="software-update-history"></a>
-
 <details>
 <summary><strong>Software history</strong> · StockSync 3.1.1</summary>
+
+<a id="software-update-history"></a>
 
 The full device update includes StockSync, camera SDK libraries, and the device service. AW3 frontend and device-side versions are independent. Detailed changes remain in one [Release Notes](releases/README.md) file.
 
@@ -23,10 +23,10 @@ The full device update includes StockSync, camera SDK libraries, and the device 
 
 </details>
 
-<a id="document-update-history"></a>
-
 <details>
 <summary><strong>Document history</strong> · V0.1 · files updated 2026-10-08</summary>
+
+<a id="document-update-history"></a>
 
 | Document | Version | Document date | File updated | Read |
 | --- | --- | --- | --- | --- |

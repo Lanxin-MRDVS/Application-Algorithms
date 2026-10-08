@@ -10,10 +10,10 @@
 
 > **Before you update:** Check your installed AW3 and application versions against the software history below. Confirm that the User Manual applies to your deployment.
 
-<a id="software-update-history"></a>
-
 <details>
 <summary><strong>Software history · AW3 3.1.2</strong></summary>
+
+<a id="software-update-history"></a>
 
 This table records the supplied platform and frontend history. Release-note availability does not establish public installer availability or a verified application bundle. Component versions are independent.
 
@@ -29,10 +29,10 @@ All versions share one [AW3 Release Notes](releases/README.md) file. Add verifie
 
 </details>
 
-<a id="document-update-history"></a>
-
 <details>
 <summary><strong>Document history · V0.1</strong></summary>
+
+<a id="document-update-history"></a>
 
 | Document | Version | Publication date | Applies to | File |
 | --- | --- | --- | --- | --- |
@@ -59,7 +59,8 @@ All versions share one [AW3 Release Notes](releases/README.md) file. Add verifie
       <strong>Installation by application</strong><br>
       Volume Measurement: frontend + backend<br>
       Slot Monitoring / Pallet Docking: frontend + separate algorithm package<br><br>
-      <a href="#software-update-history"><strong>View update history ↑</strong></a>
+      <a href="#software-update-history"><strong>View software history ↑</strong></a><br>
+      <a href="#document-update-history">View document history ↑</a>
     </td>
   </tr>
 </table>

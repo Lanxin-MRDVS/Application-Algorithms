@@ -10,10 +10,10 @@
 
 > **Before you update:** Check your installed Obstacle Workstation version and camera compatibility before updating. Confirm that the document version applies to your deployment.
 
-<a id="software-update-history"></a>
-
 <details>
 <summary><strong>Software history · Obstacle Workstation 1.0.19</strong></summary>
+
+<a id="software-update-history"></a>
 
 Obstacle Workstation follows a dedicated host-application release lifecycle. A document version or a V1/V2 camera label does not establish a software package version.
 
@@ -25,10 +25,10 @@ Published host applications and subsequent patches will be retained in this tabl
 
 </details>
 
-<a id="document-update-history"></a>
-
 <details>
 <summary><strong>Document history · V0.1</strong></summary>
+
+<a id="document-update-history"></a>
 
 | Document | Version | Publication date | Status | Read |
 | --- | --- | --- | --- | --- |

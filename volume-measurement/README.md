@@ -10,10 +10,10 @@
 
 > **Before you update:** Check your installed AW3 and algorithm versions against the software history below. Confirm that the document version applies to your deployment before following installation or configuration steps.
 
-<a id="software-update-history"></a>
-
 <details>
 <summary><strong>Software history</strong> · TorusMetric version records</summary>
+
+<a id="software-update-history"></a>
 
 This table retains formal versions and standalone updates. The supplied TorusMetric 2.0.1 notes describe cumulative algorithm capabilities; they do not identify a published AW3 bundle or a standalone patch package.
 
@@ -26,10 +26,10 @@ This table retains formal versions and standalone updates. The supplied TorusMet
 
 </details>
 
-<a id="document-update-history"></a>
-
 <details>
 <summary><strong>Document history</strong> · V0.1</summary>
+
+<a id="document-update-history"></a>
 
 The Release status shows the latest document set. This table retains every published document version and its software applicability.
 
@@ -59,7 +59,8 @@ The Release status shows the latest document set. This table retains every publi
       Delivery: AW3 installer (frontend + backend)<br><br>
       <strong>Applicable standalone updates</strong><br>
       Not published<br><br>
-      <a href="#software-update-history"><strong>View update history ↑</strong></a><br><br>
+      <a href="#software-update-history"><strong>View software history ↑</strong></a><br>
+      <a href="#document-update-history">View document history ↑</a><br><br>
       <small>Download AW3 only and install both frontend and backend. No separate TorusMetric algorithm package is required.</small>
     </td>
   </tr>

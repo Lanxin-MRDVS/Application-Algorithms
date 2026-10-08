@@ -8,10 +8,10 @@
 
 > **Before you update:** Check your installed package and algorithm versions. The current standalone delivery is separate from AW3; confirm that the guide applies to your deployment.
 
-<a id="software-update-history"></a>
-
 <details>
 <summary><strong>Software history · standalone 3.0.1</strong></summary>
+
+<a id="software-update-history"></a>
 
 The public standalone package and the PalletEye algorithm record use independent version histories. Their shared `3.0.1` number does not establish that they contain the same changes.
 
@@ -23,10 +23,10 @@ The public standalone package and the PalletEye algorithm record use independent
 
 </details>
 
-<a id="document-update-history"></a>
-
 <details>
 <summary><strong>Document history · Deployment Guide</strong></summary>
+
+<a id="document-update-history"></a>
 
 | Document | Version | Read |
 | --- | --- | --- |
