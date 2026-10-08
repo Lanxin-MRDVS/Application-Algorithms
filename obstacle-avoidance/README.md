@@ -61,8 +61,8 @@ v0.0 is the repository archive identifier assigned to the previous guide. Its or
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-obstacle-workstation-v1.0.19/AW3ObstacleWorkstation-Setup-1.0.19-x64.exe">Obstacle Workstation Installer</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/obstacle-avoidance/releases/README.md#workstation-1019">Release notes</a><br><br>
       <strong>Applicable standalone updates</strong><br>
       Not published<br><br>
-      <a href="#software-update-history"><strong>View software history ↑</strong></a><br>
-      <a href="#document-update-history">View document history ↑</a><br><br>
+      <a href="#user-content-software-update-history"><strong>View software history ↑</strong></a><br>
+      <a href="#user-content-document-update-history">View document history ↑</a><br><br>
       <small>V1 / V2 identify camera compatibility and output features. Software package versions are recorded separately.</small>
     </td>
   </tr>

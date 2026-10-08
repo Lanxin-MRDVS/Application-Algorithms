@@ -75,8 +75,8 @@ SmartDocking algorithm versions and legacy PalletPro host versions are separate 
       <strong>Required frontend</strong><br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">AW3 Installer</a><br>
       Frontend only; no AW3 PC backend<br><br>
-      <a href="#software-update-history"><strong>View software history ↑</strong></a><br>
-      <a href="#document-update-history">View document history ↑</a>
+      <a href="#user-content-software-update-history"><strong>View software history ↑</strong></a><br>
+      <a href="#user-content-document-update-history">View document history ↑</a>
     </td>
   </tr>
 </table>

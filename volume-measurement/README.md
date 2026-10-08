@@ -59,8 +59,8 @@ The Release status shows the latest document set. This table retains every publi
       Delivery: AW3 installer (frontend + backend)<br><br>
       <strong>Applicable standalone updates</strong><br>
       Not published<br><br>
-      <a href="#software-update-history"><strong>View software history ↑</strong></a><br>
-      <a href="#document-update-history">View document history ↑</a><br><br>
+      <a href="#user-content-software-update-history"><strong>View software history ↑</strong></a><br>
+      <a href="#user-content-document-update-history">View document history ↑</a><br><br>
       <small>Download AW3 only and install both frontend and backend. No separate TorusMetric algorithm package is required.</small>
     </td>
   </tr>

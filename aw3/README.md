@@ -59,8 +59,8 @@ All versions share one [AW3 Release Notes](releases/README.md) file. Add verifie
       <strong>Installation by application</strong><br>
       Volume Measurement: frontend + backend<br>
       Slot Monitoring / Pallet Docking: frontend + separate algorithm package<br><br>
-      <a href="#software-update-history"><strong>View software history ↑</strong></a><br>
-      <a href="#document-update-history">View document history ↑</a>
+      <a href="#user-content-software-update-history"><strong>View software history ↑</strong></a><br>
+      <a href="#user-content-document-update-history">View document history ↑</a>
     </td>
   </tr>
 </table>
