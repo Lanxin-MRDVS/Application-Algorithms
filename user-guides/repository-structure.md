@@ -19,6 +19,12 @@ Application-Algorithms/
 
 Root Markdown files provide the homepage, compatibility release index, and GitBook-compatible navigation.
 
+## Homepage reading order
+
+Lead with the AW3 platform and five application entries in a two-row, three-column layout. Give each entry one plain-language purpose statement and link to its product page. Follow with the application delivery overview, latest software, shared tools, and repository layout. Keep a direct Latest software shortcut for returning users.
+
+The overview diagram explains platform relationships, not installation steps. Clearly distinguish current support, planned AW3 migration, and dedicated host applications. Keep frontend/backend and package requirements beside downloads and on the owning product pages. Product pages provide guides and software/document histories; do not duplicate those histories on the homepage.
+
 ## Application folder contract
 
 Every application folder must contain:

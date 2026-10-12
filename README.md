@@ -4,15 +4,48 @@
 
 <p align="center"><strong>Application documentation, verified downloads, and release history for MRDVS 3D vision products.</strong></p>
 
-<p align="center">
-  <a href="aw3/README.md"><img src="user-guides/assets/button-aw3.svg" alt="AW3 Platform" width="220" height="44"></a>
-  <a href="depalletizing/README.md"><img src="user-guides/assets/button-depalletizing.svg" alt="Depalletizing" width="220" height="44"></a>
-  <a href="pallet-docking/README.md"><img src="user-guides/assets/button-pallet-docking.svg" alt="Pallet Docking" width="220" height="44"></a>
-  <br>
-  <a href="volume-measurement/README.md"><img src="user-guides/assets/button-volume-measurement.svg" alt="Volume Measurement" width="220" height="44"></a>
-  <a href="slot-monitoring/README.md"><img src="user-guides/assets/button-slot-monitoring.svg" alt="Slot Monitoring" width="220" height="44"></a>
-  <a href="obstacle-avoidance/README.md"><img src="user-guides/assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance" width="220" height="44"></a>
-</p>
+## Find your application
+
+Choose a product below to see its overview, guides, downloads and version history. **Already using our software?** Go to [Latest software](#latest-software); check your installed versions before updating.
+
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
+<a href="aw3/README.md"><img src="user-guides/assets/button-aw3.svg" alt="AW3 Platform" width="220" height="44"></a><br><br>
+Configure devices and manage supported vision applications.
+</td>
+<td width="33%" align="center" valign="top">
+<a href="depalletizing/README.md"><img src="user-guides/assets/button-depalletizing.svg" alt="Depalletizing" width="220" height="44"></a><br><br>
+Vision guidance for removing bags and cartons from a stack.
+</td>
+<td width="33%" align="center" valign="top">
+<a href="pallet-docking/README.md"><img src="user-guides/assets/button-pallet-docking.svg" alt="Pallet Docking" width="220" height="44"></a><br><br>
+Locate pallet entry faces and their orientation for autonomous forklift docking.
+</td>
+</tr>
+<tr>
+<td align="center" valign="top">
+<a href="volume-measurement/README.md"><img src="user-guides/assets/button-volume-measurement.svg" alt="Volume Measurement" width="220" height="44"></a><br><br>
+Measure object dimensions and volume at fixed inspection stations.
+</td>
+<td align="center" valign="top">
+<a href="slot-monitoring/README.md"><img src="user-guides/assets/button-slot-monitoring.svg" alt="Slot Monitoring" width="220" height="44"></a><br><br>
+Check storage-slot occupancy and cargo placement for warehouse operations.
+</td>
+<td align="center" valign="top">
+<a href="obstacle-avoidance/README.md"><img src="user-guides/assets/button-obstacle-avoidance.svg" alt="Obstacle Avoidance" width="220" height="44"></a><br><br>
+Detect 3D obstacles in configured zones for mobile robots and forklifts.
+</td>
+</tr>
+</table>
+
+## Application delivery model
+
+AW3 provides a shared application interface. The diagram distinguishes current AW3 applications, planned migration and separate software.
+
+<p align="center"><img src="user-guides/assets/aw3-application-model.svg" alt="AW3 supports Pallet Docking, Volume Measurement and Slot Monitoring. Depalletizing currently uses a standalone package, with AW3 migration planned. Obstacle Avoidance has a dedicated host application. LxCameraViewer and CameraSDK are shared tools." width="820"></p>
+
+**Where to go next:** On the product page, read the guide for your deployment, check **Software history** and **Document history**, then choose the matching package. Download requirements are listed below.
 
 ## Latest software
 
@@ -34,14 +67,6 @@ Volume Measurement requires the AW3 installer only, with both frontend and backe
 | [**LxCameraViewer**](tools/lxcameraviewer/README.md) | Camera discovery, networking, parameter setup, and image or point-cloud verification. | [LxCameraViewer Installer](https://github.com/Lanxin-MRDVS/CameraSDK/releases/download/SDK-V2.4.60/MRDVS-2.4.60.260126-windows-installer.exe) | [User Guide](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/tools/lxcameraviewer/docs/user-guide.md) |
 | [**CameraSDK**](https://github.com/Lanxin-MRDVS/CameraSDK) | Host-side camera APIs, SDK packages, and integration examples. | [SDK repository](https://github.com/Lanxin-MRDVS/CameraSDK#english) | [English documentation](https://github.com/Lanxin-MRDVS/CameraSDK#english) |
 
-## Application delivery model
-
-<p align="center"><img src="user-guides/assets/aw3-application-model.svg" alt="Volume Measurement uses AW3 frontend and backend; Slot Monitoring and Pallet Docking use AW3 frontend plus separate algorithm packages without the AW3 backend" width="820"></p>
-
-The shared AW3 installer is published once under AW3. Slot Monitoring and Pallet Docking publish their own algorithm packages under their respective software Releases. Depalletizing retains its legacy standalone delivery pending its AW3 migration; Obstacle Avoidance retains its dedicated host application.
-
-Maintainers: [Release policy](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/user-guides/release-policy.md) · [Release-note template](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/user-guides/release-note-template.md) · [Repository structure](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/user-guides/repository-structure.md)
-
 ## Repository layout
 
 ```text
@@ -58,6 +83,8 @@ latest-downloads/    Current verified installation packages
 
 Every application folder follows the same contract: `README.md` is the entry page, `docs/` stores the current guide, and `releases/README.md` is the single Release Notes file containing every version for that product.
 
+Maintainers: [Release policy](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/user-guides/release-policy.md) · [Release-note template](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/user-guides/release-note-template.md) · [Repository structure](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/user-guides/repository-structure.md)
+
 ---
 
-<sub>Hangzhou Lanxin Technology Co., Ltd. & MRDVS Co., Ltd. · All Rights Reserved. · Last updated: September 2026</sub>
+<sub>Hangzhou Lanxin Technology Co., Ltd. & MRDVS Co., Ltd. · All Rights Reserved. · Last updated: October 2026</sub>

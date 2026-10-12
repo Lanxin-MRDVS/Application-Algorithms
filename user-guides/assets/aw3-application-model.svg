@@ -1,30 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="344" viewBox="0 0 820 344" role="img" aria-labelledby="title desc">
-  <title id="title">AW3 application installation</title>
-  <desc id="desc">Volume Measurement requires only the AW3 installer, with frontend and backend. Slot Monitoring and Pallet Docking require the AW3 frontend and their own algorithm tar.gz, without the AW3 backend. Depalletizing retains its legacy delivery, and Obstacle Avoidance has a dedicated host application.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="320" viewBox="0 0 820 320" role="img" aria-labelledby="title desc">
+  <title id="title">MRDVS platform and application overview</title>
+  <desc id="desc">AW3 currently supports Pallet Docking, Volume Measurement and Slot Monitoring. Depalletizing uses a standalone package with AW3 migration planned. Obstacle Avoidance has a dedicated host application. LxCameraViewer and CameraSDK are shared tools. Package installation requirements are listed separately.</desc>
   <defs><linearGradient id="brand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1964FF"/><stop offset="1" stop-color="#10BEE8"/></linearGradient></defs>
-  <rect x="1" y="1" width="818" height="342" rx="18" fill="#F6F9FF" stroke="#D7E3F4" stroke-width="2"/>
+  <rect x="1" y="1" width="818" height="318" rx="18" fill="#F6F9FF" stroke="#D7E3F4" stroke-width="2"/>
   <g font-family="Arial, Helvetica, sans-serif">
-    <text x="26" y="35" font-size="20" font-weight="700" fill="#0F2747">AW3 application installation</text>
-    <rect x="24" y="53" width="772" height="40" rx="10" fill="url(#brand)"/>
-    <text x="410" y="79" text-anchor="middle" font-size="16" font-weight="700" fill="white">ONE SHARED AW3 INSTALLER</text>
-    <rect x="24" y="107" width="248" height="122" rx="10" fill="white" stroke="#BFD1EA"/>
-    <text x="148" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#173E78">Volume Measurement</text>
-    <text x="148" y="160" text-anchor="middle" font-size="12" fill="#315476">AW3 frontend + backend</text>
-    <text x="148" y="183" text-anchor="middle" font-size="12" fill="#315476">No separate algorithm package</text>
-    <rect x="286" y="107" width="248" height="122" rx="10" fill="white" stroke="#BFD1EA"/>
-    <text x="410" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#173E78">Slot Monitoring</text>
-    <text x="410" y="160" text-anchor="middle" font-size="12" fill="#315476">AW3 frontend only</text>
-    <text x="410" y="183" text-anchor="middle" font-size="12" fill="#315476">+ StockSync algorithm .tar.gz</text>
-    <text x="410" y="206" text-anchor="middle" font-size="12" fill="#315476">Do not install the AW3 backend</text>
-    <rect x="548" y="107" width="248" height="122" rx="10" fill="white" stroke="#BFD1EA"/>
-    <text x="672" y="133" text-anchor="middle" font-size="16" font-weight="700" fill="#173E78">Pallet Docking</text>
-    <text x="672" y="160" text-anchor="middle" font-size="12" fill="#315476">AW3 frontend only</text>
-    <text x="672" y="183" text-anchor="middle" font-size="12" fill="#315476">+ SmartDocking algorithm .tar.gz</text>
-    <text x="672" y="206" text-anchor="middle" font-size="12" fill="#315476">Do not install the AW3 backend</text>
-    <text x="410" y="251" text-anchor="middle" font-size="12" fill="#52708F">AW3 hosts the shared installer. Each application owns its algorithm package.</text>
-    <line x1="24" y1="266" x2="796" y2="266" stroke="#D7E3F4"/>
-    <text x="26" y="289" font-size="12" fill="#315476">Depalletizing: legacy standalone delivery retained</text>
-    <text x="434" y="289" font-size="12" fill="#315476">Obstacle Avoidance: dedicated host application</text>
-    <text x="26" y="318" font-size="12" fill="#52708F">Shared tools: LxCameraViewer and CameraSDK</text>
+    <rect x="24" y="20" width="772" height="180" rx="12" fill="#FFFFFF" stroke="#BFD1EA"/>
+    <rect x="24" y="20" width="772" height="44" rx="12" fill="url(#brand)"/>
+    <path d="M24 52v12h772V52" fill="url(#brand)"/>
+    <text x="42" y="48" font-size="18" font-weight="700" fill="#FFFFFF">AW3 PLATFORM</text>
+    <text x="778" y="47" text-anchor="end" font-size="13" fill="#FFFFFF">Shared configuration and application interface</text>
+    <g text-anchor="middle">
+      <rect x="40" y="80" width="176" height="75" rx="9" fill="#F6F9FF" stroke="#879BB4" stroke-dasharray="5 4"/>
+      <text x="128" y="109" font-size="15" font-weight="700" fill="#173E78">Depalletizing</text>
+      <text x="128" y="134" font-size="12" fill="#52708F">AW3 migration planned</text>
+      <rect x="228" y="80" width="176" height="75" rx="9" fill="#EAF0FF" stroke="#1964FF"/>
+      <text x="316" y="109" font-size="15" font-weight="700" fill="#173E78">Pallet Docking</text>
+      <text x="316" y="134" font-size="12" fill="#315476">SmartDocking</text>
+      <rect x="416" y="80" width="176" height="75" rx="9" fill="#E8F5FF" stroke="#167DEB"/>
+      <text x="504" y="109" font-size="15" font-weight="700" fill="#173E78">Volume Measurement</text>
+      <text x="504" y="134" font-size="12" fill="#315476">TorusMetric</text>
+      <rect x="604" y="80" width="176" height="75" rx="9" fill="#E5F9FF" stroke="#10A8DA"/>
+      <text x="692" y="109" font-size="15" font-weight="700" fill="#173E78">Slot Monitoring</text>
+      <text x="692" y="134" font-size="12" fill="#315476">StockSync</text>
+    </g>
+    <text x="42" y="181" font-size="12" fill="#52708F">Depalletizing currently uses its standalone package. Installation requirements differ by application.</text>
+    <rect x="24" y="218" width="378" height="78" rx="12" fill="#FFFFFF" stroke="#BFD1EA"/>
+    <rect x="24" y="230" width="4" height="54" rx="2" fill="#1964FF"/>
+    <text x="42" y="249" font-size="16" font-weight="700" fill="#173E78">Obstacle Avoidance</text>
+    <text x="42" y="276" font-size="13" fill="#52708F">Dedicated host application</text>
+    <rect x="418" y="218" width="378" height="78" rx="12" fill="#FFFFFF" stroke="#BFD1EA"/>
+    <rect x="418" y="230" width="4" height="54" rx="2" fill="#10BEE8"/>
+    <text x="436" y="249" font-size="16" font-weight="700" fill="#173E78">Shared tools</text>
+    <text x="436" y="276" font-size="13" fill="#52708F">LxCameraViewer · CameraSDK</text>
   </g>
 </svg>
