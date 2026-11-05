@@ -19,7 +19,7 @@ The full device update includes StockSync, camera SDK libraries, and the device 
 
 | Version | Category | Target | Publication date | Release note / download |
 | --- | --- | --- | --- | --- |
-| StockSync `3.1.1` | Full device update; build 2026-09-24 | RK3588 / Linux ARM64; AW3 frontend | 2026-09-29 | [Notes](releases/README.md#stocksync-311) · [StockSync Package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.tar.gz) |
+| StockSync `3.1.1` | Full device update; build 2026-09-24 | RK3588 / Linux ARM64; AW3 frontend | 2026-09-29 | [Notes](releases/README.md#stocksync-311) · [MDS BIN](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_MDS_stocksync_full_update_rk3588_260924_3.1.1.bin) · [SDK BIN](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.bin) |
 
 </details>
 
@@ -53,7 +53,7 @@ The full device update includes StockSync, camera SDK libraries, and the device 
       <strong>Latest algorithm package</strong><br>
       StockSync <code>3.1.1</code><br>
       2026-09-29 · RK3588 / Linux ARM64<br>
-      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.tar.gz">StockSync Package</a> · <a href="releases/README.md#stocksync-311">Release notes</a><br><br>
+      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_MDS_stocksync_full_update_rk3588_260924_3.1.1.bin">MDS BIN</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.bin">SDK BIN</a> · <a href="releases/README.md#stocksync-311">Release notes</a><br><br>
       <strong>Required frontend</strong><br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">AW3 Installer</a><br>
       Frontend only; no AW3 PC backend<br><br>
@@ -87,9 +87,10 @@ The white paper specifies S10 Pro as the standard camera. Confirm the device pla
 | Download | Target | Installation |
 | --- | --- | --- |
 | [AW3 Installer](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe) | Windows x64 PC | Install the frontend only; clear **AW3 Backend Download**. |
-| [StockSync Package](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.tar.gz) | RK3588, Linux ARM64 | Deploy the `.tar.gz` to the matching device / center via SSH, using the device package deployment instructions. |
+| [MDS BIN](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_MDS_stocksync_full_update_rk3588_260924_3.1.1.bin) | RK3588, Linux ARM64 · MDS | Use the delivered device-update procedure for this variant and retain the original `.bin` filename. |
+| [SDK BIN](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.bin) | RK3588, Linux ARM64 · SDK | Use the delivered device-update procedure for this variant and retain the original `.bin` filename. |
 
-Both packages are required. Do not install the AW3 PC backend for this application. The algorithm archive contains the device-side service and runtime dependencies; it is not a Windows installer. Confirm the device platform before updating and back up its configuration. Hardware deployment has not been tested as part of this publication.
+Install the AW3 frontend and one device firmware variant matching the delivered configuration: MDS or SDK. Retain the original `.bin` filename. The full device update contains StockSync, camera SDK libraries, and the device service. Confirm the device platform before updating and back up its configuration. Hardware deployment has not been tested as part of this publication.
 
 ## Start here
 

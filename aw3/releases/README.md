@@ -16,7 +16,7 @@ AW3 frontend, device service, and algorithm versions are independent. Matching v
 
 ### Installation and package ownership
 
-Volume Measurement uses the AW3 installer with both frontend and backend. Slot Monitoring and Pallet Docking use the AW3 frontend only plus their separate algorithm `.tar.gz`; do not install the AW3 backend for those applications. See [installation requirements](../README.md#installation). This delivery model does not verify the contents or compatibility of any unpublished installer.
+Volume Measurement uses the AW3 installer with both frontend and backend. Slot Monitoring uses the AW3 frontend plus the matching StockSync MDS or SDK `.bin` firmware. Pallet Docking uses the AW3 frontend plus its separate SmartDocking `.tar.gz` package. Do not install the AW3 backend for those applications. See [installation requirements](../README.md#installation). This delivery model does not verify the contents or compatibility of any unpublished installer.
 
 <a id="aw3-312"></a>
 

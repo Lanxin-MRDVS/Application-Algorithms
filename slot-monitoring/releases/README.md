@@ -6,11 +6,11 @@ This is the single release-note file for StockSync. The supplied notes were comp
 
 | Version | Scope | Public release date | Package |
 | --- | --- | --- | --- |
-| [3.1.1](#stocksync-311) | Full RK3588 device update; build 2026-09-24 | 2026-09-29 | [Algorithm tar.gz](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.tar.gz) |
+| [3.1.1](#stocksync-311) | Full RK3588 device update; build 2026-09-24 | 2026-09-29 | [MDS BIN](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_MDS_stocksync_full_update_rk3588_260924_3.1.1.bin) · [SDK BIN](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.bin) |
 
 ### Installation and package ownership
 
-Use the [AW3 installer](../../aw3/README.md#installation) for the frontend only, plus the StockSync algorithm `.tar.gz`. Do not install the AW3 backend. StockSync software Releases own the algorithm package; the AW3 installer remains under AW3.
+Use the [AW3 installer](../../aw3/README.md#installation) for the frontend only, plus the matching StockSync MDS or SDK `.bin` firmware. Do not install the AW3 backend. StockSync software Releases own the algorithm package; the AW3 installer remains under AW3.
 
 <a id="stocksync-311"></a>
 
@@ -24,19 +24,18 @@ Use the [AW3 installer](../../aw3/README.md#installation) for the frontend only,
 | Package build date | 2026-09-24 |
 | Algorithm version | StockSync `3.1.1`, confirmed by the packaged component record |
 | Target | RK3588 / Linux ARM64 |
-| Package | [AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.tar.gz](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.tar.gz) |
-| Size | 173,136,699 bytes |
+| MDS firmware | [AW3_camera_MDS_stocksync_full_update_rk3588_260924_3.1.1.bin](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_MDS_stocksync_full_update_rk3588_260924_3.1.1.bin) · 173,151,191 bytes |
+| SDK firmware | [AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.bin](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.bin) · 173,136,699 bytes |
 
-Use the AW3 PC frontend only, with no AW3 PC backend. The full device update is deployed on the matching RK3588 device / center. The `.bin` source is a valid gzip-compressed tar archive; only its published suffix changed to `.tar.gz`, without changing the contents.
+Use the AW3 PC frontend only, with no AW3 PC backend. The full device update is deployed on the matching RK3588 device / center. Firmware is supplied in the original `.bin` files. Choose MDS or SDK according to the delivered configuration and keep the original filename.
 
 <details>
 <summary><strong>SHA-256</strong></summary>
 
 ```text
-9ab80e42b3fee25cf17d2cf45a3dbffcea7fd5904612d530eb6782ec99cc5aae
+6d7eba30c75483a69d8bdb415e9735a71d4ca060ebeb95ee8c998125b13095cd  AW3_camera_MDS_stocksync_full_update_rk3588_260924_3.1.1.bin
+9ab80e42b3fee25cf17d2cf45a3dbffcea7fd5904612d530eb6782ec99cc5aae  AW3_camera_SDK_stocksync_full_update_rk3588_260924_3.1.1.bin
 ```
-
-[SHA256SUMS.txt](https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/stocksync-v3.1.1/SHA256SUMS.txt)
 
 </details>
 
