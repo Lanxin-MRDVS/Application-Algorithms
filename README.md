@@ -88,3 +88,7 @@ Maintainers: [Release policy](https://github.com/Lanxin-MRDVS/Application-Algori
 ---
 
 <sub>Hangzhou Lanxin Technology Co., Ltd. & MRDVS Co., Ltd. · All Rights Reserved. · Last updated: October 2026</sub>
+
+## Knowledge community downloads
+
+[Manuals and white papers](downloads/knowledge-community/README.md) are stored directly in this repository, with their original filenames and checksums. Chinese downloads are mirrored to Alibaba Cloud OSS.

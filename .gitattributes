@@ -1,1 +1,5 @@
 *.pdf binary
+# Preserve downloadable original files.
+downloads/knowledge-community/** binary
+downloads/knowledge-community/**/*.md text
+downloads/knowledge-community/**/*.json text
