@@ -8,8 +8,8 @@ The public [Document update history](../README.md#document-update-history) is ma
 
 | File | Size | SHA-256 |
 | --- | ---: | --- |
-| `torusmetric-user-manual-v0.1.pdf` | 11,302,591 bytes (10.78 MiB) | `6c20504e366862511f817bf7776f5b0cb737a0f04e769daa4db4c6900fcd4ebb` |
-| `torusmetric-white-paper-v0.1.pdf` | 4,883,747 bytes (4.66 MiB) | `cc7233c49bb8e33e8bbad032473318db0aeea0216f058ed0ea94a350fa05c6e6` |
+| https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf` | 11,302,591 bytes (10.78 MiB) | `6c20504e366862511f817bf7776f5b0cb737a0f04e769daa4db4c6900fcd4ebb` |
+| https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf` | 4,883,747 bytes (4.66 MiB) | `cc7233c49bb8e33e8bbad032473318db0aeea0216f058ed0ea94a350fa05c6e6` |
 
 The PDFs identify TorusMetric as an AW3 application and document centimeter-class measurement, multi-camera stitching, operating limits, calibration, configuration, monitoring, protocol output, troubleshooting, and validation. Software downloads and version-specific changes are maintained in the [Software update history](../README.md#software-update-history).
 

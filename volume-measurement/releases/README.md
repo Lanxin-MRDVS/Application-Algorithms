@@ -42,7 +42,7 @@ The version identifies the algorithm independently of the AW3 frontend. This is 
 
 Formal delivery belongs to the corresponding AW3 release. This cumulative algorithm record does not establish the exact algorithm version in the separately obtained AW3 backend component. See the AW3 page for the current installer; the TorusMetric release date and verified bundle mapping remain unspecified. No standalone patch is declared by this record.
 
-- [User Manual V0.1](../docs/torusmetric-user-manual-v0.1.pdf)
-- [White Paper V0.1](../docs/torusmetric-white-paper-v0.1.pdf)
+- [User Manual https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf)
+- [White Paper https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf)
 
 The documentation versions are unchanged. Their exact software-build applicability has not been verified.

@@ -35,8 +35,8 @@ The Release status shows the latest document set. This table retains every publi
 
 | Document | Version | Applies to | Publication date | Status | File |
 | --- | --- | --- | --- | --- | --- |
-| TorusMetric User Manual | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf) |
-| TorusMetric Volume Measurement Solution White Paper | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | [PDF](https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-white-paper-v0.1.pdf) |
+| TorusMetric User Manual | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf) |
+| TorusMetric Volume Measurement Solution White Paper | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf) |
 
 </details>
 
@@ -52,7 +52,7 @@ The Release status shows the latest document set. This table retains every publi
       <strong>Latest documentation</strong><br>
       <code>V0.1</code> · 2026-09-09<br>
       Formal version: <code>TBC</code><br>
-      <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf">User Manual</a> · <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-white-paper-v0.1.pdf">White Paper</a><br><br>
+      <a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf">User Manual</a> · <a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf">White Paper</a><br><br>
       <strong>Latest formal software</strong><br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">AW3 Installer</a> · 2026-09-29<br>
       Recorded algorithm: <a href="releases/README.md#torusmetric-201">TorusMetric 2.0.1</a><br>
@@ -109,7 +109,7 @@ AW3 manages devices, camera groups, calibration, application settings, monitorin
   <tbody>
     <tr>
       <td>1. Review product fit</td>
-      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-white-paper-v0.1.pdf">White Paper</a></td>
+      <td><a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf">White Paper</a></td>
     </tr>
     <tr>
       <td>2. Verify camera data</td>
@@ -117,7 +117,7 @@ AW3 manages devices, camera groups, calibration, application settings, monitorin
     </tr>
     <tr>
       <td>3. Deploy and validate in AW3</td>
-      <td><a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/blob/main/volume-measurement/docs/torusmetric-user-manual-v0.1.pdf">User Manual</a></td>
+      <td><a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf">User Manual</a></td>
     </tr>
   </tbody>
 </table>

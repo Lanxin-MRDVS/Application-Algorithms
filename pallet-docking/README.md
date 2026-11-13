@@ -50,8 +50,8 @@ SmartDocking algorithm versions and legacy PalletPro host versions are separate 
 
 | Document | Version | Document date | Status | Read |
 | --- | --- | --- | --- | --- |
-| Smart Docking User Manual | V0.1 | 2026-09-28 | Current AW3 workflow | [PDF](docs/smartdocking-user-manual-v0.1.pdf) |
-| Pallet Docking Solution White Paper | V0.1 | 2026-09-28 | Current | [PDF](docs/smartdocking-white-paper-v0.1.pdf) |
+| Smart Docking User Manual | V0.2 | 2026-10-30 | Current AW3 workflow | https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_User_Manual_v0_2.pdf) |
+| Pallet Docking Solution White Paper | V0.2 | 2026-11-12 | Current | https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_White_Paper_v0_2.pdf) |
 | PalletPro User Guide | Original, unversioned | Not supplied | Legacy PalletPro workflow | [Markdown](docs/user-guide.md) |
 
 </details>
@@ -67,7 +67,7 @@ SmartDocking algorithm versions and legacy PalletPro host versions are separate 
       <strong>Release status</strong><br><br>
       <strong>Latest documentation</strong><br>
       <code>V0.1</code> · 2026-09-28<br>
-      <a href="docs/smartdocking-user-manual-v0.1.pdf">User Manual</a> · <a href="docs/smartdocking-white-paper-v0.1.pdf">White Paper</a><br><br>
+      <a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_User_Manual_v0_2.pdf">User Manual</a> · <a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_White_Paper_v0_2.pdf">White Paper</a><br><br>
       <strong>Latest algorithm package</strong><br>
       SmartDocking <code>3.0.2</code><br>
       2026-09-29 · RKU20 / Linux ARM64<br>
@@ -114,8 +114,8 @@ Both packages are required. Do not install the AW3 PC backend for this applicati
 <table>
   <thead><tr><th width="620" align="left">Step</th><th width="240" align="left">Link</th></tr></thead>
   <tbody>
-    <tr><td>1. Review application fit and operating limits</td><td><a href="docs/smartdocking-white-paper-v0.1.pdf">White Paper</a></td></tr>
+    <tr><td>1. Review application fit and operating limits</td><td><a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_White_Paper_v0_2.pdf">White Paper</a></td></tr>
     <tr><td>2. Install the AW3 frontend and the device algorithm package</td><td><a href="#installation">Installation</a></td></tr>
-    <tr><td>3. Configure, calibrate, and validate the application</td><td><a href="docs/smartdocking-user-manual-v0.1.pdf">User Manual</a></td></tr>
+    <tr><td>3. Configure, calibrate, and validate the application</td><td><a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_User_Manual_v0_2.pdf">User Manual</a></td></tr>
   </tbody>
 </table>
