@@ -107,19 +107,6 @@
     "repository": "Application-Algorithms",
     "release_id": 413402006,
     "release_tag": "knowledge-hub-docs-2026-10-15",
-    "asset_id": 642596443,
-    "old_url": "https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/knowledge-hub-docs-2026-10-15/algorithms--pallet--v0.1--pallet-manual-en.pdf",
-    "asset_name": "algorithms--pallet--v0.1--pallet-manual-en.pdf",
-    "download_name": "MRDVS_Smart_Docking_User_Manual_v0_1.pdf",
-    "bytes": 10083488,
-    "sha256": "f93ccf069dbe9f4693b952a9af254a9c6a4445d9cf972cf56831efe7f1fb0a4a",
-    "git_blob_sha": "84d61f6a7357aa906e0d983f60b70134bbe20f8c",
-    "repository_path": "downloads/knowledge-community/2026-10-15/MRDVS_Smart_Docking_User_Manual_v0_1.pdf"
-  },
-  {
-    "repository": "Application-Algorithms",
-    "release_id": 413402006,
-    "release_tag": "knowledge-hub-docs-2026-10-15",
     "asset_id": 642596539,
     "old_url": "https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/knowledge-hub-docs-2026-10-15/algorithms--pallet--v0.1--pallet-manual-ja.pdf",
     "asset_name": "algorithms--pallet--v0.1--pallet-manual-ja.pdf",
@@ -133,32 +120,6 @@
     "repository": "Application-Algorithms",
     "release_id": 413402006,
     "release_tag": "knowledge-hub-docs-2026-10-15",
-    "asset_id": 642596580,
-    "old_url": "https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/knowledge-hub-docs-2026-10-15/algorithms--pallet--v0.1--pallet-manual-zh.pdf",
-    "asset_name": "algorithms--pallet--v0.1--pallet-manual-zh.pdf",
-    "download_name": "迈尔微视_托盘对接_用户手册_v0_1.pdf",
-    "bytes": 10088390,
-    "sha256": "4423e5ba7cecd396b50869cd79ca5bbdb1d26f4c6c46e014754bedf5a4307c8d",
-    "git_blob_sha": "fd0d41b376080847b08cbc6515ab429f6cc624d0",
-    "repository_path": "downloads/knowledge-community/2026-10-15/迈尔微视_托盘对接_用户手册_v0_1.pdf"
-  },
-  {
-    "repository": "Application-Algorithms",
-    "release_id": 413402006,
-    "release_tag": "knowledge-hub-docs-2026-10-15",
-    "asset_id": 642596728,
-    "old_url": "https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/knowledge-hub-docs-2026-10-15/algorithms--pallet--v0.1--pallet-white-en.pdf",
-    "asset_name": "algorithms--pallet--v0.1--pallet-white-en.pdf",
-    "download_name": "MRDVS_Smart_Docking_White_Paper_v0_1.pdf",
-    "bytes": 5783024,
-    "sha256": "cc55857a28ccfdbaf3df1fafb8634fc6d89b086be2a730901d4abd26b7527f1a",
-    "git_blob_sha": "73d314e53f60e4957dbb21fb6dbfa8ecaea1d491",
-    "repository_path": "downloads/knowledge-community/2026-10-15/MRDVS_Smart_Docking_White_Paper_v0_1.pdf"
-  },
-  {
-    "repository": "Application-Algorithms",
-    "release_id": 413402006,
-    "release_tag": "knowledge-hub-docs-2026-10-15",
     "asset_id": 642596797,
     "old_url": "https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/knowledge-hub-docs-2026-10-15/algorithms--pallet--v0.1--pallet-white-ja.pdf",
     "asset_name": "algorithms--pallet--v0.1--pallet-white-ja.pdf",
@@ -167,19 +128,6 @@
     "sha256": "d57b934c701e1595360fcfe3ae019a3fd44a92af32545c12a83e817fa8867d57",
     "git_blob_sha": "c02a6d3e5b1364e45261b0a10202557b6f1c422f",
     "repository_path": "downloads/knowledge-community/2026-10-15/MRDVS_Smart_Docking_ホワイトペーパー_v0_1.pdf"
-  },
-  {
-    "repository": "Application-Algorithms",
-    "release_id": 413402006,
-    "release_tag": "knowledge-hub-docs-2026-10-15",
-    "asset_id": 642596852,
-    "old_url": "https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/knowledge-hub-docs-2026-10-15/algorithms--pallet--v0.1--pallet-white-zh.pdf",
-    "asset_name": "algorithms--pallet--v0.1--pallet-white-zh.pdf",
-    "download_name": "迈尔微视_托盘对接_白皮书_v0_1.pdf",
-    "bytes": 5958553,
-    "sha256": "11071867669526d27d1b9de4ece0096ee955f08599363a163975cd3a65d408ea",
-    "git_blob_sha": "0d6e2806bb91442ac1d95286f3b8786cf72701f7",
-    "repository_path": "downloads/knowledge-community/2026-10-15/迈尔微视_托盘对接_白皮书_v0_1.pdf"
   },
   {
     "repository": "Application-Algorithms",
@@ -300,54 +248,66 @@
   },
   {
     "repository": "Application-Algorithms",
-    "release_id": 413402006,
-    "release_tag": "knowledge-hub-docs-2026-10-15",
-    "asset_id": 642597776,
-    "old_url": "https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/knowledge-hub-docs-2026-10-15/algorithms--volume--v0.1--volume-manual-en.pdf",
-    "asset_name": "algorithms--volume--v0.1--volume-manual-en.pdf",
-    "download_name": "MRDVS_TorusMetric_User_Manual_v0_1.pdf",
-    "bytes": 11302591,
-    "sha256": "6c20504e366862511f817bf7776f5b0cb737a0f04e769daa4db4c6900fcd4ebb",
-    "git_blob_sha": "fc1d368bb7f8152d6e7b0026752dff2b2f47fd61",
-    "repository_path": "downloads/knowledge-community/2026-10-15/MRDVS_TorusMetric_User_Manual_v0_1.pdf"
-  },
-  {
-    "repository": "Application-Algorithms",
-    "release_id": 413402006,
-    "release_tag": "knowledge-hub-docs-2026-10-15",
-    "asset_id": 642598008,
-    "old_url": "https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/knowledge-hub-docs-2026-10-15/algorithms--volume--v0.1--volume-manual-zh.pdf",
-    "asset_name": "algorithms--volume--v0.1--volume-manual-zh.pdf",
-    "download_name": "迈尔微视_体积检测_用户手册_v0_1.pdf",
-    "bytes": 10161471,
-    "sha256": "9b1f6d9a9d840c427daf53c6cb16fd38fa8ab6acb0f84c3f5e271a6fcc3e38d1",
-    "git_blob_sha": "61a32f659b21fc65664fc12b06b97686ae5c1d5f",
-    "repository_path": "downloads/knowledge-community/2026-10-15/迈尔微视_体积检测_用户手册_v0_1.pdf"
-  },
-  {
-    "repository": "Application-Algorithms",
-    "release_id": 413402006,
-    "release_tag": "knowledge-hub-docs-2026-10-15",
-    "asset_id": 642598063,
-    "old_url": "https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/knowledge-hub-docs-2026-10-15/algorithms--volume--v0.1--volume-white-en.pdf",
-    "asset_name": "algorithms--volume--v0.1--volume-white-en.pdf",
-    "download_name": "MRDVS_TorusMetric_White_Paper_v0_1.pdf",
-    "bytes": 4883747,
-    "sha256": "cc7233c49bb8e33e8bbad032473318db0aeea0216f058ed0ea94a350fa05c6e6",
-    "git_blob_sha": "fe2d3f169c8f77497b0dcf16d19534552f04201e",
-    "repository_path": "downloads/knowledge-community/2026-10-15/MRDVS_TorusMetric_White_Paper_v0_1.pdf"
-  },
-  {
-    "repository": "Application-Algorithms",
-    "release_id": 413402006,
-    "release_tag": "knowledge-hub-docs-2026-10-15",
-    "asset_id": 642598160,
-    "old_url": "https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/knowledge-hub-docs-2026-10-15/algorithms--volume--v0.1--volume-white-zh.pdf",
-    "asset_name": "algorithms--volume--v0.1--volume-white-zh.pdf",
-    "download_name": "迈尔微视_体积检测_白皮书_v0_1.pdf",
+    "repository_path": "downloads/knowledge-community/current/volume/迈尔微视_体积测量_白皮书_v0_1.pdf",
+    "download_name": "迈尔微视_体积测量_白皮书_v0_1.pdf",
     "bytes": 5203564,
     "sha256": "73c13bf99695f63b19b148cfebddde36c42c2dfc3ec500ace679f6c6ddfffddc",
-    "git_blob_sha": "bedbe0444b9f4d7d87593aa33eedddf272859f59",
-    "repository_path": "downloads/knowledge-community/2026-10-15/迈尔微视_体积检测_白皮书_v0_1.pdf"
+    "git_blob_sha": "bedbe0444b9f4d7d87593aa33eedddf272859f59"
+  },
+  {
+    "repository": "Application-Algorithms",
+    "repository_path": "downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf",
+    "download_name": "MRDVS_TorusMetric_White_Paper_v0_1.pdf",
+    "bytes": 4919137,
+    "sha256": "92b0714a8b3ec412ae66ca25e2084dc008e9acf39d4eec3136081dc9935481bf",
+    "git_blob_sha": "e278a07c83739a9142275c2431c4809855d0983c"
+  },
+  {
+    "repository": "Application-Algorithms",
+    "repository_path": "downloads/knowledge-community/current/volume/迈尔微视_体积测量_用户手册_v0_2.pdf",
+    "download_name": "迈尔微视_体积测量_用户手册_v0_2.pdf",
+    "bytes": 12124963,
+    "sha256": "0fbad05448155fab049b87c82fe6c59a56254b39bb0ec1b8158b7efa541b5b5d",
+    "git_blob_sha": "3cc958b2c223a2ac195749c5d65ca315a80444ae"
+  },
+  {
+    "repository": "Application-Algorithms",
+    "repository_path": "downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf",
+    "download_name": "MRDVS_TorusMetric_User_Manual_v0_2.pdf",
+    "bytes": 12595223,
+    "sha256": "77a456fa734939709207c54af700ad8cd197d9c31bb4811295e520c74a3a442d",
+    "git_blob_sha": "1bab23df99a48d178f3546aef06729466f256644"
+  },
+  {
+    "repository": "Application-Algorithms",
+    "repository_path": "downloads/knowledge-community/current/pallet/迈尔微视_托盘对接_白皮书_v0_2.pdf",
+    "download_name": "迈尔微视_托盘对接_白皮书_v0_2.pdf",
+    "bytes": 6013929,
+    "sha256": "9ef5db4d606e2fd9d216de56eef328fbb910abf75b5aa6314a3797f0c2718a14",
+    "git_blob_sha": "7b093e66b2e8819285ddef1277a3aa3301bfdb0f"
+  },
+  {
+    "repository": "Application-Algorithms",
+    "repository_path": "downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_White_Paper_v0_2.pdf",
+    "download_name": "MRDVS_Smart_Docking_White_Paper_v0_2.pdf",
+    "bytes": 5872517,
+    "sha256": "9d1f64eb65de81285b60d78b045c60c57d6c33e3f6659700c7aed1bfea5dc9a3",
+    "git_blob_sha": "89fd6152a71bc34b7ccf44db4540e9521daa9bcb"
+  },
+  {
+    "repository": "Application-Algorithms",
+    "repository_path": "downloads/knowledge-community/current/pallet/迈尔微视_托盘对接_用户手册_v0_2.pdf",
+    "download_name": "迈尔微视_托盘对接_用户手册_v0_2.pdf",
+    "bytes": 12198007,
+    "sha256": "fb11e4bd12850ce501f6e73d30d29af58d757341fe1593a5cd16f59a77346af2",
+    "git_blob_sha": "a54ae194be2eb8b3e23cf893cf9489553cc1b54f"
+  },
+  {
+    "repository": "Application-Algorithms",
+    "repository_path": "downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_User_Manual_v0_2.pdf",
+    "download_name": "MRDVS_Smart_Docking_User_Manual_v0_2.pdf",
+    "bytes": 12376816,
+    "sha256": "5cef77659181da0b8debe4aa8f639df176caa0c40e4b5dc63fe5bcbd6125df24",
+    "git_blob_sha": "24205f26819b99060101d838dad195012c2163cb"
   }
 ]
