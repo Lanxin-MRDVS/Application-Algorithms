@@ -309,5 +309,37 @@
     "bytes": 12376816,
     "sha256": "5cef77659181da0b8debe4aa8f639df176caa0c40e4b5dc63fe5bcbd6125df24",
     "git_blob_sha": "24205f26819b99060101d838dad195012c2163cb"
+  },
+  {
+    "repository": "Application-Algorithms",
+    "repository_path": "downloads/knowledge-community/current/depalletizing/迈尔微视_拆垛算法_用户手册_v1.0.pdf",
+    "download_name": "迈尔微视_拆垛算法_用户手册_v1.0.pdf",
+    "bytes": 9209715,
+    "sha256": "de726120a4a6e55cba4eacf45bf222b5233d98487f5f8b978fd1eb7497626eca",
+    "git_blob_sha": "c29db5791708d6a862f9b62866f97dc698c0c8f5"
+  },
+  {
+    "repository": "Application-Algorithms",
+    "repository_path": "downloads/knowledge-community/current/depalletizing/MRDVS_PalletEye_User_Manual_v1.0.pdf",
+    "download_name": "MRDVS_PalletEye_User_Manual_v1.0.pdf",
+    "bytes": 9263638,
+    "sha256": "31ee25f6c2fde3eb94fbf75550b517bef9b61404f796bb7e2f2ad293bec13eec",
+    "git_blob_sha": "697c30f504b6cb401231c795c97e085c2c4952e1"
+  },
+  {
+    "repository": "Application-Algorithms",
+    "repository_path": "downloads/knowledge-community/current/depalletizing/迈尔微视_拆垛算法_白皮书_v1.0.pdf",
+    "download_name": "迈尔微视_拆垛算法_白皮书_v1.0.pdf",
+    "bytes": 4722669,
+    "sha256": "c2af7cf5c2b2e21b6b50b8fee6dc7fbe2acd405ef2ef689fd1b7052566a567c8",
+    "git_blob_sha": "9413134a720150215d17b48c3df9582e121cc9c9"
+  },
+  {
+    "repository": "Application-Algorithms",
+    "repository_path": "downloads/knowledge-community/current/depalletizing/MRDVS_PalletEye_White_Paper_v1.0.pdf",
+    "download_name": "MRDVS_PalletEye_White_Paper_v1.0.pdf",
+    "bytes": 4549052,
+    "sha256": "2b52da4431309f2e76f7bc8e09e7c4f86d1ecf828f294edb2031b1bc27a1c0a5",
+    "git_blob_sha": "5921d99d69b1889180d6abe15091c1902f34db44"
   }
 ]

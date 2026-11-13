@@ -35,3 +35,7 @@ Original manuals, specifications, brochures and drawings are stored directly in 
 | 2026-10-15 | [MRDVS_AW3_Application_Algorithm_Platform_User_Manual_v0_1.pdf](2026-10-15/MRDVS_AW3_Application_Algorithm_Platform_User_Manual_v0_1.pdf) | 13,247,240 B |
 
 See [manifest.json](manifest.json) for SHA-256 checksums and migration provenance.
+| Current | [迈尔微视_拆垛算法_用户手册_v1.0.pdf](current/depalletizing/%E8%BF%88%E5%B0%94%E5%BE%AE%E8%A7%86_%E6%8B%86%E5%9E%9B%E7%AE%97%E6%B3%95_%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_v1.0.pdf) | 9,209,715 B |
+| Current | [MRDVS_PalletEye_User_Manual_v1.0.pdf](current/depalletizing/MRDVS_PalletEye_User_Manual_v1.0.pdf) | 9,263,638 B |
+| Current | [迈尔微视_拆垛算法_白皮书_v1.0.pdf](current/depalletizing/%E8%BF%88%E5%B0%94%E5%BE%AE%E8%A7%86_%E6%8B%86%E5%9E%9B%E7%AE%97%E6%B3%95_%E7%99%BD%E7%9A%AE%E4%B9%A6_v1.0.pdf) | 4,722,669 B |
+| Current | [MRDVS_PalletEye_White_Paper_v1.0.pdf](current/depalletizing/MRDVS_PalletEye_White_Paper_v1.0.pdf) | 4,549,052 B |
