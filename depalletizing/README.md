@@ -8,6 +8,15 @@
 
 > **Before you update:** Check your installed package and algorithm versions. The current standalone delivery is separate from AW3; confirm that the guide applies to your deployment.
 
+## Latest manuals and white papers
+
+| Document | Version | Date | Download |
+| --- | --- | --- | --- |
+| PalletEye User Manual | V1.0 | 2026-11-10 | [Download PDF](https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/1a258f7964e5f19ed74a673d97d68b860ad3d8fb/downloads/knowledge-community/current/depalletizing/MRDVS_PalletEye_User_Manual_v1.0.pdf) |
+| PalletEye White Paper | V1.0 | 2026-11-11 | [Download PDF](https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/1a258f7964e5f19ed74a673d97d68b860ad3d8fb/downloads/knowledge-community/current/depalletizing/MRDVS_PalletEye_White_Paper_v1.0.pdf) |
+
+The PalletEye V1.0 documents describe the AW3 workflow. The legacy standalone package below has its own software version and deployment guide. Document and software versions are independent.
+
 <details>
 <summary><strong>Software history · standalone 3.0.1</strong></summary>
 
