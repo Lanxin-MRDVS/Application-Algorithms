@@ -1,16 +1,19 @@
-# TorusMetric Documentation
+# TorusMetric Volume Measurement Documentation
 
-[Documentation Home](../../README.md) / [Volume Measurement](../README.md) / Documentation
+[Documentation Home](../../README.md) / [TorusMetric Volume Measurement](../README.md) / Documentation
 
-The public [Document update history](../README.md#document-update-history) is maintained at the bottom of the Volume Measurement product page. This folder stores the published document files and their supporting images. Preserve earlier versioned files. When an approved document is refreshed without a version change, replace it in place and update the verification data below without adding a history entry.
+## Latest English documents
+
+| Document | Version | Document date | Download |
+| --- | --- | --- | --- |
+| User Manual | V0.2 | 2026-10-28 | [Download PDF](https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf) |
+| White Paper | V0.1 | 2026-09-09 | [Download PDF](https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf) |
 
 ## File verification
 
 | File | Size | SHA-256 |
 | --- | ---: | --- |
-| https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf` | 11,302,591 bytes (10.78 MiB) | `6c20504e366862511f817bf7776f5b0cb737a0f04e769daa4db4c6900fcd4ebb` |
-| https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf` | 4,883,747 bytes (4.66 MiB) | `cc7233c49bb8e33e8bbad032473318db0aeea0216f058ed0ea94a350fa05c6e6` |
+| [MRDVS_TorusMetric_User_Manual_v0_2.pdf](https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf) | 12,595,223 bytes | `77a456fa734939709207c54af700ad8cd197d9c31bb4811295e520c74a3a442d` |
+| [MRDVS_TorusMetric_White_Paper_v0_1.pdf](https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf) | 4,919,137 bytes | `92b0714a8b3ec412ae66ca25e2084dc008e9acf39d4eec3136081dc9935481bf` |
 
-The PDFs identify TorusMetric as an AW3 application and document centimeter-class measurement, multi-camera stitching, operating limits, calibration, configuration, monitoring, protocol output, troubleshooting, and validation. Software downloads and version-specific changes are maintained in the [Software update history](../README.md#software-update-history).
-
-The product-page illustrations are indexed in [images/README.md](images/README.md). They are original assets extracted from the source white paper, not separate technical specifications.
+The [product-page illustrations](images/README.md) remain available. Software versions and download packages are listed on the [product page](../README.md#software-update-history).

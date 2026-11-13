@@ -27,16 +27,16 @@ This table retains formal versions and standalone updates. The supplied TorusMet
 </details>
 
 <details>
-<summary><strong>Document history</strong> · V0.1</summary>
+<summary><strong>Documentation</strong> · Latest English manuals and white papers</summary>
 
 <a id="document-update-history"></a>
 
-The Release status shows the latest document set. This table retains every published document version and its software applicability.
+| Document | Version | Document date | Download |
+| --- | --- | --- | --- |
+| User Manual | V0.2 | 2026-10-28 | [Download PDF](https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf) |
+| White Paper | V0.1 | 2026-09-09 | [Download PDF](https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf) |
 
-| Document | Version | Applies to | Publication date | Status | File |
-| --- | --- | --- | --- | --- | --- |
-| TorusMetric User Manual | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf) |
-| TorusMetric Volume Measurement Solution White Paper | `V0.1` | Formal: `TBC`<br>Standalone: none<br>AW3: `TBC` | 2026-09-09 | Current | https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf) |
+Document and software versions are managed separately.
 
 </details>
 
@@ -50,8 +50,8 @@ The Release status shows the latest document set. This table retains every publi
     <td width="34%" valign="top">
       <strong>Release status</strong><br><br>
       <strong>Latest documentation</strong><br>
-      <code>V0.1</code> · 2026-09-09<br>
-      Formal version: <code>TBC</code><br>
+      User Manual <code>V0.2</code> · 2026-10-28<br>
+      White Paper <code>V0.1</code> · 2026-09-09<br>
       <a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_User_Manual_v0_2.pdf">User Manual</a> · <a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/volume/MRDVS_TorusMetric_White_Paper_v0_1.pdf">White Paper</a><br><br>
       <strong>Latest formal software</strong><br>
       <a href="https://github.com/Lanxin-MRDVS/Application-Algorithms/releases/download/aw3-v3.1.2/AW3-V3.1.2_260929_win_x64.exe">AW3 Installer</a> · 2026-09-29<br>

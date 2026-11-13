@@ -44,15 +44,18 @@ SmartDocking algorithm versions and legacy PalletPro host versions are separate 
 </details>
 
 <details>
-<summary><strong>Document history</strong> · V0.1 / legacy PalletPro guide</summary>
+<summary><strong>Documentation</strong> · Latest English manuals and white papers</summary>
 
 <a id="document-update-history"></a>
 
-| Document | Version | Document date | Status | Read |
-| --- | --- | --- | --- | --- |
-| Smart Docking User Manual | V0.2 | 2026-10-30 | Current AW3 workflow | https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_User_Manual_v0_2.pdf) |
-| Pallet Docking Solution White Paper | V0.2 | 2026-11-12 | Current | https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_White_Paper_v0_2.pdf) |
-| PalletPro User Guide | Original, unversioned | Not supplied | Legacy PalletPro workflow | [Markdown](docs/user-guide.md) |
+| Document | Version | Document date | Download |
+| --- | --- | --- | --- |
+| User Manual | V0.2 | 2026-10-30 | [Download PDF](https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_User_Manual_v0_2.pdf) |
+| White Paper | V0.2 | 2026-11-12 | [Download PDF](https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_White_Paper_v0_2.pdf) |
+
+Legacy PalletPro deployments: [PalletPro User Guide](docs/user-guide.md).
+
+Document and software versions are managed separately.
 
 </details>
 
@@ -60,13 +63,14 @@ SmartDocking algorithm versions and legacy PalletPro host versions are separate 
   <tr>
     <td width="66%" valign="top">
       <strong>Designed for forklift pallet positioning</strong><br><br>
-      SmartDocking locates the pallet fork-entry face using 2D semantic positioning or pure 3D geometry. It supplies a reference position, orientation, and positioning status to the vehicle. AW3 manages devices, configuration, calibration, and result monitoring; the vehicle controller selects targets and controls motion and safety.<br><br>
+      SmartDocking locates the pallet fork-entry face using pure 3D geometry for the standard international offering. It supplies a reference position, orientation, and positioning status to the vehicle. AW3 manages devices, configuration, calibration, and result monitoring; the vehicle controller selects targets and controls motion and safety.<br><br>
       <img src="docs/images/smartdocking-applications.png" alt="Warehouse handling, production handover, and under-pallet handling" width="650">
     </td>
     <td width="34%" valign="top">
       <strong>Release status</strong><br><br>
       <strong>Latest documentation</strong><br>
-      <code>V0.1</code> · 2026-09-28<br>
+      User Manual <code>V0.2</code> · 2026-10-30<br>
+      White Paper <code>V0.2</code> · 2026-11-12<br>
       <a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_User_Manual_v0_2.pdf">User Manual</a> · <a href="https://raw.githubusercontent.com/Lanxin-MRDVS/Application-Algorithms/e123cfae91274642b46ad740c7d0505c007bd564/downloads/knowledge-community/current/pallet/MRDVS_Smart_Docking_White_Paper_v0_2.pdf">White Paper</a><br><br>
       <strong>Latest algorithm package</strong><br>
       SmartDocking <code>3.0.2</code><br>
@@ -83,7 +87,7 @@ SmartDocking algorithm versions and legacy PalletPro host versions are separate 
 
 ## How it works
 
-2D semantic positioning combines RGB model recognition with depth data. Pure 3D positioning matches leg and beam geometry against a configured template. Select and calibrate the required mode; pure 3D is an alternative method, not an automatic fallback when 2D fails.
+Pure 3D positioning matches leg and beam geometry against a configured template. Configure and calibrate the template for the site pallets. The V0.2 documents cover the standard international offering; 2D semantic positioning is not included.
 
 <p align="center"><img src="docs/images/smartdocking-positioning-flow.png" alt="Semantic and pure 3D positioning paths, reference point, and valid result fields" width="860"></p>
 
@@ -94,7 +98,7 @@ SmartDocking algorithm versions and legacy PalletPro host versions are separate 
 | Entry-face reference position | X, Y, and Z in millimeters for the pallet fork-entry reference point. |
 | Orientation | Roll and Yaw in degrees; Pitch is fixed at zero and is not a valid measured output. |
 | Positioning status | Check validity, detected count, and available pallet-class results before vehicle use. |
-| Two positioning modes | Select an appropriate semantic model or pure 3D geometry template for the site pallets. |
+| Pure 3D positioning | Configure a geometry template for the site pallets. |
 | Pallet templates and calibration | Maintain pallet geometry and installation-specific settings. |
 | Load detection | Available in pure 3D mode when enabled; it is not a general 2D output. |
 
